@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1636996686 "master.tex" "master.pdf" "master" 1636996686
+["pdflatex"] 1525682633 "master.tex" "master.pdf" "master" 1525682637
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/share/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -235,14 +235,14 @@
   "/usr/local/share/texmf-dist/web2c/texmf.cnf" 1635988059 31993 99636c7cdb6bfcdeed281f4a9987770c ""
   "/usr/local/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1636003938 3846757 8ad1ea890c6807fddfeb3bb7a544c3ee ""
   "/var/db/tlpkg/texmf.cnf" 1635988352 31993 99636c7cdb6bfcdeed281f4a9987770c ""
-  "lec_31.tex" 1636926551 3792 ed2e13a8cd3ea03629539d496d5cb013 ""
-  "lec_32.tex" 1636996685 4110 d6232a3e29f82d88c5a65a4323f25125 ""
-  "master.aux" 1636996669 82 24de3289e7bc87153049f553e2be7933 ""
-  "master.tex" 1636993947 249 1e661dff1695a12b86ade9ec5b6a0d02 ""
-  "master.toc" 1636996669 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "lec_32.tex" 1636996716 4203 b768fa4517fc6a44d0016481f279bcd0 ""
+  "lec_33.tex" 1525682633 898 9dbce8516df797e180fa96638e50e4ed ""
+  "master.aux" 1525682633 82 24de3289e7bc87153049f553e2be7933 ""
+  "master.tex" 1525680250 249 99eb4269183e30c551c8baaa059b50b6 ""
+  "master.toc" 1525682633 0 d41d8cd98f00b204e9800998ecf8427e ""
   "ops.tex" 1636926551 336 896d4018dcea668f4168e1e81713412a ""
   (generated)
-  "master.aux"
-  "master.toc"
-  "master.log"
   "master.pdf"
+  "master.aux"
+  "master.log"
+  "master.toc"
