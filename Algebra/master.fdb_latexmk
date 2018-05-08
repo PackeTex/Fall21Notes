@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1525733852 "master.tex" "master.pdf" "master" 1525733853
+["pdflatex"] 1525738445 "master.tex" "master.pdf" "master" 1525738445
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -72,6 +72,7 @@
   "/usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1215737283 145408 43d44302ca7d82d487f511f83e309505 ""
   "/usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1215737283 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1215737283 135942 859a90cad7494a1e79c94baf546d7de5 ""
+  "/usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb" 1215737283 154599 ded6d7c21788a8930eadc7fef7518942 ""
   "/usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1215737283 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1215737283 136101 f533469f523533d38317ab5729d00c8a ""
   "/usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb" 1215737283 131438 3aa300b3e40e5c8ba7b4e5c6cebc5dd6 ""
@@ -239,11 +240,13 @@
   "/usr/local/share/texmf-dist/web2c/texmf.cnf" 1635988059 31993 99636c7cdb6bfcdeed281f4a9987770c ""
   "/usr/local/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1636003938 3846757 8ad1ea890c6807fddfeb3bb7a544c3ee ""
   "/var/db/tlpkg/texmf.cnf" 1635988352 31993 99636c7cdb6bfcdeed281f4a9987770c ""
+  "lec_38.tex" 1637606277 6267 a97797cb50c510ffef97061dcd225a5c ""
+  "lec_39.tex" 1638210660 1700 08c8833999ce19f1bce5ee0bcf09f905 ""
   "lec_40.tex" 1638387223 6340 6fc218db15ee0c24ac23bae93a6447f4 ""
-  "lec_41.tex" 1525733852 4139 398f23b0ca392ab3bdc84fa65f304b4b ""
-  "master.aux" 1525733852 165 be2a466d56656025531524af8e22813c ""
-  "master.tex" 1525731302 254 c69eefbf5c062447503f1c6c61f38fdf ""
-  "master.toc" 1525733852 65 f9d817310fa9436f7762e88b72c7de4f ""
+  "lec_41.tex" 1525738444 16099 5f802563d2c340139a8acefbba364485 ""
+  "master.aux" 1525738445 326 62602d823f4dad01bd4633b1c4f8f7c7 ""
+  "master.tex" 1525736436 300 8e89ca81099e7d4d3f0edfc908fd38a5 ""
+  "master.toc" 1525738445 190 27bb1f7ecc7f60503d2a2c4eea1799fd ""
   "ops.tex" 1637344845 321 9febfa2d8b1edf00692199596e84cda4 ""
   (generated)
   "master.pdf"
