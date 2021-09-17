@@ -1,0 +1,60 @@
+\lecture{9}{Mon 13 Sep 2021 11:26}{Semidirect Products and Basic Results}
+\section{Semidirect Products}
+\begin{definition}[Direct Product]
+	Let \(H, N\) be groups. Their (external) \textbf{direct product}  is \(N \times N = \{\left( x, h \right) :  x \in N, h \in H\} \) with \(\left( x_1, h_1 \right) \left( x_2, h_2 \right)  = \left( x_1 x_2 , h_1 h_2 \right)  \).
+\end{definition}
+\begin{definition}[Semidirect Product]
+Let \(H, N\)  be groups and let \(\alpha : H \to \aut \left( N \right) \). Thus \(H\) acts on \(N\) by \(x^{h} = \alpha \left( h \right) \left( x \right) \). We define the (external) \textbf{semidirect product} to be \(N \rtimes_{\alpha} H = \{\left( x, h : x \in N, h \in H\right) \} \). This forms a group with \(\left( x_1, h_1 \right)  \left( x_2, h_2 \right)  = \left( x_1, x_2 ^{h_1}, h_1 h_2 \right) \)
+\end{definition}
+Let us verify this is  a group. We see this is a well defined map as \(H\) is closed and \(x_2^{h_1} \in N\) and \(N\) is closed. Now, let us find the identity. We see \(\left( 1, 1 \right) \) has \(\left( x,h  \right) \left( 1, 1 \right) = \left( x1^{h} = h_1 \right)  =  \left( x, h\right) \) and \(\left( 1, 1 \right) \left( x, h \right)  = \left( 1x^{1}, 1h \right)  = \left( x,h \right) \). Hence, \(\left( 1, 1 \right) = e\) is the identity. Next, the inverse of \(\left( x, y \right) \) is \(\left( x^{-1} \right) ^{h^{-1}}, h^{-1}\). We see
+\begin{align*}
+\left( x, y \right) \left( \left( x^{-1} \right)^{h^{-1}}, h^{-1}  \right) &=  \left( x\left[\left( x^{-1} \right)^{h^{-1}} \right] ^{h}, h h^{-1} \right)  \\
+									   &=  \left( x \left( x^{-1} \right)^{h h^{-1}}, 1  \right)  \\
+									   &= \left( x \left( x^{-1} \right) ^{1}, 1 \right)  \\
+									   &= \left( x x^{-1}, 1 \right)  \\
+									   &= \left( 1, 1 \right)  \text{ and }\\
+\left( \left( x^{-1} \right) ^{h^{-1}} , h^{-1} \right) \left( x, h \right)  &=  \left( \left( x^{-1} \right)^{h^{-1}} x^{h^{-1}}, h^{-1} h  \right) \\
+									     &= \left( \left( x^{-1} x \right) ^{h^{-1}}, 1 \right)  \text{ By \(h^{-1}\) being an homo(auto)morphism}\\
+									     &= \left( 1^{h^{-1}}, 1 \right)  \\
+									     &= \left(1, 1\right) \\
+.\end{align*}
+We see this holds as \(\left( xy \right) ^{h} = \alpha \left( h \right) \left( x y\right) = \alpha \left( h \right) \left( x \right) \alpha \left( h \right) \left( y \right) = x^{h}y^{h} \).\\
+Lastly, let us show associativity. Let \(\left( x_1, h_1 \right) , \left( x_2, h_2 \right) \left( x_3, h_3 \right)  \in N \rtimes H\). Then,
+\begin{align*}
+	\left( \left( x_1, h_1 \right) \left( x_2, h_2 \right)  \right) \left( x_3, h_3 \right) &= \left( x_1x_2^{h_1}, h_1 h_2 \right) \left( x_3, h_3 \right)\\
+												&= \left( x_1x_2^{h_1}\left( x_3 \right) ^{h_1h_2}, h_1 h_2 h_3 \right)  \\
+	\left( x_1, h_1 \right) \left( \left( x_2, h_2 \right) \left( x_3, h_3 \right)  \right) &=  \left( x_1, h_2 \right) \left( x_2x_3^{h_2}, h_2h_3 \right)  \\
+												&= \left( x_1 \left( x_2x_3^{h_2} \right)^{h_1}, h_1 h_2 h_3 \right)  \\
+												&= \left( x_1 x_2^{h_1}x_3^{h_1h_2}, h_1 h_2 h_3\right)
+.\end{align*}
+Hence this is indeed a group. Lastly, let us observe \(\left|  N \rtimes H\right| = \left| N \right| \left| H \right|  \).\\
+Now, note that \(N \times \{1\} \) has \(\left( x, 1\right) \left( y, 1 \right)  = \left( xy^{1}, 1\cdot_1 \right) = \left( xy, 1 \right)  \) so \(N \times \{1 \simeq N\} \). Hence, we often refer to \(N\) as having  \(N \le N \times H\) even though it is techinically \(N \times \{1\}  \le N \rtimes H\). Likewise \(\{1\} \rtimes H\) has \(H \le N \times H\).\\
+The reason this is of interest is that \(N\) is normal in \(N \rtimes H\), with the notation being purposely similar to \(N \triangleleft H\) in order to remind one which group will be normal.
+We see for \(\left( x, 1 \right) \in N\) and \(\left( y, h \right) \in N \rtimes H\) we have \begin{align*}
+	\left( y, h \right) \left( x, 1 \right) \left( y, h \right) ^{^{-1}} &=  \left( y, h \right) \left( x, 1\right) \left( \left( y^{-1} \right) ^{h^{-1}}, h^{-1} \right)  \\
+									     &= \left( yx^{h}, h \right) \left( \left( y^{-1} \right) h^{-1} , h^{-1}\right)  \\
+									     &= \left( yx^{h} \left( \left( y^{-1} \right) ^{h^{-1}} \right) ^{h}, h h^{-1} \right)  \\
+									     &= \left( yx^{h}\left( y^{-1} \right) ^{hh^{-1}}, 1 \right)  \\
+									     &= \left( yx^{h}y^{-1}, 1 \right)\\
+									     &\in N
+.					\end{align*}
+
+Se \(N\) is indeed normal in \(N \rtimes H\).\\
+If \(\alpha : H \to \aut \left( N \right) \) being the trivial homomorphism, we see every element is the identity map, hence \(N \rtimes H =  N \times H\).
+\begin{theorem}
+	Let \(H, N\) be groups with \(\alpha : H \to \aut \left( N \right) \) being a homomorphism. \(H \trianglelefteq N \rtimes_{\alpha} H \iff N \rtimes_{alpha} H = N \times H\).
+\end{theorem}
+\begin{proof}
+	Assume \(H \trianglelefteq N \rtimes_{\alpha} H\). So, \(\left( x, 1 \right) \left( 1, h \right) \left( x^{-1}, 1 \right)  = \left( 1, h^{\prime} \right) \in H\) for all \(x \in N\) and \(h \in H\). Then,
+	\begin{align*}
+		\left( x, 1 \right) \left( 1, h \right) \left( x^{-1}, 1 \right)  &=  \left( x\cdot 1^{1}, 1 \cdot h \right) \left( x^{-1}, 1 \right)   \\
+										  &= \left( x, h \right) \left( x^{-1}, 1 \right)   \\
+										  &= \left( x\left( x^{-1} \right) ^{h}, h \right)  \\
+										  &= \left( 1, h^{\prime} \right)  \\
+	.\end{align*}
+	Implying \(h = h^{\prime}\) and \(\left( x^{-1} \right) ^{h} = x^{-1}\), for all \(h \in H\). Then, as every \(h\) acts as the trivial map, we see this is simply the special case yielding the direct product.\\
+	The other direction of the proof is left as an exercise.
+\end{proof}
+\begin{definition}[Internal Semidirect Products]
+	Let \(G \) 	 be a group with \(H, N \le G\) and suppose \(H \le N_{G}\left( N \right) \) and \(H \cap N = \{1\} \). Then \(NH \simeq N \rtimes_{\alpha} H\) where \(\alpha: H \to \aut \left( N \right) , h \left( x \right)  \mapsto \alpha \left( h \right)  \left( x \right)  = hxh^{-1}\). We define this to be the \textbf{internal semidirect product}.
+\end{definition}

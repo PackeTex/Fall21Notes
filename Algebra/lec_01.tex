@@ -1,0 +1,51 @@
+\lecture{1}{Mon 23 Aug 2021 11:21}{Review of Group Theory}
+\section{Review of Group Theory}
+\begin{note}{Textbook}
+	Algebra I will use Dummitt and Foote and Algebra II will also use Lang and Hungerford.
+\end{note}
+\begin{definition}[Group]
+	A \textbf{multiplicative group} is a set $G$ with a binary operation mapping the product of two elements from $G$ to an element of $G$: $\cdot : G \times G \to G$. This operation must be closed, associative, have an identity ($1$), and have inverses ($g^{-1}$) for all $g \in G$. Alternatively, a \textbf{additive group} uses the operation $+: G\times G \to G$, this is generally used with commutative groups and we denote the identity $0$ and inverse $-g$.
+\end{definition}
+\begin{remark}[Commutatitvity]
+	Groups need not be commutative. However, inverses and identities always commute ($1g = g 1 = g$ and $g g^{-1}= g^{-1}g = 1$). Groups for which $gh = hg$ for all $g, h \in G$ are denoted abelian.
+\end{remark}
+\begin{definition}[Subgroup]
+	If $(G, \cdot )$ is a group, a nonempty subset $H \subseteq G$ is a \textbf{subgroup} if $H$ forms a group under the same operation ($\cdot$). We denote this $H\le G$. In other words, $H$ is closed under $\cdot$ and under inverses. Clearly, associativity and identity are implicitly a part of $H$ if closure and inverses hold. A subgroup for which $H\subset G$ is denoted  $H <  G$ and is called a \textbf{proper subgroup}.
+\end{definition}
+\begin{example}
+	The trivial subgroup $ \{1\} \le G$ is always a subgroup.
+\end{example}
+\begin{theorem}[Lagrange's Theorem]
+	If $H\le G$ and $\left| G \right| $ is finite, then $\left| H \right| | \left| G \right| $ (The order of $H$ divides the order of $G$).
+\end{theorem}
+\begin{definition}[Order]
+	The \textbf{order} of an element $g \in G$ is the least positive integer $n$ for which $g^{n} = 1$. We denote this $\ord \left( g \right) $ and we define $g^{0} \coloneqq 1$ for consistency sake.
+\end{definition}
+\begin{notation}[Additive order]
+	Instead of exponent notation, we use \\$ng = g + g + \ldots + g$, $n$ times, to denote the repeated application of the group operation in an additive group.
+\end{notation}
+\begin{definition}[Homomorphisms]
+	A \textbf{group homomorphism} is a map between two groups $\left( G, \cdot \right)$ and $\left( H, \times \right) $ which preserves operations. That is, $\phi: G \to H$ such that for $x, y \in G$, we have $\phi \left( x\cdot y \right) = \phi \left( x \right) \times \phi \left( y \right) $.
+\end{definition}
+\begin{remark}
+	It is a direct result of this definition that $\phi \left( 1_{G} \right) = 1_{H}$ and \\$\phi\left( g^{-1} \right)= \phi \left( g \right) ^{ -1}$ for all $g \in G$.
+\end{remark}
+\begin{definition}[Types of Maps]
+	A map $f: A \to B$ for which \\$f\left( x \right) = f\left( y \right) \implies x=y$ for all $x , y \in A$ is called an \textbf{injection}. A map such that for all $z \in B$, there exists $x \in A$ such that $f\left( x \right) = z$ is called a \textbf{surjection}. An equivalent notation is that $f\left( A \right) = B$ or to say the range of $f$ is $B$. A map which is both in injection and a surjection is called a \textbf{bijection}.
+\end{definition}
+\begin{remark}[Injection creates bijection]
+	As the quality of surjection is more dependant on our codomain than the map itself, we may alter any map which is an injection to create a bijection. Suppose $f: A \to B$ is an injection, then, restricting the codomain of $f$ to be exactly $f\left( A \right) $ induces a surjection, and hence a bijection.
+\end{remark}
+\begin{definition}[Isomorphism]
+	A group homomorphism which is a bijection is called an \textbf{group isomorphism}. If two groups $G, H$ have an isomorphism between them, then they are called \textbf{isomorphic} and we denote this relation by $G \simeq H$.
+\end{definition}
+\begin{remark}
+	For a group isomorphism it is sufficient to only check that the identity is injective. Restated, $\phi$ is injective if $\ker \left( \phi \right) = \{g \in G : \phi \left( G \right)  = 1	\} = \left\{ 1 \right\} $, a trivial subgroup of $G$ (Note that the kernel is always a subgroup of the domain).
+\end{remark}
+\newpage
+\begin{remark}
+	If $\phi$ is an isomorphism, then $\phi ^{-1} : H \to G$ is also an isomorphism, hence $H \simeq G$. Isomorphism of two groups essentially implies equivalence of the groups in all algebraic ways. It is of note that it is possible to have subgroups $H, K \le G$ such that $H \simeq K$ but,$H$ and $K$ possess different properties within $G$. Hence isomorphism implies equivalence only when the groups which are isomorphic are the whole of the universe under consideration.
+\end{remark}
+\begin{definition}[Automorphism]
+	If $G$ is a group, we define $\aut \left( G \right) $ to be the set of all isomorphism from $G \to G$. This is called the \textbf{automorphism group} and it does indeed from a group under the operation  of composition. An element $f \in \aut\left( G \right) $ is called an \textbf{automorphism} of $G$. The group operation is usually denoted, for $f, g \in \aut \left( G \right) $, $x\in G$, as $f\left( g\left( x \right)  \right) $ or $\left(f \circ g \right) \left( x \right) $.
+\end{definition}

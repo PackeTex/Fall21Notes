@@ -1,0 +1,110 @@
+\documentclass[a4paper]{article}
+\input{../../preamble.tex}
+\usepackage{pdfpages}
+\title{Algebraic Theory I: Homework I}
+\date{Mon 06 Sep 2021 18:53}
+\input{../ops.tex}
+\begin{document}
+\maketitle
+\begin{problem}[1]
+	Let \(G\) be a group and \(H, K \trianglelefteq G\) with \(H \cap K = \{1\} \). Show that \(hk = kh\) for \(h \in H\), \(k \in K\).
+\end{problem}
+\begin{solution}
+	Note that as \(K\) is normal, we have \(h^{-1} k h = n\in K\) and \(kh k^{-1} = m\in H\) for \(k \in K\), \(h \in H\). Then, note that \(h^{-1} k h k^{-1} = nk^{-1} = h^{-1} m\). But as \(h^{-1}, m \in H\), we see \(h^{-1} m \in H\) by closure. Similarly, \(nk^{-1} \in K\). Hence \(1= h^{-1} k h k^{-1} \in H \cap K = \{1\} \). Now, multiplying by \(k\) from the right and \(h\) from the left yields \(kh = hk\).
+\end{solution}
+\newpage
+\begin{problem}[2]
+	Let \(G\) be a nontrivial group and \(H\) to be a maximal normal subgroup of \(G\). Show that \(G / H\) has no proper nontrivial normal subgroups.
+\end{problem}
+\begin{solution}
+	Suppose \(K \trianglelefteq  (G / H)\) is a  nontrivial subgroup. Then, the lattice theorem guarantees \(K = T / H\) for some \(H \le T \le G\) with \(T \trianglelefteq G\). As \(K\) is nontrivial, we see there is a \(t \in T \setminus H\) else \(K\) would be trivial. Hence, \(H < T \le HT \le G\) and, as \(H, T \trianglelefteq G\), we see \(HT \trianglelefteq G\) (as \(xHT = HxT = HTx\)). Hence, \(H < HT \trianglelefteq G\), so \(H\) is not the maximal normal subgroup of \( G\) . \(\lightning\)
+\end{solution}
+\newpage
+\begin{problem}[3]
+	Let \(G\) be a group action acting transitively on the set \(\Omega\) and let \(\alpha: G \to \perm \left( \Omega \right) \) be the corresponding homomorphism given by \(\alpha \left( g \right) \left( x \right)  = x^{g}\) for \(g \in G\) and \(x \in \Omega\). For any \(x \in \Omega\) show that \(\ker \left( \alpha \right)  = \bigcap_{g \in G} gG_{x}g^{-1}\)
+\end{problem}
+\begin{solution}
+	Let \( x \in \Omega\), and for each \(g \in G\), define \(x^{g} = a_{g} \in \Omega\) and note that by transitivity, \(\{a_{g} : g \in G\}  = \Omega\).
+\begin{align*}
+\bigcap_{g \in G} gG_{x} g^{-1} &=  \bigcap_{g \in G}G_{x^{g}} \\
+				&= \bigcap_{g \in G} \{h \in G : \left(x^{g} \right)^{h} = x^{g}\}   \\
+				&=  \{h \in G : \left(x^{g} \right) ^{h} = x^{g} \ \forall \ g \in G\} \\
+&=  \{h \in G : a_{g}^{h} = a_{g} \ \forall \ a_{g} \in \Omega\} \\
+&=  \{h \in G : \alpha \left( h \right) \left( a_{g} \right)  = \alpha\left( 1_{G} \right) \left( a_{g} \right) = 1_{\perm (\Omega) } \left( a_{g} \right) , a_{g} \in \Omega \} \text{ as \(\alpha\) is a homomorphism} \\
+&= \ker \left( \alpha \right)
+.\end{align*}
+\end{solution}
+\newpage
+\begin{problem}[4]
+	Let \(G\) be a group acting transitively on a finite set \(\Omega\), and let \(H \trianglelefteq G\). Consider the action of \(H\) on \(\Omega\) inherited from \(G\) and let \(\mathscr{O}_1, \ldots, \mathscr{O}_{r}\) be the distinct orbits of this action.
+	\begin{enumerate}
+		\item Show that there is a well defined action of \(G\) on \(\{\mathscr{O}_1, \ldots, \mathscr{O}_{r}\} \) defined by \(\mathscr{O}^{g} = \{x^{g} : x \in \mathscr{O}_{i}\} \), with this action being transitive.
+			\item Show that \(\left| \mathscr{O}_{i} \right| = \left| \mathscr{O}_{j} \right|  \) for all \(i, j\).
+				\item For \(x \in \mathscr{O}_{1}\) show that \(\left| \mathscr{O}_{1} \right| = \left|H : H \cap G_{x}\right|\) and \(r = \left| G : HG_{x} \right| \).
+	\end{enumerate}
+\end{problem}
+\begin{lemma}
+	\(\left|\mathscr{O}_{i}^{g}\right| \le \mathscr{O}_{i} \). Suppose every \(x_{j} \in \mathscr{O}_{i}\) mapped to a unique \(x_{k}\) by \(g\), that is \(x_{j}^{g} = x_{n}^{g}\) implies \(x_{j} = x_{n}\), This is clearly the case of maximal size. Then, \(\left| \mathscr{O}_{i}^{g} \right|  = \left| \mathscr{O}_{i} \right| \). If  \(x_{j}^{g} = x_{n}^{g} =x_{k}\) for some \(j \neq n\), then \(\left| \mathscr{O}_{i}^{g}\right| < \left| \mathscr{O}_{i} \right| \) . Hence the inequality holds regardless.
+\end{lemma}
+\begin{solution}
+Let \(\{\mathscr{O}_{1}, \mathscr{O}_{2}, \ldots, \mathscr{O}_{r}\} = \mathscr{O}\).
+\begin{enumerate}
+	\item First we show the action is well defined. First, note that \(\mathscr{O}_{i} ^{ 1} = \{x^{1} = x \in \mathscr{O}_{i}\} = \mathscr{O}_{i} \). Furthermore let \(x_{i}\) to be the generating element for each respective \(\mathscr{O}_{i}\). Then,
+		\begin{align*}
+			\left( \mathscr{O}_{i}^{g} \right) ^{h} &= \{\left( x^{g} \right)^{h}:g, x \in \mathscr{O}_{i}  \} \\
+&= \{x^{hg}: h, g \in \mathscr{O}_{i}\}  \\
+&= \mathscr{O}_{i}^{hg}
+		.\end{align*}
+		Next, note that for each pair \(1 \le i, j \le r\) and each \(g, g^{-1} \in H\), there is a \(h_{i;j} \in g\) and \(\hat{g}{h}_{i;j} \in h_{i ; j}G = Gh_{i;j}\) such that \(h_{i;j}\hat{g} = \hat{g}{h}_{i;j}\) and \(x_{i}^{\hat{h}_{i;j}} = x_{j}\). Hence
+		\begin{align*}
+			\mathscr{O}_{i}^{h_{i, j}} &= \{\left( x_{i}^{g} \right)^{h_{i; j}} : g \in H \} \\
+						   &= \{x_{i}^{h_{i; j} g} : g \in H\}\\
+						   &= \{x_{i} ^{h_{i;j}g} :  h_{i;j} g \in h_{i:j} H\}  \\
+						   &= \{x_{i} ^{g\hat{h}_{i;j}} :  g\hat{h}_{i;j} \in  H h_{i; j}\} \\
+						   &=  \{\left( x_{i}^{\hat{h}_{i;j}} \right)^{g} : g \in H \}  \\
+						   &= \{x_{j}^{g} : g \in H\}  \\
+						   &= \mathscr{O}_{j}
+		.\end{align*}
+So, the action is transitive.
+\item First, let \(g \in G\) and \(1 \le i, k \le r\) such that \(\mathscr{O}_{i} ^{g} = \mathscr{O}_{k}\). Then, we note that \(\left| \mathscr{O}_{k} \right| = \left| \mathscr{O}_{i}^{g} \right| \le \left|\mathscr{O}_{k}\right|\). Now, let \(h \in G\) such that \(\mathscr{O}_{k}^{h} = \mathscr{O}_{i}\). Then, \(\left| \mathscr{O}_{i} \right| = \left| \mathscr{O}_{k}^{g} \right|  \le \left| \mathscr{O}_{k} \right| \). Hence, \(\left| \mathscr{O}_{k} \right|  \le \left| \mathscr{O}_{i} \right| \le \left| \mathscr{O}_{k} \right| \), so \(\left| \mathscr{O}_{i} \right| = \left| \mathscr{O}_{k} \right| \).
+\item First let \(x \in \mathscr{O}_{i}\) and denote the stabilizer of \(x\) within \(H\) to be \(H_{x}\). Then, note that \[G_{x} \cap H= \{g \in G : x^{g} = x\} \cap H = \{g \in G \cap H : x^{g} = x\} = \{ g\in H : x^{g} = x\} = H_{x}.\] Then, point-stabilizer theorem shows \(\left| \mathscr{O}_1 \right| = \left| H : H_{x} \right| = \left| H : G_{x} \cap H \right|  \).\\
+	Now, note that normalcy (\(G_{x} \cap H  = H \trianglelefteq H\), \(G_{x} \trianglelefteq HG_{x}\), and \(H \le N_{G}\left( G_{x} \right) \))and the 3rd isomorphism theorem guarantees \(\left| H : G_{x} \cap H \right|  = \left| HG_{x} : G_{x} \right| \). Lastly, note that as \(g\) is transitive, we have \(\mathscr{O}_{G;x} = G\) (the orbit of \(x\) in \(G\)). Then, orbit-stabilizer guarantees \(\left| \mathscr{O}_{G;x} \right| = \left| G : G_{x} \right| = \left| G \right|  \). Finally, the 2nd isomorphism theorem says \((G / G_{x}) \simeq \left( G / HG_{x} \right) / \left( HG_{x} / G_{x} \right) \), hence \(\left| G : G_{x} \right|  = \left| G : HG_{x} \right| \cdot \left|  HG_{x} : G_{x} \right| \). Lastly, note that as all orbits were of equal cardinality and \(G\) acts transitively, we must have \(\left|  \right| \), we may construct our equality.\\
+\begin{align*}
+	\left| G \right| &= \left| G : G_{x} \right|  \\
+			 &= \left| G : HG_{x}\right| \cdot \left|  HG_{x}  : G_{x}\right|  \\
+			 &=  \left| G : HG_{x} \right| \cdot \left| O_{i} \right|  \\
+.\end{align*}
+But, as \(G = r \left| \mathscr{O}_{i} \right| \), we see \(\left| G:HG_{x} \right| = r\).
+
+
+\end{enumerate}
+
+\end{solution}
+\newpage
+\begin{problem}[5]
+	Let \(G\) be a group acting transitively on a finite \(\Omega\). Define a block to be a nonempty subset \(B \subseteq \Omega\) such that for every \(g \in G\), \(B\) and \(B^{g} = \{x ^{g} : g \in G, x \in B\} \) have either \(B = B^{g}\) or \(B \cap B^{g} = \O\).
+	\begin{enumerate}
+		\item Show that the definition for a block \(B\) and \(g \in G\) gives a well defined group action of \(G\) on the set \(\Omega_{B} \coloneqq \{B^{g} : g \in G\} \).
+			\item If \(B\) is a block with \(x \in B\), then \(G_{x} \le G_{B} = \{g \in G : B^{g} = B\} \le G \).
+				\item Show that there does not exist a block \(B\) with \(1 < \left| B \right|  < \left| \Omega \right| \) if and only if for every \(x \in \Omega\) the only subgroups of \(G\) containing \(G_{x}\) are \(G\) and \(G_{x}\) itself.
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+\begin{enumerate}
+	\item First, note that \(\left( B^{g} \right)^{1}  = B^{1g} = B^{g}\).\\
+		Next,
+		\begin{align*}
+			\left( \left( B^{g} \right)^{h}  \right)^{k} &= \{\left( \left( x^{g} \right)^{h}  \right)^{k} : x \in B \} \\
+								     &= \{\left( x^{g} \right)^{kh} : x \in B \}  \\
+								     &= \left( B^{g} \right)^{kh}  \\
+		.\end{align*}
+		\item Let \(B\) be a block and \(x \in B\). Then, \[
+		G_{B} = \{g \in G : B^{g} = B\} = \{g \in G : \{x^{g} : x \in B\} = B \}
+		.\]
+		Suppose there is a \(h \in G_{x} \setminus G_{B}\). That is, there is an \(h\) such that \(x^{h} = x\) but \(B^{h} \neq B\), implying \(B^{h} \cap B = \O\). But, we know \(x \in B\) and \(x^{h} = x \in B^{h}\), hence \(B^{h} \cap B \neq \O\). \(\lightning\). Hence for all \(g \in G_{x}\), \(g \in G_{B} \), so \(G_{x} \le G_{B}\).
+	\item Suppose for all \(x \in \Omega\), the only subgroups of \(G\) containing \(G_{x}\) are \(G\) and \(G_{x}\). Then, as \(G_{x} \le G_{B} \le G\), we must have \(G_{B} = G_{x}\) for all \(x \in \Omega\) or \(G_{B} = G\). Suppose \(G_{B} = G\) and \(\left| B \right|  < \left| \Omega \right| \), let \(y \in \Omega \setminus B\) then \(\{x^{g} : g \in G, x \in B\} = B \). But as the action is transisitve, for each \(x \in B\) there is a \(h \in G = G_{B}\) such that \(x^{h} = y \in B^{h} = B\). \(\lightning\) as \(y \not\in B\). Hence \(\left| B \right| = \left| \Omega \right| \) in this case.\\
+		Now, consider the case \(G_{B} = G_{x}\) for all \(x \in \Omega\) where \(\left| B \right|  > 1\). Then, let \(x, y \in B\) be distinct elements and note that \(G_{B} = G_{x} = G_{y}\). Let \(g \in G \) such that \(x^{g} = y\). Then, as \(x^{g} = y \in B^{g}\), we see \(B^{ g} = B\) hence \(g \in G_{B}\), but as \(x^{g} =y \neq x\), then \(g \not\in G_{x}\) hence \(G_{x} \neq G_{B}\). \(\lightning\). So \(\left| B \right|  =1\) in this case.\\
+		The other direction of the proof eludes me.
+\end{enumerate}
+\end{solution}
+\end{document}

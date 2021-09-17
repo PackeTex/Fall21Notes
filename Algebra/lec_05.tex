@@ -1,0 +1,41 @@
+ \section{Conjugacy and Normality Proofs}
+\lecture{5}{Wed 01 Sep 2021 11:24}{Mathematical Justification of Conjugacy}
+\begin{recall}[Orbit Stabilizer Lemma]
+	If \(G\) acts on a set \(\Omega\) and \(x \in \Omega\), then \(\left| \mathscr{O}_{x} \right| = \left| G : G_{x} \right| \). This meant, we could write \(\left| \Omega \right| = \sum_{x \in A}^{} \left| \mathscr{O}_{x} \right| = \sum_{x \in A}^{}  \left| G : G_{x} \right|  \), where \(A \subseteq X\) was a subset of \(\Omega\) containing one representatives for each orbit.
+\end{recall}
+\begin{example}
+	If \(G\) acts on itself by conjugation. We call the orbits of this action the \textbf{conjugacy classes} of \(G\). So \(\mathscr{O}_{x} = \{gxg^{-1} : g \in G\} \) and \\\(G_{x} = \{g \in G :  gxg^{-1} = x^{g} = x\} = Z_{G} \left( \left<x \right>  \right)  \).\\
+	Hence, \[\left| \Omega \right| = \left| G \right| = \sum_{x \in \mathscr{C}}^{} \left| G: Z_{g}\left( x \right)  \right| = \left| Z\left( G \right)  \right|  + \sum_{x \in \mathscr{C}^{\prime}}^{}\left| G : Z\left( x \right)  \right|  \] where \(\mathscr{C}\) is a set containing \(1\) representative from each conjugacy class and \(\mathscr{C}^{\prime}\) is a set containing \(1\) representative from each conjugacy class of size \(\ge 2\).\\
+	This final equivalence comes from the fact that the orbit being of size \(1\) implies that \(gxg^{-1} = x\) for all \(g\), hence the centralizer \(Z\left( x \right)  = Z\left( G \right) \).
+\end{example}
+\begin{definition}[Subgroup Conjugacy]
+	Two subgroups \(H, K \le G\) are \textbf{conjugate} when \(K = gHg^{-1}\) for some \(g \in G\). So, \(K\) is the image of \(H\) under the conjugation by \(g\) automorphism for some \(g \in G\). Since \(K\) is an isomorphic image of \(H\), we have \(H \simeq K\) for conjugate groups \(H, K \le G\).
+\end{definition}
+We may wish to count the number of conjugate subgroups. For this, let \(G\) act by conjugation on the set of all subgroups conjugate to \(H\), denoted \(\Omega\). This is a transitive group action by definition (there is only \(1\) orbit). So, by the orbit stabilizer lemma, the number of conjugate subgroups which is precisely \(\left| \Omega \right| = \left| G : G_{H} \right|  = \left| G : N_{G}\left( H \right)  \right| \). This is true as
+\begin{align*}
+	G_{H} &= \{g \in G : H^{g} = H\} \\
+	      &= \{g \in G : gHg^{-1} = H\} \\
+	      &= N_{G}\left( H \right)
+.\end{align*}
+\begin{theorem}
+	Let \(G\) be a group with \(H\le G\) and \(\left| G : H \right| = 2\). Then, \(H\) is normal.
+\end{theorem}
+\begin{proof}
+	Let \(G\) act on all conjugate subgroups to \(H\) by conjugation. Then, the number of conjugate subgroups is simply \(\left| G : N_{G}\left( H \right)  \right| \) by the previous remark. Let us note, \(H \le N_{G}\left( H \right) \le G \) and \(\left| G : H \right| = 2\). If \(H < N_{G}\left( H \right) \), then \(N_{G}\left( H \right) \) would contain \(2\) \(H\)-cosets, whose union would be \(G\) by the index \(2\) assumption. Thus, wither \(N_{G}\left( H \right)  = H \text{ or } G\). If \(N_{G}\left( H \right) = G\), then \(H\) is normal by definition since \(H\trianglelefteq N_{G}\left( H \right) \).
+	\\ Hence, assume the contrary, that \(N_{G}\left( H \right) = H\). Thus, there are \(\left| G: N_{G} \left( H \right)  \right|  = \left| G : H \right| = 2\) conjugate subgroups to \(H\), denoted \(\Omega = \{H, K\} \). Thus \(G\) is acting on the two element set \(\Omega\), hence there is a homomorphism \(\alpha: G \to \perm \left( G \right) \simeq S_2\). Let \(\ker \left( \alpha \right) = H_0\).\\
+	By definition, we have \(H_0 = \{g \in G : H^{g} = H \text{ and } K^{g} = K\} \), but as \(g\) is a permutation, we see mapping \(H \mapsto H\) implies \(K\mapsto K\). Hence, \(H_0 = \{g \in G : H^{g} = H\} = N_{G}\left( H \right) = H\). As \(H\) is the kernel of a homomorphism it is normal. Hence \(H\) is normal in either case, so \(H \trianglelefteq G\).
+\end{proof}
+Many of the ideas of this proof will be used frequently, such as showing something is the kernel in order to show its normal.
+\begin{note}{Note on the Midterm}
+	The midterm will consist of \(2\) parts, the first part will consist of novel problems which only require mashing together the theorems and lemmas we already to know in order to make a short (\(1\) paragraph) proof) and the second part will consist of recitation of the proofs of some of the more important theorems.
+\end{note}
+\begin{therorem}
+	Let \(G\) be a finite group and let \(p \mid \left| G \right| \) be the smallest prime divisor of \(\left| G \right| \). Let \(H\) be a subgroup such that \(\left| G : H \right|  = p\). Then \(H \trianglelefteq G\). We see this is a generalization of the previous result as \(2\) is the "smallest smallest" prime divisor of all. The one caveat is that this can only be applied to finite groups as \(\left| G \right| \) must be well defined.
+\end{therorem}
+\begin{proof}
+	Let \(\Omega\) be the set of conjugate subgroups to \(H\) and let \(G\) act on \(\Omega\) by  conjugation. As before, as this action is transitive, we know \\\(\left| \Omega \right|  = \left| G : G_{H} \right| = \left| G : N_{G} \left( H \right)  \right| \). we need to use \(\left| G:H \right| = p\) to conclude \(N_{G}\left( H \right) = H\). In general, we know \(H \le N_{G}\left( H \right) \le G\), hence as \(\left| G :H\right| = p\), then we have \[
+		p = \left| G:H \right|  = \left| G : N_{G}\left( H \right)  \right|\cdot \left| N_{G}\left( H \right) : H \right|
+	.\]
+	Thus, \(\left| G:N_{G}\left( H \right)  \right| = 1 \text{ or } p\) as \(p\) is prime so there are no divisors.
+	If \(\left| G : N_{G}\left( H \right)  \right| = 1\), then \(N_{G}\left( H \right) = G\), so \(H\trianglelefteq G\). Hence, let us conclude the contrary, that \(\left| G : N_{G}\left( H \right)  \right| = p\). Hence, \(\left| N_{G}\left( H \right)  \right| = 1\) by the earlier product, hence \(N_{G}\left( H \right) = H\). The rest of the proof follows directly from the earlier arguments with some minor augmentations, we will show that \(H\) is the kernel of the associated homomorphism, making use of the fact that \(p\) was the smallest prime divisor.
+\end{proof}

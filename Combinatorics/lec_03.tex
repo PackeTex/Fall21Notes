@@ -1,0 +1,71 @@
+\newpage
+\lecture{3}{Fri 27 Aug 2021 09:31}{Strongly Regular Graphs (3)}
+\begin{recall}
+	Even if a SRG's parameters satisfy whatever equations we desire, we still cannot say anything about their existence. Hence, graphs of a certain type tend to be named after people as their may only be one or two which satisfy a particular criterion.
+\end{recall}
+\begin{definition}[Line Graph]
+	Given a graph \(G= \left( V, E \right) \), we may produce a new graph, called the \textbf{line graph}, \(\mathscr{L}\left( G \right)= \left( E, \hat{E} \right) \). Here we consider two vertices of \(\mathscr{L}\left( G \right) \) to be adjacent if the corresponding edges in \(G\) intersect (meet at a common vertex).
+\end{definition}
+\begin{example}
+	\(\mathscr{L}\left( P_{n} \right) = P_{n-1}\).\\
+	\(\mathscr{L}\left( C_{n} \right) = C_{n} \).\\
+	\(\mathscr{L}\left( K_{1, n} \right) = K_{n} \).
+	\(\mathscr{L}\left( K_{q} \right) = \SRG\left( \binom{q}{2}, 2\left( q-2 \right), q-2, 4 \right)  \), see the picture below for an illustration of this. We call \(\mathscr{L}\left( K_q \right) \) a triangular graph.
+	\(\mathscr{L}\left( K_{q, q} \right) = \SRG\left(q^2, 2\left( q-1 \right),q-2, 2    \right)  \), we call this the Lattice \(2\) graph, denoted \(L_{2}\left( q \right) \).
+\end{example}
+\begin{figure}[ht]
+    \centering
+    \incfig{linekq}
+    \caption{We see \(uv\) and \(wv\) have \(n-3\) neighboring edges with the rest of the graph and \(uw\) forms the last neighboring edge. A similar diagram illustrates the final parameter.}
+    \label{fig:linekq}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \incfig{linekq2}
+    \caption{We see the disjoint edges \(uw_1\) and \(vw_2\) (dotted) have exactly \(4\) edges in common.}
+    \label{fig:linekq2}
+\end{figure}
+
+\begin{definition}[Triangular Graph]
+	We define \(\mathscr{L}\left( K_{q} \right) = T\left( q \right) \) to be the \textbf{triangular graph} of order \(q\). We know this to be an infinite family of SRGs, so it is of particular interest. Notably, the first nontrivial triangular graph is equivalent to a usual graph of interest, \(K_{2, 2, 2}\).
+\end{definition}
+\newpage
+\begin{example}
+	\(T\left( 4 \right) = \SRG\left( 6, 4, 2, 4 \right) \). The fact that this is a \(4\)-regular graph of order \(6\) makes this undesirable to work in, so we often examine the complement (which we know to be also SRG). \(\overline{T\left( 4 \right) }\) is a \(1\)-regular graph, in other words the union of disjoint edges. Further examination yields that \(\overline{T\left( 4 \right) }\) has \(3\) disjoint edges, and hence its complement graph is the complete tripartite regular graph. Thus, \(T\left( 4 \right) = K_{2, 2, 2}\).
+\end{example}
+\newpage
+\begin{definition}[Lattice \(2\)-Graph]
+	We denote \(\mathscr{L}\left( K_{q, q} \right) = L_{2}\left( q \right)  \) to be the \textbf{lattice \(2\)-graph}. This is known to be \(\SRG\left( q^2, 2\left( q-1 \right) , q-2, 2 \right) \) by the following diagrams.
+\end{definition}
+\begin{figure}[ht]
+    \centering
+    \incfig{linekqq}
+    \caption{We see each edge has precisely \(q-1\) edges in its partite set and \(q-1\) edges in the other partite set, hence \(2\left( q-1 \right). \)}
+    \label{fig:linekqq}
+\end{figure}
+\begin{figure}[ht]
+    \centering
+    \incfig{linekqq2}
+    \caption{We see any intersection of two edges with a common vertex \(v\) must be in the opposing partite set.}
+    \label{fig:linekqq2}
+\end{figure}
+
+\begin{problem}
+	Determine what is \(\mathscr{L}\left( K_{3, 3} \right) = L_2 \left( 3 \right)  \).
+\end{problem}
+\begin{remark}
+	An equivalent construction of \(L_2\left( q \right) \) is to take the \(q \times q\) matrix and connect all vertices with a common column or row. We call this the greek graph.
+\end{remark}
+\begin{definition}[Latin Square Graph]
+	A \textbf{Latin square} consists of a \(q \times q\) matrix where the elements of the matrix consist of a set of \(q\) symbols, normally \(\{1, 2, \ldots, q\} \). The only requirement of the matrix is that every row and column should contain exactly \(1\) copy of each number. This is similar to a generalized sudoku grid (without the square requirement).
+\end{definition}
+\begin{example}
+	\( \begin{bmatrix} 1 & 2 & 3\\ 2 & 3 & 1\\3 & 1 & 2 \end{bmatrix} \) and
+	\(\begin{bmatrix} 4&1&2&3\\1&4&3&2\\2&3&4&1\\3&2&1&4 \end{bmatrix} \).\\
+\end{example}
+\begin{remark}
+	There is a latin square of order \(q\) for every \(q\). To obtain such a latin square we can copy the construction of the first example, that is starting with the ordered row and shifting the following row right (or left) by \(1\) unit.
+\end{remark}
+\begin{problem}
+	Show if \(L\) is a symmetric latin (\(\ell_{i, j} = \ell_{j, i}\) for all matrix entries \(\ell_{i, j}\)) square of odd order, then if a symbol shows in the bottom diagonal , it must show in the top diagonal. In other words, each symbol should show an even number of times in the bottom partition, an equal (even) number of times in the top partition, and once on the diagonal.
+\end{problem}

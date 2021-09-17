@@ -1,0 +1,3 @@
+\contentsline {section}{\numberline {1}Combinatorial Nullstellensatz}{1}{}%
+\contentsline {section}{\numberline {2}Chevalley-Warning Theorem and Sumsets}{6}{}%
+\contentsline {section}{\numberline {3}Zero-Sum Sequences, and the q-Dyson Theorem}{10}{}%

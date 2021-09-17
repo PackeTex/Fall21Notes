@@ -1,0 +1,55 @@
+\lecture{6}{Fri 03 Sep 2021 10:22}{Graph Eigenvalues}
+\begin{recall}
+	An entry \(b_{i, j}\in A^2\) where \(A\) is the adjacency matrix of a graph has \(b_{i, j} = \hat{d} \left( i, j \right) \) and \(b_{i, i} = d\left( i \right) \). This allows us to formalize SRG's further as we must have \(b_{i, i} = k\), \(b_{i, j} = \lambda\) for \(i \sim j\) and \(b_{i, j}= \mu\) for \(i \not\sim j\). Hence, the entries of \(A^2\) for a given SRG will take only \(3\) possible values.
+\end{recall}
+Let us now examine the matrix \(\lambda A\). We see for adjacent entries, those being entries \(a_{i, j}= 1\) this yields \(\lambda a_{i, j} = \lambda = \hat{d} \left( i, j \right) \). Hence, for the purposes of adjacent edges this yields the same entries as \(A^2\).
+We wish to take this even further. Recall that the complement of a SRG is also SRG, this gives a hint as to where to proceed. Note that the adjacency matrix for a graph complement \(\overline{G}\) has \(\Adj \left( \overline{G} \right) = \left[ c_{i, j} \right] \) has \[
+c_{i, j} = \left \{
+	\begin{array}{11}
+		1, & \quad i \not\sim j \text{ and } i \neq j \\
+		0 , & \quad i \sim j \text{ or } i = j
+	\end{array}
+	\right.
+\]
+Hence, we see \(\Adj \left( \overline{G} \right)  = J_{n}  - I_{n} - \Adj \left( G \right) \) where \(J_{n}\) is the matrix with all entries \(1\) and \(I_{n}\) is the standard \(n\times n\) identity matrix. This equation essentially takes the "complement" of the identity matrix with the exception of the diagonal, which should still be \(0\) (as it is in all adjacency matrices for non-loop graphs).
+With this revelation, we can now define \begin{equation}
+A^2 = \lambda A + \mu \left( J_{n} - I_{n} - A \right) + kI_{n} .\end{equation} This guarantees we have \(k\) along the main diagonal, \(\mu\) for nonadjacent vertices and \(\lambda\) for adjacent vertices, hence it characterizes the SRG. The following rearrangement yields \(A^2 - \left( \lambda - \mu \right) A - \left( k-\mu \right) I = \mu J\). We see this is essentially quadratic in nature, and as matrices forms a ring, we can perform the normal arithmetic operations to search for possible solutions.
+\begin{remark}
+	If \(G\) is \(k\)-regular, then \(k\) is the largest eigenvalue of \(G\) with \(j_{n} = \begin{pmatrix} 1\\ \vdots\\ 1 \end{pmatrix}\) as its corresponding eigenvector.
+\end{remark}
+This is a foundational result in spectral graph theory. The proof essentially relies on the result of the largest eigenvalue being equal to the maximum of the inner product of \(Ax\) with \(x\) over all normal \(x\). This proof also relies on the two facts \(\lambda_1 \ge \frac{2\edg\left( G \right) }{\vtx\left( G \right) }\) and \(\lambda_1 \le \Delta \left( G \right) \).
+\begin{proposition}
+	The eigenvectors of a graph \(G\) (generally any real symmetric matrix) can be chosen to be an orthogonal basis of \(R^{n}\) where \(n = v\left( G \right) \).
+\end{proposition}
+\begin{recall}
+	\(x, y \in R^{n}\) are orthogonal if the inner product \(\left<x, y \right> = 0\).
+\end{recall}
+Now, let us take a basis of orthogonal eigenvectors of \(G\) with \(G\) being an SRG satisfying \(\left( 2.1 \right) \). Denote these to be \(j_{n}, \overline{v_2}, \ldots, \overline{v_{n}}\) and let the corresponding eigenvalues to be \(k, \lambda_2, \ldots, \lambda_{n}\).
+\\
+Recall \(j_{n} = \begin{pmatrix} 1\\ \vdots\\ 1 \end{pmatrix}\) and denote \(\overline{v}_{j} = \begin{pmatrix} a_1\\ \vdots\\ a_n \end{pmatrix}\), then note by the orthogonality, we have \(\overline{v_{i}} \cdot j = \sum_{i= 1}^{n} a_{i} \cdot 1 = \sum_{i= 1}^{n} a_{i} = 0\). From this it is clear that \(J \overline{v}_{i} = 0\) for all \(\overline{v}_{i}\). With this fact, let us take equation \( 1\) and multiply by \(\overline{v}_{i}\) for some \(i\). This yields \begin{align*}
+0 &= \left( A^2 - \left( \lambda - \mu \right) A - \left( k - \mu \right) I \right) \overline{v}_{i} \\
+&= A^2\overline{v_{i}} - \left( \lambda - \mu)A \overline{v_{i}}- \left( k - \mu \right) I\overline{v}_{i} \right) \\
+&= \lambda_{i}^2 \overline{v_{i}}- \left( \lambda - \mu \right) \lambda_{i} \overline{v_{i}}  - \left( k - \mu \right) \overline{v_{i}} \\
+&= \overline{v_{i}}\left( \lambda_{i}^2 - \left( \lambda - \mu \right) \lambda_{i}  - \left( k - \mu \right) \right) \\
+&\implies \lambda_{i}^2 - \left( \lambda - \mu \right) \lambda_{i} - \left( k - \mu \right) = 0 \text{ as \(v_{i}\) is an eigenvector, so nonzero}
+.\end{align*}
+This implies all eigenvalues of a \(\SRG \left( n, k, \lambda, \mu \right) \) are
+\begin{enumerate}
+	\item k
+	\item \(r = \frac{\left( \lambda - \mu \right) + \sqrt{\left( \lambda - \mu \right) ^2 + 4\left( k - \mu \right) } }{2}\)
+	\item \(s = \frac{\left( \lambda - \mu \right) - \sqrt{\left( \lambda - \mu \right) ^2 + 4\left( k - \mu \right) } }{2}\)
+\end{enumerate}
+Additionally, we generally define the multiplicity of \(r\) to be \(f\) and the multiplicity of \(s\) to be \(g\). This yields eigenvalues corresponding to \(j_{n}, \overline{v_2}, \ldots, \overline{v_{n}}\) to be \(k, \underbrace{r, \ldots, r}_{f \text{ times}}, \underbrace{s, \ldots, s}_{g \text{ times}}\), so \(f + g = n-1\), and as we know the sum of all eigenvalues is \(0\), we have \(k + fr + gs = 0\).
+\begin{remark}
+	This quadratic expression of the eigenvalues guarantees all SRGs of equal parameters to have exactly the same eigenvalues.
+\end{remark}
+As usual, we define the discriminant to be \(\Delta = \left( \lambda - \mu \right) ^2 + 4\left( k- \mu \right) \), not to be confused with the maximum degree.\\
+It turns out that the multiplicity of the eigenvalues are also completely characterized by the parameters of the SRG as follows,
+\begin{align*}
+	f &= \frac{1}{2}\left( n - 1 - \frac{\left( \lambda - \mu \right) \left( n - 1 \right) +2k}{\sqrt{\Delta} } \right) \\
+	g &= \frac{1}{2}\left( n - 1 + \frac{\left( \lambda - \mu \right) \left( n - 1 \right) +2k}{\sqrt{\Delta} } \right)
+.\end{align*}
+As \(f\) and \(g\) must be integers, this additionally guarantees either \(\sqrt{\Delta} \in \Z\) or \(\left( \lambda - \mu \right) \left( n-1 \right) = -2k\) (hence the top is zero). Further investigation yields that if \(f\neq g\), then \(\Delta\) is a perfect square and \(r, s\) are integers as the roots of an algebraic equation with integral coefficients must be integral (if it is rational which is guaranteed by \(\Delta\) being a perfect square). On the other hand, if \(f = g\), then we have \(G\) is a conference graph.
+\begin{example}
+	The eigenvalues of \(C_5\) are \(r = \frac{\sqrt{5} -1}{2}\) and \(s = \frac{-\sqrt{5} -1}{2}\).
+\end{example}

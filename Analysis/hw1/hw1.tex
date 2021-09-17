@@ -1,0 +1,155 @@
+\documentclass[a4paper]{article}
+\input{../../preamble.tex}
+\usepackage{pdfpages}
+\title{Real Variables I: Homework I}
+
+\date{Fri 03 Sep 2021 09:05}
+\begin{document}
+\maketitle
+\begin{problem}[1]
+	Let \(f:X \to Y\).
+	\begin{enumerate}
+		\item Show that for \(A\subseteq X\), \(B\subseteq Y\), \(f\left( f^{-1}\left( B \right)  \right) \subseteq B\) and \(A \subseteq f^{-1}\left( f\left( A \right)  \right) \).
+			\item Give examples to show that the set inclusions can be proper.
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+	\begin{enumerate}
+	\item Let \(b \in f\left( f^{-1} \left( B \right)  \right) \) and note that, as \(b\) is in the image of \(f^{-1}\left( B \right) \), there is \(a \in f^{-1}\left( B \right) \) such that \(f\left( a \right) = b\). As \(a \in f^{-1} \left( B \right) \), we see \(f\left( a \right) \in B\). As \(f\left( a \right) = b \in B\) this completes the proof.\\
+\\ Now, let \(a \in A\). We see \(f\left( a \right) \in f\left( A \right) \) by definition, and as \(f\left( a \right) \in f\left( A \right) \) we see that for all \(b \in A\) such that \(f\left( b \right) = f\left( a \right) \in f\left( A \right) \), we have \(b \in f^{-1} \left( f\left( A \right)  \right) \). It is clear that \(a\) is one such element, so \(a \in f^{-1} \left( f\left( A \right)  \right) \). This completes the proof.
+	\item Let \(f: \R \to \R, \ x \mapsto f(x) = x^2\) and denote \(B = [-1,1]\). We see \(f^{-1} \left( B \right) = [-1,1]\) and \(f\left( [-1, 1] \right) = [0, 1]\). Hence, \(f\left( f^{-1} \left( B \right) \right) = [0, 1] \subset [-1, 1] = B\).
+	\\\\
+	Now, let \(f: \R \to \R, \ x \mapsto f(x) = 0\) and denote \(A = [0, 1]\). We see \(f\left( A \right) = \{0\} \) and \(f^{-1}\left( \{0\}  \right) = \R \) as the function is zero everywhere. Hence \(f^{-1} \left( f\left( A \right)  \right) = \R \supset [0, 1] = A\).
+	\end{enumerate}
+\end{solution}
+\newpage
+\begin{problem}[2]
+	Let \(A, B \subseteq X\). Prove or disprove
+	\begin{enumerate}
+		\item \(A \triangle B = \O \iff A = B\).
+			\item \(A \triangle B = X \iff A = B^{c}\).
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+	\begin{enumerate}
+		\item Suppose \(A \triangle B = \O\) and let \(a \in A\), \(b \in B\). Then, we see \(a \not\in B \setminus A\) by definition. Furthermore, as \(A \triangle B = \left( A\setminus B \right) \cup \left( B \setminus A \right)  = \O\), we see \(a \not\in A \setminus B\), but as \(a \in A\) this implies \(a \in B\). Hence \(a \subseteq B\). Again, notice \(b \not\in A \setminus B\) by definition. Furthermore, \(b \not\in B \setminus A\) as this would make \(A\triangle B\) nonempty, so \(b \in A\). Hence, \(A=B\).\\
+			Conversely, suppose \(A = B\). Then, \[
+				A \triangle B = A \triangle A = \left( A \setminus A \right) \cup \left( A \setminus A \right)  = \O \cup \O = \O
+			.\]
+		\item Suppose \(A\triangle B = X\) and let \(a \in A\). Then, we see \(a \not\in B \setminus A\) by definition, but \(a \in X\), so \( a \in A \setminus B\). Hence \(a \not\in B\). As every \(a \in A\) has \(a \not\in B\), we see \(A \subseteq B^{c}\). Now, let \(b \in B^{c}\). We see \(b \not\in B\) by definition, hence \(b \not\in B \setminus A\). As \(b \in X\), we must then have that \(b \in A \setminus B\), hence \(b \in A\). Thus, \(B^{c} = A\).\\
+			Conversely, suppose \(B^{c} = A\). Then, \[
+				A \triangle B = B^{c} \triangle B = \left( B^{c} \setminus B \right)  \cup \left( B \setminus B^{c} \right) = B^{c} \cup B = X
+			\] by definition of complements.
+	\end{enumerate}
+\end{solution}
+\newpage
+\begin{problem}[3]
+	Suppose \(f:X \to Y\) and \(g: Y\to Z\)  are functions.
+	\begin{enumerate}
+		\item Show that \(f:X \to Y\) is injective if and only if there is a map \(g: Y \to X\) such that \(g \circ f\) is the identity on \(X\). If such a map \(g\) exists is it necessarily unique, injective, or surjective.
+			\item Show that \(f\) is onto if and only if there is a map \(g:Y \to X\) such that \(f \circ g\) is the identity on \(Y\).
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+	\begin{enumerate}
+		\item Let \(g: X \to Y\) be a map such that \(g \circ f\) is the identity on \(X\). Then, suppose \(f\) is not injective. Let \(x , y \in X\) such that \(x\neq y\) and \(f\left( x \right)  = f\left( y \right) \). Then \(g\left( f\left( x \right)  \right)  = x \) element. WLOG, suppose \(g\left( f\left( x \right)  \right) = g\left( f\left( y \right)  \right) = x \). Then, \(g\left( f\left( y \right)  \right) =x\) contradicts the assumption that \(g \circ f\) was the identity. \\
+		\\	Now, suppose \(f\) is injective. Then, for each \(x \in X\) there is a unique \(f\left( x \right) \in Y\). Hence, let us define the map \(g: Y \to X\) such that \(g\left( f\left( x \right)  \right) = x\) for all \(x \in X\). We see this is a function as each \(f\left( x \right) \in Y \) originates from only \(1\) \(x \in X\) by injectivity. Hence, this implies \(g \circ f\) is the identity by this definition. This completes the proof.
+		\item We wish to see if this map is necessarily unique. Suppose \(h: Y \to Z\) is another map such that \(h \circ f\) is the identity on \(X\). Then, for every \(x \in X\), we have \(\left( h \circ f \right) \left( x \right)  = x\), that is \(h\left( f\left( x \right)  \right) = x\), hence \(h: f\left( x  \right) \mapsto x\), just as \(g\), hence \(h = g\) are the same maps.\\
+		\\	Furthermore, we wish to see if the map is necessarily a bijection. As \(g\) is the unique inverse map, let us now it denote \(f^{-1}\) as it is equivalent to a pointwise preimage. We see \(X \subseteq f^{-1} \left( f\left( X \right)  \right) \) by problem \(1\), and as the universe under consideration is \(X\), this implies \(f^{-1} : Y \to X\) is in fact a surjection (its image is \(X\)). As for  injectivity , we know the function \(f\) must map \(x \mapsto f\left( x \right) \) uniquely, that is, \(\left| f\left( \{x\}  \right)  \right| = 1\). Hence, suppose \(f^{-1} \left( y \right) = f^{-1} \left( z \right) \) for some \(y \neq z\). Then, by our earlier observation, \(f\left( x \right) = y \text{ and } z \), hence \(\left| f\left( \{x\}  \right)  \right| > 1\). \(\lightning\). So, \(g\) is necessarily a bijection.
+\item Suppose \(g:Y \to X\) is a map such that \(f \circ g\) is the identity on \(Y\). Then, we have for each \(y \in Y\), \(f\left( g\left( y \right)  \right) = y\), so, we see \[\bigcup_{y \in Y} f\left( g\left( \{y\}  \right)  \right) = f\left( g\left( \bigcup_{y \in Y} \{y\} \right)   \right) =   f\left( g\left( Y \right)  \right) = \bigcup_{y \in Y} \{y\} = Y.\] That is, \(f\left( g\left( Y \right)  \right) = Y\), hence the image of \(f\) is \(Y\), so \(f\) is a surjection.\\
+	\\		Now, suppose \(f\) is onto. Then, for each \(y \in Y\), there is a \(x \in X\) such that \(f\left( x \right)  =y\). Hence, define \(g: Y \to X, \ y \mapsto g(y) = x\) where \(x\) is the afformentioned element such that \(f\left( x \right) =y\) for this particular \(y\). Then, we see \(\left( f \circ g \right) \left( y \right) = f\left( g\left( y \right)  \right) = f\left( x \right) = y\) for arbitrary \(y\), so \(\left( f \circ g \right) \) is the identity on \(Y\),
+	\end{enumerate}
+\end{solution}
+\newpage
+\begin{problem}[4]
+	Prove or disprove the following. If \(\mathscr{A}\) is a \(\sigma\)-Algebra of subsets of \(Y\) and \(f: X \to Y\) is a function, then the collection \(\{f^{-1} \left( A \right) : A \in \mathscr{A}\} \) is a \(\sigma\)-Algebra of subsets of \(X\).
+\end{problem}
+\begin{solution}
+	First, denote the collection \(\{f^{-1}\left( A \right) : A \in \mathscr{A}\} = \mathscr{B}\). We show all three conditions:
+	\begin{enumerate}
+		\item As \(Y \in \mathscr{A}\) and \(f\left( X \right) \subseteq Y\) necessarily, we see \(X \subseteq f^{-1} \left( Y \right) \) (as \(X\) is the whole of the domain, we can even say \(X = f^{-1}\left( Y \right) \)). Hence, \(f^{-1}\left( Y \right) = X \in \mathscr{B}\).
+		\item Let \(A \in \mathscr{A}\), then \(A^{c} \in \mathscr{A}\). As \(f^{-1}\left( A^{c} \right) = \left[ f^{-1}\left( A \right)  \right] ^{c} \), we see \(\left[ f^{-1}\left( A \right)  \right] ^{c} \in \mathscr{B}\) (for all \(f^{-1}\left( A \right) \in \mathscr{B}\)).
+		\item Lastly, let \(B_1, B_2, \ldots \in \mathscr{B}\) be a countable collection of elements with each \(B_{i} = f^{-1}\left( A_{i} \right) \) for \(A_{i} \in \mathscr{A}\) and define \(\bigcup_{n \in \N} B_{n} = B\). We see \(\bigcup_{n \in \N} A_{n} \in \mathscr{A}\) by hypothesis, hence
+			\begin{align*}
+				\mathscr{B} &\ni f^{-1}\left( A \right) \\
+				&= f^{-1}\left( \bigcup_{n \in \N} A_{n} \right) \text{ by construction of \(\mathscr{B}\)}\\
+					    &= \bigcup_{n \in \N} f^{-1}\left( A_{n} \right)  \\
+					    &= \bigcup_{n\in \N} B_{n} \\
+					    &= B \in \mathscr{B}
+			.\end{align*}
+	\end{enumerate}
+	Hence \(\mathscr{B}\) is a \(\sigma\)-Algebra.
+\end{solution}
+\newpage
+\begin{problem}[5]
+	Prove the set of all polynomials with rational coefficients is rational.
+\end{problem}
+\begin{solution}
+	Let \(f = \sum_{i= 0}^{n} a_{i} x^{i}\) be an arbitrary polynomial and define the finite sequence \(\left( f_{k} \right)_{i=0}^{n}\) such that \(f_{k} = a_{k}\) for each \(k\) and each polynomial \(f\). Next, define \(\mathscr{F} = \{\left( f_{k} \right)_{k=1}^{n}: n \text{ is finite, }f \in P_{\Q}\left( n \right)  \} \) where \(P_{\Q}\left( n \right) \) is the set of all rational polynomials of degree at most \(n\). We see \(\mathscr{F}\) contains a sequence corresponding to each finite polynomial with rational coefficients, hence as \(\Q\) is countable, and \(\mathscr{F}\) is a subset of the set of all finite sequences from \(\Q\) (which is countable by a proposition in class), we see \(\mathscr{F}\) is countable. As each rational polynomial of finite length, \(f\), has a corresponding sequence \(\left( f_{k} \right) \in \mathscr{F}\), we see the set \(\{f: f \text{ is a rational polynmomial of finite length}\}  \subseteq \mathscr{F}\). Hence, this set is also countable.
+\end{solution}
+\newpage
+\begin{problem}[6]
+	Prove the set of all infinite sequences \(\left( x_{k} \right) \) with \(x_{k} \in \{0, 1\} \) is uncountable.
+\end{problem}
+\begin{solution}
+	Assume indirectly that such a set is countable. Let \(f: \N \to \{\left( x_{k} \right)_{k \in \N} : x_{k} \in \{0, 1\}  \} , \ n \mapsto f(n) = \left( x_{n, k} \right) _{k}\). Now define a sequence \(\left( y_{k} \right) \) such that \[y_{k} = \left \{
+		\begin{array}{11}
+			0 , & \quad  x_{k, k}= 1 \\
+			1, & \quad x_{k, k} = 0
+		\end{array}
+		\right.\]
+		We see \(\left( y_{k} \right) \) differs from each sequence , \(f\left( n \right) = \left( x_{n, k} \right) _{k}\) in the \(n\)-th position. Hence, \(f\) is not surjective, so there is no bijection from \(\{\left( x_{k} \right) : x_{k} \in \{0, 1\} \} \to \N\), so the set is not countable.
+\end{solution}
+\newpage
+\begin{problem}[7]
+	Let \(A\) be a set and \(B = \{0, 1\} \). Prove there exists a bijection from \(\mathscr{P}\left( A \right) \) to the set of all functions from \(A\) to \(B\).
+\end{problem}
+\begin{solution}
+	Define the set of all functions from \(A\) to \(B\) as \(\mathscr{F}\left( A, B \right) \). Define a function \(f: \mathscr{P}\left( A \right) \to \mathscr{F}\left( A, B \right) \) such that for \(X \in \mathscr{P}\left( A \right) \), \(f\left( X \right) = g: A \to B\) such that for \(a \in A\), \[
+		g\left( a \right)  = \left \{
+			\begin{array}{11}
+				0, & \quad a \in X \\
+				1, & \quad a \not\in X
+			\end{array}
+			\right.
+	.\]
+	This is clearly a function as each element \(X \in \mathscr{P}\left( A \right) \) has either \(a \in X\) or \(a \not\in X\) for every \(a \in A\). Now, we check that it it bijective.\\
+	Suppose \(X, Y \in \mathscr{P}\left( A \right) \) such that \(f\left( X \right) = g = f\left( Y \right) \). Then, we see for each element \(a \in A\), \(f\left( X \right) \left( a \right) = g\left( a \right) = f\left( Y \right) \left( a \right) \), hence if \(a \in X\), then \(a \in Y\). Similarly, if \(a \not\in X\), then \(a \not\in Y\). Hence, as every \(a \in X\) has \(a \in Y \) and every \(a \not\in X\) has \(a \not\in Y\), we see \(X = Y\), so \(f\) is an injection. Now, we wish to show that \(f\left( \mathscr{P}\left( A \right)  \right) = \mathscr{F}\left( A, B \right) \). As we already know \(f\left( \mathscr{P}\left( A \right)  \right) \subseteq \mathscr{F}\left( A, B \right) \), we must only show the reverse containment holds. Let \(g \in \mathscr{F}\left( A, B \right) \). Then, for each element \(a \in A\), \(g\left( a \right) = 0 \text{ or } 1\). Define a new set \(J\) such that \[
+	\left \{
+		\begin{array}{11}
+			a \in J, & \quad g\left( a \right) =1  \\
+			a \not\in J, & \quad g\left( a \right) \neq 1
+		\end{array}
+		\right.
+	.\]
+	We see \(J \subseteq A\), hence \(J \in \mathscr{P}\left( A \right) \) as it contains some (perhaps all) of the elements of \(A\), and \begin{align*}
+		f\left( J \right) \left( a \right) &= \left \{
+		\begin{array}{11}
+			1, & \quad a \in J \\
+			0, & \quad a \not\in J
+	\end{array}
+\right \\
+						   &= g\left( a \right) \end{align*}
+						   so \(g \in f\left( \mathscr{P}\left( A \right)  \right) \). Hence \(f\left( \mathscr{P}\left( A \right)  \right) = \mathscr{F}\left( A, B \right) \), so \(f\) is a bijection.
+\end{solution}
+\newpage
+\begin{problem}
+	Let \(X = Z \times \left( Z \setminus \{0\}  \right) \). Define a relation \(\sim\) on \(X\) such that \(\left( p, q \right) \sim \left( u, v \right) \) if \(pv = qu\).
+	\begin{enumerate}
+		\item Show that \(\sim\) is an equivalence relation on \(X\).\\
+		\item Show that there exists a bijection \(f: \left( X / \sim \right) \to \Q\).
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+\begin{enumerate}
+	\item First we show \(~\) is reflexive. Note that \(pq = pq\), hence \(\left( p, q \right) \sim \left( p, q \right) \).\\
+		Now, we show it is symmetric. Note that if \(pv = qu\), then \(uq=vp\), hence \(\left( p, q \right) \sim \left( u,  v \right) \implies \left( u, v \right) \sim \left( p, q \right)  \).\\
+		Lastly, we show transitivity. Suppose \(\left( a, b \right) \sim \left( c, d \right) \) and \(\left( c, d \right) \sim \left( e, f \right) \). Then this implies \(ad=bc\) and \(cf=de\) dividing through by the (guaranteed) nonzero term in both equations yields \(\frac{a}{b} = \frac{c}{d}\) and \(\frac{c}{d}= \frac{e}{f}\), hence \(\frac{a}{b} = \frac{e}{f}\) so \(af = eb\), so \(\left( a, b \right) \sim \left( e, f \right) \).\\
+		Hence the relation is an equivalence relation.
+	\item Now, we wish to induce a bijection between \(\left( X / \sim \right) \) and \(\Q\), this will follow directly from the proof of transitivity. For each equivalence class \( \left[ \left( a, b \right)  \right] \in \left( X / \sim \right) \) define \(f \left( \left[ \left( a, b \right)  \right]  \right) = \frac{a}{b}\) (we know this is well defined as the second element is guaranteed to be nonzero). Now, we wish to show that the choice of representative is unimportant, so let \(\left( a, b \right) , \left( c, d \right) \in \left[ \left( a, b \right)  \right] \) (hence \(\left( a, b \right) \sim \left( c, d \right) \)). From the previous proof, we see that dividing by the nonzero term yields \(\frac{a}{b} = f\left( \left[ \left( a, b \right)  \right]  \right)  =  \frac{c}{d} = f\left( \left[ \left( c, d \right)  \right]  \right) \) hence the choice of representative produces the same rational.\\
+		Now, we wish to show this mapping is injective. Suppose two different equivalence classes, \(x, y \in \left( X / \sim \right) \) have \(f\left( x \right) = f\left( y \right) \). Let \(\left( x_1, x_2 \right) \in x\) and \(\left( y_1, y_2 \right) = y\) be representatives of each equivalence class. Then, this implies \(f\left( x \right)  = \frac{x_1}{x_2}= \frac{y_1}{y_2} = f\left( y \right) \). Multiplying through by the denominators yields \(x_1 y_2 = y_1x_2\), hence \(\left( x_1, x_2 \right)\sim \left( y_1, y_2 \right)  \), so \(x= y\).
+		Lastly, we wish to show this is a surjection. Let \(\frac{p}{q}\in \Q\) be a rational. Then, by definition, \(p \in \Z\) and \(q \in Z \setminus \{0\} \), so \(\left[ \left( p, q \right)  \right] \in \left( X / \sim \right) \) and \(f\left( \left[ \left( p, q \right)  \right]  \right) = \frac{p}{q}\), so there is an equivalence class that produces each rational.\\
+		Hence, the mapping \(f:\left( X / \sim \right) \to \Q : \left[ x_1, x_2 \right]  \mapsto f\left( \left[ \left( x_1, x_2 \right)  \right]  \right) = \frac{x_1}{x_2}\) is a bijection.
+\end{enumerate}
+\end{solution}
+\end{document}

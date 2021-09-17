@@ -1,0 +1,79 @@
+\lecture{6}{Thu 09 Sep 2021 13:03}{Sequences in \(\R\)}
+\begin{lemma}
+	A set \(S \subseteq \R\) is connected if and only if it is an interval.
+\end{lemma}
+\begin{remark}
+	\(\O = \left( a, a \right) \) is considered an interval as is a singleton (\(\left[ x, x \right] \)).
+\end{remark}
+\begin{proof}
+	By the previous remark we may assume \(\left| S \right| \ge 2\).\\
+	Now, assume \(S\) is connected and not an interval, then we can contain \(x, y \in S\) such that \(x < z < y\). Then, we can construct neighborhoods \(U = \left( - \infty , z \right) \) and \(V = \left( z, \infty \right) \) which are open and disjoint with \(S \subseteq U \cup V \) and \(S \cap V \cap U\) hence \(S\) is not connected. \\
+	Now, assume \(S\) is an interval. Let \(U, V\) be open such that \(S \subseteq U \cup V\) and \(S \cap U \cap V = \O\). Suppose \(x, y \in S\) with \(x < y\). Furthermore, WLOG we may let \(x \in U\). Now, let \(\{z : \left[ x, z \right] \subseteq U, x\le z \le y\} \) and as \(y\) is an upper bound of this set, we may let \(c\) be its supremum.\\
+	Then, \(\left[ x, c \right] \subseteq S\). Then \(\left[ x, c \right] \subseteq S\). Hence, \( c \in U\) for if \(c \in V\) and \(\left( c-\epsilon, c+\epsilon \right) \subseteq V\) for some \(\epsilon\), then we would conclude that \(S \cap U \cap v \neq \O\). Since \(c \in U\), then we see \(c = y\). Otherwise, we could find \(\epsilon > 0\) and \(z \in U\) such that \(c < z < c+\epsilon \le y\) and \(\left[ x, z \right]  \in U\). Consequently \(S \subseteq U\), so an interval is connected.\\
+	In short we showed that for every \(x \in U\) and all \(x < y \in U\) such that the  \(\left[ x, y \right] \subseteq U \) hence \(U \) contains all intervals in \(S\), hence \(S \subseteq U\).
+\end{proof}
+\begin{definition}[Borel \(\sigma\)-Algebra]
+The smallest \(\sigma\)-Algebra containing all open subsets of \(\R\) is called the \textbf{Borel \(\sigma\)-Algebra}. We denote \(F_{\sigma}\) to be the union of a countable collection of closed sets and \(G_{ \delta}\) to be the intersection of a countable collection of open sets.
+\end{definition}
+\begin{definition}
+	\begin{enumerate}
+		\item A sequence \(\left( x_{m} \right) \) is \textbf{bounded} if there is a \(M >0 \) such that \(\left| x_{m} \right|  \le M\) for all \(m\).
+		\item A sequence \(\left( x_{m} \right) \) is \textbf{bounded from above or below} if there is an \( M \in \R\) such that \(x_{m} \le M\) or \(x_{m} \ge M\) for all \(m\).
+			\item A sequence is \textbf{increasing} if \(x_{n} \le x_{n+1}\) for all \(n\), it is \textbf{strictly increasing} if \(x_{n} < x_{n+1}\).
+				\item A sequence is \textbf{decreasing} if \(x_{n} \ge x_{n+1}\) and similarly for \textbf{strictly decreasing} we say \(x_{n} > x_{n+1}\)
+				\item A sequence \(\left( x_{m} \right) \) is called \textbf{convergent} if there is \(x_0 \in \R\) such that for every \( \epsilon > 0\) we find that \(N \in \N\), \[
+				\left| x_{m} - x_0 \right| < \epsilon  \text{ if } m\ge N
+				.\] This is writen \(\lim x_{n}, \lim_{n} x_{n}, \text{ or } \lim_{n \to \infty} x_{n}\).
+			\item A sequence \(\left( x_{n} \right) \) has a \textbf{subsequence} \(\left( x_{m} \right)_{k} \). All sequences have a strictly increasing and a strictly decreasing subsequence.
+			\item For a sequence \(\left( x_{m} \right) \)  and a point \(x \in \R\), \(x\) is an \textbf{accumulation/cluster point} of \(\left( x_{m} \right) \) if for every \(\epsilon > 0\) the set \(\{m : \left| x_{m} - x \right| < \epsilon\} \) is infinite. Lastly, if a limit does converge, its limit is unique.
+
+	\end{enumerate}
+	\begin{example}
+		For the sequence \(x_{m}  = \left( -1 \right) ^{m}\) we see \(1, -1\) are accumulation points.\\
+		The sequence \(x_{m} = \left( 1 + e^{-m} \right) \) yields accumulation point \(1\).
+	\end{example}
+\end{definition}
+\begin{proposition}
+	A point \(x^{*}\) is an accumulation point of the sequence \(\left( x_{n} \right) \) if and only if \(\left( x_{m} \right) \) has a convergent subsequence if and only if \(\left( x_{m} \right) \) has a convergent subsequence with limit \(x^{*}\).
+\end{proposition}
+\begin{proposition}
+	Let \(S \subseteq \R\) be nonempty. Then, a point \(x^{*} \in \R\) belongs to \(\overline{S}\) if and only if there is a convergent sequence, \(\left( x_{n} \right) \in S^{\N}\) with \(x^{*} = \lim_{n \to \infty}x_{n}\).
+\end{proposition}
+\begin{theorem}[Bolzano-Weirstrass Theorem]
+Every bounded sequence has a convergent subsequence.
+\end{theorem}
+\begin{proof}
+	Given a bounded sequence \(\left( x_{n} \right) \), let \(M > 0\) be a bound. We will construct intervals \(\left[ A_{k}, B_{k} \right] \) such that the set \(\{ n : x_{n} \in \left[ A_{k}, B_{k} \right] \} \) is infinite and \(\left[ A_{k+1}, B_{k+1} \right] \subseteq \left[ A_{k}, B_{k} \right]  \) and \(B_{k} - A_{k} \le \frac{4M}{2^{k}}\).\\
+	Set \(A_1 = -M\), \(B_1 = M\). Having constructed \(A_{k}, B_{k}\), define \(A_{k+1}, B_{k+1}\) as follows
+	\begin{itemize}
+		\item If \(\{m : x_{m} \in \left[ A_{k}, \frac{A_{k} + B_{k}}{2} \right] \} \) is infinite, let \(A_{k+1} = A_{k}\) and \(B_{k+1} = \frac{A_{k} + B_{k}}{2}\).
+			\item Otherwise, let \(A_{k+1} = \frac{A_{k} + B_{k}}{2} \) and \(B_{k+1} = B_{k}\).
+	\end{itemize}
+	It is clear the intervals are nested and infinite, as we always took either the top or bottom half of an infinite interval, one of which must be infinite. Since \(\left[ A_{k+1}, B_{k+1} \right] \subseteq \left[ A_{k}, B_{k} \right] \) for all \(k\), we can always take a finite number of sets and find a finite intersection. Then, by the finite intersection property, \(\bigcap_{k=1} ^{ \infty} \left[ A_{k}, B_{k} \right]  \neq \O\).\\
+	Suppose \(x_0, y_0 \in \bigcap_{k=1} ^{\infty}\left[ A_{k}, B_{k} \right] \) then for every \(k \in \N\) and \(\epsilon > 0\), \(\left| x_0 - y_0 \right|  \le B_{k} - A_{k} \le \frac{4M}{2^{k} < \epsilon}\) for sufficiently large \(k\). Hence \(x_0 = y_0\).\\
+	Lastly, we construct a subsequence which converges to \(x_0\) . Let \(n_1 = 1\) and having found \(n_{k}\), note that the construction guarantees the set \(\{m : x_{m} \in \left[ A_{k+1}, B_{k+1} \right], m > n_{k} \}\) is an infinite set. By well-ordering, it contains a smallest element, which we denote to be \(n_{k+1}\).\\
+	Observe that for every \(\epsilon > 0\) there is \(k \in \N\) such that \(\left| x_{n_{k}} - x_0 \right| \le \frac{4M}{2^{k}} < \epsilon\).
+\end{proof}
+\begin{proposition}
+	Every bounded, monotone sequence is convergent.
+\end{proposition}
+\begin{proof}
+	Assume WLOG that \(\left(x_{n} \right)\) is increasing, if not consider \(\left( -x_{n} \right) \). By Bolzano-Weirstrass, \(\left( x_{n} \right) \) has a convergent subsequence \(\left( x_{n_{k}} \right)\) with limit \(x_0\). Clearly, as \(x_{n_{k}}\) is increasing, \(x_{n_{k}} \le x_0\) for all \(k\). Given \(\epsilon > 0\) we find \(K \in \N\) such that \(x_0 - x_{n_{k}} = \left| x_0 - x_{n_{k}} \right|  < \epsilon\) for all \(k \ge K\).\\
+	By monotonicity \(\left| x_0 - x_{m} \right| = \left| x_0 - x_{m} \right|  \le x_0 - x_{n_{K}} < \epsilon \) for all \(n \ge n_{K}\).
+\end{proof}
+\begin{definition}[Cauchy Sequence]
+	A sequence \(\left( x_{n} \right) \) is called a \textbf{cauchy sequence} if for each \(\epsilon > 0\) there is a \(N \in \N\) such that \(\left| x_{n} - x_{m} \right| < \epsilon \) for \(n, m \ge N\).
+\end{definition}
+\begin{theorem}
+	A sequence is cauchy if and only if it is convergent.
+\end{theorem}
+\begin{proof}
+	If \(\left( x_{n} \right) \) is convergent with limit \(x_0\), then for each \( \epsilon > 0\) there is \(N \in \N\) such that for \(n, m \ge N\) \(\left|  x_{n} - x_{m}\right|  \le \left| x_{n} - x_0 \right|  + \left| x_{m} - x_0  \right|  < \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon\).\\
+	Now, recall that if a sequence is cauchy, then it is bounded. Then, by bolzano-weirstrass, there is a convergent subsequence \(\left( x_{n_{k}} \right) \) with limit \(x_0\). Given \( \epsilon > 0\) we find \(N \in \N\) such that \(\left| x_{n} - x_{m} \right|  < \frac{\epsilon}{2}\) for \(n, m \ge N\). Also, there is \(K \in \N\) such that \(K \ge N\) and \(\left| x_{m_{k}} - x_0 \right| < \frac{\epsilon}{2} \) by convergence. Consequently, for \(m \ge N\),
+	\begin{align*}
+		\left| x_{m} - x_0 \right| &\le \left| x_{m_{k}} - x_0 \right|  + \left| x_{m} - x_{m_{K}} \right|  \\
+					   &< \frac{\epsilon}{2} + \frac{\epsilon}{2}\\
+					   &=  \epsilon
+	.\end{align*}
+Hence
+\end{proof}

@@ -1,0 +1,67 @@
+\lecture{5}{Tue 07 Sep 2021 13:05}{Topology on \(\R\) (2)}
+\begin{recall}
+	\( U \subseteq \R\) is open iff \(U = \overset{\circ}{U} \) and \(V \subseteq \R\) is closed iff \(V = \overline{V}\) where \(\overline{V}\) is the closure of \(V\).
+\end{recall}
+\begin{proposition}
+\begin{enumerate}
+	\item \(\R\) and \(\O\) are open.\\
+		\item \(\bigcup_{x \in X} U_{x} \) is open for arbitrary open \(U_{x}\) and ordered \(x\).
+			\item \(\bigcap_{i=1}^{n} U_{i} \) is open for finite \(n\) an open \(U_{i}\)
+				\item The complements of these statements hold for closed sets.
+
+\end{enumerate}
+\end{proposition}
+\begin{proposition}
+	Let \(U\subseteq \R\). Then \(\overset{\circ}{U}\) is the largest ope set contained in \(U\) and \(\overline{U}\) is the smallest closed set containing \(U\).
+\end{proposition}
+\begin{definition}[Boundary]
+	For any \(S \subseteq \R\), the set \(\delta S = \overline{S} \setminus \overset{\circ}{S}\). A point \(x \in\delta S \) is called a \textbf{boundary point}.
+\end{definition}
+\begin{example}
+	For \(S = \Q \cap \left[ 0, 1 \right] \) we have \(\overline{S} = \left[ 0, 1 \right] \) and \(\overset{\circ}{S} = \O\). Hence \(\delta S = S\).
+\end{example}
+\begin{lemma}
+	For any set \(S \subseteq \R\), \(\left( \overline{S} \right) ^{c} = \overset{\circ}{\left( S^{c} \right) }\).
+\end{lemma}
+\begin{theorem}
+	Every open set in \(\R\) is the disjoint union of a countable collection of open intervals.
+\end{theorem}
+\begin{proof}
+	Let \(U \subseteq \R\) be open and denote \(x \sim y\) if \(\left[ x, y \right] \subseteq U \) if \(x \le y\) or \(\left[ y, x \right] \subseteq U\) if \(y \le x\). It is trivial to show that this is infact an equivalence relation on \(U\). Now analyzing the equivalence classes guarantees disjointness. Now, we must only show that the equivalence classes are intervals and are countable.\\
+	Denote the equivalence class containing \(x\) by \(I_{x}\). As \(x \in I_{x}\), we see each \(I_{x} \neq \O\). Furthermore, \(I_{x} \subseteq U\) for all \(x \in U\) and for any \(x, \hat{x} \in U\) we have either \(I_{x} = I_{\hat{x}}\) or \(I_{x} \cap I_{\hat{x}} = \O\).\\
+	Next, note that each \(I_{x}\), \(x \in U\) is an interval, else we could find a \(y \in I_{x}\) and a \(z \not\in I_{x}\) such that one of the following occure
+	\begin{enumerate}
+		\item \(x<z<y\) and \([x, y] \subseteq U\) but \(\left[ x, z \right] \not\in U\) \(\lightning\).
+			\item \( y < z < x\) and \(\left[ y, x \right] \subseteq U\) but \(\left[ x, z \right]  \not\in U\) \(\lightning\).
+	\end{enumerate}
+	Hence, \(I_{x}\) is an interval. Next, suppose \(y \in I_{x}\) for some \(x \in U\). We wish to show \(y \in \overset{\circ}{U}\). Since \(U\) is open there is an \(\epsilon > 0\) such that \(\left( y - \epsilon, y + \epsilon \right) \subseteq U\). Cosequently, for each \(z \in \left( y-\epsilon, y + \epsilon \right) \) we conclude \(z \sim y \sim x\). Hence, \(\left( y- \epsilon, y + \epsilon\right) \subseteq I_{x}\). Hence \(I_{x}\) is open for each \(x \in U\).\\
+	Lastly, we show these unions are countable. This will invoke the axiom of choice so it is not valid in all models.\\
+	Note, \(U = \bigcup_{x \in U} I_{x}\). Also, note that \(I_{x} \cap \Q \neq \O\) as each \(I_{x}\) is open and nonempty, hence convexity implies it contains a rational. Hence, there is a choice function \(f: \{I_{x}\cap \Q : x \in U\}  \to \bigcup_{x \in U} \left( I_{x} \cap \Q \right) = U \cap \Q\) such that \(f\left( I_{x} \cap \Q \right) \in I_{x} \cap \Q\) for every \(x \in U\).\\
+	Now, the map \(g: \{I_{x}: x \in U\} \to R \) with \(R\) being the image of \(f\) and \(g\left( I_{x} \right) = f\left( I_{x}\cap \Q \right)  \). This is trivially a bijection from \(U \to R\), and as \(R \subseteq \Q\) we have countability.
+	\\ Essentially this argument first strips all the irrationals from \(I_{x}\) and then chooses \(1\) rational contained in \(I_{x}\). The use of two functions here just cleans up the arguments, but essentially, \(f\) does all the work while \(g\) just adds the formalism to create a true bijection.
+\end{proof}
+
+\begin{remark}
+	Picking a rational from each set and construcing a bijection \(\alpha: U \to \Q\) is a common strategy.
+\end{remark}
+\begin{definition}[Compactness]
+Let \(S, U_{\lambda} \subseteq \R\) with \(\lambda \in \Lambda\). Then, \(\{U_{\lambda}: \lambda \in \Lambda\} \) is a \textbf{cover} of \(S\) if \(S \subseteq \bigcup_{\lambda \in \Lambda} U_{\lambda}\). The cover is an \textbf{open cover} if each \(U_{\lambda}\) is open and it is a countable cover if \(\Lambda\) is countable.\\
+A \textbf{subcover} of a cover \(\{U_{\lambda} :  \lambda \in \Lambda\} \) is a collection \(\{ U_{\lambda} : \lambda \in \Lambda_{0}\} \) such that \(\Lambda_{0} \subseteq \Lambda\) and \(\{U_{\lambda} : \lambda \in \Lambda_{0}\} \) is a cover.\\
+A set is called \textbf{compact} if every open cover of the set has a finite subcover.\\
+A set \(S\) is \textbf{connected} if for all open sets \(U, V \) such that \(S \subseteq U \cup V\) and \(S\cap U \cap V = \O\) it follows that \(S \subseteq U\) or \(S \subseteq V\).
+\end{definition}
+\begin{theorem}[Heine-Borel Theorem]
+	A set \(S \subseteq \R\) is compact if and only if \(S\) is bounded and closed.
+\end{theorem}
+\begin{proof}
+	Suppose \(S \) is bounded and closed. Let us examine the special case, \(S = \left[ a, b \right] \subseteq \R\).\\
+	Let \(\{U_{\lambda} : \lambda \in \Lambda\} \) be an open cover of \(S\) and let \(F\) be the set of all \(x \in S\), with \(a\le x\le b\) such that \(\left[ a, x \right] \) has a finite subcover from \(\{U_{\lambda}\} \). Clearly, \(a \in F\) as \(\left[ a, a \right] = \{a\} \in U_{\lambda}\) for some \(\lambda\). Since \(F\) is bounded from above \(b\) there exists a supremum of \(F\). Let \(c = \sup \left( F \right) \). Furthermore, \(a\le c\le b\) by definition of supremum , so \(c \in \left[ a, b \right] \).
+	Then, \(c \in U_{\lambda_0}\) for some \(\lambda_0 \in \Lambda\) as \(c\) is in the interval which is covered by \(\{U_{\lambda}\} \). Since \(U_{\lambda_0}\)  is open by assumption, there is a \(\epsilon > 0\) such that \(\left( c-\epsilon, c + \epsilon \right) \subseteq U_{x}\). Since \(c - \epsilon\) is not an upper bound of \(F\), there is an \(x \in F\) such that \(c - \epsilon < x\). Since \(x \in F\), there is a finite indexed set \(\Lambda_0 \subseteq \Lambda\) such that \(\left[ a, x \right] \subseteq \bigcup_{\lambda \in \Lambda_0} U_{\lambda}\). Hence, \(\left[ a, c + \epsilon \right] \subseteq \bigcup_{\lambda \in \Lambda_0 \cup \{U_{\lambda_0}\}}  U_{\lambda}\). As \(\Lambda_0\) is countable, \(\Lambda_0 \cup \{U_{\lambda_0}\} \) yields a countable subcover. Hence, \(c = b\), else \(c\) would not be an upper bound, so \(\left[ a, b \right] \subseteq \left[ a, b + \epsilon \right)\) has a finite subcover, so it is compact. Lastly, let \(S\) be any bounded, closed set, in \(\R\). Then, there is \(M \in \N\) such that \(\left| x \right| \le M\) for all \(x \in S\), so \(S \subseteq \left[ -M, M \right] \) and we see an open cover of \(S\), \(\{U_{\lambda} : \lambda \in \Lambda\} \). Then, \(\{U_{\lambda} : \lambda \in \Lambda\} \cup S^{c} = \R\) is an open cover of \(\left[ a, b \right] \), hence there is a finite subcover of \(\left[ a, b \right] \). If the finite subcover does not contain \(S^{c}\), we have a finite subcover of \(S\), otherwise, we can take the finite subcover minus \(S^{c}\) to induce a finite subcover of \(S\).
+	\\ Conversely, suppose \(S\) is not bounded, then \(S \subseteq \bigcup_{k \in \Z} \left( k, k+2 \right)  \) and we see any finite subcover of this would yield a bounded set. Similairly, if \(S\) is not closed, then there is a closure point \( x\not\in S\). Then, \(S \subseteq \bigcup_{\epsilon > 0}\left( \left[ x-\epsilon, x+\epsilon \right]  \right) ^{c}  = \R \setminus \{x\} \). As all intervals \(\left( x-e, x+e \right) \cap S \neq \O\), we see any finite collection of \(\epsilon\) will yield a minimum \(\epsilon\), denoted \(\epsilon_0\), hence a finite subcover would be of the form \(\bigcup_{i=1} ^{n}\left( x-\epsilon _{i}, x+\epsilon_{i} \right)  = \R \setminus \left( x-\epsilon_0, x+\epsilon_0 \right) \nsupseteq S \). \(\lightning\). Hence, \(S\) is bounded and closed.
+\end{proof}
+\begin{corollary}
+	Suppose \(\{C_{\lambda} : \lambda \in \Lambda\} \) is a collection of compact sets such that \(\bigcap_{\lambda \in \Lambda_0} C_{\lambda} \neq \O\) for every finite indexed \(\Lambda_0 \subseteq \Lambda\). Then \(\bigcap_{\lambda \in \Lambda} C_{\lambda} \neq \O\).
+\end{corollary}
+\begin{proof}
+	Assume \(\bigcap_{\lambda \in\Lambda} C_\lambda = \O \). Then, \(\bigcup_{\lambda \in \Lambda} C_{\lambda}^{c} = \R\). Given \(\Lambda_0 \in \Lambda\), we find a finite subcover \(\{C_{\lambda}^{c} : \lambda \in \Lambda_0\} \) of \(C_{\lambda_0}\). That is, \(C_{\lambda_0}\subseteq \bigcup_{\lambda \in \Lambda_0} C_{\lambda}^{c}\) fora  finite subset \(\Lambda_0 \subseteq \Lambda\). Hence, \(C_{\lambda_0} \bigcap_{\lambda \in \Lambda_0}C_{\lambda} = \O \). \(\lightning\). Hence, \(\bigcap_{\lambda \in \Lambda} C_{\lambda} \neq \O\).
+\end{proof}

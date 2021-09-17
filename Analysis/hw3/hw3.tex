@@ -1,0 +1,47 @@
+\documentclass[a4paper]{article}
+\input{preamble.tex}
+\usepackage{pdfpages}
+\title{Analysis I: Homework III}
+\date{Fri 10 Sep 2021 12:58}
+\input{../ops.tex}
+\begin{document}
+\maketitle
+\begin{problem}[14]
+	Let \(\left( x_{n} \right) \)	 be a sequence. A point \(x^{*}\) is called an accumulation point of \(\left( x_{n} \right) \) if for each \(\epsilon ? 0\) and each \(N \in \N\) there is a \(n \in \N\) with \(n \ge N\) such that \(\left| x_{n} - x^{*} \right| <\epsilon \). Show the set of all accumulation points is closed.
+\end{problem}
+\begin{solution}
+	Denote the set of all accumulation points \(X\) of \(\left( x_{n} \right) \) and let \(x \in \overline{X}\). Then, for all \(\epsilon > 0\), we have \(X \cap \left( x-\epsilon, x+\epsilon \right) \neq \O\). Hence, for every \(\frac{\epsilon}{2} > 0\) there is an accumulation point \(x^{*}\in X\) such that \(x^{*} \in \left( x- \frac{\epsilon}{2}, x + \frac{\epsilon}{2} \right) \). Thus, \(\left| x - x^{*} \right|  < \frac{\epsilon}{2}\). Furthermore, for each \(\frac{\epsilon}{2} > 0\) and \(N \in \N\) there is an \(n \in \N\) such that \(\left| x^{*} - x_{n} \right| < \frac{\epsilon}{2} \). Combining these yields for each \(\epsilon > 0\) and \(N \in \N\), a \(n \in \N\) with \(n \ge N\) such that
+	\begin{align*}
+		\left| x_{n} - x\right| &= \left| x_{n} - x^{*} - \left( x - x^{*} \right)  \right|  \\
+		&\le \left| x_{n} - x^{*} \right| + \left| x - x^{*} \right|   \\
+		&< \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon
+	.\end{align*}
+Hence, \(x\) is an accumulation point, so \(X \subseteq \overline{X} \subseteq X\), so \(X = \overline{X}\) and \(X\) is closed.
+\end{solution}
+\newpage
+\begin{problem}[15]
+	Let \(S\) be a set of nonnegative real numbers. Define \(\sum_{x \in S}^{}x = \sup \{\sum_{x \in S_0}^{} x : S_0 \subseteq S \text{ is finite}\} \). Prove if \(\sum_{x \in S}^{}x < \infty\), then \(S\) is countable.
+\end{problem}
+\begin{solution}
+	We induce a countable covering of \(S\) by finite sets. Note that for each \(n \in \N\) we must have at most finitely many \(x \in S\) such that \(x \ge \frac{1}{n}\). Otherwise, there would be a family of sets \(\hat{S}_{i}\) where \(\hat{S}_{i}\) contains \(i\) elements \(x \ge \frac{1}{n}\), hence \(\sum_{x \in S_{i}}^{} x \ge \frac{i}{n}\) for all \(i \in \N\), hence we would have \[
+	\sup \{\sum_{ x\in S_0}^{} x : S_0 \subseteq S \text{ is finite}\} \ge \sup \{\sum_{ x \in \hat{S}_{i}}^{} x : i \in \N\}  \ge \sup \{\frac{i}{n} :  i \in \N\} > M
+	\]
+for all \(M \in \R\), hence our sum would be unbounded, so \(\sum_{x \in S}^{} x \not < \infty\) \(\lightning\).\\
+Thus, the set \(\{x \in S : x \ge \frac{1}{n}\} \) is finite for all \(n \in \N\). Then, we have that \[
+	\bigcup_{n \in \N} \{x \in S : x \ge \frac{1}{n}\}  = \left( 0, \infty \right) \cap S =  S \setminus \{0\} \text{ by nonnegative assumption}
+.\]
+Hence, we have a countable covering of \(S \setminus \{0\} \) by finite sets, so \(S \setminus \{0\} \) is countable. Thus, \(S\) is countable.
+\end{solution}
+\newpage
+\begin{problem}[16]
+	For a collection \(\mathscr{S}\) of subsets of \(X\), denote the smallest \(\sigma\)-algebra containing \(\mathscr{S}\) by \(\sigma\left( \mathscr{S} \right) \). Let \(\mathscr{C}\) be a collection of subsets of \(X\) and let \(\mathscr{U}\) be the collection of all countable subcollections \(\mathscr{F}\subseteq \mathscr{C}\). Hence, each subcollection \(\mathscr{F}\) contains only countable many subsets of \(X\). Prove \(\bigcup_{\mathscr{F} \in \mathscr{U}}  \sigma \left( \mathscr{F} \right) \) is a \(\sigma\)-algebra which is equal with \(\sigma\left( \mathscr{C} \right) \).
+\end{problem}
+\begin{solution}
+	First, we show \(\bigcup_{\mathscr{F}\in \mathscr{U}} \sigma \left( \mathscr{F} \right) \) is a \(\sigma\)-algebra. As each \(\sigma \left( \mathscr{F} \right) \) is a \(\sigma\)-algebra, we have that \(X \in \sigma\left( \mathscr{F} \right) \) so \(X \in \bigcup_{\mathscr{F}\in \mathscr{U}} \sigma \left( \mathscr{F} \right) \).\\
+	Next, let \(A \in \bigcup_{\mathscr{F}\in \mathscr{U}} \sigma \left( \mathscr{F} \right) \). Then, \(A \in \sigma\left( \mathscr{F} \right) \) for some \(\mathscr{F} \in \mathscr{U}\), hence \(A^{c} \in \sigma ( \mathscr{F})\), so \(A^{c} \in \bigcup_{\mathscr{F}\in \mathscr{U}}  \sigma \left( \mathscr{F} \right) \).\\
+	Lastly, let \(\left( A_{k} \right)_{k \in \N} \) be a countable collection of elements \(A_{k} \in \bigcup_{\mathscr{F} \in \mathscr{U}} \sigma \left( \mathscr{F} \right) \). Then, each \(A_{k} \in \sigma \left( \mathscr{F}_{k} \right) \) for some \(\mathscr{F}_{k} \in \mathscr{U}\). As each \(\mathscr{F}_{k}\) is countable, then \(\bigcup_{k \in \N} \mathscr{F}_{k}\) is countable, hence \(\bigcup_{ k\in \N} \mathscr{F}_{k} \in \mathscr{U} \) by definition of \(\mathscr{U}\). Thus, \(\sigma \left( \bigcup_{ k \in \N} \mathscr{F} _{k} \right) \subseteq \bigcup_{\mathscr{F}\in \mathscr{U}} \sigma\left( \mathscr{F} \right) \) and as \(\bigcup_{k \in \N}A_{k} \in \sigma \left( \bigcup_{k \in \N} \mathscr{F}_{k} \right)  \), we see \(\bigcup_{k \in \N}A_{k} \in \bigcup_{\mathscr{F} \in \mathscr{U}} \sigma \left( \mathscr{F} \right)  \).\\
+
+	Note that it is clear as each \(\mathscr{F}\subseteq \mathscr{C}\) that each \(\sigma \left( \mathscr{F} \right) \subseteq \sigma \left( \mathscr{C} \right) \) hence \(\bigcup_{ \mathscr{F} \in \mathscr{U}} \sigma \left( \mathscr{F} \right) \subseteq \sigma \left( \mathscr{C} \right) \).\\
+	Now, we show equality. Let \(A \in \sigma \left( \mathscr{C} \right) \). If \(A \in \mathscr{C}\), then \(A \in \mathscr{F}\) for some \(\mathscr{F} \in \mathscr{U}\) hence \(A \in \bigcup_{\mathscr{F}\in \mathscr{U}} \sigma \left( \mathscr{F} \right) \). Otherwise, we may have that \(A = B^{c}\) for some \(B \in \mathscr{C}\). Hence \(B \in \mathscr{F}^{*}\) for some \(\mathscr{F}^{*} \in \mathscr{U}\), so \(A^{c} \in \sigma \left( \mathscr{F}^{*} \right) \) hence it is in the union. Else, as \(\sigma \left( \mathscr{C} \right) \) is the minimal \(\sigma\)-algebra containing \(\mathscr{C}\) we must have that \(A = \bigcup_{i=1}^{\infty}B_{i} \) for \(B_{i} \in \mathscr{C}\). Hence, each \(B_{i} \in \mathscr{F}_{i}\) for some \(\mathscr{F}_{i} \in \mathscr{U}\), hence every \(B_{i} \in \bigcup_{\mathscr{F} \in \mathscr{U}}\sigma \left( \mathscr{F} \right)  \), so \(\bigcup_{i \in \N} B_{i}  = A \in \bigcup_{\mathscr{F}\in \mathscr{U}}\sigma \left( \mathscr{F} \right)  \) as this is a \(\sigma\) algebra. Hence, we see \(A \in \bigcup_{\mathscr{F} \in \mathscr{U}} \sigma \left( \mathscr{F} \right) \) for all \(A \in \sigma (\mathscr{C})\), so \(\sigma \left( \mathscr{C} \right)  = \bigcup_{\mathscr{F} \in \mathscr{U}}\sigma \left( \mathscr{F} \right)  \).
+\end{solution}
+\end{document}

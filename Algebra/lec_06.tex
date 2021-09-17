@@ -1,0 +1,52 @@
+\lecture{6}{Fri 03 Sep 2021 11:30}{Conclusion of Lecture 5 and Sylow Theorems}
+\begin{recall}[]
+	We had shown that if \(G\) acts by conjugation on the conjugate subgroups of \(H\), then the normalizer \(N_{G} \left( H \right)  =H\).
+\end{recall}
+\begin{proof}[continued]
+	Let \(\alpha: G \to \Perm \left( \Omega \right) \simeq S_p\) be the associated homomorphism with the group action. Recall \(\left| \Omega \right| = \left| G: N_{G}\left( H \right)  \right|= \left| G:H \right| = p \) by the orbit stabilizer theorem. Let
+	{align*}
+		H_0 &= \ker \left( \alpha \right) \\
+		    &= \{g \in G: K^{g}= K \ \forall \ k \in \Omega\} \\
+		    &= \bigcap_{K \in \Omega} \{g \in G: K^{g} = K\}  \\
+		    &= \bigcap_{K \in \Omega} N_{G}\left( K \right) \text{ by definition of normalizer}\\
+		    &\implies H_0 \le H = N_{G}\left( H \right) \text{ as } H\in \Omega
+	.\end{align*}
+	We see \(\left| \Im \left( \alpha \right)  \right| = \left| \frac{G}{H_0} \right| \) as \(\Im \left( \alpha \right) \le S_{p}\).
+	This implies \(\left| \frac{G}{H_0} \right| \mid \left| S_p \right| = p!\).\\
+	Also, \(\frac{\left| G \right| }{\left| H_0 \right| } = \frac{\left| G \right| }{\left| H \right| }\cdot \frac{\left| H \right| }{\left| H_0 \right| } = \left| G:H \right| \cdot \left| H:H_0 \right| = p\cdot \left| H:H_0 \right| \).\\
+	Simplifying, we see \(p\left| H:H_0 \right| = \left| \frac{G}{H_0} \right|  \) and as this divides \(p!\), we obtain \[p\left| H:H_0 \right| \mid p! \implies \left| H:H_0 \right| \mid \left( p-1 \right) !  .\] But, \(\left| H:H_0 \right| \mid \left| H \right| \mid \left| G \right|  \), but as \(p\) is the smallest prime divisor of \(\left| G \right| \), all prime divisors are \(\ge p\) and thus, they would not divide \(\left( p-1 \right) !\). Hence, we see \(\left| H:H_0 \right| = 1\), hence \(H = H_0 = \ker \left( \alpha \right) \). As the kernel is a normal subgroup, this yields \(H \trianglelefteq G\).
+\end{proof}
+\section{Sylow Theorems}
+\begin{definition}[P-groups]
+	A group \(G\) is a \textbf{\(p\)-group} where \(p\) is prime if the order of every \(g \in G\) is a power of \(p\)
+\end{definition}
+\begin{theorem}[Cauchy's Theorem]
+	If \(G\) is a (nontrivial) finite group and \(p \mid \left| G \right| \) is a prime, then there is a \(g \in G\) such that \(\ord \left( g \right) = p \) and hence there is a subgroup \(\left[ g \right] \) of order \(p\).
+\end{theorem}
+\begin{proof}
+	We will break the proof into \(2\) cases.
+	\begin{enumerate}
+		\item G is abelian.
+		\item G is nonabelian.
+	\end{enumerate}
+	Note that we will use \(0\) as the identity for this part of the proof as the groups are abelian. For the first case we will proceed by induction. If \(\left| G \right| = p\), then any nonzero element of \(x \in G\) has \(\ord \left( x \right) = p\) as \(\ord \left( x \right) \mid \left| G \right| \) and the order is not \(1\) so it must be \(p\).\\
+	We will use this as the base case.  Let \(x \in G\) be a nonzero elemnt and let \(H = \left<x \right> \), so \(\left| H \right| = \ord \left( x \right) \). So, \(\{H = x, x^2, \ldots, x^{\ord \left( x \right) }\}\). If \(p \mid \left| H \right| \), then \(\ord \left( x^{\left| H \right| / p} \right) = p \), so such an element exists. In the other case (\(p \nmid \left| H \right| \)). Then, \(p | \left| G / H \right| \) as \(p | \left| G \right| = \left| G / H \right| \cdot \left| H \right| \). This is well defined as \(G\) is abelian, so \(H\) must be normal. Let \(\phi _{H}: G \to G /H\) be the cannonical homomorphism, then \(\left| G / H \right| < \left| G \right| \)as \(H\) is nontrivial and \(p | \left| G / H \right| \) so the inductive hypothesis implies there is a \(y \in G\) such that \(\ord \left( \phi _{H} \left( y \right)  \right)  = p\). Let \(m = \ord \left( y \right) \). Then, \(y^{m} = 1\), so \(\phi \left( y^{m} \right) = \phi \left( y \right) ^{m} = 1\), so \(\ord \left( \phi\left( y \right)  \right)  = p \mid m\) (and \(m = \alpha p\)). Hence, \(\ord \left( y^{\alpha} \right) = p \). This completes the proof of this case.\\
+	\newline
+	For the nonabelian case, we will make use of the class equation, so let us recall: \[
+		\left| G \right| = \left| Z\left( H \right)  \right| + \sum_{X \in \mathscr{C}}^{} \left| G:Z_{G}\left( x \right)  \right|
+	\]  where \(\mathscr{C}\le G\) is simply a set of representatives for all conjugacy classes in \(G\) of size \(\ge 2\). Now, \(Z\left( G \right) \) is the center of \(G\), so it is abelian by definition. If \(p \mid \left| Z\left( G \right) \right| \) then we may simply apply the abelian case to yield an element, \(x \in Z\left( G \right) \le G\), of order \(p\). Hence, assume \(p \nmid \left| Z\left( G \right)  \right| \). Then, we see there must be atleast one \(x \in \mathscr{C}\) such that \(p \nmid \left| G:Z_{G}\left( x \right)  \right| \) (else we would have all parts of the right size of the class equation are divisible by \(p\) except the centralizer, so \(\left| G \right|  = \left| Z\left( G \right)  \right| (\mod p) \neq 0 (\mod p) \)). So, \(p \nmid \left| G: Z_{G}\left( \left<x \right>  \right)  \right|  = \frac{\left| G \right| }{\left| Z_{G}\left( x \right)  \right| }\). But, \(p \mid \left| G \right| = \left( \frac{\left| G \right| }{\left| Z_{G}\left( x \right)  \right| } \right) \left| Z_{G}\left( x \right)  \right| \), so \(p \mid \left| Z_{G}\left( x \right)  \right| \).\\
+	If \(Z_{G}\left( x \right) < G\), then we could proceed by induction on \(\left| G \right| \) and apply the inductive hypothesis to \(Z_{G}\left( x \right) \) to complete the proof (with base case \(\left| G \right| = p\)). Hence, we must have \(Z_{G}\left( x \right) = G \implies x \in Z\left( G \right) \). This is a contradiction, as we assumed \(\left| G: Z_{G}\left( x \right)  \right| = \frac{\left| G \right| }{\left| Z_{G}\left( x \right)  \right| }\ge 2\). That is, \(x\) was chosen to be an element not in the center, but if \(Z_{G}\left( x \right) = G\), then \(x\) commutes with everything, so \(x \in Z \left( G \right) \). \(\lightning\). Hence, we must have that \(p \mid \left| Z\left( G \right)  \right| \) or \(Z_{G}\left( x \right) \) is a proper subgroup of \(G\), so this completes the proof.
+\end{proof}
+\newpage
+\begin{corollary}
+	If \(H\) is a finite \(p\)-group, then \(\left| H \right|  = p^{n}\) for some \(n\ge 1\).
+\end{corollary}
+\begin{proof}
+	If this fails, then there is a \(q \mid \left| H \right| \) with \(q\neq p\) being prime. Then, cauchy's theorem implies there is an element of order \(q \neq p\), so \(H\) is not a \(p\)-group. \(\lightning\).
+\end{proof}
+\begin{definition}[Sylow Subgroup]
+	If \(G\) is a finite group, \(p\) is a prime, and \(p^{n}\) is the maximal power of \(p\) such that \(p^{n} \mid \left| G \right| \). Then, any subgroup \(H \le G\) with \(\left| H \right| = p^{n}\) is called a \textbf{sylow \(p\)-subgroup}.
+\end{definition}
+\begin{example}
+	If \(\left| G \right| = 8\cdot 9 \cdot 7\). Then a subgroup with  \(\left| H \right| = 8\)  is a sylow \(2\)-group. Similairly, \(\left| H \right| = 9\) implies \(H\) is a sylow \(3\)-group and \(\left| H \right| = 7\) implies \(H\) is a sylow \(7\)-group.
+\end{example}

@@ -1,0 +1,67 @@
+\lecture{10}{Wed 15 Sep 2021 10:20}{Hadamard Matrices (3)}
+\begin{recall}
+	The tensor product of matrices \(A, B\) is \(A \otimes B\) and this preserves hadamardness.
+\end{recall}
+\begin{example}
+	\[
+	\underbrace{	\begin{bmatrix} +&+\\
+		+&-\end{bmatrix}}_{=H}  \otimes \begin{bmatrix} +&+\\
+			+&-\end{bmatrix} = \begin{bmatrix} +&+&+&+\\
+		+&-&+&-\\
+	+&+&-&-\\
++&-&-&+\end{bmatrix} = H \otimes H
+	.\]
+Furthermore, \(H \otimes H \otimes H\) will be an \(8 \times 8\) hadamard matrix. And the arbitrary \(\bigotimes_{i=1}^{n} H\) yields a hadamard matrix of order \(2^{n}\).
+\end{example}
+A natural question arises, what are the singular values of an arbitrary hadamard \(H\)?
+\begin{recall}
+	Singular values are the square roots of the eigenvalues of \(A A^{*}\).
+\end{recall}
+Other definitions also arise, for example the largest singular value of \(A\), denoted \(\sigma_1\) is equal to the operator norm on \(A\). Similarly, we can change the matrix slightly to remove singular value \(\sigma_1\) and this yields \(\sigma_2\) is the operator norm on the modified \(\hat{A}\).\\
+
+For now, we return to the original definition, and we note that as \(H H^{*} = n I\), we have eigenvalues \(\lambda_1, \lambda_2, \ldots, \lambda_{n}\) with \(\lambda_{i} = n\) and corresponding eigenvactor \(e_{i} = \begin{pmatrix} 0 \\ \vdots\\ \underbrace{1}_{\text{position \(i\)}} \\ \vdots \\  0 \end{pmatrix}\).
+Hence the singular values of \(A\) are all \(\sqrt{n} \).
+\begin{proposition}
+	Let \(H = \left[ h_{i, j} \right] \) with \(\left| h _{i, j} \right|  = 1\) for all \(i, j\). Then, the following are equivalent
+	\begin{itemize}
+		\item \(HH^{*} = nI\)
+		\item All singular values are equal to \(\sqrt{n} \)
+			\item For singular values \(\sigma_{i}\), \(1\le i \le n\), the sum \(\sum_{i=1}^{n} \sigma_{i} = n\sqrt{n} \).
+	\end{itemize}
+\end{proposition}
+\begin{definition}[Nuclear Norm]
+	For a matrix \(A\), we define the \textbf{nuclear norm or trace norm} to be \(\|A\|_{*} = \sum_{i = 1}^{n} \sigma_{i} \left( A \right) \).
+\end{definition}
+\begin{remark}
+	If \(A\) is \(n \times n\) with \(\left| a_{i, j} \right|  \le 1\) then \(\|A\|_{*} \le n\sqrt{n} \). Furthermore, equality holds if and only if \(A\) is hadamard.
+\end{remark}
+Now, let \(A\) be \(m \times n\) with \(m \le n\). Then, \(\|A\|_{*} \le m\sqrt{n} \). Equality holds if and only if \(A\) is a \textbf{partial hadamard matrix} meaining \(A A^{*} = n I_{m}\).
+\begin{definition}[Regular Matrix]
+	For a matrix \(A\) we say \(A\) is \textbf{regular} if all row sums are equal.
+\end{definition}
+We examine the properties of a regular hadamard matrix.\\
+It is clear, as we may switch rows and columns and multiply by \(\pm 1\) for each row, that these row sums are fragile, and occasionally we may even induce a regular hadamard matrix from a nonregular one this way.\\
+\begin{example}
+	\(\begin{bmatrix} +&+&+&-\\
+	+&+&-&+\\
++&-&+&+\\
+-&+&+&+\end{bmatrix} \) is a regular hadamard matrix induced by the \(4 \times 4\) hadamard from earlier.
+\end{example}
+\begin{remark}
+	A regular matrix need not be symmetric. For example \(\begin{bmatrix} +&+&+&-\\
+	+&-&+&+\\
+-&+&+&+\\
++&+&-&+\end{bmatrix} \)  is regular and nonsymmetric.
+\end{remark}
+Note that a real symmetric hadamard matrix has real eigenvalues.
+\begin{proposition}
+	Suppose \(H\) is a \(n \times n\) symmetric and regular (row sum \(d\)). Then, \(n = d^2\).
+\end{proposition}
+\begin{proof}
+	Let \(\lambda_1, \lambda_2, \ldots, \lambda_{n}\) be the eigenvalues of \(H\) and note that \(\left| \lambda_{i} \right|  = \sqrt{n} \) for \(1\le i \le n\) as the eigenvalues of a real symmetric matrix are precisely the singular values.\\
+	Next, we note that there is atleast one \(\lambda_{i} = \sqrt{n} \) and one \(\lambda_{j} = - \sqrt{n} \). Otherwise, suppose WLOG all \(\lambda_{i} = \sqrt{n} \) , then \(\sum_{i= 1}^{n} \lambda_{i} = n\sqrt{n}  = \tr \left( H \right) \), but the trace can be atmost \(n\) by an earlier theorem. Hence, \(\lambda_1 = \sqrt{n} \) and \(\lambda_{n} = -\sqrt{n} \). Then, note that \(H j = dj\) for \(j = \begin{pmatrix} 1 \\ \vdots\\ 1 \end{pmatrix}\). Hence, \(d\) is an eigenvalue with \(j\) as its eigenvector. Hence \(d = -\sqrt{n} \) or \(d = \sqrt{n} \). Hence either case yields \(n = d^2\).
+\end{proof}
+\begin{definition}[Constant Diagonal]
+	A hadamard matrix \(H\) is said to have a \textbf{constant diagonal} if \(h_{1, 1} = h_{2, 2} = \ldots = h_{n, n}\).
+\end{definition}
+This property can always be ensured for a hadamard matrix with just elementary transformations. Furthermore, if \(H\) is a \(n \times n\) constant diagonal hadamard matrix with \(\delta = h_{1, 1}\). Then, \(\delta H\) has a constant diagonal of \(1\) and we define \(A = \frac{1}{2} \left( J_{n} - \delta H \right) \), hence the diagonal of \(A\) is constant \(0\). Next, note that \(\delta H\) is a hadamard matrix and for an element \(h_{i, j} = 1\), we see \(\delta h_{i, j} = \delta\). Similairly if \(h_{i, j} = -1\) we have \(\delta h_{i, j} = -\delta\). Hence the entries of \(A\) are \(a_{i, j} = 0\) if \(\delta h_{i, j} = 1\) and \(a_{i, j} = 1\) if \(\delta h_{i, j} = -1\). So, this matrix has all entries \(0\) and \(1\), something we call a \textbf{digraph matrix}. Furthermore, if \(H\) is regular, the graph induced by \(A\) is a strongly regular graph.

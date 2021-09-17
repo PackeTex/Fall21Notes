@@ -1,0 +1,22 @@
+\newpage
+\lecture{11}{Fri 17 Sep 2021 11:36}{Homework Review and Sylow Groups (4)}
+\begin{note}{Solution to Questions 4 and 5 From Homework I}
+	\begin{enumerate}
+		\item For question \(4\) part \(1\) we needed to show \(\mathscr{O}_{i}^{g} \in \mathscr{O}\) for all \(i\) and \(g \in G\). We note that if \(x \in \mathscr{O}_{i}\), then \(\mathscr{O}_{i} = x^{H}\), hence \(\mathscr{O}_{i}^{g} = x^{Hg} = x^{gH} = \left( x^{g} \right)^{H} = \mathscr{O}_{j} \) for whichever \(\mathscr{O}_{j} \ni g\).
+		\item For question \(5\) part \(3\) we needed to show that \(G_{x}\) being a maximal subgroup for every \(x \in G\) is equivalent to the existence of no trivial blocks \(B \subseteq \Omega\). One direction was simple, so we only show the other. Assume there is a \( x \in \Omega\) such that \(G_{x} < H < G\) for some \(H \le G\), then we wish to find a nontrivial block \(B\).\\
+			Define \(B = x^{H} = \{x^{h} : h \in H\} \). First, we show this is a block. Suppose \(B \cap B^{g} \neq \O\), then \(\exists x^{h_1} \in B\) and \(x^{gh_2} \in B^{g}\) for some \(h_1, h_2 \in H\) with \(x^{gh_2} = x^{h_1}\), implying \(x^{h_1^{-1} g h_2} = x^{h_1^{-1}h_1} = x\). Hence, \(h^{-1}g h_2 \in G_{x} \le H\), so \(g \in h_1 H h_2 ^{-1} = H\). But, if \(g \in H\), we have \(B^{g} = \left( x^{H} \right) ^{g} = x^{gH} = x^{H} = B\), hence \(B\) is a block and furthermore, \(G_{B} = H\).\\
+			Now, if \(B = \{x\} \), then \(G_{B} = H = G_{x}\), \(\lightning\). Furthermore, if \(B = \Omega\), then \(B_{G} = H = G \), \(\lightning\). Hence \(B\) is a proper nontrivial block.
+	\end{enumerate}
+\end{note}
+\begin{proposition}
+	Let \(G\) be a group of order \(\left| G  \right| = 7 \cdot 3^3\). Then, \(G\) is not simple.
+\end{proposition}
+\begin{proof}
+	Let \(n_3\), \(n_7\) be the number of sylow \(3\)-groups and \(7\)-groups respectively. Then, by Sylow's Theorems \(n_7 | \frac{\left| G \right| }{7} = 3^3\), and \(n_7 = 1 \left( \mod 7 \right) \). So, \(n_7 = 1, 3, 9, 27\) by the first requirement, and the second requirement implies \(n_7 = 1\). Hence there is a unique Sylow \(7\)-group, hence it is normal by an earlier proposition. Thus, there is a normal subgroup of order \(7\), so \(G\) is not simple. Note that had we dried with \(n_3\) instead of \(n_7\), we would get \(n_3 | 7\) and \(n_3 = 1 \left( \mod 3 \right)\) implying that \(n_3\) could be \(7\), hence only \(1\) direction worked.
+\end{proof}
+\begin{example}
+	We can show that no group of \(\left| G \right| = 30\) is simple. Suppose \(\left| G \right|  = 2 \cdot 3 \cdot 5\), using \(n_2\) yields essentially no results as all other primes are odd. Hence, we try with \(n_3\), this yields possibilities \(n_3 = 1\) or \(n_3 = 10\). If \(n_3 = 10\), we know \(G\) is not simple, so let us assume \(n_3 = 10\).\\
+	Now, trying with \(n_5\) yields \(n_5 = 1\) or \(n_5 = 6\). Again, we know if \(n_5=1\), then \(G\) is not simple so let us assume \(n_5 = 6\). \\
+	Let \(P_1, P_2\) be \(2\) sylow \(3\)-groups. Then, either \(P_1 = P_2\) or \(P_1 \cap P_2 = \O\), as \(\left| P_1 \right|  = \left| P_2 \right|  = 3\) is prime. Thus, the \(3\)-groups may only intersect trivially as they are of prime order. Hence, there are at least \(n_3 \cdot \left( 3 - 1 \right) \) elements of order \(3\) in \(G\). Hence, there are at least \(20\) elements of order \(3\) in \(G\).\\
+	Similairly, we see there must be atleast \(n_5 \cdot \left( 5 - 1 \right) \) elements of order \(5\) in \(G\) hence there are \(24\) elements of order \(5\), but as no element can have order \(3\) and \(5\), and we have \(\left| G \right|  = 30 < 24 + 20 + 1\) (the \(1\) being the identity which we did not count yet), we see either \(n_3\) or \(n_5 = 1\). Hence, \(G\) cannot be simple as it must have either a normal \(3\)-group or a normal \(5\)-group.
+\end{example}

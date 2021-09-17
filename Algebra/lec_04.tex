@@ -1,0 +1,66 @@
+\lecture{4}{Mon 30 Aug 2021 11:26}{Group Actions (2)}
+\begin{recall}[Group Actions]
+	The canonical definition of a group action was 	a map from \(G \to \Omega\) satisfying \(x^{1}= x\) and \(\left( x^{g} \right)^{h}= x^{hg} \). Formally, we defined a homomorphism \(\alpha: G \to \perm \left( G \right) , \ x \mapsto \left(\alpha(g)\right) \left( x \right) \coloneqq x^{g}\), where the homomorphism condition implies the identity condition and the "left action" combined with the rules of composition implies the second condition.\\
+	Recall also, that we had for a subset \(X \subseteq \Omega\) then \(G_{X} = \{g \in G: X^{g} = X\} \) where \(X^{G} = \{x^{g}: x \in X\}  \) is called the  stabilizer of \(X\). A common case of this is where \(X = \{ x\} \), where we have \(G_{x} = \{g \in G : x^{g} = x\} \le G \) , denoted the \textbf{point stabilizer} of \(x\).
+\end{recall}
+\begin{note}{Point Wise Stabilizer}
+	\(\bigcap_{x \in X}G_{x} \le G_{X}\) is called the \textbf{point wise stabilizer} of \(X\). Essentially, the point stabilizer of a point \(x\) must leave \(x\) in its position, taking the intersection of these yields all of the \(g \in G\) which leaves every element of \(X\) exactly in its place. On the other hand, \(G_{X}\) can permute the elements within \(X\) provided they stay within \(X\).
+\end{note}
+\begin{definition}[Properties of Actions]
+	\begin{enumerate}
+		\item A group action, \(\alpha\), is \textbf{transitive} if for all \(x, y \in \Omega\) there is a \(g \in G\) such that \(x^{g} = y\)
+		\item The action is \textbf{faithful} if \(\ker \left( \alpha \right) \) is trivial, that is, \(x^{g}= x^{h}\) for all \(x \in \Omega\) implies \(g = h\)
+		\item That is, each element of \(G\) provides a distinct map
+		\item A \textbf{fixed point} of \(\Omega\) is an element \(x \in \Omega\) such that \(x^{g}= x\) for all \(g \in G\) (hence \(G_{x}= G\))
+		\item If \(X \subseteq \Omega\), then the \textbf{orbit} of \(X\) is the set \(\mathscr{O}_{X}= \{x^{g}: x \in X, g \in G\} \)
+	\end{enumerate}
+\end{definition}
+\begin{remark}
+	If the action is transitive, then \(\mathscr{O}_{X} = \Omega\) for all nonempty \(X\subseteq \Omega\).
+\end{remark}
+\begin{example}
+	Let \(G\) act no itself by conjugation (\(x^{g} = gxg^{-1}\)). Then, \(G_{x}= \{g \in G : gxg^{-1} = x\} = \{g \in G: gx = xg\} = Z_{G}\left( \left<x \right>  \right)   \).
+\end{example}
+\begin{theorem}
+	Let \(G\) act on \(\Omega\), then \(G_{xg} = gG_{x}g^{-1}\) for all \(x \in \Omega\), \(g \in G\).
+\end{theorem}
+\begin{proof}
+	\begin{align*}
+		G_{xg} &= \{h \in G : \left( x^{g} \right)^{h} = x^{g} \} \\
+		&= \{h \in G : x^{hg} = x^{g}\}. \\
+		&\text{	Now, let us change variables, let \(h^{\prime} = ghg^{-1}\), then }\\
+		&= \{gh^{\prime}g^{-1} \in G : x^{gh^{\prime}g^{-1}g} = x^{g}\} \\
+		&= \{gh^{\prime}g^{-1} \in G : x^{gh^{\prime}}= x^{ g}\} \\
+		&\text{	Now, note \(x^{h^{\prime}} = x \iff x^{gh^{\prime}} = x^{g}\). So, }\\
+		&= \{gh^{\prime}g^{-1} \in G : x^{h^{\prime}} = x\} \\
+		&= g \{h^{\prime} \in G : x^{h^{\prime}} = x\} g^{-1}\\
+		&= gG_{x}g^{-1}
+	.\end{align*}
+\end{proof}
+\begin{theorem}
+	Suppose \(G\) acts on \(\Omega\) and let \(x \in \Omega\), \(g, h \in C\). Then, \(x^{g} = x^{h} \iff x, y \text{ are in the same left \(G_{x}\)-coset}\).
+\end{theorem}
+\begin{proof}
+	Suppose \(x^{g}= x^{h}\) and apply the inverse map, \(h^{-1}\) to both sides. This yields \[
+		\underbrace{\left( x^{g} \right)^{h^{-1}}}_{= x^{h^{-1}}g} = \underbrace{x^{h h^{-1}} }_{=1}
+	.\]
+	Thus, \(h^{-1} g \in G_{x}\), so \(g \in h G_{x}\).\\
+	Now, Conversely, if \(g \in hG_{x}\) we have
+	\begin{align*}
+		h^{-1}g &\in G_{x}\\
+		\implies x^{h^{-1}g} &= x\\
+		\implies \underbrace{\left( x^{h^{-1} g} \right)^{h}}_{= x^{h h^{-1}}g = x^{g}} &= x^{h}\\
+		\implies x^{g} &= x^{h}
+	.\end{align*}
+	This concludes the proof.
+\end{proof}
+\begin{theorem}[Orbit-Stabilizer Theorem]
+Suppose \(G\) acts on \(\Omega\), then \(\left| \mathscr{O}_{x} \right| = \left| G : G_{x} \right| \)	for all \(x \in \Omega\). That is, the size of the orbit of \(x\) is equal to the index of the point stabilizer of \(x\).
+\end{theorem}
+\begin{proof}
+Let us induce a bijection between \(\mathscr{O}_{x}\)	 and \(\left[ G : G_{x} \right] \). Define a map \begin{align*}
+	f: \{gG_{x} : g \in G\}  &\longrightarrow \Omega  \\
+	x &\longmapsto f(x) = f\left( gG_x)  \right) = x^{g}
+.\end{align*}
+By the previous theorem, we know if \(h \in gG_{x}\), then \(x^{h}=x^{g}\), so this map is in fact well defined (it doesn't matter which representative we choose). We see \(\IM \left( f \right) = \mathscr{O}_{x}\). Now, if we prove the map is injective, we have a bijection from the \(\left[ G:G_{x} \right] \to \mathscr{O}_{x}\). Now, suppose \(f\left( gG_{x} \right) = f\left( hG_{x} \right)  \), then as \(x^{g} = x^{ h} \iff gG_{x} = hG_{x}\), then we have the map is injective (as the output being equal implies the input is equal), hence we have  a bijection, so the cardinalities are equal, \(\left| \mathscr{O}_{x} \right|  = \left| G : G_{x} \right| \).
+\end{proof}

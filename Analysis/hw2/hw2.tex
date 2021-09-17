@@ -1,0 +1,144 @@
+\documentclass[a4paper]{article}
+\input{preamble.tex}
+\usepackage{pdfpages}
+\title{Analysis I: Homework II}
+\date{Mon 06 Sep 2021 10:37}
+\input{../ops.tex}
+\begin{document}
+\maketitle
+\begin{problem}[9]
+	Let \(\mathscr{F} = \{\{3\} , \{\{3\} , \N\}, \{\Z, \{\{3\} , \N\} \}  \} \). Show all possible choice functions on \(\mathscr{F}\).
+\end{problem}
+\begin{solution}
+	Let \(f_1, f_2, f_3, f_4: \mathscr{F} \to \{\{3\} , \N, \Z, \{\{3\} , \N\} \} \) and \(F \in \mathscr{F}\). We list all possible function rules which are a choice function.
+	\begin{enumerate}
+		\item 	\[
+				f_1\left( F \right)  = \left \{
+			\begin{array}{11}
+				3 , & \quad  F = \{3\} \\
+				\{3\} , & \quad  F = \{\{3\} , \N\}  \\
+				\Z , & \quad F = \{\Z, \{\{3\} , \N\} \}
+			\end{array}
+			\right.
+		.\]
+
+				\item 	\[
+				f_2\left( F \right)  = \left \{
+			\begin{array}{11}
+				3 , & \quad  F = \{3\} \\
+				\{3\} , & \quad  F = \{\{3\} , \N\}  \\
+				\{\{3\} , \N\}  , & \quad F = \{\Z, \{\{3\} , \N\} \}
+			\end{array}
+			\right.
+		.\]
+
+		\item 	\[
+				f_3\left( F \right)  = \left \{
+			\begin{array}{11}
+				3 , & \quad  F = \{3\}  \\
+				  \N, & \quad  F = \{\{3\} , \N\}   \\
+				\Z , & \quad F = \{\Z, \{\{3\} , \N\} \}
+			\end{array}
+			\right.
+		.\]
+				\item 	\[
+				f_4\left( F \right)  = \left \{
+			\begin{array}{11}
+				3 , & \quad  F = \{3\}\\
+				\N , & \quad  F =  \{\{3\} , \N\}   \\
+				\{\{3\} , \N\}  , & \quad F = \{\Z, \{\{3\} , \N\} \}
+			\end{array}
+			\right.
+		.\]
+	\end{enumerate}
+\end{solution}
+\newpage
+\begin{problem}[10]
+	Let \(\left( a_{k} \right), \left( b_{k} \right) \in \CS \left( \Q \right) \).
+	\begin{enumerate}
+		\item Show that \(\left( a_{k}b_{k} \right) \in \CS \left( \Q \right)  \).
+		\item Show that \(\left( \frac{a_{k}}{b_{k}} \right)  \in \CS \left( \Q \right) \) if there is \(N \in \N\) and rational \(\epsilon > 0\) such that \(\left| b_{n} \right|\ge \epsilon \) for \(n \ge N\).
+	\end{enumerate}
+\end{problem}
+	\begin{lemma}
+		All \(\left( x_{k} \right) \in \CS \left( \Q \right) \) are bounded by some \(M \in \N\).
+	\end{lemma}
+	\begin{proof}[Proof of lemma]
+		Let \(\left( x_{k} \right) \in \CS \left( \Q \right) \) and suppose for all \(M \in \N\) there is \(k \in \N\) such that \(\left| x_{k} \right| \ge M\). Then, let \(\epsilon > 0\) and \(N \in \N\) such that for all \(m, n \ge N\), we have \(\left| x_{n} - x_{m} \right| < \epsilon\) and set \(m \ge n\). Fix \(M \in \N\) such that \(M \ge \left|x_{N}\right|\) and \(M \ge \epsilon\) and let \(m\) be sufficiently large such that \(\left| x_{m} \right| \ge 2M\). Then, \(\left| x_{m} - x_{N} \right| \ge \left| 2M - M \right|  = M \ge \epsilon\). \(\lightning\). Hence, there must be \(M \in \N\), such that  \(\left| x_{k} \right| < M\) for all \(k \in \N\).
+	\end{proof}
+
+\begin{solution}
+	\begin{enumerate}
+		\item We wish to show that for all \(\epsilon > 0\) there is a \(N \in \N\) such that \(\left| a_{n}b_{n} - a_{m} b_{m} \right| < \epsilon\) for \(n, m \ge N\).  Let \(0 \neq M \ge \left| a_{n} \right| , \left| b_{n} \right| \) for all \(n \in \N\) to be an upper bound by the lemma. Then, as \(\left( a_{k} \right) \) and \(\left( b_{k} \right) \in \CS \left( \Q \right) \) we see for all \(\frac{\epsilon}{2M} > 0\), there is \(N_{a}, N_{b}\in \N\) such that \(\left| a_{n} - a_{m} \right|< \frac{\epsilon}{2M} \) , \(n, m \ge N_{a}\), and \(\left| b_{n} - b_{m} \right| < \frac{\epsilon}{2M} \), \(n, m \ge N_{b}\). Lastly, let \(N = \max \{N_{a}, N_{b}\} \). Then, we see, for all \(m, n \le N\) we have
+			\begin{align*}
+				\left| a_{n}b_{n} - a_{m}b_{m} \right| &= \left| a_{n}b_{n} - a_{n}b_{m} + a_{n}b_{m} + a_{m}b_{m} \right| \\
+								       &= \left| a_{n}\left( b_{n} - b_{m} \right) - b_{m} \left( a_{n} - a_{m} \right)   \right|  \\
+						&\le \left| a_{n} \right| \left| b_{n} - b_{m} \right| + \left| b_{m} \right| \left| a_{n} - a_{m} \right|  \\
+						&< \left| a_{n} \right| \frac{\epsilon}{2M} + \left| b_{m} \right| \frac{\epsilon}{2M} \text{ by \(\left( a_{k} \right) , \left( b_{k} \right) \in \CS \left( \Q \right) \)}\\
+						&= \frac{\epsilon}{2M}\left( \left| a_{n} \right|  + \left| b_{m} \right|  \right)  \\
+						&\le 2M\frac{\epsilon}{2M} = \epsilon	\text{ by boundedness}
+			.\end{align*}
+			Hence \(\left( a_{k}b_{k} \right) \in \CS \left( \Q \right) \).
+		\item Denote \(\left| b_{n} \right| \ge \epsilon_{B}\) for \(n \ge N_B\). Furthermore, as \(\left( a_{k} \right), \left( b_{k} \right) \in \CS\left( \Q \right)  \) we know for all \(\epsilon > 0\) there are \(N_{a}, N_{b}\in \N\) such that \(\left| a_{n} - a_{m} \right| <\epsilon \) for \(n, m \ge N_{a}\) and \(\left| b_{n} - b_{m} \right|  < \epsilon\) for \(n, m \ge N_{b}\). Let \(\frac{M\epsilon}{2} > 0\) and \(N = \max \{N_{B}, N_{a}, N_{b}\} \). Then, we see for \(n, m \ge N \ge N_{B}\) (hence division will be well defined) we have
+			\begin{align*}
+				\left| \frac{a_{n}}{b_{n}} - \frac{a_{m}}{b_{m}} \right| &= \left| \frac{a_{n}b_{m} - a_{m}b_{n}}{b_{n}b_{m}} \right| \\
+											 &= \left| a_{n}b_{m}- a_{m}b_{n} \right|\frac{1}{\left|b_{m}b_{n}\right|}\\
+											 &= \left| a_{n}b_{m} - a_{n}b_{n} - a_{m}b_{n} + a_{n}b_{n} \right| \frac{1}{\left|b_{n}b_{m}\right|}\\
+											 &\le \left( \left| a_{n} \right| \left| b_{m} - b_{n} \right| + \left| b_{n} \right| \left| a_{n} - a_{m} \right| \right) \frac{1}{\left| b_{n}b_{m} \right| }\\
+											 &< \frac{M\epsilon}{2}\left(\left| a_{n} \right| + \left| b_{n} \right|  \right) \frac{1}{\left| b_{n} \right| \left|b_{m} \right| }\\
+											 &\le \frac{2M^2\epsilon}{2} \cdot \frac{1}{M^2} \text{ by boundedness}\\
+											 &= \epsilon
+			.\end{align*}
+			Hence, \(\left( \frac{a_{k}}{b_{k}} \right) \in \CS \left( \Q \right) \).
+	\end{enumerate}
+\end{solution}
+\newpage
+\begin{problem}[11]
+	Let \(\left( x_{k} \right) \) be a rational sequence such that there is \(M \in \Z\) such that \(\left| x_{n} \right|\le M \) for all \(n\) and \(x_{n+1}\ge x_{n}\) for all \(n\).
+	\begin{enumerate}
+		\item Without resorting to real numbers, show that \(\left( x_{k} \right) \in \CS \left( \Q \right)  \).
+		\item Let \(s = \sup \{x_{n} : n \in \N\} \). Use the Least upper bound property to show \(\left( x_{k} \right) \in \CS \left( \Q \right) \).
+	\end{enumerate}
+\end{problem}
+\begin{solution}
+	\begin{enumerate}
+		\item Suppose \(\left( x_{k} \right) \) has the ascribed properties and \(\left( x_{k} \right) \not\in \CS\left( \Q \right) \). That is, there is a rational \(\epsilon > 0\) such that for all \(N \in \N\), \(\left| x_{n} - x_{m} \right| \ge \epsilon \) for some \(n, m \ge N\). Moreover, there are infinitely many pairs, \(n, m \ge N\) such that \(\left| x_{n} - x_{m} \right| \ge \epsilon\) (else we could set \(N = \max \{n, m\} \)).
+			\\ We will show that this contradicts the boundedness assumption. Note that for any pair \(n, m \in \N\) such that \(\left| x_{n} - x_{m} \right| \ge \epsilon\) we can find a pair \(p, q \ge \max \{n, m\} \) such that \(\left| x_{p} - x_{q} \right| \ge \epsilon \) (setting \(N = \max \{n, m\} \)). Let \(\left( p_{i}, q_{i} \right) \) be a sequence of such pairs with \(p_{i} \ge q_{i}\). That is, \(q_1 \le p_1 \le q_2 \le p_2 \le \ldots \le q_{i} \le p_{i} \le q_{i+1} \le p_{i+1}\le \ldots\). Then, we have \(\left| x_{p_{i}} - x_{q_{i}} \right| \ge \epsilon \) and as \(x_{p_{i}}\ge x_{q_{i}}\) by the increasing hypothesis, we see \(x_{p_{i}} \ge x_{q_{i}} + \epsilon\) for all \(i \in \N\). Furthermore the increasing hypothesis guarantees \(x_{q_{i}} \ge x_{p_{i-1}}\). Now, we induce on \(i\) to show \(x_{p_{i}} \ge  i \epsilon + x_{q_1} \). For the base case we see
+			\begin{align*}
+				x_{p_2} &\ge x_{q_2} + \epsilon\\
+					&\ge x_{p_1} + \epsilon\\
+					&\ge x_{q_1} + 2\epsilon
+			.\end{align*}
+			Now, let us assume \(x_{p_{i-1}} \ge \left( i-1 \right) \epsilon + x_{q_{1}}\). Lastly, we see
+			\begin{align*}
+				x_{p_{i}} &\ge x_{q_{i}} + \epsilon\\
+					  &\ge x_{p_{i-1}} + \epsilon \\
+					  &\ge x_{q_1} + \left( i-1 \right) \epsilon  + \epsilon = x_{q_1} + i\epsilon
+			.\end{align*}
+\\
+Finally, as we know for all positive \(p,q \in \Q\), there is \(m \in \N\) such that \(mp > q\) (the archemedian property on rationals), we see there is \(n \in \N\) such that \(n \epsilon > M\) (the upper bound) and a \(m \in \N\) such that \(m\epsilon > \left| x_{q_1} \right| \), hence \(m\epsilon + x_{q_1} > 0\) (even in the case \(x_{q_1} < 0\)). Then we see,
+\begin{align*}
+	x_{p_{(n + m)}} &\ge\underbrace{ x_{q_1} + m\epsilon}_{> 0} + n \epsilon\\
+		      &>   n \epsilon\\
+		      &> M > 0
+.\end{align*}
+As \(\left| x_{p_{n}} \right| = x_{p_{n}} > M \) this contradicts the boundedness assumption. \(\lightning\). So, we must have that \(\left( x_{k} \right) \in \CS \left( \Q \right) \).
+\item	As \(M\) is an upper bound, we see \(s\le M\) is well defined. Hence, \(\left| x_{n} \right|  \le s \le M\) for all \(n \in N\). Furthermore, we see for any rational \(\epsilon > 0\), we have \(s - \epsilon < x_{j} \le x_{j+1} \le \ldots \le s\) for sufficiently large \(j\) else \(s -\epsilon\) would be an upper bound. Hence, for \(n, m \ge j\), we have \(\left| x_{n} - x_{m} \right| < \left| s - \left( s - \epsilon \right)  \right|  = \epsilon\). Thus, \(\left( x_{k} \right) \in \CS \left( \Q \right) \).
+	\end{enumerate}
+\end{solution}
+\newpage
+\begin{problem}[12]
+	Show that the extension of the total ordering \(\le\) from \(\R\) to \(\C\) does not yield a total ordering on \(\C\).
+\end{problem}
+\begin{solution}
+	Let \(1, i \in \C\) and let \(\left( x_{i} \right) = \left( 1 \right)  \in 1\), \(\left( y_{i} \right) = \left( i \right) \in i\) be (complex) rational cauchy sequences within their respective equivalence classes. Then, \(1 \not\le i + \epsilon\) and \(i \not \le 1 + \epsilon\), for any arbitrary indices \(x_{i} = 1\) and \(y_{i} = i\) or \(\epsilon > 0\). Hence, we can conclude \(\left[ \left( 1 \right)  \right]  \not\le \left[ \left( i \right)  \right] \) and \(\left[ \left( i \right)  \right] \not \le \left[ \left( 1 \right)  \right] \), so \(\le \) is not a total ordering on \(\C\).
+\end{solution}
+\newpage
+\begin{problem}[13]
+Let \(X\) be the collection of all sets \(A\) for which \(A \not\in A\). Prove \(X \in X \iff X \not\in X\).
+\end{problem}
+\begin{solution}
+	Suppose \(X \in X\). Then, \(X \in X\) is a set containing itself, hence \(X \not\in X\) by construction.\\
+	Conversely, suppose \(X \not\in X\). Then, \(X\) is a set for which \(X \not\in X\), so \(X \in X\) by construction.
+\end{solution}
+\end{document}

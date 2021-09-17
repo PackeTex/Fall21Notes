@@ -1,0 +1,100 @@
+\lecture{4}{Thu 02 Sep 2021 13:05}{Construction of the Reals (2) and Intro to Topology}
+\begin{recall}[Archimedian property]
+	For \(x, y \in \R\)	 with \(x>0\), there is \(m \in \N\) such that \(mx > y\).
+\end{recall}
+\begin{corollary}
+	For any two \(x, y \in \R\) with \(x<y\) there is a rational \(q\) such that \(x<q<y\).
+\end{corollary}
+\begin{proof}
+	By Archmedian property there is a \(m \in \N\) such that \(m\left( y-x \right) > 1 \). Additionally, there is \(j \in \N\) such that  \(j > -mx\). Now, let \(\ell\in \N\) be the smallest natural such that \(\ell > mx + j\) (by the fact that rational cauchy sequences are always bounded, such an \(\ell\) must exist and well-ordering guarantees a smallest such \(\ell\)). Then,
+	\begin{align*}
+		my + j &> mx + 1 + j, \text{ by construction of \(m\)}\\
+		       &\ge \ell, \text{ by construction of \(\ell\)}\\
+		       &> mx + j
+	.\end{align*}
+	Hence, \(my > \ell - j > mx\). Now, let \(\left( x_{k} \right)\in x \), \(\left( y_{k} \in y \right) \) be representatives of \(x\) and \(y\) respectively. Then, for every rational \(\epsilon > 0\) there is a \(N \in \N\) such that \(\ell - j \le my_{m} + m\epsilon\) and \(mx_{m}\le l - j + m\epsilon\) for \(m\ge N\). Hence, with \(q = \frac{\ell-j}{m}\) we get \(q \le ym + \epsilon\) and \(x_{m} \le q + \epsilon\). This implies that \(q \le y\) and \(x \le q\).\\
+	Now, suppose \(q= x\) or \(q= y\), then \(mx = \ell - j\) or \(my = \ell - j\), but as \(my > \ell - j > mx\), we see this cannot happen. Hence \(x < q < y\).
+\end{proof}
+\begin{definition}[Inverses]
+	For \(x \in \R\), we call \(y \in \R\) the \textbf{inverse} of \(x\) if \(xy = 1\).
+\end{definition}
+\begin{proposition}
+	Every real \(x\neq 0\)  has a unique inverse.
+\end{proposition}
+\begin{proof}
+	For \(x\neq 0\), let \(\left( x_{k} \right)\in x \) be a representative. We wish to construct a cauchy sequence \(\left( \frac{1}{x_{k}} \right) \) such that multiplication provides the constant \(\left( 1 \right) \) sequence. Of course, some \(x_{k}\) could be \(0\), but we know we can always choose a sufficiently small rational \(0<\epsilon < x\) which allows us to guarantee for \(n < N \in \N\), \(x_{k} \neq 0\).\\
+	By the corollary, we know there is a \(q \in \Q\) such that either \(x<-2q<0\) or \(0<2q<x\). Hence there exists \(N \in \N\) such that \(2q \le \left| x_{n} \right|+ q \) if \(n > N\) (i.e. \(\left| x_{n} \right| \ge q \) for \(q > 0\)). Now, define \(\left( y_{k} \right) \) by setting \(y_{m} = \left \{
+		\begin{array}{11}
+			\frac{1}{x_{n}}, & \quad  n \ge N\\
+			1, & \1uad 1\le n < N
+		\end{array}
+		\right.1)
+		This is1indeed a rational cauchy sequence such that \(\left( x_{k} \right) \left( y_{k} \right) = \left( x_{k}y_{k} \right) = 1   \). Hence \(\left( y_{k} \right) \) is an inverse. Now, we prove uniqueness.\\
+		Let \(\left( z_{k} \right) \in \CS \left( \Q \right) \) such that \(\left[ \left( x_{k} z_{k} \right)  \right]  = 1\). Then, \(\left( x_{k}z_{k} \right) \sim 1 \sim \left( x_{k} y_{k} \right) \). Since \(\left| x_{k} \right| \ge q \) for \(k \ge N\), then we see
+		\begin{align*}
+			\left| y_{m} - z_{m} \right| &= \left| x_{m}y_{m} - x_{m}z_{m} \right| \cdot \frac{1}{\left| x_{m} \right| }\\
+						     &\le \frac{1}{q}\left| x_{m}y_{m} - x_{m}z_{m} \right| \text{ if \(m\ge N\)}
+		.\end{align*}
+		Consequently \(\left[ \left( y_{k} \right)  \right] = \left[ \left( z_{k} \right)  \right] \). So, the inverses are unique.
+\end{proof}
+\begin{notation}
+	For \(x\neq 0\) we denote the inverse of \(x\) to be \(x^{-1}\).
+\end{notation}
+Consequently, \(\R\) is an ordered field. Hence, we may define division:
+\begin{definition}[Division]
+	We define, for \(x, y \in \R\), with \(y\neq 0\), \(\frac{x}{y} = xy^{-1}\).
+\end{definition}
+Now, we have finally finished constructing \(\R\) as we have already known it, but we are missing the motivation for the usefulness of \(\R\), as all of its properties so far are mirrored in \(\Q\). This next property is unique to \(\R\) and it is what makes it of unique interest.
+\begin{definition}[Bounds]
+\begin{enumerate}
+	\item \(M \in \R\) is an \textbf{upper bound} of \(S \subseteq R\) if \(x \le m\) for all \(x \in S\).
+	\item \(m \in \R\) is an \textbf{lower bound} of \(S \subseteq R\) if \(x \ge m\) for all \(x \in S\).
+	\item \(M\^{*} \in \R\) is the \textbf{least upper bound} or \textbf{supremum} of \(S \subseteq R\) if \(M\^{*}\) is an upper bound of \(S\) and \(M^{*} \le M\) for all other upper bounds \(M\).
+	\item \(m\^{*} \in \R\) is the \textbf{greatest lower bound} or \textbf{infimum} of \(S \subseteq R\) if \(M\^{*}\) is a lower bound of \(S\) and \(M^{*} \ge M\) for all other lower bounds \(M\).
+\end{enumerate}
+We generally denote \(\LUB \left( S \right)  = \sup \left( S \right) \) and \(\GLB \left( S \right) = \inf \left( S \right) \) for the supremum and infimum respectively.
+\end{definition}
+\begin{corollary}
+	If \(S\) has no lower bound, we write \(\sup \left( S \right)= \infty \), and if \(S\) has no upper bound, we write \(\inf \left( S \right) = -\infty \). Additionally, \(\sup \left( \O \right) = -\infty \) and \(\inf \left( S \right) = \infty \). Lastly, these bounds are unique.
+\end{corollary}
+\begin{proposition}
+	Let \(S \subseteq \R\). An upper bound \(M^{*}\) is the least upper bound of \(S\) if and only if for every \(\epsilon> 0 \) there is a \(s \in S\) such that \(M^{*} < s + \epsilon\).
+\end{proposition}
+\begin{proof}
+	Suppose \(M^{*}\) is an upper bound such that for every \(\epsilon > 0\) there is a \(s \in S\) such that \(M^{*} > s + \epsilon\). Let \(M\) be any with \(M < M^{*}\) and let \(\epsilon  = M^{*} - M\).Then, there is \(s \in S\) such that \(M^{*} < s + \epsilon = s + M^{*} - M\), in other words \(M < s\). Hence, \(M\) is not an upper bound of \(S\), so \(M^{*} = \sup \left( S \right) \).
+	Conversely, if \(M^{*}\) is the least upper bound, then for every \(\epsilon > 0\), \(M^{*} - \epsilon\)  is not an upper bound of \(S\). Hence, there is \(s \in S\) such that \(M^{*} - \epsilon < s\) and hence \(M^{*} < s + \epsilon\).
+\end{proof}
+Of course, this also holds for lower bounds.
+\begin{theorem}[Least Upper Bound Property]
+	If a nonempty subset of \(\R\) has an upper bound, it has a supremum.
+\end{theorem}
+This is the property which makes \(\R\) of interest, and its proof will provide a generalizable format for proving other statements. We will halve intervals to construct a rational cauchy sequence such that its equivalence class will be the supremum.
+\begin{proof}
+	Let \(S \subseteq R\) be nonempty with an upper bound. As \(\R \) is archimedian, there exist rational numbers \(\ell_1, u_1\) such that \(u_1\) is an upper bound and \(l_1\) is not (For every \( s \in S\) we can find \(\ell_1 < s < u_1\)). Now, construct sequences \(\left( \ell_m \right), \left( u_{m} \right)  \)of rationals such that each \(u_{m}\) is an upper bound and each \(\ell_n\) is not. Having constructed \( \ell_{m}, u_{m}\) we define \(\ell_{m+1}, u_{m+1}\) such that \(u_{m+1} = \frac{\ell_{m} + u_{m}}{2}\) and \(\ell_{m+1}= \ell_{m}\) if this new \(u_{m+1}\) is an upper bound, and if not we set \(u_{m+1} = u_{m}\) and \(\ell_{m+1} = \frac{\ell_{m} + u_{m}}{2}\) as this will guarantee \(\ell_{q} \le s \le u_{q}\) for all \(s \in S\). Additionally, it follows that \[
+	\ell_1 \le \ell_{m} \le \ell_{m+1}\le \ldots \le u_{m+1} \le u_{m} \le u_1
+	.\]
+	Since we have \(u_{m+1} - \ell_{m+1} = \frac{1}{2} \left( u_{m}  - \ell_{m}\right) \), we get for every rational \(\epsilon > 0\) and \(k \ge m\)
+	\begin{align*}
+		\max\left\{\left| \ell_{k} - \ell_{m}|, \left| u_{k} - u_{m} \right|\right\} \right| &\le  u_{m} - \ell_{m} \\
+												     &\le \left| u_{m} - \ell_{m} \right| \\
+												     &\le \frac{2}{2^{m}}\left| u_1  - \ell_1\right| , \text{ if and only if \(m\) is sufficiently large}
+	.\end{align*}
+	This shows that \(\left( \ell_{m} \right), \left( u_{m} \right) \in \CS \left( \Q \right)  \). Let \(\ell = \left[ \left( \ell_{m} \right)  \right] \) and \(u	= \left[ \left( u_{m} \right)  \right] \). Then, by the same inequality, we see \(u = \ell\).\\
+	Next, we will show \(u\) is indeed an upper bound of \(S\). Suppose the contrary, then there is \(s \in S\) such that \(u < s\). Let \(\epsilon = s- u > 0\). By construction of \(\ell\) and \(u\), we have \(\ell_{k} \le \ell = u \le u_{k}\) and \(\left| \ell_{k} - u_{k} \right| \le \frac{2}{2^{k}}\left| \ell_1 - u_1	  \right| \) for every \(k\). Hence, we fine \(K \in \N\) such that \(u_{k} - u \le u_{k} - \ell_{k} < \epsilon\). Thus \(u_{k} < u + \epsilon = u + s - u = u\). \(\lightning\). So, we have that \(u\) is in fact an upper bound.\\
+	Finally, we show it is a least upper bound. Since for every \(\epsilon > 0\) there is \(K \in \N\) such that \(u - \ell_{k} \le u_{k} - \ell_{k} < \epsilon\), we have that \(\ell_{k} \ge u_{k} - \epsilon \ge u - \epsilon\). Since \(\ell_{k}\) is not an upper bound by construction, there is \(s \in S\) such that \(s > \ell_{k} \ge u_{k} - \epsilon\) or \( u < s + \epsilon\). Hence, there can be no upper bound larger than \(u\), so \(u\) is a least upper bound of \(S\).
+\end{proof}
+The same line of reasoning yields a Greatest Lower Bound Property.
+\begin{remark}
+	Any ordered field which has the LUB property yields a bijection between \(\R\) and this field which preserves all structure. This is an important result as, up to structure preserving bijections, \(\R\) is the unique ordered field with the Least Upper Bound Property.
+\end{remark}
+\section{Topology on \(\R\)}
+\begin{definition}[Open/Closed]
+	A set \(S \subseteq \R\) is \textbf{open} if for each \(x \in S\) there is an \(\epsilon > 0\) such that \(\left( x-\epsilon, x + \epsilon \right)  \subseteq S\). A set \(V \subseteq \R\) is \textbf{closed} if \(V^{c} \) is open.
+\end{definition}
+\begin{definition}[]
+	Let \(U, V \subseteq \R\) then,
+	\begin{enumerate}
+		\item \(x \in \R\) is a \textbf{interior point} of \(U\) if there is \(\epsilon > 0\) such that \(\left( x-\epsilon, x + \epsilon \right)  \subseteq U\). The \textbf{interior} of a set \(U \subseteq \R\), denoted \(U^{\circ} = \overset{\circ}{U}\) is the set of all interior points of \(U\).
+		\item \(x \in R\) is a \textbf{closure point} of \(V\) if for every \(\epsilon > 0\), \( V \cap \left( x-\epsilon, x + \epsilon \right) \neq \O\). The \textbf{closure} of \(V\) is denoted \(\overline{V} = \cl \left( V \right) \) is the set of all closure points of \(V\).
+	\end{enumerate}
+\end{definition}

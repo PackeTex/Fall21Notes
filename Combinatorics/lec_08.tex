@@ -1,0 +1,53 @@
+\lecture{8}{Fri 10 Sep 2021 10:19}{Hadamard Matrices}
+\begin{recall}
+	For a complex matrix \(A\), \(A^{*} = \overline{\left( A^{T} \right)}\) is the adjoint and \(A\cdot A^{*}\) is a (square) hermitian matrix (an extension of symmetric real matrices in the complex case). Note, a matrix is hermitian if \(A = A^{*}\). Furthermore, all eigenvalues of \(A \cdot A^{*}\) are nonnegative and these eigenvalues are the squares of the singular values of \(a\) (eigenvalues \(\lambda\) yields singular values \(\sqrt{\lambda} \)). We generally denote these singular values \(\sigma_1 \ge\sigma_2\ge \ldots\ge \sigma_{m}>= \ge 0\)
+\end{recall}
+Let \(A\) be a \(n \times n\) symmetric matrix. Clearly, \(A^{*} = A\), hence \(A A^{*} = A^2\). We know for eigenvalues of \(A\), we have \[
+\lambda_1\ge \lambda_2 \ge \ldots \ge \lambda_{n}
+.\] This yields eigenvalues of \(A^2\), \(\lambda_1^2 \ge \lambda_2^2, \ldots\), hence the singular values \(\sigma = \left| \lambda \right| \). We cannot however say that \(\sigma_{i} = \left| \lambda_{i} \right| \) as the \(\lambda_{i}\) may be negative. \\
+We wish to prove the following theorem
+\begin{proposition}
+	The singular values of a hermitian matrix are also \(\left| \lambda_1 \right|, \left| \lambda_2 \right| , \ldots, \left| \lambda_{n} \right|  \).
+\end{proposition}
+If \(G\) is a graph, with eigenvalues \(\lambda_1 \ge \ldots  \ge \lambda_{n}\) with \(\lambda_1 > 0\). Again, we cannot say \(\sigma_1 = \lambda_1\), for example take hypothetical eigenvalues \(\left( 1, -10 \right) \), hence \(\sigma = 10\).
+\begin{definition}[Spectral Radius]
+	We define the largest absolute eigenvalue of a graph to be the \textbf{spectral radius}.
+\end{definition}
+Further investigation yields a theorem from spectral graph theory which proves \(\lambda_1 = \sigma_1\) after all.
+\begin{example}
+	The spectrum of \(K_{n, n} = \{n, 0, \ldots, 0, -n\}  \). Hence its spectral radius is \(\lambda_1 = n\).
+\end{example}
+\begin{note}{Singular values vs eigenvalues}
+	A \(3 \times 5\) matrix trivially has no eigenvalues, but it will still have singular values.
+\end{note}
+Consider such a \(3 \times 5\) matrix and note that \(A A^{*}\) is a \(3\times 3\) matrix yielding \(3\) singular values which are not necessarily distinct.
+\begin{example}
+	\(J^{*}_{5, 3} = J_{3, 5}\) hence \(J_{5, 3} J_{3, 5} = \begin{bmatrix} 5&5&5\\
+	5&5&5\\
+5&5&5\end{bmatrix} \).
+It is of note that \(J_{3}\) has eigenvalues \(3, 0, 0\), hence our matrix above has eigenvalues \(15, 0, 0\). Hence its singular values are \(\sqrt{15} , 0, 0\)
+\end{example}
+In general the singular values of \(J_{n, m}\) are \(\sigma_1 = \sqrt{nm} \) and \(\sigma_{i} = 0\) for \(2\le i \le n\). However, it is accepted convention to index only up to \(\min \{n, m\} \) as all eigenvalues past this point will be guaranteed \(0\). This is due to the fact that \(A\) and \(A^{*} \) have the same singular values. Additionally, the rank of any matrix  is equal to the number of nonzero singular values of \(a\).\\
+Let \(A\) be a \(n \times m\) matrix. We attempt to produce a formula for the sum of squares of its singular values, \(\sigma_1^2  + \ldots + \sigma_{n}^2\). But, as we know these are just the eigenvalues of \(A A^{*}\), and for a matrix \(B\), \(\lambda_1 + \lambda_2 + \ldots + \lambda_{i} = \tr\left( B \right) \) where \(\lambda_{i}\) is an eigenvalues of \(B\). Hence, \(\sigma_1^2 + \ldots + \sigma_{i}^2 = \tr \left{ A A^{*} \right) \). We see for entries \(a_{i, j} \in A\). Then,  \(\tr\left(A A^{*} \right)  = \sum_{i= 1}^{n} a_{i,k}\overline{a}_{i,k} = \sum_{i= 1}^{n} \left| a_{i,k} \right|^2 \).
+\begin{definition}[Hadamard Matrix]
+A matrix \(H\) is called \textbf{hadamard} if
+\begin{itemize}
+	\item  It is square (\(n\times n\)).
+\item Its entries \(a_{i, j}\) have \(\left| a_{i, j} \right| = 1\) for all \(i, j\).
+	\item \(HH^{*} = nI_{n}\).
+\end{itemize}
+\end{definition}
+\begin{example}
+	\(H = \begin{bmatrix} 1 & 1\\
+	1 & -1\end{bmatrix} \) is hadamard as \(H H^{*} = 2I_{2}\).\\
+		\(H = \begin{bmatrix} 1&1&1&1\\
+		1&-1&1&-1\\
+	1&1&-1&-1\\
+	1&-1&-1&1\end{bmatrix} \) is also hadamard.\\
+			As all real values will take on either \(1\) or \(-1\), so we often denote then \(H = \begin{bmatrix} +&+\\
++&-\end{bmatrix} \).
+\end{example}
+As it turns out, there is an abundance of complex examples, but these are lesser studied. For now, we will mostly consider real hadamard matrices.\\
+Take \(H\) to be a \(n\times n\) matrix with \(\left| h_{i, j} \right| \le 1 \) for all \(1\le i, j \le n\). We ask how large can \(\left|\det \left( H \right) \right|\) be. As it turns out the maximum possible size is \(h^{\frac{h}{2}}\). The proof follows:
+	We know the eigenvalues of \(\left| \det \left( H \right)  \right|  = \lambda_1 \lambda_2 \ldots \lambda_{n} = \sigma_1 \sigma_2 \ldots \sigma_{n}\) and the earlier found follows form there. The maximal case is precisely in the hadamard matrices.\\
+	We can even determine that a \(3\times 3 \) case does not exist. And we wonder is there always a \(4k \times 4k\) hadamard matrix? This question is yet unsolved but has been checked to a high bound manually.
