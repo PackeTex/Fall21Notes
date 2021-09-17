@@ -2,8 +2,8 @@ This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (prel
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/memphisrex/school/masters/semester-1/Analysis/master.tex
-(/home/memphisrex/school/masters/semester-1/Analysis/master.tex
+**/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex
+(/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/share/texmf-dist/tex/latex/base/article
 .cls
@@ -807,8 +807,8 @@ File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 ) (/usr/share/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 
-)) (./master.aux)
-\openout1 = `master.aux'.
+)) (./full.aux)
+\openout1 = `full.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -869,9 +869,9 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
 .
-(/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) (./master.toc)
+(/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) (./full.toc)
 \tf@toc=\write6
-\openout6 = `master.toc'.
+\openout6 = `full.toc'.
 
 (./lec_01.tex
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
@@ -879,206 +879,475 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
 (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (34.15134pt too wide) in paragraph at lines 1--1
+Overfull \hbox (37.1992pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 6.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 13.
+(mdframed)              on input line 12.
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.13 ... \right) $. We denote this by $G$ is $\SRG
+                                                  \left( n, k, \lambda, \mu ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.18 	$2K_3= \SRG
+                 \left( 6, 2, 1, 0 \right)$.\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.19 	$2K_{n} = \SRG
+                    \left( 2n, n-1, n-2, 0 \right) $.\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.20 	$C_5 = \SRG
+                 \left( 5, 2, 0, 1 \right) $.\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.21 	$K_{n, n}= \SRG
+                     \left( 2n, n, 0, n \right) $.\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 18.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 22.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 26.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 37.
-
-Overfull \hbox (10.59523pt too wide) in paragraph at lines 38--40
-\T1/cmr/m/n/10 Now, the \T1/cmr/bx/n/10 dis-tribu-tive laws\T1/cmr/m/n/10 , let
- $\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 ^^R \OML/cmm/m/it/10 X$\T1/cmr/m/n/10 , t
-hen $\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 \ [] \OT1/cmr/m/n/10 = [][] []$
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 41.
+(mdframed)              on input line 31.
 [2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 48.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 54.
+(mdframed)              on input line 35.
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.36 	For a given $\SRG
+                       \left( n, k, \lambda, \mu \right) $, we have \\$k\lef...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--58
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.43 ... graph. Hence, it is unknown whether $\SRG
+                                                  \left( 99, 14, 1, 2 \right...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
+) (./lec_02.tex
+Overfull \hbox (37.09506pt too wide) in paragraph at lines 1--1
+[][] 
  []
 
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2.
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.3 	Let $G$ be $\SRG
+                      \left( n, k, \lambda, mu \right) $. Then, $\overline{G...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.3 ...mu \right) $. Then, $\overline{G}$ is $\SRG
+                                                   \left( n, n-k-1, n-2k+\mu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (83.88835pt too wide) in paragraph at lines 3--4
+[]\T1/cmr/bx/n/10 Proposition 1.3. []\T1/cmr/m/n/10 Let $\OML/cmm/m/it/10 G$ \T
+1/cmr/m/n/10 be $[]$. Then, $[]$ is $[]$ 
+ []
+
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.6 	Let $G$ be $\SRG
+                      \left( n, k, \lambda, \mu \right) $. It is clear $\ove...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./figures/vtxpart.pdf_tex
+<./figures//vtxpart.pdf, id=51, page=1, 682.86612pt x 341.43306pt>
+File: ./figures//vtxpart.pdf Graphic file (type pdf)
+<use ./figures//vtxpart.pdf, page 1>
+Package pdftex.def Info: ./figures//vtxpart.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//vtxpart.pdf, id=52, page=2, 682.86612pt x 341.43306pt>
+File: ./figures//vtxpart.pdf Graphic file (type pdf)
+<use ./figures//vtxpart.pdf, page 2>
+Package pdftex.def Info: ./figures//vtxpart.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+) [3]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 27.
+! Undefined control sequence.
+<recently read> \diam 
+                      
+l.28 	If $G$ is connected and SRG, then $\diam
+                                               \left( G \right) = 2$.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \diam 
+                      
+l.31 ...h (by SRG assumption), we have that $\diam
+                                                   \left( G \right)  \ge 2$,...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \diam 
+                      
+l.31 ...ge 2$, hence we must only show that $\diam
+                                                   \left( G \right) < 3$. WL...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment propostion undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \begin{propostion}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<recently read> \diam 
+                      
+l.34 ...$ is $r$-regular, of order $n$, and $\diam
+                                                   \left( G \right) = 2$ the...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{propostion}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \end{propostion}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[4 <./figures//vtxpart.pdf> <./figures//vtxpart.pdf>]
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.41 ...isely $1$ common neighbor, so $G$ is $\SRG
+                                                   \left( r^2 + 1, r, 0, 1 \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment enumerate* undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...t yet proven, these are:\begin{enumerate*}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.45 		\item $C_5$ ($\SRG
+                         \left( 5, 2, 0, 1 \right) $)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.46 		\item The Peterson Graph ($\SRG
+                                       \left( 10, 3, 0, 1 \right) $ )
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.47 		\item The Hoffman-Singelton Graph ($\SRG
+                                               \left( 50, 7, 0, 1 \right) $ )
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \SRG 
+                     
+l.48 		\item The theorized but yet-unproven $\SRG
+                                                 \left( 3250, 57, 0, 1 \righ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{example} on input line 43 ended by \end{enumerate*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 	\end{enumerate*}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./figures/c5.svg.2021_08_25_13_14_48.0.pdf_tex
+<./figures//c5.svg.2021_08_25_13_14_48.0.pdf, id=63, page=1, 682.86612pt x 341.
+43306pt>
+File: ./figures//c5.svg.2021_08_25_13_14_48.0.pdf Graphic file (type pdf)
+<use ./figures//c5.svg.2021_08_25_13_14_48.0.pdf, page 1>
+Package pdftex.def Info: ./figures//c5.svg.2021_08_25_13_14_48.0.pdf , page1 us
+ed on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+)) (./lec_03.tex [5 <./figures//c5.svg.2021_08_25_13_14_48.0.pdf>]
+Overfull \hbox (30.1245pt too wide) in paragraph at lines 2--2
+[][] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6.
+! Undefined control sequence.
+l.13 	\(\mathscr{L}\left( K_{q} \right) = \SRG
+                                              \left( \binom{q}{2}, 2\left( q...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.14 	\(\mathscr{L}\left( K_{q, q} \right) = \SRG
+                                                 \left(q^2, 2\left( q-1 \rig...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./figures/linekq.pdf_tex
+<./figures//linekq.pdf, id=70, page=1, 682.86612pt x 341.43306pt>
+File: ./figures//linekq.pdf Graphic file (type pdf)
+<use ./figures//linekq.pdf, page 1>
+Package pdftex.def Info: ./figures//linekq.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//linekq.pdf, id=71, page=2, 682.86612pt x 341.43306pt>
+File: ./figures//linekq.pdf Graphic file (type pdf)
+<use ./figures//linekq.pdf, page 2>
+Package pdftex.def Info: ./figures//linekq.pdf , page2 used on input line 60.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+) (./figures/linekq2.pdf_tex
+<./figures//linekq2.pdf, id=72, page=1, 682.86612pt x 341.43306pt>
+File: ./figures//linekq2.pdf Graphic file (type pdf)
+<use ./figures//linekq2.pdf, page 1>
+Package pdftex.def Info: ./figures//linekq2.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//linekq2.pdf, id=73, page=2, 682.86612pt x 341.43306pt>
+File: ./figures//linekq2.pdf Graphic file (type pdf)
+<use ./figures//linekq2.pdf, page 2>
+Package pdftex.def Info: ./figures//linekq2.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//linekq2.pdf, id=74, page=3, 682.86612pt x 341.43306pt>
+File: ./figures//linekq2.pdf Graphic file (type pdf)
+<use ./figures//linekq2.pdf, page 3>
+Package pdftex.def Info: ./figures//linekq2.pdf , page3 used on input line 62.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+)
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 29.
+[6 <./figures//linekq.pdf> <./figures//linekq.pdf>]
+! Undefined control sequence.
+l.34 	\(T\left( 4 \right) = \SRG
+                                \left( 6, 4, 2, 4 \right) \). The fact that ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[7 <./figures//linekq2.pdf> <./figures//linekq2.pdf> <./figures//linekq2.pdf>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 37.
+! Undefined control sequence.
+l.38 ...e \(2\)-graph}. This is known to be \(\SRG
+                                                  \left( q^2, 2\left( q-1 \r...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./figures/linekqq.pdf_tex
+<./figures//linekqq.pdf, id=88, page=1, 682.86612pt x 341.43306pt>
+File: ./figures//linekqq.pdf Graphic file (type pdf)
+<use ./figures//linekqq.pdf, page 1>
+Package pdftex.def Info: ./figures//linekqq.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//linekqq.pdf, id=89, page=2, 682.86612pt x 341.43306pt>
+File: ./figures//linekqq.pdf Graphic file (type pdf)
+<use ./figures//linekqq.pdf, page 2>
+Package pdftex.def Info: ./figures//linekqq.pdf , page2 used on input line 59.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//linekqq.pdf, id=90, page=3, 682.86612pt x 341.43306pt>
+File: ./figures//linekqq.pdf Graphic file (type pdf)
+<use ./figures//linekqq.pdf, page 3>
+Package pdftex.def Info: ./figures//linekqq.pdf , page3 used on input line 62.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+) (./figures/linekqq2.pdf_tex
+<./figures//linekqq2.pdf, id=91, page=1, 682.86612pt x 341.43306pt>
+File: ./figures//linekqq2.pdf Graphic file (type pdf)
+<use ./figures//linekqq2.pdf, page 1>
+Package pdftex.def Info: ./figures//linekqq2.pdf , page1 used on input line 56.
+
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//linekqq2.pdf, id=92, page=2, 682.86612pt x 341.43306pt>
+File: ./figures//linekqq2.pdf Graphic file (type pdf)
+<use ./figures//linekqq2.pdf, page 2>
+Package pdftex.def Info: ./figures//linekqq2.pdf , page2 used on input line 59.
+
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//linekqq2.pdf, id=93, page=3, 682.86612pt x 341.43306pt>
+File: ./figures//linekqq2.pdf Graphic file (type pdf)
+<use ./figures//linekqq2.pdf, page 3>
+Package pdftex.def Info: ./figures//linekqq2.pdf , page3 used on input line 63.
+
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//linekqq2.pdf, id=94, page=4, 682.86612pt x 341.43306pt>
+File: ./figures//linekqq2.pdf Graphic file (type pdf)
+<use ./figures//linekqq2.pdf, page 4>
+Package pdftex.def Info: ./figures//linekqq2.pdf , page4 used on input line 65.
+
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+)
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 62.
-) (./lec_02.tex [3]
-Overfull \hbox (35.58849pt too wide) in paragraph at lines 2--2
+[8 <./figures//linekqq.pdf> <./figures//linekqq.pdf> <./figures//linekqq.pdf> <
+./figures//linekqq2.pdf> <./figures//linekqq2.pdf> <./figures//linekqq2.pdf> <.
+/figures//linekqq2.pdf>]) (./lec_04.tex
+Overfull \hbox (37.1992pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 9.
+(mdframed)              on input line 5.
+
+Overfull \hbox (5.40797pt too wide) in paragraph at lines 6--7
+[]\T1/cmr/bx/n/10 Definition 1.7 \T1/cmr/m/n/10 (Back---Cir-cu-lant Latin Squar
+e)\T1/cmr/bx/n/10 . []\T1/cmr/m/n/10 We de-fine a \T1/cmr/bx/n/10 back-circulan
+t
+ []
+
+! Undefined control sequence.
+l.11 ...uare of order  \(q\) can generate a \(\SRG
+                                                  \left( q^2, 3\left( q-1 \r...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[9]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 18.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 22.
-[4]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 26.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 30.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 36.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 39.
-
-Overfull \hbox (3.19751pt too wide) in paragraph at lines 41--42
-[]\T1/cmr/m/n/10 Reflexive: $\OML/cmm/m/it/10 xRx$ \T1/cmr/m/n/10 for all $\OML
-/cmm/m/it/10 x \OMS/cmsy/m/n/10 2
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 50.
-[5]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 57.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 69.
-) (./lec_03.tex
-Overfull \hbox (34.15134pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3.
 ! Undefined control sequence.
-l.4 ...f all rational cauchy sequences to be \(\CS
-                                                   \left( \Q \right) \).
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (4.94281pt too wide) in paragraph at lines 4--5
-[]\T1/cmr/bx/n/10 Definition 3.1 \T1/cmr/m/n/10 (Ra-tio-nal Cauchy Se-quences)\
-T1/cmr/bx/n/10 . []\T1/cmr/m/n/10 We de-fine a \T1/cmr/bx/n/10 ra-tio-nal cauch
-y
- []
-
-! Undefined control sequence.
-l.6 ..._{k} \right) , \left( b_{k} \right) \in \CS
-                                                  \left( \Q \right) \) impli...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.6 ... , \left( a_{k} \cdot b_{k} \right) \in \CS
-                                                  \left( Q \right)  \).
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.7 ... we define an equivalence relation on \(\CS
-                                                  \left( \Q \right) \) such ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.7 ... \(\left| a_{m} - b_{m} \right| < \epsilons
-                                                  \) if \(m\ge N\).\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--8
-
- []
-
-[6]
-! Undefined control sequence.
-l.11 ...asses, that being the quotient space \(\CS
-                                                   \left( \Q \right) / \sim\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 ...tend the total ordering of \(\Q\) to \(\CS
-                                                  \left( \Q \right) / \sim \...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 ...roduce the relation \(\leqslant\) on \(\CS
-                                                  \left( Q \right) \) such t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 ... Q \right) \) such that for \(x, y \in \CS
-                                                  \left( Q \right) / \sim\),...
+l.19 ... \textbf{conference graph} if it is \(\SRG
+                                                   \left( n, \frac{n-1}{2}, ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1087,22 +1356,10 @@ and I'll forget about whatever was undefined.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 13.
+(mdframed)              on input line 25.
 ! Undefined control sequence.
-l.14 	Suppose \(x, y \in \CS
-                             \left( \Q \right) / \sim\) and there are \(\lef...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 23.
-! Undefined control sequence.
-l.24 ...\(\leqslant\) is a total ordering on \(\CS
-                                                   \left( \Q \right)  / \sim...
+l.26 ...n \in Z\). Consider the finite field \(\GF
+                                                  \left( q \right) \). We sa...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1110,36 +1367,95 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.27 ...lence classes. Now, suppose \(x, y \in \CS
-                                                   \left( \Q \right) / \sim\...
+l.26 ...ph \(G\) is a \textbf{paley graph} if \(\V
+                                                  \left( G \right) = \GF\lef...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-[7]
 ! Undefined control sequence.
-l.30 ...btain a total ordering. Let \(x, y \in \CS
-                                                  \left( \Q \right) / \sim\)...
+l.26 ...paley graph} if \(\V\left( G \right) = \GF
+                                                  \left( q \right) \), the e...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 41.
 ! Undefined control sequence.
-<argument> ... \thm@notefont (Operations on \(\CS 
-                                                  (\Q ) / \sim \))}
-l.41 ...nition}[Operations on \(\CS (\Q) / \sim\)]
+l.26 ...ite field, and two elements \(x, y \in \GF
+                                                  \left( q \right) \) have \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.26 ...y\) if \(x-y = k^2\)  for some \(k \in \GF
+                                                  \left( q \right) \setminus...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.29 	\(\GF
+           \left( 5 \right) \) consists of elements \(0, 1, 2, 3, 4\) and  \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.32 	Take a quadratic nonresidue \(a \in \GF
+                                             \left( q \right) \) and define ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.32 ...rthermore, if \(x-y\) is a square in \(\GF
+                                                  \left( q \right) \), then ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.32 ...his mapping takes the paley graph of \(\GF
+                                                  \left( q \right) \) to its...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./figures/payleycomp.pdf_tex
+<./figures//payleycomp.pdf, id=104, page=1, 682.86612pt x 341.43306pt>
+File: ./figures//payleycomp.pdf Graphic file (type pdf)
+<use ./figures//payleycomp.pdf, page 1>
+Package pdftex.def Info: ./figures//payleycomp.pdf , page1 used on input line 5
+6.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//payleycomp.pdf, id=105, page=2, 682.86612pt x 341.43306pt>
+File: ./figures//payleycomp.pdf Graphic file (type pdf)
+<use ./figures//payleycomp.pdf, page 2>
+Package pdftex.def Info: ./figures//payleycomp.pdf , page2 used on input line 6
+3.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+)
+! Undefined control sequence.
+<argument> ...es We see the payley graph of \(\GF 
+                                                  \left ( 5 \right ) \), \(C...
+l.37 ...apsto 2x\) yields the complement (dotted)}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1148,8 +1464,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.42 	Now, we wish to introduce addition of \(\CS
-                                                 \left( \Q \right) / \sim\).\\
+<argument> We see the payley graph of \(\GF 
+                                            \left ( 5 \right ) \), \(C_5\), ...
+l.37 ...apsto 2x\) yields the complement (dotted)}
+                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1157,8 +1475,28 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.43 	Let \(x, y \in \CS
-                        \left( \Q \right) / \sim\) with \(\left( x_{k} \righ...
+<argument> We see the payley graph of \(\GF 
+                                            \left ( 5 \right ) \), \(C_5\), ...
+l.37 ...apsto 2x\) yields the complement (dotted)}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 ...hen the graph will be approximately \(\SRG
+                                                  \left( n, \sim cn, c^2n, c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.41 ...n}{2}\)-regular and is approximatly \(\SRG
+                                                  \left( n, \frac{n}{2}, \fr...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1169,223 +1507,40 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 46.
 ! Undefined control sequence.
-l.47 ... \textbf{real numbers}, \(\R\) to be \(\CS
-                                                   \left( \Q \right) \) toge...
+l.47 ... \(2\)-dimensional linear space over \(\GF
+                                                  \left( q \right) \) denote...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+! Undefined control sequence.
+l.47 ... simply ordered pairs of elements of \(\GF
+                                                  \left( q \right) \). Then,...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-! LaTeX Error: Environment convention undefined.
+! Undefined control sequence.
+l.47 ...llows us to define a graph \(G\) with \(\V
+                                                  \left( G \right) \) being ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 \begin{convention}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{convention}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 \end{convention}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 52.
-[8]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 59.
-) (./lec_04.tex
-Overfull \hbox (34.03334pt too wide) in paragraph at lines 1--1
+[10]) (./lec_05.tex
+Overfull \hbox (35.53992pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 18.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 21.
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 		\begin{array}{11}
-                        
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 		\begin{array}{11}
-                        
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 ! Undefined control sequence.
-l.29 			1, & \1
-               uad 1\le n < N
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 ...ed a rational cauchy sequence such that \(
-                                                  \left( x_{k} \right) \left...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Undefined control sequence.
-l.33 		Let \(\left( z_{k} \right) \in \CS
-                                          \left( \Q \right) \) such that \(\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (226.60065pt too wide) in paragraph at lines 25--34
-\T1/cmr/m/n/10 for $\OML/cmm/m/it/10 q > \OT1/cmr/m/n/10 0$\T1/cmr/m/n/10 ). No
-w, de-fine $[]$ by set-ting $\OML/cmm/m/it/10 y[] \OT1/cmr/m/n/10 = [] 1)\OML/c
-mm/m/it/10 Thisis\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 indeedarationalcauchysequenc
-esuchthat [] [] \OT1/cmr/m/n/10 =
- []
-
-[9]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 44.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 48.
-
-LaTeX Warning: Command \^ invalid in math mode on input line 52.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.52 	\item \(M\^{*}
-                     \in \R\) is the \textbf{least upper bound} or \textbf{s...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ... \accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.52 	\item \(M\^{*}
-                     \in \R\) is the \textbf{least upper bound} or \textbf{s...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no è in font cmex10!
-
-LaTeX Warning: Command \^ invalid in math mode on input line 52.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.52 ...supremum} of \(S \subseteq R\) if \(M\^{*}
-                                                  \) is an upper bound of \(...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ... \accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.52 ...supremum} of \(S \subseteq R\) if \(M\^{*}
-                                                  \) is an upper bound of \(...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no è in font cmex10!
-
-LaTeX Warning: Command \^ invalid in math mode on input line 53.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.53 	\item \(m\^{*}
-                     \in \R\) is the \textbf{greatest lower bound} or \textb...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ... \accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.53 	\item \(m\^{*}
-                     \in \R\) is the \textbf{greatest lower bound} or \textb...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no è in font cmex10!
-
-LaTeX Warning: Command \^ invalid in math mode on input line 53.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ... \let \ignorespaces \relax \accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.53 ...{infimum} of \(S \subseteq R\) if \(M\^{*}
-                                                  \) is a lower bound of \(S...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! You can't use `\spacefactor' in math mode.
-\add@accent ... \accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.53 ...{infimum} of \(S \subseteq R\) if \(M\^{*}
-                                                  \) is a lower bound of \(S...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-Missing character: There is no è in font cmex10!
-! Undefined control sequence.
-l.55 We generally denote \(\LUB
-                                \left( S \right)  = \sup \left( S \right) \)...
+l.3 ...om this, we may  construct a graph \\\(\SRG
+                                                   \left( q^2, s\left( q-1 \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1393,272 +1548,578 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.55 ...ht)  = \sup \left( S \right) \) and \(\GLB
-                                                   \left( S \right) = \inf \...
+l.6 	Is there a graph which is \(\SRG
+                                      \left( n, \frac{n}{3}, \sim\frac{n}{9}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 57.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 60.
-[10]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 68.
-
-Overfull \hbox (4.77956pt too wide) detected at line 81
-[]
- []
-
-! Undefined control sequence.
-l.82 ..._{m} \right), \left( u_{m} \right) \in \CS
-                                                   \left( \Q \right)  \). Le...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[11]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 91.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 94.
-
-Overfull \hbox (9.78697pt too wide) in paragraph at lines 97--98
-[]$\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \U/msb/m/n/10 R$ \T1/cmr/m/n/10 is a \
-T1/cmr/bx/n/10 in-te-rior point \T1/cmr/m/n/10 of $\OML/cmm/m/it/10 U$ \T1/cmr/
-m/n/10 if there is $\OML/cmm/m/it/10 " > \OT1/cmr/m/n/10 0$ \T1/cmr/m/n/10 such
- that $[] \OMS/cmsy/m/n/10 ^^R
- []
-
-! Undefined control sequence.
-l.98 ...} of \(V\) is denoted \(\overline{V} = \cl
-                                                   \left( V \right) \) is th...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-) (./lec_05.tex
-Overfull \hbox (32.59619pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 14.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 17.
+[11 <./figures//payleycomp.pdf> <./figures//payleycomp.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 26.
-[12]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 47.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 53.
-[13]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 62.
-) (./lec_06.tex
-Overfull \hbox (34.03334pt too wide) in paragraph at lines 1--1
-[][] 
- []
+! Undefined control sequence.
+l.25 ...e that \(\sum_{i= 1}^{n} \lambda_{i} = \tr
+                                                  \left( A \right) \).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2.
+(mdframed)              on input line 31.
+! Undefined control sequence.
+l.32 ..., then the \textbf{adjacency matrix}, \(\A
+                                                   \left( G \right) \) is de...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...ntry \(a_{ij} = \left \{ \begin{array}{11}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ...ntry \(a_{ij} = \left \{ \begin{array}{11}
+                                                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.37 		\)
+         
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+
+Overfull \hbox (9.30122pt too wide) in paragraph at lines 32--38
+[]\T1/cmr/bx/n/10 Definition 2.2 \T1/cmr/m/n/10 (Ad-ja-cency Ma-trix)\T1/cmr/bx
+/n/10 . []\T1/cmr/m/n/10 Let $\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 = []$\T1/cmr/m
+/n/10 , where $\OML/cmm/m/it/10 V \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/
+m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; [] ; n\OMS/cmsy/
+m/n/10 g$
+ []
+
+) (./lec_06.tex
+Overfull \hbox (28.56935pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+[12]
+! Undefined control sequence.
+l.6 ...raph complement \(\overline{G}\) has \(\Adj
+                                                   \left( \overline{G} \righ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 	\begin{array}{11}
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 	\begin{array}{11}
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.14 Hence, we see \(\Adj
+                          \left( \overline{G} \right)  = J_{n}  - I_{n} - \A...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.14 ...erline{G} \right)  = J_{n}  - I_{n} - \Adj
+                                                   \left( G \right) \) where...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> 2\edg 
+                 \left ( G \right ) 
+l.20 ...g\left( G \right) }{\vtx\left( G \right) }
+                                                  \) and \(\lambda_1 \le \De...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \vtx 
+                \left ( G \right ) 
+l.20 ...g\left( G \right) }{\vtx\left( G \right) }
+                                                  \) and \(\lambda_1 \le \De...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 21.
+[13]
+! Undefined control sequence.
+l.36 This implies all eigenvalues of a \(\SRG
+                                              \left( n, k, \lambda, \mu \rig...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (./lec_07.tex
+Overfull \hbox (35.53992pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+! Undefined control sequence.
+l.3 ...only \(3\) distinct values. Let \( G = \SRG
+                                                  \left( n, k, \lambda, \mu ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [14]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 15.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 18.
+(mdframed)              on input line 5.
+(./figures/payley.pdf_tex
+<./figures//payley.pdf, id=125, page=1, 682.86612pt x 341.43306pt>
+File: ./figures//payley.pdf Graphic file (type pdf)
+<use ./figures//payley.pdf, page 1>
+Package pdftex.def Info: ./figures//payley.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+)
+! Undefined control sequence.
+l.27 	\(T\left( q \right)  = \SRG
+                                  \left( \binom{q}{2}, 2\left( q-1 \right), ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (4.94pt too wide) in paragraph at lines 28--29
-[]\T1/cmr/m/n/10 For a se-quence $[]$ and a point $\OML/cmm/m/it/10 x \OMS/cmsy
-/m/n/10 2 \U/msb/m/n/10 R$\T1/cmr/m/n/10 , $\OML/cmm/m/it/10 x$ \T1/cmr/m/n/10 
-is an \T1/cmr/bx/n/10 ac-cu-mu-la-tion/cluster
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
  []
 
+(./figures/eigen.pdf_tex
+<./figures//eigen.pdf, id=126, page=1, 682.86612pt x 341.43306pt>
+File: ./figures//eigen.pdf Graphic file (type pdf)
+<use ./figures//eigen.pdf, page 1>
+Package pdftex.def Info: ./figures//eigen.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+)
+! Undefined control sequence.
+l.44 	\(L_2 \left( q \right)  = \SEG
+                                    \left( q^2, 2\left( q-1 \right) , q-2, 2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[15 <./figures//payley.pdf>]
+! Undefined control sequence.
+l.54 	\(L_3 \left( q \right)  = \SRG
+                                     \left( q^2, 3\left( q-1 \right) , q, 6 ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.64 	A graph \(G\) is conference if it is \( \SRG
+                                                   \left( n, \frac{n-1}{2}, ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(./figures/coneig.pdf_tex
+<./figures//coneig.pdf, id=133, page=1, 682.86612pt x 341.43306pt>
+File: ./figures//coneig.pdf Graphic file (type pdf)
+<use ./figures//coneig.pdf, page 1>
+Package pdftex.def Info: ./figures//coneig.pdf , page1 used on input line 56.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+<./figures//coneig.pdf, id=134, page=2, 682.86612pt x 341.43306pt>
+File: ./figures//coneig.pdf Graphic file (type pdf)
+<use ./figures//coneig.pdf, page 2>
+Package pdftex.def Info: ./figures//coneig.pdf , page2 used on input line 61.
+(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
+)
+! Undefined control sequence.
+l.80 ... one with parameters approximately \( \SRG
+                                                   \left( n, \sim \frac{n}{2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[16 <./figures//eigen.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 36.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 39.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 42.
-[15]
-Overfull \hbox (9.08652pt too wide) in paragraph at lines 52--56
-\T1/cmr/m/n/10 find a fi-nite in-ter-sec-tion. Then, by the fi-nite in-ter-sec-
-tion prop-erty, $[][] [] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 =
+(mdframed)              on input line 82.
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
+
  []
 
+[17 <./figures//coneig.pdf> <./figures//coneig.pdf>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 57.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 64.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 67.
-[16]) (./lec_07.tex
-Overfull \hbox (32.59619pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 9.
-
-Overfull \hbox (6.61328pt too wide) in paragraph at lines 10--11
-\T1/cmr/m/n/10 ex-ists if and only if $[]$ has an ac-cu-mu-la-tion point and if
- so, $[][] []$
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 22.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 27.
-[17]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 33.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 40.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 50.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 53.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 59.
-[18]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 63.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 67.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 72.
+(mdframed)              on input line 103.
 ) (./lec_08.tex
-Overfull \hbox (34.03334pt too wide) in paragraph at lines 1--1
+Overfull \hbox (28.56935pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
 (mdframed)              on input line 9.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 12.
+(mdframed)              on input line 13.
+[18]
+! Undefined control sequence.
+l.31 ...1 + \lambda_2 + \ldots + \lambda_{i} = \tr
+                                                  \left( B \right) \) where ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31 ...\(\sigma_1^2 + \ldots + \sigma_{i}^2 = \tr
+                                                   \left{ A A^{*} \right) \)...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing delimiter (. inserted).
+<to be read again> 
+                   {
+l.31 ...a_1^2 + \ldots + \sigma_{i}^2 = \tr \left{
+                                                   A A^{*} \right) \). We se...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.31 ...+ \sigma_{i}^2 = \tr \left{ A A^{*} \right
+                                                  ) \). We see for entries \...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Undefined control sequence.
+l.31 ...r entries \(a_{i, j} \in A\). Then,  \(\tr
+                                                  \left(A A^{*} \right)  = \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 32.
+) (./lec_09.tex
+Overfull \hbox (35.64406pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
 [19]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
+(mdframed)              on input line 7.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 15.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--25
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
 (mdframed)              on input line 25.
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 31.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 34.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 37.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 40.
+! Undefined control sequence.
+l.43 ...imes t\) block of \(0\) or \(1\) in \(\adj
+                                                   \left( G^{\left( t \right...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+l.45 ...t) } \right) = t^3 K_{3}\left( G \right) }
+                                                    \), Many other graph par...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) (./lec_10.tex
+Overfull \hbox (35.53992pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 24.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 32.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 45.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 49.
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+(mdframed)              on input line 39.
 
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+[22]
+Overfull \hbox (8.90863pt too wide) in paragraph at lines 51--55
+[]\T1/cmr/bx/n/10 Remark. []\T1/cmr/m/n/10 A reg-u-lar ma-trix need not be sym-
+met-ric. For ex-am-ple $[]$
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 63.
+(mdframed)              on input line 57.
+! Undefined control sequence.
+l.62 ..._{i= 1}^{n} \lambda_{i} = n\sqrt{n}  = \tr
+                                                   \left( H \right) \), but ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 83.
-[21]
+(mdframed)              on input line 64.
+) (./lec_11.tex
+Overfull \hbox (28.56935pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+[23]
+! Misplaced alignment tab character &.
+l.9 	nI j &
+           =  dH^{*}j \text{ by hadamardness}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 96.
-) [22] (./master.aux) ) 
+(mdframed)              on input line 15.
+! Double superscript.
+l.21 ...g this again yields a matrix \(A^{\prime}^
+                                                  {\prime}\) with eigenvalue...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+l.21 ...\lambda_1^{\prime} \ge \lambda_1^{\prime}^
+                                                  {\prime}\) and \(\lambda_{...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+
+Overfull \hbox (0.4552pt too wide) in paragraph at lines 19--23
+\T1/cmr/m/n/10 Returning to our orig-i-nal con-struc-tion yields $\OML/cmm/m/it
+/10 ^^U[] [] \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 ^^U[] [] \OMS/cmsy/m/n/10 ^^
+U \OML/cmm/m/it/10 ^^U[] [] \OMS/cmsy/m/n/10 ^^U
+ []
+
+[24]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 27.
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 		\begin{array}{11}
+                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 		\begin{array}{11}
+                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.40 		\right\)
+               .
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+) (./lec_12.tex
+Overfull \hbox (28.56935pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+) [25] (./full.aux) ) 
 Here is how much of TeX's memory you used:
- 21528 strings out of 478994
- 420769 string characters out of 5864752
- 722303 words of memory out of 5000000
- 38489 multiletter control sequences out of 15000+600000
- 430587 words of font info for 108 fonts, out of 8000000 for 9000
+ 21685 strings out of 478994
+ 425085 string characters out of 5864752
+ 720387 words of memory out of 5000000
+ 38599 multiletter control sequences out of 15000+600000
+ 427753 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,14n,105p,1661b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super
--t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb></us
-r/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-supe
-r/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-</usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/tex
-mf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-
-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.
-pfb>
-Output written on master.pdf (22 pages, 372993 bytes).
+ 107i,17n,105p,1409b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
+1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm
+10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/
+type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm
+-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700
+.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss
+1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/
+share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on full.pdf (25 pages, 360340 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 245 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
