@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1631915980 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1631915981
+["pdflatex"] 1631925389 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1631925748
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1631915921 462 4eacd2964195c00509cf4b37d56ae60f ""
+  "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1631925342 440 e6647773940108b3d6014bfc213b01ae ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -263,9 +263,9 @@
   "figures/payley.pdf_tex" 1631115245 2059 0b91c99b5fd99e4774f413b6c22f554f ""
   "figures/payleycomp.pdf_tex" 1630339611 2948 45814b4925974531e34d9a1484a3d05e ""
   "figures/vtxpart.pdf_tex" 1630007510 2803 48b61298a71ce9ea94733a5e4fb9d77f ""
-  "full.aux" 1631915981 2998 c12b49fcbd1fafd8c13af93c6eb17dc0 "pdflatex"
-  "full.tex" 1631915921 462 4eacd2964195c00509cf4b37d56ae60f ""
-  "full.toc" 1631915981 213 c6d6b28c6056b6d47d0c941c16a91b0b "pdflatex"
+  "full.aux" 1631925390 2998 c12b49fcbd1fafd8c13af93c6eb17dc0 "pdflatex"
+  "full.tex" 1631925342 440 e6647773940108b3d6014bfc213b01ae ""
+  "full.toc" 1631925390 213 c6d6b28c6056b6d47d0c941c16a91b0b "pdflatex"
   "lec_01.tex" 1630074911 4786 253c868570e2277982ae23ed9d3004d9 ""
   "lec_02.tex" 1630083598 5538 9581b86871bbd1d4dd77805f14d5246f ""
   "lec_03.tex" 1630348573 5027 6bdc26c53c96ced1b834208657298f55 ""
@@ -276,10 +276,9 @@
   "lec_08.tex" 1631550300 5123 13722076a849de191bf066631fec24fd ""
   "lec_09.tex" 1631550310 5442 b39d5cc19b9fd34abe9c9418cfc3598e ""
   "lec_10.tex" 1631722607 5312 5c0b8a7732e3648e2edb44baa2b3abe1 ""
-  "lec_11.tex" 1631907373 5770 8189fbdf24e98ad53a0293989956223c ""
-  "lec_12.tex" 1631915921 38 454e61c7aeca848b2d468bde78e7ce5b ""
+  "lec_11.tex" 1631925747 5802 3d2db17a8d99fa7dbf85da63018ea705 ""
   (generated)
   "full.pdf"
-  "full.log"
   "full.toc"
+  "full.log"
   "full.aux"
