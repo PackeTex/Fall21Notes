@@ -1,0 +1,56 @@
+\lecture{12}{Mon 20 Sep 2021 10:21}{Conference Matrices}
+\begin{recall}
+	A Conference matrix is	a matrix \(C\) with
+	\begin{enumerate}
+		\item C is \(n \times n\)
+			\item \(c_{i, i} = 0\) for all \(1\le i \le n\)
+				\item \(c_{i, j} = \pm 1\) for \(i \neq j\)
+				\item \(C C^{T} = \left( n-1 \right) I\).
+	\end{enumerate}
+\end{recall}
+Just as with hadamard graphs, this implies the inner product of each pair of rows \(r_{i}, r_{j}\) with \(i\neq j\) is \(\left<r_{i}, r_{j} \right> = 0 \), hence the rows are orthogonal. This clearly also implies the columns are orthogonal. Furthermore, \(n \equiv 0 \left( \mod 2 \right) \) by the same argument as hadamard matrices.\\
+Just as with hadamard matrices, we look to determine which \(n\) have associated hadamard matrices.
+\begin{example}
+	\(\begin{bmatrix} 0&+\\
+	+&0\end{bmatrix} \) is conference.\\
+		\(\begin{bmatrix} 0&+&+&+&+&+\\
+		+&0&+&- &- &+ \\
+	+&+&0&+&-&-\\
+	+&-&+&0&+&-\\
+	+&-&-&+&0&+\\
+	+&+&-&-&+&0
+\end{bmatrix}\) is also conference.\\
+Note that this matrix is simply the Seidel matrix of \(\overline{C}_5\), that being the matrix \(S\left( G \right)  \) with \(s_{i, j} = \left \{
+	\begin{array}{11}
+		-1, & \quad i \sim j  \\
+		1, & \quad i \not \sim j \text{ and } i \neq j\\
+		0, & \quad i = j
+	\end{array}
+	\right\) for  a matrix \(G\),  with an additional row and column of \(1\)s along the top and left. This derives from the fact that \(C_5\) is a conference graph.
+\end{example}
+Similarly to hadamard, we can simultaneously transpose rows and columns of a conference matrix to obtain another conference matrix. Furthermore, we can negate any row or column while remaining hadamard. Hence,
+\begin{definition}[Normal Conference Matrix]
+A conference matrix is called a \textbf{normal conference matrix} if it has \(r_1 = \hat{j}_{n} =
+\begin{pmatrix}
+	0 & 1 & \ldots & 1
+\end{pmatrix}\)	and \(c_{i} = \hat{j}_{n} = \begin{pmatrix} 0\\ 1 \\ \vdots\\ 1 \end{pmatrix}\).\\
+We define the matrix \(C^{\prime} = S\) to be the remaining matrix when the first row and column are removed. This submatrix completely characterizes the normal conference matrix.
+\end{definition}
+It is of note that the negation property makes every conference matrix normalizable.
+\begin{proposition}
+		If \(n \equiv \left( 2 \mod 4 \right) \), then \(S\) is symmetric. If \(n \equiv 0 \left( \mod 4 \right) \), then \(S\) is antisymmetric or skew symmetric (\(A = - A^{T}\)).
+\end{proposition}
+\begin{remark}
+	If \(A\) is antisymmetric, then \(iA\) is hermitian.
+\end{remark}
+\begin{proposition}
+If \(C\) is a conference matrix with \(n \equiv 2 \left( \mod 4 \right) \), then \(S\) is the seidel matrix of a conference graph.
+\end{proposition}
+\begin{remark}
+	All \(2 \left( \mod 4 \right) \) numbers up to \(n = 22\) have been shown to have conference matrices of that order. For the case \(n= 22\), we have a proof by Seidel vam Lint, that if \(n\) is the order of a conference matrix, then \(n-1\) is the sum of two squares. As \(21\) is not the sum of \(2\) perfect squares, there is no conference matrix of order \(22\). Similarly for \(34\) and \(66\). Note that all primes \(p \equiv 1\left( \mod  4 \right) \) are the sums of two squares, so we need only check the composite cases.
+\end{remark}
+Now, we introduce the Payley construction of conference matrices.\\
+Let \(q \equiv 3 \left( \mod 4 \right) \) be a prime power. Then, there is a skew-symmetric conference matrix of order \(q + 1\) and a hadamard matrix of order \(q + 1\).\\
+\begin{proposition}
+	Let \(q = 1 \left( \mod 4 \right) \), then there exists a symmetric conference matrix of order \(q+1\) and a symmetric hadamard matrix of order \(2\left( q+1 \right) \). We will introduce the construction of the hadmard matrix next lecture.
+\end{proposition}
