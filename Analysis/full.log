@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  17 SEP 2021 16:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  21 SEP 2021 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -807,23 +807,23 @@ File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 ) (/usr/share/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
 
-)) (./full.aux)
+)) (./ops.tex) (./full.aux)
 \openout1 = `full.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count339
@@ -854,20 +854,20 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 6.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
 .
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) (./full.toc)
 \tf@toc=\write6
@@ -991,48 +991,12 @@ Overfull \hbox (34.15134pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3.
-! Undefined control sequence.
-l.4 ...f all rational cauchy sequences to be \(\CS
-                                                   \left( \Q \right) \).
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 Overfull \hbox (4.94281pt too wide) in paragraph at lines 4--5
 []\T1/cmr/bx/n/10 Definition 3.1 \T1/cmr/m/n/10 (Ra-tio-nal Cauchy Se-quences)\
 T1/cmr/bx/n/10 . []\T1/cmr/m/n/10 We de-fine a \T1/cmr/bx/n/10 ra-tio-nal cauch
 y
  []
-
-! Undefined control sequence.
-l.6 ..._{k} \right) , \left( b_{k} \right) \in \CS
-                                                  \left( \Q \right) \) impli...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.6 ... , \left( a_{k} \cdot b_{k} \right) \in \CS
-                                                  \left( Q \right)  \).
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.7 ... we define an equivalence relation on \(\CS
-                                                  \left( \Q \right) \) such ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
 l.7 ... \(\left| a_{m} - b_{m} \right| < \epsilons
@@ -1049,134 +1013,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
  []
 
 [6]
-! Undefined control sequence.
-l.11 ...asses, that being the quotient space \(\CS
-                                                   \left( \Q \right) / \sim\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 ...tend the total ordering of \(\Q\) to \(\CS
-                                                  \left( \Q \right) / \sim \...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 ...roduce the relation \(\leqslant\) on \(\CS
-                                                  \left( Q \right) \) such t...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.12 ... Q \right) \) such that for \(x, y \in \CS
-                                                  \left( Q \right) / \sim\),...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Overfull \hbox (9.20277pt too wide) in paragraph at lines 11--13
+[]\T1/cmr/m/n/10 Now, we ex-am-ine the equiv-a-lence classes, that be-ing the q
+uo-tient space $[] [] \OML/cmm/m/it/10 = \OMS/cmsy/m/n/10 ^^X$\T1/cmr/m/n/10 ,
+ []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 13.
-! Undefined control sequence.
-l.14 	Suppose \(x, y \in \CS
-                             \left( \Q \right) / \sim\) and there are \(\lef...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
-! Undefined control sequence.
-l.24 ...\(\leqslant\) is a total ordering on \(\CS
-                                                   \left( \Q \right)  / \sim...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.27 ...lence classes. Now, suppose \(x, y \in \CS
-                                                   \left( \Q \right) / \sim\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
 [7]
-! Undefined control sequence.
-l.30 ...btain a total ordering. Let \(x, y \in \CS
-                                                  \left( \Q \right) / \sim\)...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 41.
-! Undefined control sequence.
-<argument> ... \thm@notefont (Operations on \(\CS 
-                                                  (\Q ) / \sim \))}
-l.41 ...nition}[Operations on \(\CS (\Q) / \sim\)]
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.42 	Now, we wish to introduce addition of \(\CS
-                                                 \left( \Q \right) / \sim\).\\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.43 	Let \(x, y \in \CS
-                        \left( \Q \right) / \sim\) with \(\left( x_{k} \righ...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 46.
-! Undefined control sequence.
-l.47 ... \textbf{real numbers}, \(\R\) to be \(\CS
-                                                   \left( \Q \right) \) toge...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 
 ! LaTeX Error: Environment convention undefined.
 
@@ -1270,15 +1129,6 @@ l.32 ...ed a rational cauchy sequence such that \(
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
-
-! Undefined control sequence.
-l.33 		Let \(\left( z_{k} \right) \in \CS
-                                          \left( \Q \right) \) such that \(\...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (226.60065pt too wide) in paragraph at lines 25--34
@@ -1383,24 +1233,6 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 Missing character: There is no è in font cmex10!
-! Undefined control sequence.
-l.55 We generally denote \(\LUB
-                                \left( S \right)  = \sup \left( S \right) \)...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.55 ...ht)  = \sup \left( S \right) \) and \(\GLB
-                                                   \left( S \right) = \inf \...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 57.
@@ -1416,15 +1248,6 @@ Overfull \hbox (4.77956pt too wide) detected at line 81
 []
  []
 
-! Undefined control sequence.
-l.82 ..._{m} \right), \left( u_{m} \right) \in \CS
-                                                   \left( \Q \right)  \). Le...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 [11]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1439,15 +1262,6 @@ T1/cmr/bx/n/10 in-te-rior point \T1/cmr/m/n/10 of $\OML/cmm/m/it/10 U$ \T1/cmr/
 m/n/10 if there is $\OML/cmm/m/it/10 " > \OT1/cmr/m/n/10 0$ \T1/cmr/m/n/10 such
  that $[] \OMS/cmsy/m/n/10 ^^R
  []
-
-! Undefined control sequence.
-l.98 ...} of \(V\) is denoted \(\overline{V} = \cl
-                                                   \left( V \right) \) is th...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 ) (./lec_05.tex
 Overfull \hbox (32.59619pt too wide) in paragraph at lines 1--1
@@ -1624,10 +1438,10 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 96.
 ) [22] (./full.aux) ) 
 Here is how much of TeX's memory you used:
- 21528 strings out of 478994
- 420743 string characters out of 5864752
- 722299 words of memory out of 5000000
- 38489 multiletter control sequences out of 15000+600000
+ 21539 strings out of 478994
+ 420791 string characters out of 5864752
+ 722369 words of memory out of 5000000
+ 38497 multiletter control sequences out of 15000+600000
  430587 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,14n,105p,1659b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1655,7 +1469,7 @@ usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf
 e1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
 per/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pf
 b>
-Output written on full.pdf (22 pages, 372993 bytes).
+Output written on full.pdf (22 pages, 374230 bytes).
 PDF statistics:
  211 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams

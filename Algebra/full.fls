@@ -1040,6 +1040,10 @@ INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
 INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
 INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT ./ops.tex
+INPUT ops.tex
+INPUT ./ops.tex
+INPUT ops.tex
 INPUT ./full.aux
 INPUT full.aux
 INPUT full.aux
