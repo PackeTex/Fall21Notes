@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  20 SEP 2021 11:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  21 SEP 2021 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1940,7 +1940,128 @@ Overfull \hbox (35.64406pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-[23]) [24]
+[23]
+! Undefined control sequence.
+l.6 ...\) or \(N\trianglelefteq G\) (with \(Q \leN
+                                                  _{G}\left( P \right)  = G\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9 ...y some automorphism \(\alpha : C_2 \to \aut
+                                                   \left( C_{15} \right) \)....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.11 \]  we see \(\ord
+                       \left( \alpha \left( t \right)  \right)  \mid 2\).\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument>  \aut 
+                 \left ( C_{15} \right ) &= \aut \left ( C_3 \times C_5 \rig...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument>  \aut \left ( C_{15} \right ) &= \aut 
+                                                 \left ( C_3 \times C_5 \rig...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...times C_5 \right ) \\ & \simeq \aut 
+                                                  \left ( C_3 \right ) \time...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ut \left ( C_3 \right ) \times \aut 
+                                                  \left ( C_5 \right ) \\ &=...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument>  \aut 
+                 \left ( C_{15} \right ) &= \aut \left ( C_3 \times C_5 \rig...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument>  \aut \left ( C_{15} \right ) &= \aut 
+                                                 \left ( C_3 \times C_5 \rig...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...times C_5 \right ) \\ & \simeq \aut 
+                                                  \left ( C_3 \right ) \time...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ut \left ( C_3 \right ) \times \aut 
+                                                  \left ( C_5 \right ) \\ &=...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
+
+ []
+
+[24]) [25]
 
 ! LaTeX Error: \begin{proof} on input line 51 ended by \end{document}.
 
@@ -1989,10 +2110,10 @@ fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/
 texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/font
 s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/
 stmaryrd/stmary10.pfb>
-Output written on full.pdf (24 pages, 358106 bytes).
+Output written on full.pdf (25 pages, 363414 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
+ 213 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

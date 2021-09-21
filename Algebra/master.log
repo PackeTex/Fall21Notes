@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  20 SEP 2021 11:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  20 SEP 2021 12:25
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/memphisrex/school/masters/semester-1/Algebra/master.tex
-(/home/memphisrex/school/masters/semester-1/Algebra/master.tex
+**master.tex
+(./master.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (/usr/share/texmf-dist/tex/latex/base/article
-.cls
+L3 programming layer <2021-02-18> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
@@ -35,18 +35,18 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 ) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
-(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ) (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
-(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen139
@@ -87,9 +87,9 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitdp@description=\count193
 ) (/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
-(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ) (/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
@@ -97,13 +97,12 @@ Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count194
 )) (/usr/share/texmf-dist/tex/latex/emptypage/emptypage.sty
-Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
-pages
+Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty pages
 ) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+ (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
-(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+ (/usr/share/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \captionmargin=\dimen155
 \captionmargin@=\dimen156
@@ -191,7 +190,7 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \mc@col@check@num=\count274
 ) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -207,10 +206,11 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip52
+
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
 \ex@=\dimen171
@@ -266,7 +266,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ) (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
-(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+ (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count287
 \calc@Bcount=\count288
@@ -328,27 +328,23 @@ LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
 ) (/usr/share/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texmf
--dist/tex/latex/l3kernel/expl3.sty
+ (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-02-18 L3 programming layer (loader) 
-(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count291
 \l__pdf_internal_box=\box99
-)) (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (/u
-sr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))) (/usr/sha
-re/texmf-dist/tex/latex/zref/zref-abspage.sty
+)) (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))) (/usr/share/texmf-dist/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
-(/usr/share/texmf-dist/tex/latex/zref/zref-base.sty
+ (/usr/share/texmf-dist/tex/latex/zref/zref-base.sty
 Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
-(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ) (/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -363,8 +359,7 @@ Package zref Info: New property list: main on input line 764.
 Package zref Info: New property: default on input line 765.
 Package zref Info: New property: page on input line 766.
 ) (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
 with kernel methods
 )
 \c@abspage=\count292
@@ -413,7 +408,7 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 \mdf@subsubtitlebelowskip@length=\skip99
 \mdf@subsubtitleinneraboveskip@length=\skip100
 \mdf@subsubtitleinnerbelowskip@length=\skip101
-(/usr/share/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+ (/usr/share/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
 \mdf@frametitlebox=\box100
@@ -471,15 +466,14 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 \c@conclusion=\count307
 \c@bonus=\count308
 \c@presumption=\count309
-(/usr/share/texmf-dist/tex/latex/xifthen/xifthen.sty
+ (/usr/share/texmf-dist/tex/latex/xifthen/xifthen.sty
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+ (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 )) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
-rs
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip129
 \f@nch@O@elh=\skip130
 \f@nch@O@erh=\skip131
@@ -491,56 +485,44 @@ rs
 \f@nch@O@orf=\skip137
 )
 
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 166.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 166.
 
 
-Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 167.
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 167.
 
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 169.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 169.
 
 
-Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
-less on input line 170.
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is useless on input line 170.
 
 (/usr/share/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2020/08/18 v1.1.3 Todonotes source and documentation.
 Package: todonotes 2018/11/22
-(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+ (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/t
-ex/generic/xkeyval/xkvutils.tex
+ (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks32
 \XKV@tempa@toks=\toks33
 )
 \XKV@depth=\count310
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texm
-f-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/ut
-ilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-com
-mon.tex
+)) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks34
 \pgfutil@tempdima=\dimen190
 \pgfutil@tempdimb=\dimen191
-(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/u
-sr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box105
-) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/
-texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
 ))
 Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
-(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-d
-ist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf
-/systemlayer/pgfsys.code.tex
+ (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
-(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks35
 \pgfkeys@temptoks=\toks36
-(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+ (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks37
 ))
 \pgf@x=\dimen192
@@ -563,13 +545,13 @@ Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 \t@pgf@tokb=\toks39
 \t@pgf@tokc=\toks40
 \pgf@sys@id@count=\count315
-(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
 )
 Driver file for pgf: pgfsys-pdftex.def
-(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
-(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -579,30 +561,17 @@ File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
-(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-
-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/gener
-ic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/p
-gfmathparser.code.tex
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen258
 \pgfmath@count=\count318
 \pgfmath@box=\box106
 \pgfmath@toks=\toks41
 \pgfmath@stack@operand=\toks42
 \pgfmath@stack@operation=\toks43
-) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/s
-hare/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
-(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
-.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.
-tex)
-(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
-x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) 
-(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/
-usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
-(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
-.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count319
-)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/tex
-mf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@picminx=\dimen259
 \pgf@picmaxx=\dimen260
@@ -618,8 +587,7 @@ File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@yy=\dimen270
 \pgf@zx=\dimen271
 \pgf@zy=\dimen272
-)
-(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@path@lastx=\dimen273
 \pgf@path@lasty=\dimen274
@@ -633,13 +601,10 @@ File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@hbox=\box108
 \pgf@layerbox@main=\box109
 \pgf@picture@serial@count=\count320
-) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.te
-x
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgflinewidth=\dimen277
-)
-(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
-ex
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@pt@x=\dimen278
 \pgf@pt@y=\dimen279
@@ -648,9 +613,7 @@ File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
-x
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -662,13 +625,12 @@ File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@shadingcount=\count322
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+ (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfexternal@startupbox=\box110
 )) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.te
-x
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -677,7 +639,8 @@ File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfnodeparttextbox=\box111
-) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
@@ -685,22 +648,16 @@ Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@nodesepend=\dimen284
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
-)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-
-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf
-/utilities/pgfkeys.code.tex)) (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath
-.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share
-/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
-(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen285
 \pgffor@skip=\dimen286
 \pgffor@stack=\toks44
 \pgffor@toks=\toks45
 )) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
-
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
-x
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@plot@mark@count=\count323
 \pgfplotmarksize=\dimen287
@@ -721,43 +678,35 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikznumberofchildren=\count325
 \tikznumberofcurrentchild=\count326
 \tikz@fig@count=\count327
-(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfmatrixcurrentrow=\count328
 \pgfmatrixcurrentcolumn=\count329
 \pgf@matrix@numberofcolumns=\count330
 )
 \tikz@expandcount=\count331
-
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-topaths.code.tex
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)))
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-positioning.code.tex
+))) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-shadows.code.tex
+) (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-
-(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
-fadings.code.tex
+ (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryfadings.code.tex
 File: tikzlibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
+ (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
 \c@@todonotes@numberoftodonotes=\count332
 ) (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2020/10/09 version 4.42 text color boxes
-(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+ (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks46
 \verbatim@line=\toks47
 \verbatim@in@stream=\read3
 ) (/usr/share/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
-(/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+ (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 \tcb@titlebox=\box116
@@ -786,7 +735,7 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 Package: import 2020/04/01  v 6.2
 ) (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
-(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+ (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen296
 \ESO@tempdimb=\dimen297
@@ -794,7 +743,7 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \AM@pagewidth=\dimen298
 \AM@pageheight=\dimen299
 \AM@fboxrule=\dimen300
-(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+ (/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count336
@@ -806,7 +755,6 @@ File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 \AM@templatesizebox=\box128
 ) (/usr/share/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2019/11/29 v1.4 Transparency via pdfTeX's color stack (HO)
-
 )) (./master.aux)
 \openout1 = `master.aux'.
 
@@ -824,7 +772,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count339
 \scratchdimen=\dimen301
@@ -839,44 +787,39 @@ LaTeX Font Info:    ... okay on input line 4.
 \everyMPtoPDFconversion=\toks51
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+ (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+ (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 5.
-
-(/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
+ (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
-.
-(/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) (./master.toc)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 5.
+ (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) (./master.toc)
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
-(./lec_01.tex
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-.
-(/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
+ (./lec_01.tex
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 Overfull \hbox (37.1992pt too wide) in paragraph at lines 1--1
@@ -898,7 +841,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 21.
-! Undefined control sequence.
+
+./lec_01.tex:22: Undefined control sequence.
 <recently read> \ord 
                      
 l.22 ...or which $g^{n} = 1$. We denote this $\ord
@@ -922,7 +866,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 49.
-! Undefined control sequence.
+
+./lec_01.tex:50: Undefined control sequence.
 <recently read> \aut 
                      
 l.50 	If $G$ is a group, we define $\aut
@@ -933,7 +878,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_01.tex:50: Undefined control sequence.
 l.50 ...on  of composition. An element $f \in \aut
                                                   \left( G \right) $ is call...
 The control sequence at the end of the top line
@@ -942,7 +887,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_01.tex:50: Undefined control sequence.
 l.50 ...ion is usually denoted, for $f, g \in \aut
                                                    \left( G \right) $, $x\in...
 The control sequence at the end of the top line
@@ -956,7 +901,7 @@ Overfull \hbox (37.09506pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-! Undefined control sequence.
+./lec_02.tex:2: Undefined control sequence.
 l.2 ...we see $\alpha, \beta, \alpha\beta \in \aut
                                                   \left( G \right) $.
 The control sequence at the end of the top line
@@ -998,10 +943,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 46.
 
 Overfull \hbox (11.76222pt too wide) in paragraph at lines 49--50
-[]\T1/cmr/m/n/10 Suppose $\OML/cmm/m/it/10 H; K \U/msa/m/n/10 E \OML/cmm/m/it/1
-0 G$ \T1/cmr/m/n/10 and $\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/
-10 H$\T1/cmr/m/n/10 . Then, we have $\OML/cmm/m/it/10 G=H \OMS/cmsy/m/n/10 ' []
- \OML/cmm/m/it/10 = []$\T1/cmr/m/n/10 . 
+[]\T1/cmr/m/n/10 Suppose $\OML/cmm/m/it/10 H; K \U/msa/m/n/10 E \OML/cmm/m/it/10 G$ \T1/cmr/m/n/10 and $\OML/cmm/m/it/10 K \OMS/cmsy/m/n/10 ^^T \OML/cmm/m/it/10 H$\T1/cmr/m/n/10 . Then, we have $\OML/cmm/m/it/10 G=H \OMS/cmsy/m/n/10 ' [] \OML/cmm/m/it/10 = []$\T1/cmr/m/n/10 . 
  []
 
 [5]) (./lec_03.tex
@@ -1012,7 +954,7 @@ Overfull \hbox (30.1245pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 6.
-! Undefined control sequence.
+./lec_03.tex:7: Undefined control sequence.
 l.7 	Recall \[\perm
                     \left( \Omega \right) = \{f :  f: \Omega \to \Omega \tex...
 The control sequence at the end of the top line
@@ -1021,7 +963,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:7: Undefined control sequence.
 l.7 ...\Omega \right| = n < \infty\), then \(\perm
                                                   \left( \Omega \right) \sim...
 The control sequence at the end of the top line
@@ -1033,7 +975,7 @@ and I'll forget about whatever was undefined.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 9.
-! Undefined control sequence.
+./lec_03.tex:10: Undefined control sequence.
 l.10 ...\) is a homomoprhism \(\alpha: G \to \perm
                                                   (\Omega)\). We say \(G\) a...
 The control sequence at the end of the top line
@@ -1043,7 +985,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [6]
-! Undefined control sequence.
+./lec_03.tex:27: Undefined control sequence.
 <argument> ...ight ) \left ( x \right ) \in \perm 
                                                   \left ( \Omega \right ) \).
 l.27 .\end{align*}
@@ -1054,7 +996,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:27: Undefined control sequence.
 <argument> ...ight ) \left ( x \right ) \in \perm 
                                                   \left ( \Omega \right ) \).
 l.27 .\end{align*}
@@ -1065,7 +1007,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:27: Undefined control sequence.
 <argument> ...ight ) \left ( x \right ) \in \perm 
                                                   \left ( \Omega \right ) \).
 l.27 .\end{align*}
@@ -1076,7 +1018,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:27: Undefined control sequence.
 <argument> ...ight ) \left ( x \right ) \in \perm 
                                                   \left ( \Omega \right ) \).
 l.27 .\end{align*}
@@ -1087,7 +1029,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:27: Undefined control sequence.
 <argument> ...ight ) \left ( x \right ) \in \perm 
                                                   \left ( \Omega \right ) \).
 l.27 .\end{align*}
@@ -1098,7 +1040,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:27: Undefined control sequence.
 <argument> ...ight ) \left ( x \right ) \in \perm 
                                                   \left ( \Omega \right ) \).
 l.27 .\end{align*}
@@ -1109,7 +1051,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:27: Undefined control sequence.
 <argument> ...ight ) \left ( x \right ) \in \perm 
                                                   \left ( \Omega \right ) \).
 l.27 .\end{align*}
@@ -1120,7 +1062,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:27: Undefined control sequence.
 <argument> ...ight ) \left ( x \right ) \in \perm 
                                                   \left ( \Omega \right ) \).
 l.27 .\end{align*}
@@ -1131,7 +1073,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:35: Undefined control sequence.
 <argument>  \alpha : G &\longrightarrow \perm 
                                               \left ( G \right ) \\ g &\long...
 l.35 .\end{align*}
@@ -1142,7 +1084,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:35: Undefined control sequence.
 <argument> ...to \alpha (g) = g x g^{-1} \in \aut 
                                                   \left ( G \right ) \le \pe...
 l.35 .\end{align*}
@@ -1153,7 +1095,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:35: Undefined control sequence.
 <argument> ...n \aut \left ( G \right ) \le \perm 
                                                   \left ( G \right ) .
 l.35 .\end{align*}
@@ -1164,7 +1106,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:35: Undefined control sequence.
 <argument>  \alpha : G &\longrightarrow \perm 
                                               \left ( G \right ) \\ g &\long...
 l.35 .\end{align*}
@@ -1175,7 +1117,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:35: Undefined control sequence.
 <argument> ...to \alpha (g) = g x g^{-1} \in \aut 
                                                   \left ( G \right ) \le \pe...
 l.35 .\end{align*}
@@ -1186,7 +1128,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_03.tex:35: Undefined control sequence.
 <argument> ...n \aut \left ( G \right ) \le \perm 
                                                   \left ( G \right ) .
 l.35 .\end{align*}
@@ -1210,7 +1152,7 @@ Overfull \hbox (37.1992pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-! Undefined control sequence.
+./lec_04.tex:3: Undefined control sequence.
 l.3 ...efined a homomorphism \(\alpha: G \to \perm
                                                    \left( G \right) , \ x \m...
 The control sequence at the end of the top line
@@ -1229,11 +1171,12 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 40.
-[9]
+ [9]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 57.
-! Undefined control sequence.
+
+./lec_04.tex:65: Undefined control sequence.
 l.65 ...ch representative we choose). We see \(\IM
                                                    \left( f \right) = \maths...
 The control sequence at the end of the top line
@@ -1254,7 +1197,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 20.
-! Undefined control sequence.
+
+./lec_05.tex:25: Undefined control sequence.
 l.25 ...re is a homomorphism \(\alpha: G \to \perm
                                                    \left( G \right) \simeq S...
 The control sequence at the end of the top line
@@ -1264,7 +1208,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: Environment therorem undefined.
+./lec_05.tex:32: LaTeX Error: Environment therorem undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1277,7 +1221,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{document} ended by \end{therorem}.
+./lec_05.tex:34: LaTeX Error: \begin{document} ended by \end{therorem}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1291,9 +1235,7 @@ or  <return>  to continue without it.
 
 [11]
 Overfull \hbox (11.6096pt too wide) in paragraph at lines 38--41
-\T1/cmr/m/n/10 Thus, $[] \OT1/cmr/m/n/10 = 1[]\OML/cmm/m/it/10 p$ \T1/cmr/m/n/1
-0 as $\OML/cmm/m/it/10 p$ \T1/cmr/m/n/10 is prime so there are no di-vi-sors. I
-f $[] \OT1/cmr/m/n/10 =
+\T1/cmr/m/n/10 Thus, $[] \OT1/cmr/m/n/10 = 1[]\OML/cmm/m/it/10 p$ \T1/cmr/m/n/10 as $\OML/cmm/m/it/10 p$ \T1/cmr/m/n/10 is prime so there are no di-vi-sors. If $[] \OT1/cmr/m/n/10 =
  []
 
 ) (./lec_06.tex
@@ -1301,7 +1243,7 @@ Overfull \hbox (28.56935pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-! Undefined control sequence.
+./lec_06.tex:6: Undefined control sequence.
 l.6 	Let \(\alpha: G \to \Perm
                                \left( \Omega \right) \simeq S_p\) be the ass...
 The control sequence at the end of the top line
@@ -1310,7 +1252,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Missing $ inserted.
+./lec_06.tex:8: Missing $ inserted.
 <inserted text> 
                 $
 l.8 		H_
@@ -1318,7 +1260,7 @@ l.8 		H_
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-! Misplaced alignment tab character &.
+./lec_06.tex:8: Misplaced alignment tab character &.
 l.8 		H_0 &
            = \ker \left( \alpha \right) \\
 I can't figure out why you would want to use a tab mark
@@ -1328,7 +1270,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-! Misplaced alignment tab character &.
+./lec_06.tex:9: Misplaced alignment tab character &.
 <recently read> &
                  
 l.9 		    &
@@ -1340,7 +1282,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-! Misplaced alignment tab character &.
+./lec_06.tex:10: Misplaced alignment tab character &.
 <recently read> &
                  
 l.10 		    &
@@ -1352,7 +1294,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-! Misplaced alignment tab character &.
+./lec_06.tex:11: Misplaced alignment tab character &.
 <recently read> &
                  
 l.11 		    &
@@ -1364,7 +1306,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-! Misplaced alignment tab character &.
+./lec_06.tex:12: Misplaced alignment tab character &.
 <recently read> &
                  
 l.12 		    &
@@ -1376,7 +1318,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-! Misplaced \cr.
+./lec_06.tex:13: Misplaced \cr.
 \math@cr@@@ ->\cr 
                   
 l.13 	.\end{align*}
@@ -1387,7 +1329,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-! Misplaced \noalign.
+./lec_06.tex:13: Misplaced \noalign.
 \math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
                                                   {\vskip #1\relax }
 l.13 	.\end{align*}
@@ -1395,7 +1337,7 @@ l.13 	.\end{align*}
 I expect to see \noalign only after the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-! Missing $ inserted.
+./lec_06.tex:13: Missing $ inserted.
 <inserted text> 
                 $
 l.13 	.\end{align*}
@@ -1403,7 +1345,7 @@ l.13 	.\end{align*}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-! Missing } inserted.
+./lec_06.tex:13: Missing } inserted.
 <inserted text> 
                 }
 l.13 	.\end{align*}
@@ -1414,7 +1356,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra }, or forgotten \endgroup.
+./lec_06.tex:13: Extra }, or forgotten \endgroup.
 \math@cr@@ ...th@cr@@@ \noalign {\vskip #1\relax }
                                                   
 l.13 	.\end{align*}
@@ -1425,7 +1367,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-! Misplaced \noalign.
+./lec_06.tex:13: Misplaced \noalign.
 \black@ #1->\noalign 
                      {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
 l.13 	.\end{align*}
@@ -1438,7 +1380,7 @@ Overfull \hbox (124.90297pt too wide) detected at line 13
 []
  []
 
-! Extra }, or forgotten \endgroup.
+./lec_06.tex:13: Extra }, or forgotten \endgroup.
 \endalign ->\math@cr \black@ \totwidth@ \egroup 
                                                 \ifingather@ \restorealignst...
 l.13 	.\end{align*}
@@ -1450,7 +1392,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-! LaTeX Error: \begin{proof} on input line 5 ended by \end{align*}.
+./lec_06.tex:13: LaTeX Error: \begin{proof} on input line 5 ended by \end{align*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1462,7 +1404,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Missing $ inserted.
+./lec_06.tex:13: Missing $ inserted.
 <inserted text> 
                 $
 l.13 	.\end{align*}
@@ -1473,7 +1415,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Display math should end with $$.
+./lec_06.tex:13: Display math should end with $$.
 <to be read again> 
                    \endgroup 
 l.13 	.\end{align*}
@@ -1482,7 +1424,7 @@ The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-! LaTeX Error: \begin{document} ended by \end{proof}.
+./lec_06.tex:18: LaTeX Error: \begin{document} ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1494,7 +1436,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Extra \endgroup.
+./lec_06.tex:18: Extra \endgroup.
 <recently read> \endgroup 
                           
 l.18 \end{proof}
@@ -1507,7 +1449,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
-! Undefined control sequence.
+./lec_06.tex:24: Undefined control sequence.
 l.24 ...en there is a \(g \in G\) such that \(\ord
                                                    \left( g \right) = p \) a...
 The control sequence at the end of the top line
@@ -1517,7 +1459,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [12]
-! Undefined control sequence.
+./lec_06.tex:32: Undefined control sequence.
 l.32 ... nonzero element of \(x \in G\) has \(\ord
                                                    \left( x \right) = p\) as...
 The control sequence at the end of the top line
@@ -1526,7 +1468,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_06.tex:32: Undefined control sequence.
 l.32 ...as \(\ord \left( x \right) = p\) as \(\ord
                                                    \left( x \right) \mid \le...
 The control sequence at the end of the top line
@@ -1535,7 +1477,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_06.tex:33: Undefined control sequence.
 l.33 ...x \right> \), so \(\left| H \right| = \ord
                                                    \left( x \right) \). So, ...
 The control sequence at the end of the top line
@@ -1544,7 +1486,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_06.tex:33: Undefined control sequence.
 l.33 ...t) \). So, \(\{H = x, x^2, \ldots, x^{\ord
                                                    \left( x \right) }\}\). I...
 The control sequence at the end of the top line
@@ -1553,7 +1495,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_06.tex:33: Undefined control sequence.
 l.33 ... \(p \mid \left| H \right| \), then \(\ord
                                                    \left( x^{\left| H \right...
 The control sequence at the end of the top line
@@ -1562,7 +1504,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_06.tex:33: Undefined control sequence.
 l.33 ...es there is a \(y \in G\) such that \(\ord
                                                    \left( \phi _{H} \left( y...
 The control sequence at the end of the top line
@@ -1571,7 +1513,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_06.tex:33: Undefined control sequence.
 l.33 ... y \right)  \right)  = p\). Let \(m = \ord
                                                    \left( y \right) \). Then...
 The control sequence at the end of the top line
@@ -1580,7 +1522,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_06.tex:33: Undefined control sequence.
 l.33 ...phi \left( y \right) ^{m} = 1\), so \(\ord
                                                    \left( \phi\left( y \righ...
 The control sequence at the end of the top line
@@ -1589,7 +1531,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_06.tex:33: Undefined control sequence.
 l.33 ... m\) (and \(m = \alpha p\)). Hence, \(\ord
                                                    \left( y^{\alpha} \right)...
 The control sequence at the end of the top line
@@ -1624,7 +1566,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
  []
 
 
-! LaTeX Error: There's no line here to end.
+./lec_07.tex:14: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1632,12 +1574,11 @@ Type  H <return>  for immediate help.
                                                   
 l.14 	\\ N
           ow, note that every \(G_{x}\) with \(x \in I\) has that \(G_{x} < ...
-
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
+./lec_07.tex:15: Undefined control sequence.
 l.15 ... \in Z\left( G \right) \) such that \(\ord
                                                    \left( x \right) = p\). T...
 The control sequence at the end of the top line
@@ -1656,8 +1597,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 41.
-[15]
-! Undefined control sequence.
+ [15]
+./lec_07.tex:54: Undefined control sequence.
 l.54 ...ion of \(H\), denoted \(m\) is \(m \nequiv
                                                    0 \left( \mod p \right) \...
 The control sequence at the end of the top line
@@ -1667,7 +1608,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{enumerate} on input line 52 ended by \end{proof}.
+./lec_07.tex:57: LaTeX Error: \begin{enumerate} on input line 52 ended by \end{proof}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1684,37 +1625,37 @@ Overfull \hbox (28.56935pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-! Double superscript.
+./lec_08.tex:7: Double superscript.
 l.7 ...\(P^{\prime} \le G\) has some \(p^{\prime}^
                                                   {\prime} \in \Omega\) such...
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-! Double superscript.
+./lec_08.tex:7: Double superscript.
 l.7 ...ga\) such that \(p^{\prime} \le p^{\prime}^
                                                   {\prime}\).
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-! Double superscript.
+./lec_08.tex:8: Double superscript.
 l.8 ...ve we have the existence of a \(p^{\prime}^
                                                   {\prime} \in \Omega\) such...
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-! Double superscript.
+./lec_08.tex:8: Double superscript.
 l.8 ...ga\) such that \(p^{\prime} \le p^{\prime}^
                                                   {\prime}\). But \(\left| p...
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-! Double superscript.
+./lec_08.tex:8: Double superscript.
 l.8 ...t| p^{\prime}  \right| = \left| P^{\prime}^
                                                   {\prime} \right|  = p^{n} ...
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-! Double superscript.
+./lec_08.tex:9: Double superscript.
 l.9 			Hence \(p^{\prime} = p^{\prime}^
                                        {\prime} \in \Omega\), so \(p^{\prime...
 I treat `x^1^2' essentially like `x^1{}^2'.
 
-! Missing } inserted.
+./lec_08.tex:15: Missing } inserted.
 <inserted text> 
                 }
 l.15 		\end{align*}
@@ -1725,7 +1666,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Missing { inserted.
+./lec_08.tex:15: Missing { inserted.
 <inserted text> 
                 {
 l.15 		\end{align*}
@@ -1734,7 +1675,7 @@ I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-! Missing } inserted.
+./lec_08.tex:15: Missing } inserted.
 <inserted text> 
                 }
 l.15 		\end{align*}
@@ -1745,7 +1686,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Missing { inserted.
+./lec_08.tex:15: Missing { inserted.
 <inserted text> 
                 {
 l.15 		\end{align*}
@@ -1766,7 +1707,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 26.
-! Misplaced alignment tab character &.
+
+./lec_08.tex:31: Misplaced alignment tab character &.
 l.31 	\[	\left| G \right|  &
                             = \left| Z\left( G \right)  \right|  +\sum_{x \i...
 I can't figure out why you would want to use a tab mark
@@ -1778,9 +1720,7 @@ might try typing `S' now just to see what is salvageable.
 
 
 Overfull \hbox (8.96953pt too wide) in paragraph at lines 35--36
-[]$\OML/cmm/m/it/10 Z []$ \T1/cmr/m/n/10 is non-triv-ial by the lemma, hence $[
-] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 p$ \T1/cmr/m/n/10 or $[] \OT1/cmr/m/n/10 =
-
+[]$\OML/cmm/m/it/10 Z []$ \T1/cmr/m/n/10 is non-triv-ial by the lemma, hence $[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 p$ \T1/cmr/m/n/10 or $[] \OT1/cmr/m/n/10 =
  []
 
 Package mdframed Info: mdframed detected package amsthm 
@@ -1788,10 +1728,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 37.
 
 Overfull \hbox (3.16286pt too wide) in paragraph at lines 41--45
-\T1/cmr/m/n/10 This means ev-ery $\OML/cmm/m/it/10 g \OMS/cmsy/m/n/10 2 \OML/cm
-m/m/it/10 G$ \T1/cmr/m/n/10 fixes the unique sy-low $\OML/cmm/m/it/10 q$\T1/cmr
-/m/n/10 -grop $\OML/cmm/m/it/10 Q$ \T1/cmr/m/n/10 by con-ju-ga-tion ($\OML/cmm/
-m/it/10 gQg[] \OT1/cmr/m/n/10 =
+\T1/cmr/m/n/10 This means ev-ery $\OML/cmm/m/it/10 g \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 G$ \T1/cmr/m/n/10 fixes the unique sy-low $\OML/cmm/m/it/10 q$\T1/cmr/m/n/10 -grop $\OML/cmm/m/it/10 Q$ \T1/cmr/m/n/10 by con-ju-ga-tion ($\OML/cmm/m/it/10 gQg[] \OT1/cmr/m/n/10 =
  []
 
 [17]) (./lec_09.tex
@@ -1805,7 +1742,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 6.
-! Undefined control sequence.
+./lec_09.tex:7: Undefined control sequence.
 l.7 ...\)  be groups and let \(\alpha : H \to \aut
                                                    \left( N \right) \). Thus...
 The control sequence at the end of the top line
@@ -1820,7 +1757,7 @@ Overfull \hbox (18.66554pt too wide) detected at line 20
  []
 
 [18] [19]
-! Undefined control sequence.
+./lec_09.tex:43: Undefined control sequence.
 l.43 If \(\alpha : H \to \aut
                               \left( N \right) \) being the trivial homomorp...
 The control sequence at the end of the top line
@@ -1832,7 +1769,7 @@ and I'll forget about whatever was undefined.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
-! Undefined control sequence.
+./lec_09.tex:45: Undefined control sequence.
 l.45 ..., N\) be groups with \(\alpha : H \to \aut
                                                    \left( N \right) \) being...
 The control sequence at the end of the top line
@@ -1844,7 +1781,7 @@ and I'll forget about whatever was undefined.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 58.
-! Undefined control sequence.
+./lec_09.tex:59: Undefined control sequence.
 l.59 ...es_{\alpha} H\) where \(\alpha: H \to \aut
                                                    \left( N \right) , h \lef...
 The control sequence at the end of the top line
@@ -1861,7 +1798,7 @@ Overfull \hbox (35.53992pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 5.
-! Undefined control sequence.
+./lec_10.tex:9: Undefined control sequence.
 <argument>  \alpha : H &\longrightarrow \aut 
                                              \left ( N \right ) \\ h &\longm...
 l.9 	.\end{align*}
@@ -1872,7 +1809,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_10.tex:9: Undefined control sequence.
 <argument>  \alpha : H &\longrightarrow \aut 
                                              \left ( N \right ) \\ h &\longm...
 l.9 	.\end{align*}
@@ -1884,7 +1821,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [20]
-! Undefined control sequence.
+./lec_10.tex:28: Undefined control sequence.
 <argument>  \alpha : G &\longrightarrow \aut 
                                              \left ( G \right ) \\ g &\longm...
 l.28 .\end{align*}
@@ -1895,7 +1832,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_10.tex:28: Undefined control sequence.
 <argument>  \alpha : G &\longrightarrow \aut 
                                              \left ( G \right ) \\ g &\longm...
 l.28 .\end{align*}
@@ -1906,7 +1843,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_10.tex:29: Undefined control sequence.
 l.29 So, \(\alpha : H \to \aut
                                \left( G \right) \) is also a homomorphism as...
 The control sequence at the end of the top line
@@ -1915,7 +1852,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
+./lec_10.tex:36: Undefined control sequence.
 l.36 ...s for a homomorphism \(\alpha : H \to \aut
                                                    \left( N \right) \) exist?
 The control sequence at the end of the top line
@@ -1940,9 +1877,130 @@ Overfull \hbox (35.64406pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-[23]) [24]
+[23]
+./lec_12.tex:6: Undefined control sequence.
+l.6 ...\) or \(N\trianglelefteq G\) (with \(Q \leN
+                                                  _{G}\left( P \right)  = G\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-! LaTeX Error: \begin{proof} on input line 51 ended by \end{document}.
+./lec_12.tex:9: Undefined control sequence.
+l.9 ...y some automorphism \(\alpha : C_2 \to \aut
+                                                   \left( C_{15} \right) \)....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./lec_12.tex:11: Undefined control sequence.
+l.11 \]  we see \(\ord
+                       \left( \alpha \left( t \right)  \right)  \mid 2\).\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./lec_12.tex:17: Undefined control sequence.
+<argument>  \aut 
+                 \left ( C_{15} \right ) &= \aut \left ( C_3 \times C_5 \rig...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./lec_12.tex:17: Undefined control sequence.
+<argument>  \aut \left ( C_{15} \right ) &= \aut 
+                                                 \left ( C_3 \times C_5 \rig...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./lec_12.tex:17: Undefined control sequence.
+<argument> ...times C_5 \right ) \\ & \simeq \aut 
+                                                  \left ( C_3 \right ) \time...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./lec_12.tex:17: Undefined control sequence.
+<argument> ...ut \left ( C_3 \right ) \times \aut 
+                                                  \left ( C_5 \right ) \\ &=...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./lec_12.tex:17: Undefined control sequence.
+<argument>  \aut 
+                 \left ( C_{15} \right ) &= \aut \left ( C_3 \times C_5 \rig...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./lec_12.tex:17: Undefined control sequence.
+<argument>  \aut \left ( C_{15} \right ) &= \aut 
+                                                 \left ( C_3 \times C_5 \rig...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./lec_12.tex:17: Undefined control sequence.
+<argument> ...times C_5 \right ) \\ & \simeq \aut 
+                                                  \left ( C_3 \right ) \time...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./lec_12.tex:17: Undefined control sequence.
+<argument> ...ut \left ( C_3 \right ) \times \aut 
+                                                  \left ( C_5 \right ) \\ &=...
+l.17 \end{align*}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
+
+ []
+
+[24]) [25]
+
+./master.tex:21: LaTeX Error: \begin{proof} on input line 51 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1960,39 +2018,18 @@ or  <return>  to continue without it.
 ### semi simple group (level 1) entered at line 51 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 21541 strings out of 478994
- 420875 string characters out of 5864752
+ 21540 strings out of 478994
+ 420724 string characters out of 5864752
  723311 words of memory out of 5000000
  38490 multiletter control sequences out of 15000+600000
  427753 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,17n,105p,1246b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
-c}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist
-/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/public/r
-sfs/rsfs7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/
-stmaryrd/stmary10.pfb>
-Output written on master.pdf (24 pages, 358106 bytes).
+ 107i,17n,105p,1195b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on master.pdf (25 pages, 363414 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
+ 213 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
