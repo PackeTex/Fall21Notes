@@ -4,3 +4,10 @@
 	Furthermore, we say \(f\) is (strictly) increasing/decreasing/monotone if \(H \circ f\) is (strictly) increasing/decreasing/monotone.\\
 	Again, if \(\left( f_{n} \right) \) is a series of functions \(f_{n} : S \to \overline{\R}\), we say \(\left( f_{n} \right) \) converges pointwise/uniformly to \(f:S \to \overline{\R}\) if \(\left( H \circ f_{n} \right) \) converges pointwise/uniformly to \(H \circ f\) for any extending function \(H\).
 \end{definition}
+\begin{definition}
+	Let \(S \subseteq \overline{\R}\) and suppose  \(a \in \overline{R}\) is an accumulation point of a sequence taking values in \(S \setminus \{a\} \).\\
+	Then, a function \(f : S \setminus \{a\} \to \overline{R}\) is said to have the limit \(L \in \overline{\R}\) (relative to \(S\)) if for any extending function \(H\) and for each \(\epsilon > 0\) we have an \(\delta > 0\) such that \[
+		\left| H\left( f\left( x \right)  \right) - H\left( L  \right)  \right| < \epsilon \text{ for all \(x \in S \setminus \{a\} \) with } \left| H\left( x \right) - H\left( a \right)   \right| < \delta
+	.\]
+	We denote this by \(\lim_{x \to a} f\left( x \right) = L\) or \(\lim_{\underset{S}{x \to a} } f\left( x \right) = L\)
+\end{definition}
