@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  21 SEP 2021 12:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  21 SEP 2021 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -888,565 +888,16 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
-(./lec_01.tex
+(./lec_11.tex
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
 .
 (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (37.1992pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 12.
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 31.
-[2]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 35.
-) (./lec_02.tex
-Overfull \hbox (37.09506pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 2.
-
-Overfull \hbox (128.19386pt too wide) in paragraph at lines 3--4
-[]\T1/cmr/bx/n/10 Proposition 1.3. []\T1/cmr/m/n/10 Let $\OML/cmm/m/it/10 G$ \T
-1/cmr/m/n/10 be $[] []$. Then, $[]$ is $[] []$ 
- []
-
-(./figures/vtxpart.pdf_tex
-<./figures//vtxpart.pdf, id=51, page=1, 682.86612pt x 341.43306pt>
-File: ./figures//vtxpart.pdf Graphic file (type pdf)
-<use ./figures//vtxpart.pdf, page 1>
-Package pdftex.def Info: ./figures//vtxpart.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//vtxpart.pdf, id=52, page=2, 682.86612pt x 341.43306pt>
-File: ./figures//vtxpart.pdf Graphic file (type pdf)
-<use ./figures//vtxpart.pdf, page 2>
-Package pdftex.def Info: ./figures//vtxpart.pdf , page2 used on input line 59.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-) [3]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 27.
-
-! LaTeX Error: Environment propostion undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.33 \begin{propostion}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{propostion}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 \end{propostion}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[4 <./figures//vtxpart.pdf> <./figures//vtxpart.pdf>]
-
-! LaTeX Error: Environment enumerate* undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44 ...t yet proven, these are:\begin{enumerate*}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{example} on input line 43 ended by \end{enumerate*}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.49 	\end{enumerate*}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./figures/c5.svg.2021_08_25_13_14_48.0.pdf_tex
-<./figures//c5.svg.2021_08_25_13_14_48.0.pdf, id=63, page=1, 682.86612pt x 341.
-43306pt>
-File: ./figures//c5.svg.2021_08_25_13_14_48.0.pdf Graphic file (type pdf)
-<use ./figures//c5.svg.2021_08_25_13_14_48.0.pdf, page 1>
-Package pdftex.def Info: ./figures//c5.svg.2021_08_25_13_14_48.0.pdf , page1 us
-ed on input line 56.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-)) (./lec_03.tex [5 <./figures//c5.svg.2021_08_25_13_14_48.0.pdf>]
-Overfull \hbox (30.1245pt too wide) in paragraph at lines 2--2
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
-(./figures/linekq.pdf_tex
-<./figures//linekq.pdf, id=70, page=1, 682.86612pt x 341.43306pt>
-File: ./figures//linekq.pdf Graphic file (type pdf)
-<use ./figures//linekq.pdf, page 1>
-Package pdftex.def Info: ./figures//linekq.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//linekq.pdf, id=71, page=2, 682.86612pt x 341.43306pt>
-File: ./figures//linekq.pdf Graphic file (type pdf)
-<use ./figures//linekq.pdf, page 2>
-Package pdftex.def Info: ./figures//linekq.pdf , page2 used on input line 60.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-) (./figures/linekq2.pdf_tex
-<./figures//linekq2.pdf, id=72, page=1, 682.86612pt x 341.43306pt>
-File: ./figures//linekq2.pdf Graphic file (type pdf)
-<use ./figures//linekq2.pdf, page 1>
-Package pdftex.def Info: ./figures//linekq2.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//linekq2.pdf, id=73, page=2, 682.86612pt x 341.43306pt>
-File: ./figures//linekq2.pdf Graphic file (type pdf)
-<use ./figures//linekq2.pdf, page 2>
-Package pdftex.def Info: ./figures//linekq2.pdf , page2 used on input line 59.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//linekq2.pdf, id=74, page=3, 682.86612pt x 341.43306pt>
-File: ./figures//linekq2.pdf Graphic file (type pdf)
-<use ./figures//linekq2.pdf, page 3>
-Package pdftex.def Info: ./figures//linekq2.pdf , page3 used on input line 62.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-)
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 29.
-[6 <./figures//linekq.pdf> <./figures//linekq.pdf>] [7 <./figures//linekq2.pdf>
- <./figures//linekq2.pdf> <./figures//linekq2.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 37.
-(./figures/linekqq.pdf_tex
-<./figures//linekqq.pdf, id=88, page=1, 682.86612pt x 341.43306pt>
-File: ./figures//linekqq.pdf Graphic file (type pdf)
-<use ./figures//linekqq.pdf, page 1>
-Package pdftex.def Info: ./figures//linekqq.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//linekqq.pdf, id=89, page=2, 682.86612pt x 341.43306pt>
-File: ./figures//linekqq.pdf Graphic file (type pdf)
-<use ./figures//linekqq.pdf, page 2>
-Package pdftex.def Info: ./figures//linekqq.pdf , page2 used on input line 59.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//linekqq.pdf, id=90, page=3, 682.86612pt x 341.43306pt>
-File: ./figures//linekqq.pdf Graphic file (type pdf)
-<use ./figures//linekqq.pdf, page 3>
-Package pdftex.def Info: ./figures//linekqq.pdf , page3 used on input line 62.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-) (./figures/linekqq2.pdf_tex
-<./figures//linekqq2.pdf, id=91, page=1, 682.86612pt x 341.43306pt>
-File: ./figures//linekqq2.pdf Graphic file (type pdf)
-<use ./figures//linekqq2.pdf, page 1>
-Package pdftex.def Info: ./figures//linekqq2.pdf , page1 used on input line 56.
-
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//linekqq2.pdf, id=92, page=2, 682.86612pt x 341.43306pt>
-File: ./figures//linekqq2.pdf Graphic file (type pdf)
-<use ./figures//linekqq2.pdf, page 2>
-Package pdftex.def Info: ./figures//linekqq2.pdf , page2 used on input line 59.
-
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//linekqq2.pdf, id=93, page=3, 682.86612pt x 341.43306pt>
-File: ./figures//linekqq2.pdf Graphic file (type pdf)
-<use ./figures//linekqq2.pdf, page 3>
-Package pdftex.def Info: ./figures//linekqq2.pdf , page3 used on input line 63.
-
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//linekqq2.pdf, id=94, page=4, 682.86612pt x 341.43306pt>
-File: ./figures//linekqq2.pdf Graphic file (type pdf)
-<use ./figures//linekqq2.pdf, page 4>
-Package pdftex.def Info: ./figures//linekqq2.pdf , page4 used on input line 65.
-
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-)
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 59.
-[8 <./figures//linekqq.pdf> <./figures//linekqq.pdf> <./figures//linekqq.pdf> <
-./figures//linekqq2.pdf> <./figures//linekqq2.pdf> <./figures//linekqq2.pdf> <.
-/figures//linekqq2.pdf>]) (./lec_04.tex
-Overfull \hbox (37.1992pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-
-Overfull \hbox (5.40797pt too wide) in paragraph at lines 6--7
-[]\T1/cmr/bx/n/10 Definition 1.7 \T1/cmr/m/n/10 (Back---Cir-cu-lant Latin Squar
-e)\T1/cmr/bx/n/10 . []\T1/cmr/m/n/10 We de-fine a \T1/cmr/bx/n/10 back-circulan
-t
- []
-
-[9]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 18.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 25.
-(./figures/payleycomp.pdf_tex
-<./figures//payleycomp.pdf, id=104, page=1, 682.86612pt x 341.43306pt>
-File: ./figures//payleycomp.pdf Graphic file (type pdf)
-<use ./figures//payleycomp.pdf, page 1>
-Package pdftex.def Info: ./figures//payleycomp.pdf , page1 used on input line 5
-6.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//payleycomp.pdf, id=105, page=2, 682.86612pt x 341.43306pt>
-File: ./figures//payleycomp.pdf Graphic file (type pdf)
-<use ./figures//payleycomp.pdf, page 2>
-Package pdftex.def Info: ./figures//payleycomp.pdf , page2 used on input line 6
-3.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-)
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 46.
-[10]) (./lec_05.tex
-Overfull \hbox (35.53992pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-[11 <./figures//payleycomp.pdf> <./figures//payleycomp.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 23.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 31.
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 ...ntry \(a_{ij} = \left \{ \begin{array}{11}
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 ...ntry \(a_{ij} = \left \{ \begin{array}{11}
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   $
-l.37 		\)
-         
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-
-Overfull \hbox (9.30122pt too wide) in paragraph at lines 32--38
-[]\T1/cmr/bx/n/10 Definition 2.2 \T1/cmr/m/n/10 (Ad-ja-cency Ma-trix)\T1/cmr/bx
-/n/10 . []\T1/cmr/m/n/10 Let $\OML/cmm/m/it/10 G \OT1/cmr/m/n/10 = []$\T1/cmr/m
-/n/10 , where $\OML/cmm/m/it/10 V \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/
-m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; [] ; n\OMS/cmsy/
-m/n/10 g$
- []
-
-
-Overfull \hbox (4.1439pt too wide) in paragraph at lines 32--38
-\T1/cmr/m/n/10 WLOG, then the \T1/cmr/bx/n/10 ad-ja-cency ma-trix\T1/cmr/m/n/10
- , $[] []$ is de-fined such that the columns
- []
-
-) (./lec_06.tex
 Overfull \hbox (28.56935pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-[12]
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 	\begin{array}{11}
-                      
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Illegal character in array arg.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 	\begin{array}{11}
-                      
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 21.
-[13]) (./lec_07.tex
-Overfull \hbox (35.53992pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-[14]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-(./figures/payley.pdf_tex
-<./figures//payley.pdf, id=125, page=1, 682.86612pt x 341.43306pt>
-File: ./figures//payley.pdf Graphic file (type pdf)
-<use ./figures//payley.pdf, page 1>
-Package pdftex.def Info: ./figures//payley.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-(./figures/eigen.pdf_tex
-<./figures//eigen.pdf, id=126, page=1, 682.86612pt x 341.43306pt>
-File: ./figures//eigen.pdf Graphic file (type pdf)
-<use ./figures//eigen.pdf, page 1>
-Package pdftex.def Info: ./figures//eigen.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-)
-! Undefined control sequence.
-l.44 	\(L_2 \left( q \right)  = \SEG
-                                    \left( q^2, 2\left( q-1 \right) , q-2, 2...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[15 <./figures//payley.pdf>]
-Overfull \hbox (21.1658pt too wide) in paragraph at lines 64--65
-[]\T1/cmr/bx/n/10 Recall \T1/cmr/m/n/10 (Con-fer-ence Graphs)\T1/cmr/bx/n/10 . 
-[]\T1/cmr/m/n/10 A graph $\OML/cmm/m/it/10 G$ \T1/cmr/m/n/10 is con-fer-ence if
- it is $[] []$. 
- []
-
-(./figures/coneig.pdf_tex
-<./figures//coneig.pdf, id=133, page=1, 682.86612pt x 341.43306pt>
-File: ./figures//coneig.pdf Graphic file (type pdf)
-<use ./figures//coneig.pdf, page 1>
-Package pdftex.def Info: ./figures//coneig.pdf , page1 used on input line 56.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-<./figures//coneig.pdf, id=134, page=2, 682.86612pt x 341.43306pt>
-File: ./figures//coneig.pdf Graphic file (type pdf)
-<use ./figures//coneig.pdf, page 2>
-Package pdftex.def Info: ./figures//coneig.pdf , page2 used on input line 61.
-(pdftex.def)             Requested size: 345.0pt x 172.50307pt.
-) [16 <./figures//eigen.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 82.
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
-
- []
-
-[17 <./figures//coneig.pdf> <./figures//coneig.pdf>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 103.
-) (./lec_08.tex
-Overfull \hbox (28.56935pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 9.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 13.
-[18]
-! Missing delimiter (. inserted).
-<to be read again> 
-                   {
-l.31 ...a_1^2 + \ldots + \sigma_{i}^2 = \tr \left{
-                                                   A A^{*} \right) \). We se...
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.31 ...+ \sigma_{i}^2 = \tr \left{ A A^{*} \right
-                                                  ) \). We see for entries \...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 32.
-) (./lec_09.tex
-Overfull \hbox (35.64406pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
-[19]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 7.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 15.
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 21--25
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 25.
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 31.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 34.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 37.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 40.
-! Undefined control sequence.
-l.43 ...imes t\) block of \(0\) or \(1\) in \(\adj
-                                                   \left( G^{\left( t \right...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Extra }, or forgotten $.
-l.45 ...t) } \right) = t^3 K_{3}\left( G \right) }
-                                                    \), Many other graph par...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-) (./lec_10.tex
-Overfull \hbox (35.53992pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 24.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 32.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 39.
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
-
- []
-
-[22]
-Overfull \hbox (8.90863pt too wide) in paragraph at lines 51--55
-[]\T1/cmr/bx/n/10 Remark. []\T1/cmr/m/n/10 A reg-u-lar ma-trix need not be sym-
-met-ric. For ex-am-ple $[]$
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 57.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 64.
-) (./lec_11.tex
-Overfull \hbox (28.56935pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-[23]
 ! Misplaced alignment tab character &.
 l.9 	nI j &
            =  dH^{*}j \text{ by hadamardness}
@@ -1477,7 +928,9 @@ Overfull \hbox (0.4552pt too wide) in paragraph at lines 19--23
 U \OML/cmm/m/it/10 ^^U[] [] \OMS/cmsy/m/n/10 ^^U
  []
 
-[24]
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 27.
@@ -1517,12 +970,11 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-) (./lec_12.tex
+[2]) (./lec_12.tex
 Overfull \hbox (35.64406pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-[25]
 
 ! LaTeX Error: Illegal character in array arg.
 
@@ -1559,6 +1011,7 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
+[3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 32.
@@ -1567,7 +1020,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 40.
 
 Overfull \hbox (10.29861pt too wide) in paragraph at lines 41--42
-[]\T1/cmr/bx/n/10 Proposition 3.9. []\T1/cmr/m/n/10 If $\OML/cmm/m/it/10 n \OMS
+[]\T1/cmr/bx/n/10 Proposition 0.3. []\T1/cmr/m/n/10 If $\OML/cmm/m/it/10 n \OMS
 /cmsy/m/n/10 ^^Q []$\T1/cmr/m/n/10 , then $\OML/cmm/m/it/10 S$ \T1/cmr/m/n/10 i
 s sym-met-ric. If $\OML/cmm/m/it/10 n \OMS/cmsy/m/n/10 ^^Q \OT1/cmr/m/n/10 0 []
 $\T1/cmr/m/n/10 ,
@@ -1576,7 +1029,7 @@ $\T1/cmr/m/n/10 ,
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 46.
-[26]
+
 Underfull \hbox (badness 10000) in paragraph at lines 52--54
 
  []
@@ -1584,47 +1037,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 54.
-) [27] (./master.aux) ) 
+) [4] (./master.aux) ) 
 Here is how much of TeX's memory you used:
- 21701 strings out of 478994
- 425175 string characters out of 5864752
- 720536 words of memory out of 5000000
- 38612 multiletter control sequences out of 15000+600000
- 427753 words of font info for 97 fonts, out of 8000000 for 9000
+ 21473 strings out of 478994
+ 419590 string characters out of 5864752
+ 718449 words of memory out of 5000000
+ 38451 multiletter control sequences out of 15000+600000
+ 426657 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,17n,105p,1411b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super
--t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/
-cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm07
-00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/
-fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
-ss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></us
-r/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on master.pdf (27 pages, 368249 bytes).
+ 107i,12n,105p,931b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-
+t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfti1000.pfb>
+Output written on master.pdf (4 pages, 193848 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
+ 105 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
-
-/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on master.pdf (27 pages, 367776 bytes).
-PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 214 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

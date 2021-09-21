@@ -11,3 +11,29 @@
 	.\]
 	We denote this by \(\lim_{x \to a} f\left( x \right) = L\) or \(\lim_{\underset{S}{x \to a} } f\left( x \right) = L\)
 \end{definition}
+\section{Measure Theory}
+\begin{definition}[Length]
+	Let \(I = \left( a, b \right) \) be an interval, then we define the measure function \(\ell: \mathscr{P}\left( \R \right)  \to \R^{+}_{0}\) with the following properties:
+	\begin{align*}
+		\ell \left( \O \right) &= 0\\
+		\ell \left(  I  \right) &= b - a, a, b \in \R
+	.\end{align*}
+	In all other cases \(\ell \left( I = \infty \right) \).\\
+\end{definition}
+We would like to generalize this notion by constructing a set function \(\lambda\) such that
+\begin{align*}
+	\lambda:  \mathscr{P} \left( \R \right) &\to \left[ 0, \infty \right] \\
+	\lambda\left( I \right) &= \ell\left( I \right) \text{ for intervals \(I \subseteq \R\)} \\
+	\lambda\left( x + S \right) &=  \lambda\left( S \right) \text{ for \(x \in \R, S \subseteq \R, x + S = \{x + s : s \in S\} \)} \\
+	\text{if } \{S_{m} : m \in \N\} &\text{ is a countable disjoint collection of sets in \(\R\), then }\\ \lambda\left( \bigcup_{n=1} ^{\infty} S_{m} \right) &=  \sum_{n=1}^{\infty} \lambda\left( S_{n} \right)  \\
+.\end{align*}
+It turns out such a function produces contradictions, hence it is poorly posed. Hence, we must alter or remove one of these constraints and as all of the properties are very straight forward it is best to alter the domain of \(\lambda\) itself.
+\begin{definition}[Measure]
+	Let \(\mathscr{A}\) be a \(\sigma\)-algebra.\\
+	\begin{enumerate}
+		\item A set function \(\mu: \mathscr{A}\to \left[ 0, \infty \right] \) is called \textbf{countably additive} if for every countable disjoint collection \(\{S_{n} \in \mathscr{A} : n \in \N\} \) we have \[
+				\mu \left( \bigcup_{n \in \N} S_{n} \right)  = \sum_{i= 1}^{\infty} \mu \left( S_{i} \right)
+		.\]
+	\item A countable additive set function \(\mu: \mathscr{A} \to \left[ 0, \infty \right] \) such that \(\mu \left( \O \right) = 0\) is called a \textbf{measure}.
+	\end{enumerate}
+\end{definition}
