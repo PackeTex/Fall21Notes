@@ -38,5 +38,14 @@ It turns out such a function produces contradictions, hence it is poorly posed. 
 	\end{enumerate}
 \end{definition}
 \begin{proposition}
-	Let \(\mu:  \to \)
+	Let \(\mu: \mathscr{A} \to \left[ 0, \infty \right]  \). Then, \( \mu\) is monotone in the sense that if \(A, B \in \mathscr{A}\) with \(A \subseteq B\) , then we have \( \mu\left( A \right)  \le \mu\left( B \right) \).
 \end{proposition}
+\begin{proof}
+	Since \(B = A \cup \left( B \setminus A \right) \)	 and since \( \mu\) is countably additive, then \[
+		\mu\left( B \right)  = \mu\left( A \right)  + \mu\left( B \setminus A \right) \ge \mu\left( A \right)
+	.\]
+\end{proof}
+Now, we wish to extend our notion to arbitrary subsets of \(\R\).
+\begin{definition}
+	For \(A \in \mathscr{P}\left( \R \right) \), then \(J\left( A \right) \) is defined to be the collection of all countable covers \(\{I_{n} : n \in \N\} \) of \(A\) consisting of open, bounded intervals \(I_{n}\).
+\end{definition}
