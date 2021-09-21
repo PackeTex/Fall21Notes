@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1632244760 "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" "full.pdf" "full" 1632244782
+["pdflatex"] 1632244760 "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" "full.pdf" "full" 1632244807
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" 1632244714 384 f4ee3ea490e47becd2192a98e264ff0f ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -260,7 +260,7 @@
   "lec_08.tex" 1632244775 10022 909aa9ccc98a2e0334c8176e01059504 ""
   "ops.tex" 1630610909 124 ca20916fdf76fdc657317c94218b5396 ""
   (generated)
+  "full.log"
+  "full.aux"
   "full.toc"
   "full.pdf"
-  "full.aux"
-  "full.log"
