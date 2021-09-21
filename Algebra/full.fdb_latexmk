@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1632244384 "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" "full.pdf" "full" 1632244385
+["pdflatex"] 1632244384 "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" "full.pdf" "full" 1632244661
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" 1632154399 467 d6323c466a2b874fe97bcbabd9f0e3f9 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -259,9 +259,9 @@
   "lec_09.tex" 1631726282 6112 d593aca786031006587b9977ad28556f ""
   "lec_10.tex" 1631898670 3928 3f64f996230f7ab6a13b27918cb951ef ""
   "lec_11.tex" 1631907318 3811 90bc1d317ae2461044068a7a43af4291 ""
-  "lec_12.tex" 1632158708 4539 3fe22715de26aee5e04800e45658b1db ""
+  "lec_12.tex" 1632244661 4539 3fe22715de26aee5e04800e45658b1db ""
   (generated)
-  "full.aux"
-  "full.pdf"
   "full.toc"
+  "full.pdf"
   "full.log"
+  "full.aux"
