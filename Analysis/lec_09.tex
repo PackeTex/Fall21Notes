@@ -66,6 +66,47 @@ Now, we wish to extend our notion to arbitrary subsets of \(\R\).
 	\begin{enumerate}
 		\item Note that \(J\left( A \right) \subseteq J\left( B \right) \), hence \( \mu^{*} \left( A \right)  \le \mu^{*} \left( B \right) \).
 		\item Similarly, as each \(\ell\left( J_{i} \right) \) is translationally invariant, we see \( \mu^{*}\) is translationally invariant.
-		\item Let \(\epsilon >0\). Then for  each \(n \in \N\), let \(\{I_{n, k} : k \in \N\} \in J\left( S_{n} \right) \) be a collection of intervals such that \(\sum_{k=1}^{\infty} \ell\left( J_{n, k} \right)  \le \mu^{*}\left( S_{n} \right) + \frac{\epsilon}{2^{n}} \)
+		\item Let \(\epsilon >0\). Then for  each \(n \in \N\), let \(\{I_{n, k} : k \in \N\} \in J\left( S_{n} \right) \) be a collection of intervals such that \(\sum_{k=1}^{\infty} \ell\left( J_{n, k} \right)  \le \mu^{*}\left( S_{n} \right) + \frac{\epsilon}{2^{n}} \).\\
+			Since, \(\{I_{n, k} : n, k \in \N\} \in J\left( \bigcup_{n \in \N} S_{n} \right) \), we must have that \begin{align*}
+				\mu^{*}\left( \bigcup_{n \in \N} S_{n} \right) &\le \sum_{n \in \N} \sum_{k \in \N}^{} \ell \left( I_{n, k} \right)\\
+									       &\le \sum_{n= 1}^{\infty} \mu^{*} \left( S_{n} \right) + \epsilon
+			.\end{align*}
+Since this holds for all \(\epsilon > 0\), this completes the proof.
 	\end{enumerate}
 \end{proof}
+\begin{lemma}
+	For every interval \(I \subseteq \R\), the outer measure is \( \mu^{*} \left( I \right)  = \ell \left( I \right) \).
+\end{lemma}
+\begin{proof}
+	Let \(I\subseteq \R\) be nonempty (if \(I = \O\) it is trivial that \( \mu^{*}\left( \O \right) = 0\)). First, assume \(I = \left[ a, b \right] \)  with \(a\le b \in \R\). Let \(\{J_{n} : n \in \N\} \in J\left( I \right) \), then by Heine-Borel there is a finite subcovering \(\{I_{n} : 1\le n \le N\} \) such that no \(I_{n} = \O\). Note that as we will be taking the infimum, then any infinite collection containing this finite collection will be larger (or equal) hence will not matter in the infimum. Furthermore, we can assume that no interval \(J_{n}\) has \(J_{n} \subseteq J_{m}\) for some \(n \neq m\), and we can assume \(I_{n} = \left( a_{n}, b_{n} \right) \) to be ordered such that \(a_{n} < a_{n+1}\) for \(1\le n \le N-1\). Consequently, \(b_{n} > a_{n + 1}\) for \(1 \le n \le N-1\) as otherwise their would be a gap in the covering, and \(b_{n} > b\), as \(b \in I\), and \(a_1 < a\) by the same reasoning. Hence, we have an overlapping covering of \(\left[ a, b \right] \) by open bounded intervals \(\left( a_{n}, b_{n} \right) \). Hence,
+	\begin{align*}
+		\ell\left( J \right) &=  b-a \\
+				     &\le b_{N}- a_1\\
+				     &\le \sum_{i= 1}^{N} \left( b_{i} - a_{i} \right) \\
+				     &= \sum_{i= 1}^{N} \ell\left( I_{i} \right)  \\
+				     &\le \sum_{i= 1}^{\infty} \ell\left( I_{i} \right)\\
+				     &\implies \ell\left( I \right)  \le \mu^{*}\left( I \right)
+	.\end{align*}
+	Now, we look to obtain the opposite inequality. Let \(\epsilon > 0\), then \(\{\left( a - \epsilon, b + \epsilon \right) \} \in J\left( I \right)  \), hence
+	\begin{align*}
+		\mu^{*} \left( I \right)  &\le b - a + 2\epsilon\\
+		&= \ell\left( I \right)  + 2\epsilon\\
+	\text{as \(\epsilon\) is arbitrary} &\text{, we then have }\\
+		\mu^{*}\left( I \right) &\le \ell\left( I \right)
+	.\end{align*}
+	Hence \( \mu^{*} \left( I \right)  = \ell\left( I \right) \) for this case.\\
+	Now, assume \(I \in \{\left( a, b \right) : \left[ a, b \right), \left( a, b \right]  \} \) is any bounded interval with \(a < b\). By monotonicity, for every \(\epsilon > 0\), we have
+	\begin{align*}
+		\ell\left( I \right) - 2\epsilon &= b - a - 2\epsilon \\
+						 &\le \ell \left( \left[ a + \epsilon, b - \epsilon \right]  \right) \\
+						 &=  \mu^{*}\left( \left[ a + \epsilon, b - \epsilon \right]  \right)  \\
+						 &\le \mu^{*}\left( I \right)\\
+						 &\le \mu^{*}\left( I \right) \\
+						 &\le \mu^{*}\left( \left[ a, b \right]  \right)
+						 &= b -a \\
+						 &= \ell\left( I \right)
+	.\end{align*}
+	Hence, for every \(\epsilon > 0\), \(\ell\left( I \right)  - 2\epsilon \le \mu^{*}\left( I \right)  \le \ell \left( I \right) \), hence as \(\epsilon\) is arbitrary \( \mu^{*} \left( I \right)  = \ell \left( I \right) = b-a \). This covers all the bounded cases, hence only the unbounded case remains.\\
+	If \(I\) is unbounded and \(a \in I\), then \(\left[ a, a+n \right] \subseteq J\) for all \(n \in \N\) or \(\left[ a- n, a \right] \subseteq J\) for all \(n \in \N\). In either case, by the monotonicity of the outer measure,  \( \mu^{*}\left( I \right)  \ge n\) for all \(n \in \N\), hence \( \mu^{*}\left( I \right)  = \infty = \ell \left( I \right) \). This completes the proof.
+\end{proof}
+Hence, we have that \( \mu^{*}\) conforms to all of our desired properties with the notable exception of countable additivity. This, of course, means \( \mu^{*}\) is not in fact a measure, so we will again modify our measure function in order to induce a countably additive measure. This construction will come next lecture and will consist of again restricting the domain to a subset of \(\mathscr{P}\left( \R \right) \), the Lebesque measurable sets, a collection which will be introduced and formalized next lecture.
