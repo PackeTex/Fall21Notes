@@ -46,6 +46,24 @@ It turns out such a function produces contradictions, hence it is poorly posed. 
 	.\]
 \end{proof}
 Now, we wish to extend our notion to arbitrary subsets of \(\R\).
-\begin{definition}
+\begin{Notation}
 	For \(A \in \mathscr{P}\left( \R \right) \), then \(J\left( A \right) \) is defined to be the collection of all countable covers \(\{I_{n} : n \in \N\} \) of \(A\) consisting of open, bounded intervals \(I_{n}\).
+\end{Notation}
+\begin{definition}[Lebesque Outer Measure]
+	Let \(A \in \mathscr{P}\left( \R \right) \)	, then the quantity \( \mu^{*} \left( A \right)  \in \left[ 0, \infty \right] \) is defined by \[
+		\mu^{*}\left( A \right) = \inf \{\sum_{i= 1}^{\infty} \ell\left( J_{i} \right) : \{J_{i} : i \in \N\} \in J\left( A \right)  \}
+	.\]
+	This function \( \mu^{*}: \mathscr{P}\left( \R \right)  \to \left[ 0, \infty \right] \) is called the \textbf{Lebesque outer measure}.
 \end{definition}
+\begin{lemma}
+	\begin{enumerate}
+		\item The outer measure is monotone
+		\item The outer measure is translation invariant.
+		\item The outer measure is countable subadditive, that being for \(\{S_{n} : n \in \N\} \) is a countable collection of sets, then \( \mu^{*}\left( \bigcup_{n \in \N} S_{n} \right) \le \sum_{n= 1}^{\infty} \mu^{*}\left( S_{n} \right) \).  \end{enumerate}
+\end{lemma}
+
+\begin{proof}
+	\begin{enumerate}
+		\item Note that \(J\left( A \right) \subseteq J\left( B \right) \), hence \(\)
+	\end{enumerate}
+\end{proof}
