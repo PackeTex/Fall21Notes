@@ -1,1 +1,33 @@
-\lecture{14}{Fri 24 Sep 2021 10:21}{}
+\lecture{14}{Fri 24 Sep 2021 10:21}{Quasi-Random Graphs}
+\begin{remark}
+Random graphs have applications in ramsey theory. For instance, if \(p \ge 2\), \(q\ge 2\), then there is a ramsey number \(R\left( p,q \right) \) such that for a graph \(G\) of order at least \(R\left( p, q \right) \), then either \(G\) constains a \(p\)-clique or an independent set of \(q\) vertices.\\
+It is a well known result that \(R\left( 3, 3 \right) =6\).\\
+A counterexample to a graph of order \(5\) is \(K_{5} \).
+\end{remark}
+We can even obtain an upper bound  \(R\left( p, q \right) \le \binom{p + q - 2}{q - 1}\). This is obtained from the trivial fact that \(R\left( p, q  \right) \le R\left( p, q-1 \right)  + R\left(  p-1, q \right) \).\\
+Now, we examine the diagonal case, \(R\left( k, k \right) \le \binom{2k-2}{k-1}\le \frac{4^{k-1}}{\sqrt{k} }\). From this we obtain, \(\sqrt[k]{R\left( k, k \right) }  \le 4\), and a probabalistic argument from erdos yields \[\sqrt{2}  \le \sqrt[k]{R\left( k, k \right)} \le 4  \]
+\begin{proposition}
+	For all \(k\) and \(n\) with \(n \le \sqrt{2} ^{k}\), there is a graph of order \(n\) such that \(G\) has no \(k\)-clique and no independent set of order \(k\).
+\end{proposition}
+\begin{proof}[Halmos]
+	Fix \(n\) vertices, \(1, 2, \ldots, n\)	 and consider all labeled graphs
+	, denoted \(LG\). Now, recall there are \(2^{\binom{n}{2}}\) labeled graphs of order \(n\). Next, denote \(k_k \left( G \right)  \) to be the number of \(k\)-cliques in a graph \(G\) and we see an independent set is simply a clique of \(\overline{G}\), so we see we need only consider \(k_{k} \left( G \right) + k_{k}\left( \overline{G} \right) \), hence the total number of graphs with either a \(k\)-clique or \(k\)-independent set of order \(n\) are \(S = \sum_{g \in LG\left( n \right) }^{}k_{k}\left( G \right)  + k_{k}\left( \overline{G} \right) = 2\cdot \binom{n}{k} 2^{\binom{n}{2} - \binom{k}{2}} \).\\
+The leading \(\binom{n}{k}\) is due to the fact that there are \(\binom{n}{k}\) subsets of order \(k\) in a set of order \(n\) and the exponent comes from the total amount of possible edges outside of the \(k\)-clique.\\
+Now we construct a bipartite graph \(G\) with \(A= LG\left( n \right) \)  and \(B\) being the set of all possible \(k\)-cliques. We see each \(a \in A\) is a labeled graph, so it may have differing numbers of \(k\)-cliques, each \(b \in B\)  is a \(k\)-clique, and all \(k\)-cliques participate in the same number of labeled graphs of order \(n\) hence \(B\) is regular to \(A\).\\
+Taking our earlier definition of \(S\) and manipulating yields \[
+	S \le 2^{\binom{n}{2}} \left( \frac{2 \binom{n}{k} }{2^{\binom{k}{2}}} \right)
+.\]
+Hence, \[
+	\frac{S}{2^{\binom{n}{2}}} \le \frac{2\binom{n}{k}}{2^{\binom{k}{2}}} < 1
+.\]
+Assuming \(k \ge 3\) and applying definitions yields
+\begin{align*}
+	\frac{2\binom{n}{k}}{2^{\binom{k}{2}}} &< \frac{2n^{k}}{k! 2^{k\frac{ k-1 \right}{2}}}\\
+	\text{ and } \binom{n}{k} &= \frac{n\left( n-1 \right) \ldots \left( n - k +1 \right)  }{k!}\\
+					       &\le \frac{2 \cdot 2^{\frac{k^2}{2}}}{k! 2^{\binom{k\left( k-1 \right) }{2}}} \\
+			       \text{ taking \(k = \sqrt{2} ^{k}\) yields } & \frac{2\left( \sqrt{2}  \right) k}{k!}
+.\end{align*}
+\begin{remark}
+	Note that after \(\binom{n}{2}\) flips of a fair coin, one obtains a graph in \(LG\left( n \right) \). Take a subset \(M\) of cardinality \(k\) in the set of all such graphs and note that there is a \(\frac{1}{2^{\binom{k}{2}}}\) probability this will be a \(k\)-clique. Hence the total probability summed over all subsets \(M\) is \(\binom{n}{k}\frac{2}{2^{\binom{k}{2}}}\). Applying the subbadditivity of probability yields that this is strictly less than \(1\). Hence, there is such a graph not containing a \(k\)-clique or independent set of order \(20\).
+\end{remark}
+\end{proof}

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1632496927 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1632496928
+["pdflatex"] 1632500587 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1632500588
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1632496860 525 14dcee12c941a97477ea4b68218032ef ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -69,6 +69,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1617738065 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1617738065 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1617738065 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1617738065 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1617738065 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1617738065 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1617738065 145408 43d44302ca7d82d487f511f83e309505 ""
@@ -263,9 +264,9 @@
   "figures/payley.pdf_tex" 1631115245 2059 0b91c99b5fd99e4774f413b6c22f554f ""
   "figures/payleycomp.pdf_tex" 1630339611 2948 45814b4925974531e34d9a1484a3d05e ""
   "figures/vtxpart.pdf_tex" 1630007510 2803 48b61298a71ce9ea94733a5e4fb9d77f ""
-  "full.aux" 1632496928 3003 99b0495407c0f8cd858d25318287ef71 "pdflatex"
+  "full.aux" 1632500588 3003 072c3b2dacab6f2f9df59d3eeccda8b3 "pdflatex"
   "full.tex" 1632496860 525 14dcee12c941a97477ea4b68218032ef ""
-  "full.toc" 1632496928 213 c6d6b28c6056b6d47d0c941c16a91b0b "pdflatex"
+  "full.toc" 1632500588 213 c6d6b28c6056b6d47d0c941c16a91b0b "pdflatex"
   "lec_01.tex" 1630074911 4786 253c868570e2277982ae23ed9d3004d9 ""
   "lec_02.tex" 1630083598 5538 9581b86871bbd1d4dd77805f14d5246f ""
   "lec_03.tex" 1630348573 5027 6bdc26c53c96ced1b834208657298f55 ""
@@ -279,10 +280,10 @@
   "lec_11.tex" 1631928347 5770 8189fbdf24e98ad53a0293989956223c ""
   "lec_12.tex" 1632244791 3770 36237fa0074c0599d9a9b0cc8547feb3 ""
   "lec_13.tex" 1632496925 146 dd5bc03629c41d315aaa5ef94951a367 ""
-  "lec_14.tex" 1632496860 38 06d124f5cfeda64ad9016097fbf6c366 ""
+  "lec_14.tex" 1632500285 3819 2bfd16a20b61c8812c509be563689c71 ""
   "ops.tex" 1631289469 334 24d1d10e1c0997cd2bd2c17f8f9a3358 ""
   (generated)
-  "full.log"
-  "full.pdf"
-  "full.toc"
   "full.aux"
+  "full.log"
+  "full.toc"
+  "full.pdf"
