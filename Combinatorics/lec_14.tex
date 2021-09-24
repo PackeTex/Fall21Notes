@@ -22,10 +22,10 @@ Hence, \[
 .\]
 Assuming \(k \ge 3\) and applying definitions yields
 \begin{align*}
-	\frac{2\binom{n}{k}}{2^{\binom{k}{2}}} &< \frac{2n^{k}}{k! 2^{k\frac{ k-1 \right}{2}}}\\
-	\text{ and } \binom{n}{k} &= \frac{n\left( n-1 \right) \ldots \left( n - k +1 \right)  }{k!}\\
+	\frac{2\binom{n}{k}}{2^{\binom{k}{2}}} &< \frac{2n^{k}}{k! 2^{k\frac{ k-1 }{2}}}\\
+	\binom{n}{k} &= \frac{n\left( n-1 \right) \ldots \left( n - k +1 \right)  }{k!}\\
 					       &\le \frac{2 \cdot 2^{\frac{k^2}{2}}}{k! 2^{\binom{k\left( k-1 \right) }{2}}} \\
-			       \text{ taking \(k = \sqrt{2} ^{k}\) yields } & \frac{2\left( \sqrt{2}  \right) k}{k!}
+			       \text{ taking \(k = \sqrt{2} ^{k}\) yields } & \frac{2\left( \sqrt{2}  \right) ^{k}}{k!}
 .\end{align*}
 \begin{remark}
 	Note that after \(\binom{n}{2}\) flips of a fair coin, one obtains a graph in \(LG\left( n \right) \). Take a subset \(M\) of cardinality \(k\) in the set of all such graphs and note that there is a \(\frac{1}{2^{\binom{k}{2}}}\) probability this will be a \(k\)-clique. Hence the total probability summed over all subsets \(M\) is \(\binom{n}{k}\frac{2}{2^{\binom{k}{2}}}\). Applying the subbadditivity of probability yields that this is strictly less than \(1\). Hence, there is such a graph not containing a \(k\)-clique or independent set of order \(20\).
