@@ -1,0 +1,35 @@
+\lecture{11}{Tue 28 Sep 2021 13:00}{}
+We prove the final theorem from last lecture.
+\begin{proof}
+	\begin{itemize}
+		\item \(\left( 1 \implies 2 \right) \). There are \(2\) cases, \(S\) being bounded and \(S\) being unbounded.\\
+			If \(S\) is bounded, there is an interval \(\left( a, b \right) \supseteq S\), \(a, b \in \R\). Then for any given \(\epsilon > 0\), we find \(\{I_{k} : k \in \N\} \in J\left( S \right)  \) and \(\{J_{k} : k \in \N\}  \in J\left( \left[ a, b \right] \setminus S \right) \) such that \( \mu \left( s \right) \ge \sum_{k=1}^{\infty} \ell\left( I_{k} \right)  - \frac{\epsilon}{3}\) and \( \mu\left( \left[ a, b \right] \setminus S \right)  \ge \sum_{k=1}^{\infty} \ell \left( J_{k} \right) - \frac{\epsilon}{3}\).\\
+			Let \(O = \bigcup_{k \in \N} I_{k}\), \(U = \bigcup_{k \in \N} J_{k} \) and \(C = \left[ a, b \right] \setminus U\). Then, \(C  \subseteq S \subseteq O\). Note that \(O, U\) are open and \(C\) is closed. Then, \begin{align*}
+				\mu \left( S \right) &\ge \mu\left( O \right) -\frac{\epsilon}{3}\\
+				\mu\left( \left[ a, b \right] \setminus S \right) &\ge \mu\left( U \right) - \frac{\epsilon}{3}.
+			.
+		\end{align*}
+		Furthermore, \(U\), \(C\) are disjoint and \(\mu\left( U \right) < \infty\) (as it is an interval minus a measurable set) and \(\left[ a, b \right] \subseteq U \cup C\). Hence,
+		\begin{align*}
+			\mu\left( C \right) &\ge \mu \left( \left[ a, b \right]  \right)  \setminus \mu \left( U \right) \\
+					    &= b - a - \mu\left( U \right)
+		.\end{align*}
+		Then, since \( \mu\left( C \right) \le \mu\left( S \right)  < \infty\), we have \begin{align*}
+			\mu\left( O \setminus C \right) &=  \mu\left( O \right) - \mu\left( C \right)  \\
+							&\le \frac{\epsilon}{3} + \underbrace{\mu\left( S \right) - \left( b - a \right)}_{= -\mu\left( \left[ a, b \setminus S \right]  \right) }  + \mu \left( U \right) \\
+							&=  \frac{\epsilon}{3}- \mu\left( \left[ a, b \right] \setminus S \right)  + \mu\left( U \right)  \\
+							&\le \frac{2\epsilon}{3} \\
+							&< \epsilon
+		.\end{align*}
+		For a general \(S\), let \(S_{n} = S \cap \left[ n, n + 1 \right] \), \( n \in \Z\). Then, there are open \(O_{n}\) and closed \(C_{n}\) such that \(C_{n} \subseteq S_{n} \subseteq O_{n}\) and \( \mu\left( O_{n} \setminus C_{n} \right)  < \frac{\epsilon}{3\cdot 2^{\left| n \right| }}\).\\
+		Let \(O = \bigcup_{n \in \Z} O_{n}\) and \(C = \bigcap_{n \in \Z}C_{n} \). Then, \(O\) is open and \(C\) is closed by definition and we see \(O \setminus C = \bigcup_{n \in \Z} \left( O_{n} \setminus C_{n} \right) \) by demorgen and we have \(C \subseteq S \subseteq O\). Then,
+		\begin{align*}
+			\mu\left( O \setminus C \right) &\le \sum_{n \in \Z}^{} \mu\left( O_{n} \setminus C_{n} \right) \\
+							&< \sum_{ n \in \Z}^{} \frac{\epsilon}{3 \cdot 2^{\left| n \right| }} \\
+							&=  \epsilon \text{ by geometric summation}
+		.\end{align*}
+	\item \(\left( 2 \implies 3 \right) \). For each \(n \in \N\), there are closed \(C_{n}\) and open \(O_{n}\) such that \(C_{n} \subseteq S \subseteq O_{n}\) and \( \mu\left( O_{n} \setminus C_{n} \right)  < \frac{1}{n}\). Let \(F = \bigcup_{n \in \N} C_{n}\) and \(G = \bigcap_{ O_{n}} \). Then, \(F\) is a \(F_{\sigma}\) set and \(G\) is a \(G_{\delta}\) set. Then, we have \(F \subseteq S \subseteq G\) and \( \mu\left( G \setminus F \right) \le \mu\left( O_{n} \ C_{n} \right)  < \frac{1}{n}\) for all \(n \in \N\). Hence, \( \mu \left( G \setminus F \right) = 0 \).
+	\item \((3 \implies 4)\). This is immediately obvious as \(F_{\sigma}\) and \(G_{\delta}\) sets are measurable.
+	\item \(\left( 4 \implies 1 \right) \). Let \(A \subseteq \R\) and \(\epsilon > 0\). Then \(S^{c} \subseteq G \cup \left( G \cap F^{c} \right) \). Then, \(A\)
+	\end{itemize}
+\end{proof}

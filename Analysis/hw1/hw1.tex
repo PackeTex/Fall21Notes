@@ -32,14 +32,24 @@
 \end{problem}
 \begin{solution}
 	\begin{enumerate}
-		\item Suppose \(A \triangle B = \O\) and let \(a \in A\), \(b \in B\). Then, we see \(a \not\in B \setminus A\) by definition. Furthermore, as \(A \triangle B = \left( A\setminus B \right) \cup \left( B \setminus A \right)  = \O\), we see \(a \not\in A \setminus B\), but as \(a \in A\) this implies \(a \in B\). Hence \(a \subseteq B\). Again, notice \(b \not\in A \setminus B\) by definition. Furthermore, \(b \not\in B \setminus A\) as this would make \(A\triangle B\) nonempty, so \(b \in A\). Hence, \(A=B\).\\
-			Conversely, suppose \(A = B\). Then, \[
-				A \triangle B = A \triangle A = \left( A \setminus A \right) \cup \left( A \setminus A \right)  = \O \cup \O = \O
-			.\]
-		\item Suppose \(A\triangle B = X\) and let \(a \in A\). Then, we see \(a \not\in B \setminus A\) by definition, but \(a \in X\), so \( a \in A \setminus B\). Hence \(a \not\in B\). As every \(a \in A\) has \(a \not\in B\), we see \(A \subseteq B^{c}\). Now, let \(b \in B^{c}\). We see \(b \not\in B\) by definition, hence \(b \not\in B \setminus A\). As \(b \in X\), we must then have that \(b \in A \setminus B\), hence \(b \in A\). Thus, \(B^{c} = A\).\\
-			Conversely, suppose \(B^{c} = A\). Then, \[
-				A \triangle B = B^{c} \triangle B = \left( B^{c} \setminus B \right)  \cup \left( B \setminus B^{c} \right) = B^{c} \cup B = X
-			\] by definition of complements.
+		\item Suppose \(A \triangle B = \O\). Then, \(\left( A \setminus B \right)  \cup \left( B \setminus A \right)  = \O\), hence \(A \setminus B = \O\) and \(B \setminus A = \O\). If \(A = \O\), then \(B \setminus \O = B = \O\), hence \(A = B\). Similarly, if \(B = \O\), \(A \setminus \O = A = \O\), hence we can assume \(A, B \neq \O\). Now, as \(A \setminus B = \O\), we see \(A \subseteq B\), similarly as \(B \setminus A = \O\) we have \(B \subseteq A\), hence \(A = B\).\\
+			Conversely,
+	\begin{align*}
+		A \triangle B &=  A\triangle A \\
+			      &= \left( A \setminus A \right) \cup \left( A \setminus A \right)   \\
+			      &= \O \cup \O \\
+			      &= \O \\
+	.\end{align*}
+\item Now, suppose \(A \triangle B = X\). If \(A  = \O\)< we have \(A \triangle B = \left( \O \setminus B \right) \cup \left( B \setminus \O \right) = B = X\), hence \(A = B^{c}\). Hence, we can assume \(A\) is nonempty and \(B \subset X\) is proper, hence \(B^{c}\) is nonempty.\\
+	Then, let \(a \in A\), then we have \(a \in A \triangle B\) and \(a \not\in B \setminus A\) by definition, hence \(a \in A \setminus B\), so \(a \not\in B\), hence \(a \in B^{c}\), so \(A \subseteq B^{c}\).\\
+	Similairly, if \(b \in B^{c}\), then we have \(b \in A\triangle B\) and \( b \not\in B \setminus A\) by definition, so \(b \in A \setminus B\), hence \(b \in A\), so \(A = B^{c}\).\\
+	Conversely,
+	\begin{align*}
+	A \triangle B &=  B^{c} \triangle B \\
+		      &= \left( B^{c} \setminus B \right) \cup \left( B \setminus B^{c} \right)  \\
+		      &= B^{c} \cup B \\
+		      &=  X
+	.\end{align*}
 	\end{enumerate}
 \end{solution}
 \newpage
@@ -53,11 +63,22 @@
 \begin{solution}
 	\begin{enumerate}
 		\item Let \(g: X \to Y\) be a map such that \(g \circ f\) is the identity on \(X\). Then, suppose \(f\) is not injective. Let \(x , y \in X\) such that \(x\neq y\) and \(f\left( x \right)  = f\left( y \right) \). Then \(g\left( f\left( x \right)  \right)  = x \) element. WLOG, suppose \(g\left( f\left( x \right)  \right) = g\left( f\left( y \right)  \right) = x \). Then, \(g\left( f\left( y \right)  \right) =x\) contradicts the assumption that \(g \circ f\) was the identity. \\
-		\\	Now, suppose \(f\) is injective. Then, for each \(x \in X\) there is a unique \(f\left( x \right) \in Y\). Hence, let us define the map \(g: Y \to X\) such that \(g\left( f\left( x \right)  \right) = x\) for all \(x \in X\). We see this is a function as each \(f\left( x \right) \in Y \) originates from only \(1\) \(x \in X\) by injectivity. Hence, this implies \(g \circ f\) is the identity by this definition. This completes the proof.
-		\item We wish to see if this map is necessarily unique. Suppose \(h: Y \to Z\) is another map such that \(h \circ f\) is the identity on \(X\). Then, for every \(x \in X\), we have \(\left( h \circ f \right) \left( x \right)  = x\), that is \(h\left( f\left( x \right)  \right) = x\), hence \(h: f\left( x  \right) \mapsto x\), just as \(g\), hence \(h = g\) are the same maps.\\
-		\\	Furthermore, we wish to see if the map is necessarily a bijection. As \(g\) is the unique inverse map, let us now it denote \(f^{-1}\) as it is equivalent to a pointwise preimage. We see \(X \subseteq f^{-1} \left( f\left( X \right)  \right) \) by problem \(1\), and as the universe under consideration is \(X\), this implies \(f^{-1} : Y \to X\) is in fact a surjection (its image is \(X\)). As for  injectivity , we know the function \(f\) must map \(x \mapsto f\left( x \right) \) uniquely, that is, \(\left| f\left( \{x\}  \right)  \right| = 1\). Hence, suppose \(f^{-1} \left( y \right) = f^{-1} \left( z \right) \) for some \(y \neq z\). Then, by our earlier observation, \(f\left( x \right) = y \text{ and } z \), hence \(\left| f\left( \{x\}  \right)  \right| > 1\). \(\lightning\). So, \(g\) is necessarily a bijection.
-\item Suppose \(g:Y \to X\) is a map such that \(f \circ g\) is the identity on \(Y\). Then, we have for each \(y \in Y\), \(f\left( g\left( y \right)  \right) = y\), so, we see \[\bigcup_{y \in Y} f\left( g\left( \{y\}  \right)  \right) = f\left( g\left( \bigcup_{y \in Y} \{y\} \right)   \right) =   f\left( g\left( Y \right)  \right) = \bigcup_{y \in Y} \{y\} = Y.\] That is, \(f\left( g\left( Y \right)  \right) = Y\), hence the image of \(f\) is \(Y\), so \(f\) is a surjection.\\
-	\\		Now, suppose \(f\) is onto. Then, for each \(y \in Y\), there is a \(x \in X\) such that \(f\left( x \right)  =y\). Hence, define \(g: Y \to X, \ y \mapsto g(y) = x\) where \(x\) is the afformentioned element such that \(f\left( x \right) =y\) for this particular \(y\). Then, we see \(\left( f \circ g \right) \left( y \right) = f\left( g\left( y \right)  \right) = f\left( x \right) = y\) for arbitrary \(y\), so \(\left( f \circ g \right) \) is the identity on \(Y\),
+		\\
+		Now, let \(f: \left[ 0, 2 \right]  \to \left[ 0, 5 \right] , \ x \mapsto  x^2\). This is clearly injective, and their exists a fuction \(g: \left[ 0, 5 \right]  \to \left[ 0, 2 \right]  , y \  \mapsto g(y) = \left \{
+			\begin{array}{11}
+				\sqrt{y} , & \quad 0 \le y \le 4\\
+				0, & \quad 4 < y \le 5
+			\end{array}
+		\right.\). Then, note that for \(x \in \left[ 0, 2 \right] \), \(f\left( x \right) \in \left| 0, 4 \right| \) hence \(g\left( f\left( x \right)  \right) = \sqrt{x^2} = x \). Hence, \(g \circ f\) is the identity on \(\left[ 0, 2 \right] \). Clearly, \(g\) is noninjective as \(g\left( 0 \right) = g\left( 5 \right) = 0\). Furthermore the function \[\hat{g}: \left[ 0, 5 \right] \to \left[ 0, 2 \right] :  x \mapsto \hat{g}\left( x \right) = \left \{
+			\begin{array}{11}
+				\sqrt{x} , & \quad 0 \le x \le 4 \\
+				1, & \quad 4 < x \le 5
+			\end{array}
+			\right.\] is another function such that \(\hat{g} \circ f\) is the idenity on \(X\), so \(g\) need not be unique.\\
+			Lastly we show it is surjective. Let \(f: X\to Y\) be injective with \(g: X \to Y\) being a map such that \(g \circ f\) is the identity and let \(x \in X\). Then, note that \(f\left( x \right)  \in Y\), hence \(g\left( f\left( x \right)  \right)  = x \in g\left( Y \right) \). Hence \( X \subseteq g\left( Y \right) \), so \(g\) is surjective.
+		\item Suppose \(g:Y \to X\) is a map such that \(f \circ g\) is the identity on \(Y\). Then, we have for each \(y \in Y\), \(f\left( g\left( y \right)  \right) = y\), so, we see \[\bigcup_{y \in Y} f\left( g\left( \{y\}  \right)  \right) = f\left( g\left( \bigcup_{y \in Y} \{y\} \right)   \right) =   f\left( g\left( Y \right)  \right) = \bigcup_{y \in Y} \{y\} = Y.\] That is, \(f\left( g\left( Y \right)  \right) = Y\), hence the image of \(f\) is \(Y\), so \(f\) is a surjection.\\
+\\
+Now, suppose \(f\) is onto, hence \(\left| f^{-1}\left( \{y\}  \right)  \right| \ge 1\) for each \(y \in Y\). Let \(h : \{f^{-1}\left(\{y\}\right) : y \in Y\} \to \bigcup_{y \in Y} f^{-1}\left( \{y\}  \right) \) be a choice function mapping each singleton preinverse to an element within it. \\Let \(k : Y \to \{f^{-1}\left( y \right) : y \in Y\}, \ y \mapsto f^{-1}\left( \{y\}  \right) \). Then denote  \(h \circ k = g \). Note that \(g\left( y \right) \in f^{-1}\left( \{y\}  \right)  \) by properties of choice function. Hence, \(\left(f \circ g \right)\left( y \right) = y\) for each \(y \in Y\), so it is the inverse on \(y\).
 	\end{enumerate}
 \end{solution}
 \newpage
