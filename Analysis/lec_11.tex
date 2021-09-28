@@ -1,4 +1,4 @@
-\lecture{11}{Tue 28 Sep 2021 13:00}{}
+\lecture{11}{Tue 28 Sep 2021 13:00}{Measure Theory (3)}
 We prove the final theorem from last lecture.
 \begin{proof}
 	\begin{itemize}
@@ -30,6 +30,69 @@ We prove the final theorem from last lecture.
 		.\end{align*}
 	\item \(\left( 2 \implies 3 \right) \). For each \(n \in \N\), there are closed \(C_{n}\) and open \(O_{n}\) such that \(C_{n} \subseteq S \subseteq O_{n}\) and \( \mu\left( O_{n} \setminus C_{n} \right)  < \frac{1}{n}\). Let \(F = \bigcup_{n \in \N} C_{n}\) and \(G = \bigcap_{ O_{n}} \). Then, \(F\) is a \(F_{\sigma}\) set and \(G\) is a \(G_{\delta}\) set. Then, we have \(F \subseteq S \subseteq G\) and \( \mu\left( G \setminus F \right) \le \mu\left( O_{n} \ C_{n} \right)  < \frac{1}{n}\) for all \(n \in \N\). Hence, \( \mu \left( G \setminus F \right) = 0 \).
 	\item \((3 \implies 4)\). This is immediately obvious as \(F_{\sigma}\) and \(G_{\delta}\) sets are measurable.
-	\item \(\left( 4 \implies 1 \right) \). Let \(A \subseteq \R\) and \(\epsilon > 0\). Then \(S^{c} \subseteq G \cup \left( G \cap F^{c} \right) \). Then, \(A\)
+	\item \(\left( 4 \implies 1 \right) \). Let \(A \subseteq \R\) and \(\epsilon > 0\). Then \(S^{c} \subseteq G \cup \left( G \cap F^{c} \right) \). Then, \(A \cap S^{c} \subseteq \left( A \cap G^{c} \right) \cup \left( G \cap F^{c} \right) \).\\
+		Hence, \begin{align*} \mu^{*}\left( A \cap S^{c} \right) &\le \mu^{*}\left( A \cap G^{c} \right) + \underbrace{ \mu^{*}\left(G \cap F^{c}\right)}_{ < \epsilon} \\
+			&\le \mu^{*}\left( A \cap G^{c} \right)  + \epsilon
+		.\end{align*}
+		And, as \(G\) is measurable, we have \[ \mu^{*}\left( A  \right) =  \mu^{*}\left( A \cap G^{} \right)  + \mu^{*}\left( A \cap G^{c} \right)  \ge  \mu^{*}\left( A \cap S \right)  + \mu ^{*}\left( A \cap S^{c} \right)  - \epsilon\]. Hence, in the infimum we have \[
+			\mu^{*}\left( A \right) \ge \mu^{*}\left( A \cap S \right)  + \mu^{*}\left( A \cap S^{c} \right)
+		.\]
+		So, \(S\) is measurable.
 	\end{itemize}
 \end{proof}
+\begin{definition}[Nested Sets]
+	A countable collection of sets \(\{S_{k} : k \in \N\} \) is called
+\begin{enumerate}
+	\item \textbf{ascending} if \(S_{k} \subseteq S_{ k + 1}\) for all \(k\).
+	\item \textbf{descending} if \(S_{k + 1} \subseteq S_{k}\) for all \(k\).
+\end{enumerate}
+\end{definition}
+\begin{lemma}
+	\begin{enumerate}
+		\item If \(\{S_{k} : k \in \N\} \) is an ascending collection of measurable sets, then \( \mu \left( \bigcup_{k \in \N} S_{k} \right) = \lim_{k \to \infty} \mu\left( S_{k} \right) \).
+		\item If \(\{S_{k} : k \in \N\} \) is a descending collection of measurable sets and \( \mu\left( S_1 \right)  < \infty\). Then, \( \mu \left( \bigcap_{k \in \N} S_{k}  \right) = \lim_{k \to \infty} \mu\left( S_{k} \right)  \).
+	\end{enumerate}
+\end{lemma}
+\begin{proof}
+\begin{enumerate}
+	\item It suffices to consider the case \( \mu\left( S_{k} \right) < \infty\) for all \(k\), else the union and limit both trivially have measure \(\infty\). Define \(S_0 = \O\), \(X_{n} = S_{n} \setminus S_{n - 1}\). Then, \(\{X_{k} : k \in \N\} \) is a disjoint collection of measurable sets such that \(\bigcup_{k \in \N} X_{k} = \bigcup_{k \in \N} S_{k} \). Hence, as we know the lebesque measure to be countably additive, we have
+		\begin{align*}
+			\mu\left( \bigcup_{k \in \N} X_{k} \right) &=  \sum_{k=1}^{\infty} \mu\left( X_{k} \right)  \\
+								   &= \lim_{n \to \infty}\sum_{k=1}^{n} \mu\left( X_{k} \right)  \\
+								   &=  \lim_{n \to \infty}\sum_{k=1}^{n} \left( \mu\left( S_{k} \right) - \mu\left( S_{ k - 1} \right)  \right)  \\
+								   &=  \lim_{k \to \infty} \mu\left( S_{k} \right)
+		.\end{align*}
+	\item Let \(X_{n} = S_1 \ S_{n}\). Then, \(\{X_{k} : k \in \N\} \) is an ascending collection of measurable sets such that \(\bigcup_{k \in \N} X_{k}= S_1 \setminus \left( \bigcap_{k \in \N}S_{k}  \right)  \). Since \(S_{k} \subseteq S_1\) and \( \mu\left( S_1 \right)  < \infty\) we have by the first lemma that
+		\begin{align*}
+		\mu\left( S_1 \right) - \mu\left( \bigcap_{k \in \N} S_{k} \right) &=  \mu\left( \bigcup_{k \in \N} X_{k} \right)  \\
+			   &= \lim_{k \to \infty} \mu\left( X_{k} \right) \\
+	   &= \mu\left( S_1 \right) - \lim_{k \to \infty} \mu\left( S_{k} \right)
+		.\end{align*}
+		As \( \mu\left( S_1 \right) \) is finite we know this to be well defined, hence
+		\[
+			\mu\left( \bigcap_{k \in \N}  S_{k} \right)  = \lim_{k \to \infty} \mu\left( S_{k} \right)
+		.\]
+\end{enumerate}
+\end{proof}
+\begin{theorem}[Borel-Cantelli Lemma]
+	Suppose \(\{S_{k} : k \in \N\} \) is a countable collection of measurable sets such that \(\sum_{k=1}^{\infty} \mu\left( S_{k} \right)  < \infty\). Then, the set of all \(x \in \R\) which belong to an infinite subcollection of \(\{S_{k} : k \in \N\} \) has measure \(0\).
+\end{theorem}
+\begin{proof}
+	Note that \(x\) belongs to an infinite subcollection of \(\{S_{k} : k \in \N\} \) if and only if \(x \in \bigcap_{k \in \N} \bigcup_{n = k} ^{\infty} S_{n}\).\\
+	Then, the collection \(\{\bigcup_{n=k} ^{\infty}S_{n} : k \in \N\} \) is descending and  \( \mu\left( \bigcup_{n \in \N} S_{n} \right) \le \sum_{n=1}^{\infty} \mu\left( S_{n} \right) < \infty\). Hence, by the preceding lemma, we have
+	\begin{align*}
+		\mu\left( \bigcap_{k \in \N} \bigcup_{ n = k} ^{\infty}S_{n} \right) &= \lim_{k \to \infty} \mu\left( \bigcup_{n=k} ^{\infty} S _{n}\right)  \\
+										     &\le \lim_{k \to \infty}\sum_{n = k}^{\infty} \mu\left( S_{n} \right)\\
+										     &=  0 \\
+	.\end{align*}
+	This final equality is because for all \(\epsilon > 0\) there is a \(K \in \N\) such that for \(k \ge K\) we have \[
+		\left| \sum_{i= 1}^{\infty} \mu\left( S_{i} \right) - \sum_{i= 1}^{k-1} \mu\left( S_{i} \right)  \right| < \epsilon
+	.\]
+\end{proof}
+\begin{problem}
+	\begin{enumerate}
+		\item Is every set measurable?
+		\item Is every set of measure \(0\) countable?
+		\item Is every measurable set Borel?
+	\end{enumerate}
+\end{problem}
