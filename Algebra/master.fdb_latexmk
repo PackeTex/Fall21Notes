@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1632933042 "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" "master.pdf" "master" 1632933043
+["pdflatex"] 1632934293 "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" "master.pdf" "master" 1632934398
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" 1632933041 254 c08809b5de472b2f3584cf117089be4d ""
+  "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" 1632934398 254 c08809b5de472b2f3584cf117089be4d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -238,14 +238,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
-  "lec_15.tex" 1632873328 3542 7b33c91db04b8a79e570b88590ebc1b9 ""
+  "lec_15.tex" 1632934293 5328 8d2ad3a1c21b68176c3f2fd25db2aa92 ""
   "lec_16.tex" 1632933041 38 1a95f811d4de773f682bf32f06201f1b ""
-  "master.aux" 1632933043 106 e860c4f38b7f6e1623795c4e9833df5e "pdflatex"
-  "master.tex" 1632933041 254 c08809b5de472b2f3584cf117089be4d ""
-  "master.toc" 1632933043 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "master.aux" 1632934294 106 e860c4f38b7f6e1623795c4e9833df5e "pdflatex"
+  "master.tex" 1632934398 254 c08809b5de472b2f3584cf117089be4d ""
+  "master.toc" 1632934294 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "ops.tex" 1630348190 128 ec4436639d737715cee9bb35f558b259 ""
   (generated)
+  "master.aux"
   "master.pdf"
   "master.toc"
-  "master.aux"
   "master.log"
