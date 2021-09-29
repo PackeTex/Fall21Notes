@@ -1246,6 +1246,10 @@ INPUT ./lec_15.tex
 INPUT lec_15.tex
 INPUT ./lec_15.tex
 INPUT lec_15.tex
+INPUT ./lec_16.tex
+INPUT lec_16.tex
+INPUT ./lec_16.tex
+INPUT lec_16.tex
 INPUT full.aux
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
