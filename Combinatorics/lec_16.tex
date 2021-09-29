@@ -1,0 +1,45 @@
+\lecture{16}{Wed 29 Sep 2021 10:27}{}
+First, we examine some more random graphs. For a random graph \(G\), it is a trivial rseult of probability theory that the number of four cycles is precisely \(\frac{1}{2}\sum_{u, v \in V\left( G \right); v\neq u}^{} \binom{\hat{d}\left( u, v \right) }{2}\). Then, applying our estimation \(\hat{d} \left( u, v \right) = \frac{n}{4 }+ o\left( u \right) \) yields \(\binom{n}{2}\) possible pairs \(u, v\) and \(\hat{d} \approx \frac{n}{4}\), hence the number of four cycles is \[
+	\frac{1}{n}\binom{\frac{n}{4}}{2}\binom{n}{2} = \frac{n^{4}}{128} + o\left( n^{4} \right)
+.\]
+Now, we examine the \(k\)-walks.
+\begin{definition}[Walks]
+A \textbf{\(k\)-walk} is a \(k\)-path \(v_1, v_2, v_3, \ldots, v_{k}\).\\
+A \textbf{closed \(k\)-walk} is a \(k\)-cycle, \(v_1, v_2, \ldots, v_{k}, v_1\).
+\end{definition}
+\begin{remark}
+Walks need not have all vertices distinct, hence a graph of order \(2\) where one simply oscillates between the vertices to produce a degenerate \(2n\)-walk. Similairly, one can traverse a triangle to induce a \(4\)-walk as well. Overall this yields \(14\) possible \(4\)-walks on a graph of order \(4\).
+\end{remark}
+Now, we examine the number of closed \(4\)-walks on a random graph of order \(n\). We see nondegenerate \(4\)-walks are just \(4\)-cycles of which we know there to be \(\frac{n^{4}}{128}\) with \(8\) possible permutations of directions and starting point yields \(8 \cdot \frac{n^{4}}{128}\). Similairly, we note that \(4\cdot \sum_{v \in V}^{} \binom{d_{i}\left( v \right) }{2}= 4n\binom{n}{2} = \frac{1}{2}n^3 + o \left( n^3 \right) = o\left( n^{4} \right) \) degenerate graphs on \(3\) vertices exist. Lastly, the number of degenerate graphs on \(2\)-vertices is clearly, \(2\cdot e\left( g \right) = o\left( n^{4} \right)  \). Hence, the number of \(4-walks\) is just \(\frac{n^{4}}{16} + o \left( n^{4} \right) \).
+\begin{proposition}
+	\(\tr\left( A\left( G \right) ^{k} \right) = \sum_{i= 1}^{n} \lambda_{i}^{k} \) is the number of closed \(k\)-walks in a graph \(G\) of order \(n\).
+\end{proposition}
+From this, we arrive at \(6k_{3}\left( G \right) = \tr\left( A^3 \right) = \sum_{i= 1}^{3} \lambda_{i}^3\).\\
+We also see the number of closed walks of order \(4\) is
+\begin{align*}
+	CW_4 &= \sum_{i= 1}^{n} \lambda_{i}^{4}\\
+	\frac{n^{4}}{16} + o\left( n^{4} \right) 	&=  \lambda_1^{4} + \sum_{i=2}^{n} \lambda_{i}^{4}\\
+\implies \sum_{i=2}^{n} \lambda_{i}^{4} &=  o\left( n^{4} \right)
+.\end{align*}
+
+Similarly, we find \(\sigma_2\left( G  \right) = o\left( n \right) \) and \(O\left( \sqrt{n}  \right) \).
+\begin{definition}[Local Density]
+	The \textbf{local density} of a graph is simply \(e\left( U \right) \) for some graph \(U \subseteq V\).
+\end{definition}
+\begin{remark}
+	Local density is highly variable. For instance in \(K_{n, n} \) we find \(U\) being one of the partite sets yields \(0\) local density and \(U\) being a set of half the vertices in each partite set yields \(\frac{1}{4}e\left( G \right) \) local density.
+\end{remark}
+
+\begin{proposition}
+	Suppose \(G\) is a random graph of order \(n\) and let \(U\) be a set with \(\left| U \right| > 502 \log \left( n \right) \). Then, \(\left| e\left( U \right) - \frac{1}{2}\binom{\left| U \right| }{2} \right|  < \binom{\left| U \right| }{2} \left( \frac{3.5 \log n}{\left| U \right| } \right) ^{\frac{1}{2}}\). \\
+\end{proposition}
+\begin{proposition}
+	There exists a function \(f: \N \to \N\) such that almost every graph of order \(n\) as clique number \(f\left( n \right) \) or \(f\left( n+1 \right) \).
+\end{proposition}
+This function is approximated by \[
+	f\left( n \right)  \approx 2 \log_2\left( n \right)
+.\]
+\begin{remark}
+	There is  clearly also such a function for the independence number.
+\end{remark}
+Furthermore, more investigation yields \(\chi \left( G \right)  \approx \frac{n}{2 \log_2\left( n \right) } \) for almost all graphs \(G\).
