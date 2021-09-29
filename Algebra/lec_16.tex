@@ -1,1 +1,12 @@
 \lecture{16}{Wed 29 Sep 2021 11:25}{}
+\begin{corollary}
+	A finite abelian group is the direct product of its sylow groups.
+\end{corollary}
+This follows directly from the theorem from last class.
+\begin{corollary}
+	If \(G\) is a finite group such that for all \(n \mid \left| G \right| \) such that there are at most \(n\) elements \(x \in G\) with \(x^{n}= 1\), then \(G\) is cyclic.
+\end{corollary}
+\begin{proof}
+	Let \(p\) be an arbitrary prime with \(p \mid \left| G \right| \). Let \(P\) be a sylow \(p\)-group with \(\left| P \right| = p^{\alpha}\). We know for any \(x \in P\), we have \(x^{\left| P \right| } = 1\), hence there are \(\left| P \right|  = p^{\alpha}\) elements \(x \in P\) such that \(x^{p^{\alpha}} = 1\). By hypothesis there is infact equality. If there was another distinct sylow \(p\)-group we would have elements \(y \not\in P\) such that \(y^{p^{\alpha}} = 1\). Hence, \(P\) is unique. Hence, as every \(p\)-group is unique, so normal, we see \(G\) is the product of its \(P\)-groups.\\
+	Denote \(G = P_1 \times P_2 \times  \ldots P_{t}\) with the \(P_{i}\)s being the distinct sylow \(\p_{i}\)-groups of \(G\). Also, if \(\left| P_1 \right|  = p_1^{\alpha_1}\), then all \(x \in P_1\) have \(\ord\left( x \right) \mid p_1^{\alpha_1}\) and there are at most \(p_1^{\alpha_1 -1} < p_1^{\alpha_1}\) such \(x\) with \(\ord\left( x \right)  \mid p_1^{\alpha_1 - 1}\). Since \(\left| P \right|  < p_1^{\alpha_1 -1}\) we see there is an \(x \in P_1\) with \(\ord\left( x \right) = p_1^{\alpha_1} = \left| P \right| \), hence \(\left<x \right>  = P_1\). So, \(P_1\) is cyclic. Likewise, all other \(P_{i}\) are shown cyclic by the same argument, with \(P_{i} = \left<x_{i} \right> \). Then, the element \(x = \prod_{i= 1}^{t} x_{i}\) is a generator of \(G\), so \(G\) is cyclic.
+\end{proof}
