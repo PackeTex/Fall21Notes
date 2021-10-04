@@ -1,3 +1,4 @@
 \contentsline {section}{\numberline {1}Strongly Regular Graphs}{1}{}%
 \contentsline {section}{\numberline {2}Graph Matrices and Eigenvalues}{12}{}%
 \contentsline {section}{\numberline {3}Hadamard Matrices}{17}{}%
+\contentsline {section}{\numberline {4}Quasi-Random Graphs}{31}{}%
