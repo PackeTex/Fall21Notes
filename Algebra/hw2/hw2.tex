@@ -13,9 +13,9 @@
 	We induce a bijective correspondence. Let \(\alpha \in \aut\left( G_1 \times G_2 \right) \) , \(x \in G_1\) and \(y \in G_2\). Then, let \(\alpha\left( x, 1 \right) = \left( a, b \right) \) and \(\alpha\left( 1, y \right)  = \left( c, d \right) \). We see,
 \begin{align*}
 	\alpha\left( \left( x, 1 \right) ^{\left| G_1 \right| } \right) &= \alpha\left( x^{\left| G_1 \right| }, 1 \right)  \\
-	\alpha\left( \left( a, b \right) ^{\left| G_1 \right| } \right) &= \alpha\left( 1, 1 \right)  \\
-	\alpha\left( a^{\left| G_1 \right| }, b^{\left| G_1 \right| } \right) &= \left( 1, 1 \right)  \\
-									      &= \alpha\left( 1, b^{\left| G_1 \right| } \right)  \\
+	\left( \left( a, b \right) ^{\left| G_1 \right| } \right) &= \alpha\left( 1, 1 \right)  \\
+	\left( a^{\left| G_1 \right| }, b^{\left| G_1 \right| } \right) &= \left( 1, 1 \right)  \\
+									      &= \left( 1, b^{\left| G_1 \right| } \right)  \\
 .\end{align*}
 Hence, as \(\alpha\) is a bijection, we must have \(b^{\left| G_1 \right| } = 1\) and as \(\left| G_1 \right| , \left| G_2 \right|  \) are coprime this implies \( b = 1\). Similairly, we see \(c = 1\). Hence,
 \begin{align*}
@@ -56,7 +56,7 @@ So, \(\Phi\) is an isomorphism, so \(\aut\left( G_1 \times G_2 \right) \simeq \a
 										   &= xy + n\left( ay + bx + abn \right)  \\
 										   &\in xy + n\Z \\
 			.\end{align*}
-			And, as \(x, y \) are coprime to \(n\), we see \(\gcd\left( xy, n \right) = 1\) hence we have \(\overline{xy} \in \left( \Z / n\Z \right)^{\times} \). Now, note that \(\overline{1} = 1 + n\Z \in \left( \Z / n\Z \right) \) as \(1\) is coprime to all numbers and \(\overline{1}\overline{x} = \overline{1x} =  \overline{x1} = \overline{x}\overline{1}= \overline{x}\), so \(\overline{1}\) is the identity. Now, recall that there is a linear combination \(ax + bn = \gcd\left( x, n \right) = 1\), hence we have that \(ax = xa = 1 - bn \in 1 + n\Z = \overline{1}\), hence \(\overline{a} = \overline{x}^{-1}\), we note that as \(a \mid 1-bn\), we have \(a \nmid bn\), hence \(a \nmid n\), so \(\gcd\left( a, n \right) = 1 \), so \(\overline{a} \in \left( \Z / n\Z \right)^{\times} \), hence inverses exist and are well defined. Next, we show associativity.			\begin{align*}
+			And, as \(x, y \) are coprime to \(n\), we see \(\gcd\left( xy, n \right) = 1\) hence we have \(\overline{xy} \in \left( \Z / n\Z \right)^{\times} \). Now, note that \(\overline{1} = 1 + n\Z \in \left( \Z / n\Z \right)^{\times} \) as \(1\) is coprime to all numbers and \(\overline{1}\overline{x} = \overline{1x} =  \overline{x1} = \overline{x}\overline{1}= \overline{x}\), so \(\overline{1}\) is the identity. Now, recall that there is a linear combination \(ax + bn = \gcd\left( x, n \right) = 1\), hence we have that \(ax = xa = 1 - bn \in 1 + n\Z = \overline{1}\), hence \(\overline{a} = \overline{x}^{-1}\), we note that as \(a \mid 1-bn\), we have  \(\gcd\left( a, n \right) = 1 \), so \(\overline{a} \in \left( \Z / n\Z \right)^{\times} \), hence inverses exist and are well defined. Next, we show associativity.			\begin{align*}
 				\left( \overline{x} \cdot \overline{y} \right) \overline{z} &= \overline{xy} \cdot \overline{z}\\
 				&= \overline{xyz} \\
 				&= \overline{x} \cdot \overline{yz} \\
@@ -71,7 +71,7 @@ So, \(\Phi\) is an isomorphism, so \(\aut\left( G_1 \times G_2 \right) \simeq \a
 &= \overline{y} \cdot \overline{x} \\
 			.\end{align*}
 			Hence, \(\left( \Z /  n \Z \right) ^{ \times}\) is an abelian group under multiplication.
-		\item Let \(x \in \Z / n\Z\) be a generator and \(\phi \in \aut\left( \Z / n\Z \right) \) be an automorphism. We wish to induce a correspondance between each \(\phi\) and each \(0 \le m < n\) such that \(\gcd\left( m, n \right)  = 1\), \(m\) being a congruence class in \(\left( \Z / nZ \right) ^{\times}\). First, note that all automorphisms of \(\Z / n\Z\) amount to fixing a generator and mapping it to each other generator. Hence a generator \(x \mapsto y = x^{a}\), \(y \in \Z / n\Z\) being another generator. We see \(\gcd\left( a, n \right)  = 1\), else \(y\) would not be a generator, hence we have each \(\phi\) corresponds to an \(a \nmid n\), denote these automorphisms by \(\phi_{a}\), \(0 \le a < n\), \(\gcd\left( a, n \right)  = 1\). Then, define a bijective correspondance \(\kappa : \aut\left( \Z / n\Z \right)  \to \left( \Z / n\Z \right) ^{\times}, \ \phi_{a} \mapsto \overline{a}\). First, we show this is a homomorphism,
+		\item Let \(x \in \Z / n\Z\) be a generator and \(\phi \in \aut\left( \Z / n\Z \right) \) be an automorphism. We wish to induce a correspondance between each \(\phi\) and each \(0 \le m < n\) such that \(\gcd\left( m, n \right)  = 1\), \(m\) being a congruence class in \(\left( \Z / nZ \right) ^{\times}\). First, note that all automorphisms of \(\Z / n\Z\) amount to fixing a generator and mapping it to each other generator. Hence a generator \(x \mapsto y = x^{a}\), \(y \in \Z / n\Z\) being another generator. We see \(\gcd\left( a, n \right)  = 1\), else \(y\) would not be a generator, hence we have each \(\phi\) corresponds to an \(a \nmid n\), denote these automorphisms by \(\phi_{a}\), \(1 \le a < n\), \(\gcd\left( a, n \right)  = 1\). Then, define a bijective correspondance \(\kappa : \aut\left( \Z / n\Z \right)  \to \left( \Z / n\Z \right) ^{\times}, \ \phi_{a} \mapsto \overline{a}\). First, we show this is a homomorphism,
 			\begin{align*}
 				\kappa\left( \phi_{a} \right) \kappa\left( \phi_{b} \right)  &= \overline{a} \cdot \overline{b}\\
 				&= \overline{ab} \\
@@ -94,7 +94,7 @@ So, \(\Phi\) is an isomorphism, so \(\aut\left( G_1 \times G_2 \right) \simeq \a
 \begin{solution}
 	\begin{enumerate}
 		\item Note that as \(15 = 3\cdot 5\), we have \(C_{15} \simeq C_3 \times C_5\), so by problem \(1\), \(\aut \left( C_{15} \right)  = \aut \left( C_3 \right) \times \aut \left( C_5 \right)  = C_2 \times C_4\).
-			\item Recall from problem \(2\) that all automorphisms of a cyclic group \(C_{n} = \Z / n\Z\) amount to mapping generators to generators \(x \mapsto y = x^{a}\), and we see as \(y\) is a generator that \(a \nmid n\). Hence, the only possible \(r\) values are those coprime to \(15\): \(r \in \{1, 2, 4,  7, 8, 11, 13, 14 \} \).
+			\item Recall from problem \(2\) that all automorphisms of a cyclic group \(C_{n} = \Z / n\Z\) amount to mapping generators to generators \(y \mapsto z = y^{a}\), and we see as \(z\) is a generator that \(a \nmid n\). Hence, the only possible \(r\) values are those coprime to \(15\): \(r \in \{1, 2, 4,  7, 8, 11, 13, 14 \} \).
 			\item If \(r = 1\), we see \(\alpha_1 \left( x \right)  = y^{1} = y\) is simply the identity automorphism, hence \(C_2 \rtimes_{\alpha} C_{15} = C_2 \times C_{15} = C_{30}\).\\
 				If \(r = 14\), we see elements of the form \(\left( y^{a}, x \right) \) have \(\left( y^{a}, x \right) ^2 = \left( y^{15a}, 1 \right) = \left( 1, 1 \right)  \) and elements of the form \(\left( y^{a}, 1 \right) \) have \(\left( y^{a}, 1 \right) ^{15} = \left( y^{15a}, 1 \right)  = \left( 1, 1 \right) \). Lastly, we have
 				\begin{align*}
@@ -125,23 +125,13 @@ So, \(\Phi\) is an isomorphism, so \(\aut\left( G_1 \times G_2 \right) \simeq \a
 	Show there is no simple group of order \(5103\).
 \end{problem}
 \begin{solution}
-	First, let \(G\) be a group with \( \left| G \right| = 5103 = 3^{6} \cdot 7\) and denote \(n_3, n_7\) to be the number of sylow \(3\)-groups and \(7\)-groups in \(G\) respectively. Then, we note by sylows theorms that \(n_7 \mid 3^{6}\) and \(n_7 \equiv 1 \left( \mod 7 \right) \). Note that the only numbers dividing \(3^{6}\) are \(1, 3, 3^2, 3^3, 3^{4}, 3^{5}, \) and \(3^{6}\), with
-	\begin{align*}
-		1 &\equiv 1 \left( \mod 7 \right) \quad
-		3 &\equiv 3 \left( \mod 7 \right) \quad
-		3^2 &\equiv 2 \left( \mod 7 \right) \quad
-		3^3 &\equiv 6 \left( \mod 7 \right) \\
-		3^{4} &\equiv 4 \left( \mod 7 \right) \quad
-		3^{5} &\equiv 5 \left( \mod 7 \right) \quad
-		3^{6} &\equiv 1 \left( \mod 7 \right) \quad
-		\end{align*}
-		If \(n_7 = 1\), then there is a unique normal sylow \(7\)-group, so let us assume \(n_7 = 3^{6}\). Similarly, \(n_3 \mid 7\) and \(n_3 \equiv 1 \left( \mod 3 \right) \), hence \(n_3 = 1\) or \(7\). If \(n_3 = 1\)  then there is a unique normal sylow \(3\)-group, hence let us assume \(n_3 = 7\). Then, recall for two sylow \(7\) groups of order \(7\) , \(P_1, P_2\) we have \(P_1 = P_2\) or \(P_1 \cap P_2 = \{1\} \). Hence, as \(n_7 = 3^{6}\), we have \(7 \cdot \left( 3^{6} - 1 \right)  = 4368\) elements among sylow \(7\)-groups, excluding identity. Additionally, we have \(n_3 = 7\) and as each sylow \(3\)-group is distinct from each other we note there must be atleast \(3^{6} + 1 \underbrace{ - 1}_{\text{identity}} \) elements among the \(3\)-groups, excluding identity. Now, as each element of a sylow \(7\)-group has order \(7\), excluding identity, and each element of a sylow \(3\)-group has order \(3^{i} \nmid 7\), \(1  \le i \le 6\), excluding identity, hence the sylow \(3\)-groups and \(7\)-groups share no common elements, so their combined size is \(3^{6} + 4374 \underbrace{ + 1}_{\text{identity}}  > \left| G \right| \),\(\lightning\), hence either \(n_3\) or \(n_7 = 1\), so there is a normal subgroup (the unique sylow group), so \(G\) is not simple.
+	Let \(G\) be a simple group with \(\left| G \right|  = 5103 = 3^{6} \cdot 7\). Then, note the congruence conditions of sylows theorem paired with \(G\) being simple implies the number of sylow \(3\)-groups, \(n_3 = 7 \). Hence, there exists a homomorphism \(\alpha : G \to S_7\) with the kernel being a normal subgroup. As \(G\) is simple, we know \(\ker \left( \alpha \right)  = \{1\} \). So, we have \(G\) being isomorphic to a subgroup of \(S_{k}\), hence \(\left| G \right|  \mid \left| S_{k} \right| \), implying \( 5103 \mid 5040 = 7! \). \(\lightning\). Hence, \(n_3 = 1\) and we see \(G\) is not simple.
 \end{solution}
 \newpage
 \begin{problem}[5]
 	Show there is no simple group of order \(4851\).
 \end{problem}
 \begin{solution}
-	We follow a similar argument. Let \(G\) be a group with \(\left| G \right|  = 4851 = 3^2 \cdot 7 ^2 \cdot 11\). Let \(n_3, n_7, n_{11}\) be the number of sylow \(3, 7, 11\)-groups respctively. Then, note that by sylows theorem we have \(n_7 \mid 3^2 \cdot 11\) and \(n_7 \equiv 1 \left( \mod 7 \right) \). We see the only factors with both properties are \(1\) and \(99\). If \(n_7 = 1\), we have a unique sylow group, so assume \(n_7 = 99\). Similarly note that \(n_{11} | 3^2 \cdot 7 ^2\) and \(n_{11} \mid 1 \left( \mod 11 \right) \) and the only numbers with both properties are \(1\) and \(441\), and if \(n_{11} = 1\) there would be contradiction, hence we assume \(n_{11} = 441.\)  Hence, we have two distinct sylow \(11\)-groups of order \(11\) have only trivial intersection, hence there are \(10 \cdot 441 = 4410\) unique elements among the sylow \(11\)-groups. Furthermore,  Thus, we have \(4410 + 4252 > \left| G \right| \) elements among  the sylow \(7\) and \(11\)-groups, so this is a contradiction \(\lightning\). Hence either \(n_7=1\) or \(n_{11} = 1\), so we have a unique sylow group, hence a normal subgroup, hence \(G\) is not simple.
+	Let \(G\) be a simple group of order \(4851 =  3^2 \cdot 7^2 \cdot 11\) and let \(n_3, n_{11}\) be the number of sylow \(3\)-groups and sylow \(11\)-groups in \(G\) respectively. Then, we find by sylows theorem \(n_3 =7\)  or \(49\) and \(n_{11} = 3^2 \cdot 7^2 = 441\). Hence, let us first assume \(n_3 = 7\) and let \(Q\) be a sylow \(3\)-group. We find \(\left| N_{G}\left( Q \right)  \right|  = 3^2 \cdot 7 \cdot 11\). Let \(P\) be an \(11\)-group of \(N_{G}\left( Q \right) \) and \(m_{11}\) to be the number of sylow \(11\)-groups in \(N_{G}\left( Q \right) \). We see \(m_{11} \mid 3^2 \cdot 7\) and \(m_{11} \equiv 1 \left( \mod 11 \right)  \), so \(m_{11} = 1\). Hence, \(P \trianglelefteq N_{G}\left( Q \right) \) and as \(P\) is an \(11\)-group of \(G\), we find \(\left<N_{G}\left( Q \right) , P \right> \le N_{G}\left( P \right) \). So, \(3^2 \cdot 7 \cdot 11 \mid \left| N_{G}\left( P \right)  \right| \).	Similarly, if \(n_3 = 49\), let \(Q\) be a sylow \(3\)-group of \(G\) then we find \(\left| N_{G}\left( Q \right)  \right| = 3^2 \cdot 11\). Let \(P\) be a sylow \(11\)-group of \(N_{G}\left( Q \right) \), and we see by the congruence conditions that once again, the number of sylow \(11\)-groups in \(N_{G}\left( P \right) \),  \(m_{11} = 1\), hence \(P \trianglelefteq N_{G}\left( Q \right) \). And, as \(P\) is a sylow \(11\)-group of \(G\), we find \(\left<N_{G}\left( Q \right) , P \right> \le N_{G}\left( P \right) \) implies \(3^2 \cdot 11 \mid \left| N_{G}\left( P \right)  \right| \). Then, As \(3 \mid \left| N_{G}\left( P \right) \right| \) in either case and \(P\) is a sylow \(11\)-group in \(G\), with \(3^2 \mid \left| G \right| \) we find \(3^2 \nmid \left| G : N_{G}\left( P \right)  \right| = n_{11}\). \(\lightning\). Hence, \(n_{11} = 1\), so \(G\) is simple.
 \end{solution}
 \end{document}
