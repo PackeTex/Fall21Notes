@@ -10,6 +10,35 @@
 	Let \(G_1\), \(G_2\) be finite groups with \(\gcd\left( \left| G_1 \right| , \left| G_2 \right|  \right) = 1\). Show that \(\aut\left( G_1 \times G_2 \right)  \simeq \aut\left( G_1 \right) \times \aut\left( G_2 \right) \).
 \end{problem}
 \begin{solution}
+	We induce a bijective correspondence. Let \(\alpha \in \aut\left( G_1 \times G_2 \right) \) , \(x \in G_1\) and \(y \in G_2\). Then, let \(\alpha\left( x, 1 \right) = \left( a, b \right) \) and \(\alpha\left( 1, y \right)  = \left( c, d \right) \). We see,
+\begin{align*}
+	\alpha\left( \left( x, 1 \right) ^{\left| G_1 \right| } \right) &= \alpha\left( x^{\left| G_1 \right| }, 1 \right)  \\
+	\left( \left( a, b \right) ^{\left| G_1 \right| } \right) &= \alpha\left( 1, 1 \right)  \\
+	\left( a^{\left| G_1 \right| }, b^{\left| G_1 \right| } \right) &= \left( 1, 1 \right)  \\
+									      &= \left( 1, b^{\left| G_1 \right| } \right)  \\
+.\end{align*}
+Hence, as \(\alpha\) is a bijection, we must have \(b^{\left| G_1 \right| } = 1\) and as \(\left| G_1 \right| , \left| G_2 \right|  \) are coprime this implies \( b = 1\). Similairly, we see \(c = 1\). Hence,
+\begin{align*}
+	\alpha\left( \left( x, 1 \right) \cdot \left( 1, y \right)  \right) &= \alpha\left( \left( x, 1 \right)  \right) \left( \alpha\left( \left( 1, y \right)  \right)  \right)  \\
+	\alpha\left(  x, y   \right) &= \left( a, 1 \right) \cdot \left( 1, d \right)  \\
+				     &=  \left( a, d \right) \\
+.\end{align*}
+Then, we note that as \(G_1 \simeq G_1 \times \{1\} \) and \(G_2 \simeq \{1\} \times G_2\), we have \[\alpha\left( x, 1 \right) \in \aut\left( G_1 \times \{ 1\}  \right) \simeq \aut\left( G_1 \right) \text{ and  }\alpha\left( 1, y \right) \in \aut\left( \{1\} \times G_2 \right) \simeq \aut\left( G_2 \right) \] Hence, let us define \(\alpha_1: G_1 \to G_1\) and \(\alpha_2 : G_2 \to G_2\) to simply be the projection of \(\alpha\) into their respective coordinates. We see by the preceding argument that \(\alpha_1 \in \aut\left( G_1 \right) \) and \(\alpha_2 \in \aut\left( G_2 \right) \).\\
+Hence, let \(\Phi : \aut\left( G_1 \times G_2 \right) \to \aut\left( G_1 \right) \times \aut\left( G_2 \right), \ \alpha \mapsto (\alpha_1, \alpha_2) \). Let \(\alpha, \beta \in \aut\left( G_1 \times G_2 \right)  \)  and suppose \(\Phi\left( \alpha \right)  = \Phi\left( \beta \right) \). Then, we have \(\Phi\left( \alpha \right)  = \left( \alpha_1, \alpha_2 \right) = \left( \beta_1, \beta_2 \right) =\Phi\left( \beta \right) \), hence \(\alpha_1 = \beta_1\) and \(\alpha_2 = \beta_2\), so we have \[\alpha\left( x, y \right)  =\alpha\left( x, 1 \right) \cdot \alpha\left( 1, y \right)  = \left( \alpha_1\left( x \right) , \alpha_2\left( y \right)  \right) = \left( \beta_1\left( x \right), \beta_2\left( y \right)   \right) = \beta\left( x, 1 \right) \beta\left( 1, y \right) = \beta\left( x, y \right)  \] for all \(x \in G_1\), \(y \in G_2\), so \(\alpha  = \beta\) and \(\Phi\) is an injection. Now, let \(\left( \alpha_1, \alpha_2 \right)  \in \aut\left( G_1 \right) \times \aut\left( G_2 \right) \) and we define \(\alpha: G_1 \times G_2 \to G_1 \times G_2, \ \left( x, y \right) \mapsto \left( \alpha_1\left( x \right) , \alpha_2\left( y \right)  \right) \). We see \(\alpha_1, \alpha_2\) are bijective, hence \(\alpha\) is bijective. Furthermore,
+\begin{align*}
+	\alpha\left( \left( a, b \right) \left( c, d \right)  \right) &= \alpha\left( ac, bd \right)  \\
+								      &= \left( \alpha_1\left( ac \right) , \alpha_2\left( bd \right)  \right)  \\
+								      &= \left( \alpha_1\left( a \right) \alpha_1\left( c \right) , \alpha_2\left( b \right) \alpha_2\left( d \right)  \right)  \\
+								      &= \left( \alpha_1\left( a \right) , \alpha_2\left( b \right)  \right) \left( \alpha_1\left( c \right) , \alpha_2\left( d \right)  \right)   \\
+								      &= \alpha\left( a, b \right) \alpha\left( c, d \right)  \\
+.\end{align*}
+Hence, \(\alpha\) is a homomorphism, so \(\alpha \in \aut\left( G_1 \times G_2 \right) \). Hence, \(\Phi\) is a bijection. Lastly, we show \(\Phi\) is a homomorphism,
+\begin{align*}
+	\Phi\left( \alpha \beta \right) &= \left( \alpha_1 \beta_1, \alpha_2 \beta_2 \right) 	\\
+					&= \left( \alpha_1, \alpha_2 \right) \left( \beta_1, \beta_2 \right)  \\
+					&= \Phi\left( \alpha \right) \Phi\left( \beta \right)
+.\end{align*}
+So, \(\Phi\) is an isomorphism, so \(\aut\left( G_1 \times G_2 \right) \simeq \aut\left( G_1 \right) \times \aut\left( G_2 \right) \).
 \end{solution}
 \newpage
 \begin{problem}[2]
@@ -20,6 +49,38 @@
 	\end{enumerate}
 \end{problem}
 \begin{solution}
+	\begin{enumerate}
+		\item First, we show multiplication is well defined. Let \(a, b \in \Z\), hence \(an, bn \in n\Z\) and we see for \(x, y \in \Z\), \(x + an \in \overline{x}\) and \(y + bn \in \overline{y}\). Then, we have
+			\begin{align*}
+				\left( x + an \right)  \cdot \left( y + bn \right) &=  xy + \left( ay + bx \right) n + abn^2  \\
+										   &= xy + n\left( ay + bx + abn \right)  \\
+										   &\in xy + n\Z \\
+			.\end{align*}
+			And, as \(x, y \) are coprime to \(n\), we see \(\gcd\left( xy, n \right) = 1\) hence we have \(\overline{xy} \in \left( \Z / n\Z \right)^{\times} \). Now, note that \(\overline{1} = 1 + n\Z \in \left( \Z / n\Z \right)^{\times} \) as \(1\) is coprime to all numbers and \(\overline{1}\overline{x} = \overline{1x} =  \overline{x1} = \overline{x}\overline{1}= \overline{x}\), so \(\overline{1}\) is the identity. Now, recall that there is a linear combination \(ax + bn = \gcd\left( x, n \right) = 1\), hence we have that \(ax = xa = 1 - bn \in 1 + n\Z = \overline{1}\), hence \(\overline{a} = \overline{x}^{-1}\), we note that as \(a \mid 1-bn\), we have  \(\gcd\left( a, n \right) = 1 \), so \(\overline{a} \in \left( \Z / n\Z \right)^{\times} \), hence inverses exist and are well defined. Next, we show associativity.			\begin{align*}
+				\left( \overline{x} \cdot \overline{y} \right) \overline{z} &= \overline{xy} \cdot \overline{z}\\
+				&= \overline{xyz} \\
+				&= \overline{x} \cdot \overline{yz} \\
+				&= \overline{x}\left( \overline{y} \cdot \overline{z} \right)
+			.\end{align*}
+			Lastly, let us determine commutativity,
+			\begin{align*}
+				\overline{x} \cdot \overline{y} &= \overline{xy}  \\
+				&= xy + n\Z \\
+				&= yx + n\Z \\
+&= \overline{yx} \\
+&= \overline{y} \cdot \overline{x} \\
+			.\end{align*}
+			Hence, \(\left( \Z /  n \Z \right) ^{ \times}\) is an abelian group under multiplication.
+		\item Let \(x \in \Z / n\Z\) be a generator and \(\phi \in \aut\left( \Z / n\Z \right) \) be an automorphism. We wish to induce a correspondance between each \(\phi\) and each \(0 \le m < n\) such that \(\gcd\left( m, n \right)  = 1\), \(m\) being a congruence class in \(\left( \Z / nZ \right) ^{\times}\). First, note that all automorphisms of \(\Z / n\Z\) amount to fixing a generator and mapping it to each other generator. Hence a generator \(x \mapsto y = x^{a}\), \(y \in \Z / n\Z\) being another generator. We see \(\gcd\left( a, n \right)  = 1\), else \(y\) would not be a generator, hence we have each \(\phi\) corresponds to an \(a \nmid n\), denote these automorphisms by \(\phi_{a}\), \(1 \le a < n\), \(\gcd\left( a, n \right)  = 1\). Then, define a bijective correspondance \(\kappa : \aut\left( \Z / n\Z \right)  \to \left( \Z / n\Z \right) ^{\times}, \ \phi_{a} \mapsto \overline{a}\). First, we show this is a homomorphism,
+			\begin{align*}
+				\kappa\left( \phi_{a} \right) \kappa\left( \phi_{b} \right)  &= \overline{a} \cdot \overline{b}\\
+				&= \overline{ab} \\
+				&= \kappa\left( \phi_{ab} \right)  \\
+				&= \kappa\left( x^{ab} \right)  \\
+				&= \kappa\left( x^{a}x^{b} \right)  \\
+				&= \kappa\left( \phi_{a}\phi_{b} \right)  \\
+			.\end{align*}Next, we show bijection. As each \(\gcd\left( a, n \right) = 1\) yields an autmorphism, we see \(\kappa\) is surjective and as each automorphism is completely determined by \(a\), we see a given \(\phi_{a}\) corresponds to only one \(\overline{a} \in \left( \Z / n\Z \right) ^{\times}\) we have \(\kappa\) is injective. Thus, \(\kappa\) is an isomorphism, so we have \(\aut\left( \Z / n\Z \right) \simeq \left( \Z / n\Z \right) ^{\times}\)
+\end{enumerate}
 \end{solution}
 \newpage
 \begin{problem}[3]
@@ -31,28 +92,46 @@
 	\end{enumerate}
 \end{problem}
 \begin{solution}
+	\begin{enumerate}
+		\item Note that as \(15 = 3\cdot 5\), we have \(C_{15} \simeq C_3 \times C_5\), so by problem \(1\), \(\aut \left( C_{15} \right)  = \aut \left( C_3 \right) \times \aut \left( C_5 \right)  = C_2 \times C_4\).
+			\item Recall from problem \(2\) that all automorphisms of a cyclic group \(C_{n} = \Z / n\Z\) amount to mapping generators to generators \(y \mapsto z = y^{a}\), and we see as \(z\) is a generator that \(a \nmid n\). Hence, the only possible \(r\) values are those coprime to \(15\): \(r \in \{1, 2, 4,  7, 8, 11, 13, 14 \} \).
+			\item If \(r = 1\), we see \(\alpha_1 \left( x \right)  = y^{1} = y\) is simply the identity automorphism, hence \(C_2 \rtimes_{\alpha} C_{15} = C_2 \times C_{15} = C_{30}\).\\
+				If \(r = 14\), we see elements of the form \(\left( y^{a}, x \right) \) have \(\left( y^{a}, x \right) ^2 = \left( y^{15a}, 1 \right) = \left( 1, 1 \right)  \) and elements of the form \(\left( y^{a}, 1 \right) \) have \(\left( y^{a}, 1 \right) ^{15} = \left( y^{15a}, 1 \right)  = \left( 1, 1 \right) \). Lastly, we have
+				\begin{align*}
+					\left( y^{a}, x \right) \left( y^{b}, 1 \right) \left( y^{a}, x \right) ^{-1} &=  \left( y^{a}, x \right) \left( y^{b}, 1 \right)\left( y^{a}, x \right)    \\
+														      &= \left( y^{a}, x \right)\left( y^{b + a}, x\right)   \\
+														      &= \left( y^{a + 14\left( b + a \right)},1 \right)  \\
+														      &= \left( y^{15b}y^{14a}, 1 \right)\\
+														      &= \left( y^{14a}, 1 \right)  \\
+														      &= \left( y^{a}, 1 \right)^{-1}  \\
+				.\end{align*}
+				Hence, when \(r = 14\), \( N \rtimes_{\alpha} H \simeq D_{15}\)\\
+
+				Next, the case \(r = 2\). Note that \(C_5 \times S_3\) is the only nonabelian group with an element of order \(10\) out of the possibilities and as \(\ord\left( y, x \right) = 10 \) and \(\left( y^2, x \right) \left( y^3, 1 \right)  = \left( y^{8}, x \right) \neq \left( y^{5}, x \right)  = \left( y^3,1 \right), \left( y^2, x \right)   \) we have \(r = 2\) produces a nonabelian group, hence for \(r = 2\) we have \(N \rtimes_{\alpha} H \simeq C_5 \times S_3\).\\
+
+				Similarly, for the case \(r = 8\) we have \(\ord\left( y, x \right)  = 10\) and \(\left( y, x \right) \left( y, 1 \right) = \left( y^{9}, x \right) \neq \left( y^2, x \right)  = \left( y, 1 \right) \left( y, x \right)  \) so \(r = 8\) produces a nonabelian group, hence \(N\rtimes_{\alpha} H \simeq C_5 \times S_3\).\\
+
+				Again, for the case \(r = 11\) we have \(\ord\left( y, x \right)  = 10\) and \(\left( y, x \right) \left( y, 1 \right)  = \left( y^{12, x} \right) \neq \left( y^2, x \right)  = \left( y, 1 \right) \left( y, x \right)  \), hence \(r = 11\) produces a nonabelian group, so we have \(N \rtimes_{\alpha} H = C_5 \times S_3\).
+
+				Now, for the case \(r = 4\) note that \(C_3 \times D_5\) is the only nonabelian group with an element of order \(6\) out of the possibilities and as \(\ord\left( y, x \right) =6\) and \(\left( y^2, x \right) \left( y^3, 1 \right) = \left( y^{14}, x \right) \neq \left( y^{5}, 1 \right) = \left( y^3, 1 \right) \left( y^2, x \right)   \) we see \(r = 4\) produces a nonabelian group, hence for \(r = 4\) we have \(N \rtimes_{\alpha} H \simeq C_3 \times D_5\).\\
+
+				Similarly, we have for \(r = 7\), \(\ord\left( y^{5}, x \right) = 6 \) and \(\left( y, x \right) \left( y, 1 \right)  =\left( y^{8}, x \right)\neq \left( y^2, x \right)  = \left( y, 1 \right) \left( y ,x \right)  \). Hence, for \(r = 7\) \(N \rtimes_{\alpha} H \simeq C_3 \times D_5\).\\
+
+				Lastly, note that when \(r = 13\), we have \(\ord\left( y, x \right)  = 30\) and as \(C_{30}\) is the only group under consideration of order \(30\), we have \(N\rtimes_{\alpha} H \simeq C_{30}\).
+	\end{enumerate}
 \end{solution}
 \newpage
 \begin{problem}[4]
 	Show there is no simple group of order \(5103\).
 \end{problem}
 \begin{solution}
-	First, note that \(5103 = 3^{6} \cdot 7\) and denote \(n_3, n_7\) to be the number of sylow \(3\)-groups and \(7\)-groups respectively. Then, we note by sylows theorms that \(n_7 \mid 3^{6}\) and \(n_7 \equiv 1 \left( \mod 7 \right) \). Note that the only numbers dividing \(3^{6}\) are \(1, 3, 3^2, 3^3, 3^{4}, 3^{5}, \) and \(3^{6}\), with
-	\begin{align*}
-		1 &\equiv 1 \left( \mod 7 \right) \quad
-		3 &\equiv 3 \left( \mod 7 \right) \quad
-		3^2 &\equiv 2 \left( \mod 7 \right) \quad
-		3^3 &\equiv 6 \left( \mod 7 \right) \\
-		3^{4} &\equiv 4 \left( \mod 7 \right) \quad
-		3^{5} &\equiv 5 \left( \mod 7 \right) \quad
-		3^{6} &\equiv 1 \left( \mod 7 \right) \quad
-		\end{align*}
-		If \(n_7 = 1\), then there is a unique normal sylow \(7\)-group, so let us assume \(n_7 = 3^{6}\). Similairly, \(n_3 \mid 7\) and \(n_3 \equiv 1 \left( \mod 3 \right) \), hence \(n_3 = 1\) or \(7\). If \(n_3 = 1\)  then there is a unique normal sylow \(3\)-group, hence let us assume \(n_3 = 7\). Then,
+	Let \(G\) be a simple group with \(\left| G \right|  = 5103 = 3^{6} \cdot 7\). Then, note the congruence conditions of sylows theorem paired with \(G\) being simple implies the number of sylow \(3\)-groups, \(n_3 = 7 \). Hence, there exists a homomorphism \(\alpha : G \to S_7\) with the kernel being a normal subgroup. As \(G\) is simple, we know \(\ker \left( \alpha \right)  = \{1\} \). So, we have \(G\) being isomorphic to a subgroup of \(S_{k}\), hence \(\left| G \right|  \mid \left| S_{k} \right| \), implying \( 5103 \mid 5040 = 7! \). \(\lightning\). Hence, \(n_3 = 1\) and we see \(G\) is not simple.
 \end{solution}
 \newpage
 \begin{problem}[5]
 	Show there is no simple group of order \(4851\).
 \end{problem}
 \begin{solution}
+	Let \(G\) be a simple group of order \(4851 =  3^2 \cdot 7^2 \cdot 11\) and let \(n_3, n_{11}\) be the number of sylow \(3\)-groups and sylow \(11\)-groups in \(G\) respectively. Then, we find by sylows theorem \(n_3 =7\)  or \(49\) and \(n_{11} = 3^2 \cdot 7^2 = 441\). Hence, let us first assume \(n_3 = 7\) and let \(Q\) be a sylow \(3\)-group. We find \(\left| N_{G}\left( Q \right)  \right|  = 3^2 \cdot 7 \cdot 11\). Let \(P\) be an \(11\)-group of \(N_{G}\left( Q \right) \) and \(m_{11}\) to be the number of sylow \(11\)-groups in \(N_{G}\left( Q \right) \). We see \(m_{11} \mid 3^2 \cdot 7\) and \(m_{11} \equiv 1 \left( \mod 11 \right)  \), so \(m_{11} = 1\). Hence, \(P \trianglelefteq N_{G}\left( Q \right) \) and as \(P\) is an \(11\)-group of \(G\), we find \(\left<N_{G}\left( Q \right) , P \right> \le N_{G}\left( P \right) \). So, \(3^2 \cdot 7 \cdot 11 \mid \left| N_{G}\left( P \right)  \right| \).	Similarly, if \(n_3 = 49\), let \(Q\) be a sylow \(3\)-group of \(G\) then we find \(\left| N_{G}\left( Q \right)  \right| = 3^2 \cdot 11\). Let \(P\) be a sylow \(11\)-group of \(N_{G}\left( Q \right) \), and we see by the congruence conditions that once again, the number of sylow \(11\)-groups in \(N_{G}\left( P \right) \),  \(m_{11} = 1\), hence \(P \trianglelefteq N_{G}\left( Q \right) \). And, as \(P\) is a sylow \(11\)-group of \(G\), we find \(\left<N_{G}\left( Q \right) , P \right> \le N_{G}\left( P \right) \) implies \(3^2 \cdot 11 \mid \left| N_{G}\left( P \right)  \right| \). Then, As \(3 \mid \left| N_{G}\left( P \right) \right| \) in either case and \(P\) is a sylow \(11\)-group in \(G\), with \(3^2 \mid \left| G \right| \) we find \(3^2 \nmid \left| G : N_{G}\left( P \right)  \right| = n_{11}\). \(\lightning\). Hence, \(n_{11} = 1\), so \(G\) is simple.
 \end{solution}
 \end{document}

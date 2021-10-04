@@ -1,0 +1,13 @@
+\lecture{17}{Fri 01 Oct 2021 10:20}{Semi-circle Law}
+Recall that for eigenvalues \(\lambda_1, \lambda_2, \ldots, \lambda_{n}\) we have \(\lambda_1 = \frac{n}{2} + \sqrt{n\log \left( n \right) }  = o\left( n \right) \). Additionally, we know \(\sigma_1 = \lambda_1\) and \(\sigma_2, \sigma_3, \ldots, \sigma_{n}\) correspond to \(\left| \lambda_2 \right|, \left| \lambda_3 \right|, \ldots, \left| \lambda_{n} \right|   \). Further, it is known by Furedi and Kowlos that \(\sigma_2 = O\left( \sqrt{n}  \right) \).\\
+\begin{theorem}
+	For a randomly chosen graph of order \(n\), with eigenvalues \(\lambda_2 \ge \lambda_3 \ge \ldots \ge \lambda_{n}\).Define \(W_{n}\left( x \right): \R \to \Z^{+} \) to be the number of eigenvalues \(\lambda_{i}\), such that \(\frac{\lambda_{i}}{\sqrt{n}} \le x\), divided by \(n\). Then, we find the function which \(W_{n}\left( x \right) \) tends to pointwise, \(W\left( x \right) \) has \(W\left( x \right) = \left \{
+		\begin{array}{11}
+			\frac{2}{\pi}\sqrt{1 - x^2} , & \quad \left| x \right| \le 1  \\
+			0 , & \quad \left| x \right|  > 1
+		\end{array}
+		\right.\)
+\end{theorem}
+Here recall that \(\sqrt{1-x^2} \) is an upper half semicircle of radius \(1\) and the factor \(\frac{2}{\pi}\) compresses it into an ellipse. This fact essentially characterizes the distribution of eigenvalues of a random graph. That is, plurality of eigenvalues will be \(0\) and we find the number of eigenvalues of a given magnitude decreases as \(\lambda \to \sqrt{n} \). We note that the leading \(\frac{2}{\pi}\) is to normalize the area such that this is a probability density function. Then, we note \(E\left[x^2 W\left( x \right) \right] = \int_{-1}^{1} \frac{2}{\pi}x^2\sqrt{1-x^2} dx = \frac{1}{4}  \). Hence, we find \(\frac{1}{n^2}\sum_{i=2}^{n} \lambda_{i}^2 \approx \frac{1}{4}\).\\
+It is a well known result that \(\sum_{i= 1}^{n} \left| \lambda_{i} \right|  = \sum_{i= 1}^{\infty} \sigma_{i} \le \frac{1}{2}n^{\frac{3}{2}} \le 2\left( n-1 \right) \). Applying our integral formula from earlier yields \(\sum_{i= 1}^{\infty} \left| \lambda_{i} \right| = \int_{-1}^{1} \left| x \right| \sqrt{1-x^2}   = 2 \int_{0}^{1} x \sqrt{1-x^2}  \).\\
+At this point, Runze found a contradiction in the argument and we ended class early.
