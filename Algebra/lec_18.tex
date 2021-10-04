@@ -1,0 +1,18 @@
+\lecture{18}{Mon 04 Oct 2021 11:28}{}
+\begin{recall}
+	A group is solvable if there exists a chain of subgroups \[
+	\{1\} \trianglelefteq H_0 \trianglelefteq H_1 \trianglelefteq \ldots \trianglelefteq H_{n} = G
+	\]  such that \(H_{i} / H_{i - 1}\) is abelian.\\
+	We had that this is equivalent to the condition that for \(G^{\left( n \right) } = 1\) where \(G^{\left( 0 \right) } = G\) and \(G^{\left( n \right) } = \left[ G^{n-1}, G^{n-1} \right] \). We showed the forward implication, so now we show the reverse implication.
+\end{recall}
+\begin{proof}
+	Suppose \(G^{\left( n \right) } = 1\)	 for some \(n \ge 0\). Then, we have a chain \[
+		G = G^{\left( 0 \right) } \trianglelefteq G^{\left( 1 \right) } \trianglelefteq \ldots \trianglelefteq G^{\left( n \right) } = \{1\}
+	.\]
+	So, we have
+	\[
+		\{1\}  = G^{\left( n \right) } \trianglerighteq G^{\left( n-1 \right) } \trianglerighteq \ldots \trianglerighteq G^{\left( 0 \right) } = G
+	.\]
+	Furthermore,  we know the commutator of \(G^{\left( i \right) }\)is a characteristic subgroup, hence it is normal.\\
+	Then, define \(H_{i} = G^{\left( n - i \right) }\) for \(0 \le i \le n\). We need only show the quotients to be abelian. We see \(H_{i} / H_{i - 1} = G^{\left(n - i \right) } / G^{\left( n - i + 1 \right) }\). But, \(G^{\left( n - i + 1 \right) } = \left[ G^{\left( n-i \right) }, G^{\left( n-i \right) } \right] \) by definition. Hence, \(G^{\left( n - i \right) } / G^{\left( n - i + 1 \right) }\) is abelian by the lemma from last class.
+\end{proof}

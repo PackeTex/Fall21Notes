@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  1 OCT 2021 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  4 OCT 2021 11:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1599,7 +1599,12 @@ Overfull \hbox (23.61076pt too wide) in paragraph at lines 32--34
 belian, hence we have $\OML/cmm/m/it/10 G[] \OMS/cmsy/m/n/10 ^^T [] ^^T
  []
 
-) [30]
+) (./lec_18.tex
+Overfull \hbox (35.90091pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+[30]) [31]
 
 ! LaTeX Error: \begin{proof} on input line 51 ended by \end{document}.
 
@@ -1607,7 +1612,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 \end{document}
+l.28 \end{document}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1619,10 +1624,10 @@ or  <return>  to continue without it.
 ### semi simple group (level 1) entered at line 51 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 21575 strings out of 478994
- 421184 string characters out of 5864752
+ 21579 strings out of 478994
+ 421222 string characters out of 5864752
  723379 words of memory out of 5000000
- 38506 multiletter control sequences out of 15000+600000
+ 38507 multiletter control sequences out of 15000+600000
  427753 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,17n,105p,1254b,647s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1632,24 +1637,23 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 mi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/
-cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary
-10.pfb>
-Output written on full.pdf (30 pages, 400630 bytes).
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist
+/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/public/r
+sfs/rsfs7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><
+/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texm
+f-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
+uper/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.p
+fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/
+texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/font
+s/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/
+stmaryrd/stmary10.pfb>
+Output written on full.pdf (31 pages, 395261 bytes).
 PDF statistics:
  232 PDF objects out of 1000 (max. 8388607)
  157 compressed objects within 2 object streams
