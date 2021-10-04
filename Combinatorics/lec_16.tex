@@ -1,4 +1,4 @@
-\lecture{16}{Wed 29 Sep 2021 10:27}{}
+\lecture{16}{Wed 29 Sep 2021 10:27}{Random Graphs}
 First, we examine some more random graphs. For a random graph \(G\), it is a trivial rseult of probability theory that the number of four cycles is precisely \(\frac{1}{2}\sum_{u, v \in V\left( G \right); v\neq u}^{} \binom{\hat{d}\left( u, v \right) }{2}\). Then, applying our estimation \(\hat{d} \left( u, v \right) = \frac{n}{4 }+ o\left( u \right) \) yields \(\binom{n}{2}\) possible pairs \(u, v\) and \(\hat{d} \approx \frac{n}{4}\), hence the number of four cycles is \[
 	\frac{1}{n}\binom{\frac{n}{4}}{2}\binom{n}{2} = \frac{n^{4}}{128} + o\left( n^{4} \right)
 .\]
