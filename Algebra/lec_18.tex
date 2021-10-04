@@ -1,4 +1,4 @@
-\lecture{18}{Mon 04 Oct 2021 11:28}{}
+\lecture{18}{Mon 04 Oct 2021 11:28}{Solvable Groups (2)}
 \begin{recall}
 	A group is solvable if there exists a chain of subgroups \[
 	\{1\} \trianglelefteq H_0 \trianglelefteq H_1 \trianglelefteq \ldots \trianglelefteq H_{n} = G
@@ -14,5 +14,50 @@
 		\{1\}  = G^{\left( n \right) } \trianglerighteq G^{\left( n-1 \right) } \trianglerighteq \ldots \trianglerighteq G^{\left( 0 \right) } = G
 	.\]
 	Furthermore,  we know the commutator of \(G^{\left( i \right) }\)is a characteristic subgroup, hence it is normal.\\
-	Then, define \(H_{i} = G^{\left( n - i \right) }\) for \(0 \le i \le n\). We need only show the quotients to be abelian. We see \(H_{i} / H_{i - 1} = G^{\left(n - i \right) } / G^{\left( n - i + 1 \right) }\). But, \(G^{\left( n - i + 1 \right) } = \left[ G^{\left( n-i \right) }, G^{\left( n-i \right) } \right] \) by definition. Hence, \(G^{\left( n - i \right) } / G^{\left( n - i + 1 \right) }\) is abelian by the lemma from last class.
+	Then, define \(H_{i} = G^{\left( n - i \right) }\) for \(0 \le i \le n\). We need only show the quotients to be abelian. We see \(H_{i} / H_{i - 1} = G^{\left(n - i \right) } / G^{\left( n - i + 1 \right) }\). But, \(G^{\left( n - i + 1 \right) } = \left[ G^{\left( n-i \right) }, G^{\left( n-i \right) } \right] \) by definition. Hence, \(G^{\left( n - i \right) } / G^{\left( n - i + 1 \right) }\) is abelian by the lemma from last class. So, the chain condition holds and \(G\) is solvable.
 \end{proof}
+\begin{theorem}
+	Let \(G\) be a solvable group with \(H\) being a subgroup. Then, \(H\) is solvable.
+\end{theorem}
+\begin{proof}
+We simply show \(H^{\left( n \right) } \le G^{\left( n \right) }\) for all \(n\) by induction. For the base case we know \(H = H^{\left( 0 \right) } \le G^{\left( 0 \right) } = G\). Then, we note \(H^{\left( n \right) } = \left[ H^{\left( n-1 \right) }, H^{\left( n-1 \right) }} \right] \subseteq \left[ G^{\left( n-1 \right) }, G^{\left( n-1 \right) } \right] = G^{\left( n \right) } \) by inductive hypothesis. Since \(G\) is solvable, we find a \(n \ge 0\) such that \(G^{\left( n \right) } = \{1\} \). Then, \(H^{\left( n \right) } \le G^{\left( n \right) }= \{1\} \), so \(H^{\left( n \right) } = \{1\} \) hence \(H\) is solvable.
+\end{proof}
+\begin{theorem}
+	If \(G\) is solvable and \(\phi: G \to G^{\prime}\) is a homomorphism, then \(\phi\left( G \right) \) is also solvable.
+\end{theorem}
+\begin{proof}
+We see \(\phi\left( G^{\left( 0 \right) } \right) = \phi\left( G \right) ^{\left( 0 \right) } \). So, \(\phi\left( G^{\left(  0\right) } \right) = \phi\left( G \right) ^{\left( 0 \right) } \). We induce on \(n\). We see \begin{align*}\phi\left( G^{\left( n \right) } \right) &= \phi \left( \left[ G^{\left( n-1 \right) }, G^{\left( n-1 \right) } \right]  \right)\\
+&= \phi\left( \left<x^{-1}y^{-1}xy : x, y \in G^{\left( n-1 \right) } \right>  \right)  \\
+&= \left<\phi\left( x^{-1}y^{-1}xy : x, y \in G^{\left( n-1 \right) } \right)  \right>  \\
+&= \left< \phi\left( x \right) ^{-1} \phi\left( y \right) ^{-1} \phi\left( x \right) \phi\left( y \right)  : x, y \in G^{\left( n-1 \right) } \right> \\
+&= \left< \overline{x}^{-1} \overline{y}^{-1} \overline{x} \overline{y} : \overline{x}, \overline{y} \in \phi\left( G^{\left( n-1 \right) } \right) \right>  \\
+&= \left<\overline{x}^{-1}\overline{y}^{-1}\overline{x}\overline{y} : \overline{x}, \overline{y} \in\phi \left( G \right) ^{\left( n-1 \right) } \right> \text{ by the inductive hypothesis.}\\
+&= \left[ \phi\left( G \right) ^{\left( n-1 \right) }, \phi\left( G \right) ^{\left( n-1 \right) } \right]  \\
+&= \phi\left( G \right)^{\left( n \right) } .
+\end{align*}
+Since \(G\) is solvable, we find an \(n \ge 0\) such that \(G^{\left( n \right) } = \{1\} \). Hence, \(\phi\left( G^{\left( n \right) } \right) = \phi\left( \{1\}  \right) = \{1\}  = \phi\left( G \right) ^{\left( n \right) }  \), so \(\phi\left( G \right) \) is solvable.
+\end{proof}
+\begin{theorem}
+	If \(G\) is a  group with \(H \trianglelefteq G\), then \(G\) is solvable if and only if \(H\) and \(G / H\) are solvable.
+\end{theorem}
+\begin{proof}
+	\(\left( \implies \right) \). We know all subgroups and homomorphic images to be solvable, hence this direction is already proven.\\
+	\(\left( \impliedby \right) \). Assume \(H\) and \(G / H\) are solvable. As \(H\) is solvable it has a normal chain \[
+	H_0 \trianglelefteq H_1 \trianglelefteq \ldots \trianglelefteq H_{n} = H
+	\]  with \(H_{i} / H_{i - 1}\) is abelian for all \(1 \le i \le n\). Similarly, since \(G / H\) is solvable there is a normal chain \[
+	\{1\}  = K_{n + 0} \trianglelefteq K_{n + 1} \trianglelefteq \ldots K_{n + s} = G / H
+	\]
+	With \(K_{n + i} / K_{n + i - 1}\) being abelian for all \(i \ge 1\). We know by the lattice theorem that there are groups \(H_{n + i}\) such that \(K_{ n + i} = H_{n + i} / H\) for some \(H _{n + i} \le G\) and \(H \le H_{n + i}\). Then, we have \[
+	\{1\}  = H / H \trianglelefteq H_{n + 1} / H \trianglelefteq \ldots \trianglelefteq H_{n + s} / H = G / H
+	.\]
+	Then, we have \(H_{n} = H\) and \(H_{n + s} = G\) and, as each contains the kernel, this correspondance preserves normality, hence we have \[
+	H_{n} = H\trianglelefteq H_{n + 1} \trianglelefteq H_{n + 2} \trianglelefteq \ldots H_{n + s}  = G
+	.\]
+	Then, note that \(H_{ n + i} / H_{ n + i - 1} = \left( H_{n + i} / H \right) / \left( H_{n + i - 1} / H \right) = K_{n + i} / K_{n + i - 1} \) which we know to be abelian. Hence all successive quotients are abelian. So, \[
+	\{1\}  = H_0 \trianglelefteq H_1 \trianglelefteq \ldots \trianglelefteq H_{n} \trianglelefteq H_{n + 1} \trianglelefteq H_{ n + 2} \trianglelefteq \ldots H_{n + s} = G
+	.\]
+	with \(H_{i} / H_{ i - 1}\) being abelian, so \(G\) is solvable.
+\end{proof}
+\begin{remark}
+	Subgroups and quotients of nilpotent groups are nilpotent, but this converse does not hold in general for nilpotent groups.
+\end{remark}
