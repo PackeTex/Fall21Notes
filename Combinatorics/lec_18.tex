@@ -13,3 +13,29 @@ Furthermore, we even find \(W\) to be continuous in the hole real line and \(W_{
 \\
 
 \section{Quasi-Random Graphs}
+\begin{definition}
+	Let \(G\) be a graph of order \(n\) with \(M\) being an arbitrary subgraph of \(K_{n} \). We define \(N_{G}^{*}\left( M \right) \) to be the number of labeled induced copies of \(M\) in \(G\). Equivalently, \[N_{G}^{*} \left( M \right) = \left| \{\alpha :  \ \alpha : V\left( M \right) \to V\left( G \right) \}   \right| \] with each \(\alpha\) preserving adjacenc and \(\alpha\left( V\left( M \right)  \right) \) being isomorphic to \(M\).
+\end{definition}
+\begin{example}
+	\(N_{G}^{*}\left( K_{2}  = 2e\left( G \right)  \right) \).\\
+	\(N_{G}^{*}\left( C_4 \right)  = \frac{1}{64}n^{4} + o\left( n^{4} \right) \). This is because every copy of \(K_{4} \) in \(G\) has \(8\) copies isomorphic to \(C_4\). Furthermore there are \(3\) symmetries of a \(K_{4} \) copy, so altogether we get \(\frac{1}{24}\binom{n}{4}\cdot\frac{1}{2^{6}} = \frac{n^{4}}{64} + o\left( n^{4} \right) \).
+\end{example}
+\begin{definition}[Graph Properties]
+	The following are equivalent:
+	\begin{itemize}
+		\item We define an infinite family of graphs with arbitrary orders \(\mathscr{G}\) to have property \(P_1\left( s \right) \) or  \textbf{property I} with power \(s\) if for all graphs \(M\) of order \(s\), we find \(N_{G}^{*}\left( M \right) = \frac{n^{s}}{2^{\binom{n}{2}}} + o\left( n^{s} \right) \) for each \(G \in \mathscr{G}\) having order \(n\).
+		\item A family \(\mathscr{G}\) has property \(P_2\) or \textbf{property II} if \(e\left( G \right)  \ge \frac{n^2}{4} + o\left( n^2 \right) \) and the number of closed walks of order \(4\), \(CW_4 \left( G \right) \le \frac{n^{4}}{16}+ o\left( n^{4} \right) \) for each \(G \in \mathscr{G}\) of order \(n\).
+		\item A family \(\mathscr{G}\) has property \(P_3\) or \textbf{property III} if \(\lambda_1\left( G \right) = \frac{n}{2} + o\left( n \right) \) and \(\sigma_2\left( G \right)  = o\left( n \right) \) for all \(G \in \mathscr{G}\) of order \(n\).
+		\item A family \(\mathscr{G}\) has property \(P_4\) or \textbf{property IV} if for all sets \(S\) we have \(\left| e\left( S \right) - \frac{1}{4}^{\left| S \right| ^2} \right| = o\left( n^2 \right) \) for all \(G \in \mathscr{G}\) of order \(n\).
+		\item A family \(\mathscr{G}\) has property \(P_5\) or \textbf{property V} if for all sets \(S\) of order \(\left\lfloor \frac{n}{2} \right\rfloor\) we find \(\left| e\left( S \right) - \frac{1}{16}n^2 \right|  = o\left( n^2 \right) \) for all \(G \in \mathscr{G}\) of order \(n\).
+		\item A family \(\mathscr{G}\) has property \(P_7\) or \textbf{property VII} if \(\sum_{1 <= i, j <= n}^{} \left| \hat{d}\left( v_{i}, v_{j} \right) - \frac{n}{4} \right| = o\left( n^3 \right) \) for \(G \in \mathscr{G}\) of order \(n\) and \(v_{i}, v_{j} \in V\left( G \right) \)>
+	\end{itemize}
+	We find \[
+		P_2 \implies P_1\left( s \right) \implies P_3 \implies P_4 \implies P_5 \implies P_7 \implies P_2
+	.\]
+\end{definition}
+\begin{example}
+	It is trivial to find that in order for \(G\) to be \(P_1\left( 2 \right) \) it must have \(e\left( G \right)  = \frac{n^2}{4} + o\left( n^2 \right) \).\\
+	We see if \(\left| S \right| =\frac{1}{2}n\) we obtain \(P_5\) from \(P_4\).\\
+Random graphs and Payley graphs are \(P_5\).
+\end{example}
