@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  4 OCT 2021 11:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  4 OCT 2021 11:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1720,7 +1720,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
 
-Overfull \hbox (33.58499pt too wide) in paragraph at lines 31--32
+Overfull \hbox (21.30716pt too wide) in paragraph at lines 31--32
 []\T1/cmr/m/n/10 A fam-ily $\U/rsfs/m/n/10 G$ \T1/cmr/m/n/10 has prop-erty $\OM
 L/cmm/m/it/10 P[]$ \T1/cmr/m/n/10 or \T1/cmr/bx/n/10 prop-erty VII \T1/cmr/m/n/
 10 if $[][] [] \OT1/cmr/m/n/10 =
@@ -1756,7 +1756,7 @@ ublic/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
 sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></
 usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf
 -dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on full.pdf (32 pages, 410814 bytes).
+Output written on full.pdf (32 pages, 411015 bytes).
 PDF statistics:
  271 PDF objects out of 1000 (max. 8388607)
  175 compressed objects within 2 object streams
