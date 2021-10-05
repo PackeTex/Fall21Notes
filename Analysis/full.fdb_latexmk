@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1633461135 "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" "full.pdf" "full" 1633461136
+["pdflatex"] 1633461150 "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" "full.pdf" "full" 1633461151
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" 1633456954 499 b768dec35e9adee10ce698d7996ac713 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -247,9 +247,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
-  "full.aux" 1633461135 905 1eb222c539638da89222c37a0cf8bc57 "pdflatex"
+  "full.aux" 1633461151 905 1eb222c539638da89222c37a0cf8bc57 "pdflatex"
   "full.tex" 1633456954 499 b768dec35e9adee10ce698d7996ac713 ""
-  "full.toc" 1633461135 507 4d16a2395532c825e9a99853e14b5122 "pdflatex"
+  "full.toc" 1633461151 507 4d16a2395532c825e9a99853e14b5122 "pdflatex"
   "lec_01.tex" 1630348652 7261 5653de60f5cca5cb9b37bfa0db899035 ""
   "lec_02.tex" 1630348714 7860 e95af571f2a3d1d0319b3f59879ea3ba ""
   "lec_03.tex" 1630610253 7701 7cf04a5cb5a802c1ab89b1bdbb06dd52 ""
@@ -261,11 +261,11 @@
   "lec_09.tex" 1632420700 10083 9766e7ed996e5678c216d8115aea4834 ""
   "lec_10.tex" 1632493298 8683 73ee5a265a3aa5d3001d1c8b3a4731ee ""
   "lec_11.tex" 1632857167 8416 0a9d7e0da60b1c745a10e21fc6633121 ""
-  "lec_12.tex" 1633456948 38 a42eccae560dfef57f4d427d66928c72 ""
+  "lec_12.tex" 1633461149 72 db7957c3d3d35786fe87940d6dbc647e ""
   "lec_13.tex" 1633460924 6462 796352b22c61cedb94cc0dae934947ca ""
   "ops.tex" 1630610909 124 ca20916fdf76fdc657317c94218b5396 ""
   (generated)
-  "full.pdf"
   "full.aux"
-  "full.toc"
   "full.log"
+  "full.toc"
+  "full.pdf"
