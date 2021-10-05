@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1633364397 "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" "master.pdf" "master" 1633456951
+["pdflatex"] 1633364397 "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" "master.pdf" "master" 1633461136
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" 1633456951 249 9250cbf07c7e4f5274370563133874fa ""
+  "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" 1633461136 249 9250cbf07c7e4f5274370563133874fa ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -238,11 +238,11 @@
   "lec_17.tex" 1633360924 2257 d412fa4efe694eafc8b7b4cd1488b2a0 ""
   "lec_18.tex" 1633364391 3940 186caaacb64405dee7b77e3479e05da2 ""
   "master.aux" 1633364398 213 2ce1c9f9cf77efb062863f40f193d1c4 "pdflatex"
-  "master.tex" 1633456951 249 9250cbf07c7e4f5274370563133874fa ""
+  "master.tex" 1633461136 249 9250cbf07c7e4f5274370563133874fa ""
   "master.toc" 1633364398 66 e86bada041ffcbe2b4ba5eb99fe416ce "pdflatex"
   "ops.tex" 1631289469 334 24d1d10e1c0997cd2bd2c17f8f9a3358 ""
   (generated)
-  "master.toc"
   "master.aux"
-  "master.pdf"
   "master.log"
+  "master.toc"
+  "master.pdf"
