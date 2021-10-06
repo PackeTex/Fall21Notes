@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1633541785 "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" "master.pdf" "master" 1633541986
+["pdflatex"] 1633542121 "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" "master.pdf" "master" 1633542122
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" 1633541986 254 227dd4ba18466965a5d823ac0b3a065c ""
+  "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" 1633542121 254 227dd4ba18466965a5d823ac0b3a065c ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -241,13 +241,13 @@
   "figures//fig.pdf" 1633541785 2057 a914d9b4643677cdcadde4231eed649d ""
   "figures/fig.pdf_tex" 1633541785 3038 4ac0fbc395b2b15e7ddf59a951eae8ff ""
   "lec_18.tex" 1633539215 6982 c22be4b4f96454b66d239554c1138ca7 ""
-  "lec_19.tex" 1633541875 5134 1a6e41abc6235d515bc991aa1e190984 ""
-  "master.aux" 1633541786 519 f00be1dfc7059467f6ad39c92de280bf "pdflatex"
-  "master.tex" 1633541986 254 227dd4ba18466965a5d823ac0b3a065c ""
-  "master.toc" 1633541786 58 f22ef112b38eb4adc929ccafaee1b7f1 "pdflatex"
+  "lec_19.tex" 1633542120 5140 9e62269781ab9dee6b0ce50404eabf94 ""
+  "master.aux" 1633542122 519 f00be1dfc7059467f6ad39c92de280bf "pdflatex"
+  "master.tex" 1633542121 254 227dd4ba18466965a5d823ac0b3a065c ""
+  "master.toc" 1633542122 58 f22ef112b38eb4adc929ccafaee1b7f1 "pdflatex"
   "ops.tex" 1630348190 128 ec4436639d737715cee9bb35f558b259 ""
   (generated)
-  "master.aux"
   "master.toc"
-  "master.log"
   "master.pdf"
+  "master.aux"
+  "master.log"
