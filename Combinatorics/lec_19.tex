@@ -1,0 +1,47 @@
+\lecture{19}{Wed 06 Oct 2021 10:21}{Quasi-Random Graphs (2)}
+Recall we had many equivalent conditions, cleverly names properties \(I\)-\(VII\). We prove the are equivalent.
+\begin{proof}[\(P_2 \iff P_3\)]
+	\begin{itemize}
+		\item \(\left( P_2 \implies P_3 \right) \). Recall \(\frac{n^{4}}{16} + o\left( n^{4} \right) = CW_4 \left( G \right)  = \tr\left( A^{4} \right) \). We know
+			\begin{align*}
+				\tr \left( A^{4} \right) &= \sum_{i= 1}^{n} \lambda_{i}^{4} \\
+				\implies\lambda_1^{4} &\le \frac{n^{4}}{16} + o\left( n^{4} \right) \\
+				\implies\lambda_1 &\le \frac{n}{2} + o\left( n \right)
+			.\end{align*}
+			From this, we also know
+			\begin{align*}
+			\sum_{i= 1}^{n} \lambda_{i}^{4} &= \lambda_1^{4} +\sum_{i=2}^{n} \lambda_{i}^{4}  \\
+			\implies \sum_{i=2}^{n} \lambda_{i}^{4} &= o\left( n^{4} \right) \\
+			\implies \lambda_{i} &= o\left( n \right) \\
+			\implies \sigma_2 &= o\left( n \right)
+		.\end{align*}
+	\item \(\left( P_3 \implies P_2 \right) \). Again, we know
+		\begin{align*}
+			CW_4 &= \sum_{i= 1}^{n} \lambda_{i}^{4}\\
+			&= \lambda_1^{4} + \sum_{i=2}^{n} \lambda_{i}^{4}\\
+			&= \frac{n^{4}}{16} + o\left( n^{4} \right)  \\
+			\implies \lambda_1^{4} = \frac{n^{4}}{16}
+		.\end{align*}
+		Similarly, we find \(\sum_{i=2}^{n} \lambda_{i}^{4} \le \sigma^2_2 \sum_{i=2}^{n} \lambda_{i}^2\)\\
+		Then, we have \(\sum_{i=2}^{4} \lambda_{i}^2 = 2e\left( G \right) - \lambda_1^2 \le o\left( n^2 \right) n^2 = o\left( n^{4} \right) \). \(P_2 \iff P_3\).
+	\end{itemize}
+\end{proof}
+\begin{remark}
+	Sometimes, we wish to only have \(2\) conditions to check for \(P_3\), and we find that there is an equivalent statement of \(P_3\) such that a family \(\mathscr{G}\) follows
+	\begin{itemize}
+		\item \(e\left( G \right)  \ge \frac{n^2}{4} + o\left( n^2 \right) \).
+		\item \(\left| \lambda_{n}\left( G \right)  \right| + \left| \lambda_{n}\left( \overline{G} \right)  \right|  = o\left( n \right)  \).
+	\end{itemize}
+\end{remark}
+\begin{proof}[\(P_3 \iff P_7\)]
+	\begin{itemize}
+		\item \(\left( P_3 \implies P_7 \right) \). As we have \(P_3\), then we have \(CW_4 = \frac{n^{4}}{16} + o(n^{4})\). Then, recall \(\sum_{1 \le i, j, \le n}^{} \binom{\hat{d}_{ij}}{2} = 2\#C_4 = \frac{CW_4}{4} + o\left( n^{4} \right) = \frac{n^{4}}{64} + o(n^{4})\) where \(\#C_4\) is simply the number of four cycles in \(G\). Hence, with some intermediate theorems, we find \[
+			\sum_{1\le i, j \le n}^{} \hat{d}_{i, j}^2= \frac{n^{4}}{32} + o\left( n^{4} \right) 		.\]
+	Hence, \[
+		\sum_{1 \le i, j \le n}^{} \left( \hat{d}_{ij} - \frac{n^2}{16} \right) = o\left( n^{4} \right)
+	.\] Then, we see as \(\sum_{1 \le i, j \le n}^{}\hat{d}_{i, j} =  \sum_{i= 1}^{n} \binom{d_{i}}{2} = \sum_{i= 1}^{n} \frac{d_{i}^2}{2} \le \frac{n}{2} \lambda_1^2 = \frac{n^3}{8} + o\left( n^3 \right) \). Then, applying subadditivity yields the desired value of \(\sum_{1\le i, j \le n}^{} \left| \hat{d}_{i, j} - \frac{n}{4} \right| = o\left( n^3 \right) \).
+	\end{itemize}
+\end{proof}
+\begin{proposition}
+	Let \(G\) be random on \(n\)-vertices with all degrees about \(\frac{n}{2}\) and codegrees about \(\frac{n}{4}\). Then, we ask how likely is it that by changing at most \(o\left( n^2 \right) \) edges, we find a conference graph.
+\end{proposition}
