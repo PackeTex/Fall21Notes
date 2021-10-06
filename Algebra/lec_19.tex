@@ -1,0 +1,37 @@
+\lecture{19}{Wed 06 Oct 2021 11:33}{Free Groups (2)}
+Recall we had a set of letters \(X = \{a, b, c, \ldots, a^{-1}, b^{-1}, c^{-1}, \ldots,  1 \}\). Then, we define a word on the alphabet \(X\) to be a string \(\omega = x_1^{\epsilon_1} x_2^{\epsilon_2} \ldots, x_{s}^{\epsilon_{s}}\) where \(x_1, x_2, \ldots, x_{s} \in X\) and \(\epsilon _{i} = \pm 1\). For example with \(X = \{a, b, c\} \) we have a word \(x_1 x_1 x_2 x_1^{-1} x_1 x_3\) for example. Then, define \(1\) to be the empty product, that being a string with no symbols. Now, we define an equivalence relation on the words to induce a group.\\
+We say two words \(\omega_1 \sim \omega_2\) if we can transform \(\omega_1\) into \(\omega_2\) with a finite sequence of the following operations
+\begin{itemize}
+	\item Remove a sequential pair \(x x^{-1}\) or \(x^{-1} x\) from the string.
+	\item Insert a substring \(x x^{-1}\) or \(x^{-1} x\) into the string.
+\end{itemize}
+So, we see \(x_1x_2x_3^{-1}x_4 \sim x_1x_2x_3^{-1}x_2x_2^{-1} x_1^{-1} x_1 x_4\) and so on. It is trivial to verify this to be an equivalence relation, so we omit the proof. Henceforth, we will denote the equivalence class of a word \(\omega\) by \(\left[ \omega \right] \). So, we see if \( \omega_1 \sim \omega_2\), we have \(\left[ \omega_1 \right]  = \left[ \omega_2 \right] \).\\
+Now, let \(F\left( X \right) \) be the set of all equivalence classes on \(X\) and define \(\left[ \omega_1 \right] \left[ \omega_2 \right]  \coloneqq \left[ \omega_1\omega_2 \right]  \) with \(\omega_1 \omega_2\) simply being the concatenation of the two words. First, we verify this to be well-defined. Suppose \(w^{\prime} \sim w\) and \(v^{\prime} \sim v\) are \(4\) words. Hence, there is a simple sequence taking \(v \mapsto v^{\prime}\) and \(w \mapsto w^{\prime}\). It is easy to see then, that the same operations applied to their respective parts will take \(vw \mapsto v^{\prime} w^{\prime}\) and \(wv \mapsto w^{\prime} v^{\prime}\), hence \(\left[ vw \right]  = \left[ v^{\prime} w^{\prime} \right] \).\\
+Next, we show this forms a group. We see \(\left[ w \right] \left[ 1 \right]  = \left[ w \cdot 1 \right] = \left[ w \right]  \) and likewise \(\left[ 1 \right] \left[ w \right] = \left[ w \right] \), so \(1\) is the identity.\\
+Next,
+\begin{align*}
+	\left[ w \right] \left( \left[ u \right] \left[ v \right]  \right) &=  \left[ w \right] \left[ uv \right]  \\
+									   &= \left[ w(uv) \right]  \\
+	&= \left[ \left( wu \right) v \right]  \\
+	&= \left[ wu \right] \left[ v \right]  \\
+	&= \left( \left[ w \right] \left[ u \right]  \right) \left[ v \right]  \\
+.\end{align*}
+Hence, \(F\left( X \right) \) is associative. Lastly, we show inverses exist. Let \(w = x_1^{\epsilon_1} \ldots x_{s}^{\epsilon_{s}}\), then let \(w^{-1} = x_{s}^{-\epsilon_{s}} \ldots x_1^{-\epsilon_1}\) and we see \(w w^{-1} \sim 1\), so \(F\left( X \right) \) has inverses.
+\begin{definition}[Free Group]
+	For an alphabet \(X\), we define \(F\left( X \right) \) to be the \textbf{Free Group on \(X\)}. More generally, the free group \(F\) on \(X\) is a group \(F\) together with an injection \(\sigma: X \xhookrightarrow{} F\) such that any \(\alpha: X \to G\), with \(G\) being an arbitrary group, extends to a unique homomorphism \(\beta: F  \to G \) such that \(\overline{\alpha} \circ \sigma = \alpha\).
+\end{definition}
+\begin{figure}[ht]
+    \centering
+    \incfig{fig}
+    \caption{In this commutative diagram solid lines represent given maps and dotted lines represent maps that must then exist}
+    \label{fig:fig}
+\end{figure}
+Next, recall a homomprhism \(\phi : H \to G\) is determined by the images of generators of \(H\). Let \(H = \left<X \right> \). Then for an arbitrary \(h \in H\) with \(h = x_1^{\epsilon_1} \ldots x_{n}^{\epsilon _{n}}\)we find \(\phi\left( h \right)  = \phi\left( x_1 \right) ^{\epsilon_1} \ldots \phi\left( x_{n} \right) ^{\epsilon_{n}}\) with \(x_{i} \in X\) and \(\epsilon_{i} = \pm 1\).\\
+Now, let \(G\) be a group with \(\alpha : X \to G\) being a map and \(\sigma:X \xhookrightarrow{} F\) be the inclusion map. Let \(w = x_1^{\epsilon_1} \ldots x_{n}^{\epsilon_{n}}\) and let \(\Beta\left( w \right) = \alpha\left( x_1 \right) ^{\epsilon_1} \ldots \alpha\left( x_{n} \right) ^{\epsilon _{n}}\) with \(x_{i} \in X\) and \(\epsilon_{i} = \pm 1\). Then, we define \(\beta \left( \left[ w \right]  \right)  = \left[ \beta \left( w \right)  \right] \). It is simple to check this is well defined as we may always insert or delete substrings of the form \(\alpha\left( x_{i} \right) ^{\epsilon_{i}} \alpha\left( x_{i} \right) ^{-\epsilon_{i}}\) in order to induce an equivalence. We see \(\beta\) is also a homomoprhism as
+\begin{align*}
+	\beta\left( \left[ w \right] \left[ v \right]  \right) &= \beta\left( \left[ wv \right]  \right)  \\
+							       &= \beta\left( wv \right)  \\
+							       &= \beta\left( w \right) \beta\left( v \right)  \\
+							       &= \beta\left( \left[ w \right]  \right) \beta\left( \left[ v \right]  \right)
+.\end{align*}
+Lastly, we see the map \(\beta\) is unique as a homomoprhism is completely characterized by where it sends the generators.
