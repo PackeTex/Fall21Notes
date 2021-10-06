@@ -1,5 +1,5 @@
 \lecture{19}{Wed 06 Oct 2021 11:33}{Free Groups (2)}
-Recall we had a set of letters \(X = \{a, b, c, \ldots, a^{-1}, b^{-1}, c^{-1}, \ldots,  1 \}\). Then, we define a word on the alphabet \(X\) to be a string \(\omega = x_1^{\epsilon_1} x_2^{\epsilon_2} \ldots, x_{s}^{\epsilon_{s}}\) where \(x_1, x_2, \ldots, x_{s} \in X\) and \(\epsilon _{i} = \pm 1\). For example with \(X = \{a, b, c\} \) we have a word \(x_1 x_1 x_2 x_1^{-1} x_1 x_3\) for example. Then, define \(1\) to be the empty product, that being a string with no symbols. Now, we define an equivalence relation on the words to induce a group.\\
+Recall we had a set of letters \(X = \{a, b, c, \ldots, a^{-1}, b^{-1}, c^{-1}, \ldots,  1 \}\). Then, we define a word on the alphabet \(X\) to be a string \(\omega = x_1^{\epsilon_1} x_2^{\epsilon_2} \ldots, x_{s}^{\epsilon_{s}}\) where \(x_1, x_2, \ldots, x_{s} \in X\) and \(\epsilon _{i} = \pm 1\). For example with \(X = \{x_1, x_2, x_3\} \) we have a word \(x_1 x_1 x_2 x_1^{-1} x_1 x_3\) for example. Then, define \(1\) to be the empty product, that being a string with no symbols. Now, we define an equivalence relation on the words to induce a group.\\
 We say two words \(\omega_1 \sim \omega_2\) if we can transform \(\omega_1\) into \(\omega_2\) with a finite sequence of the following operations
 \begin{itemize}
 	\item Remove a sequential pair \(x x^{-1}\) or \(x^{-1} x\) from the string.
@@ -18,7 +18,7 @@ Next,
 .\end{align*}
 Hence, \(F\left( X \right) \) is associative. Lastly, we show inverses exist. Let \(w = x_1^{\epsilon_1} \ldots x_{s}^{\epsilon_{s}}\), then let \(w^{-1} = x_{s}^{-\epsilon_{s}} \ldots x_1^{-\epsilon_1}\) and we see \(w w^{-1} \sim 1\), so \(F\left( X \right) \) has inverses.
 \begin{definition}[Free Group]
-	For an alphabet \(X\), we define \(F\left( X \right) \) to be the \textbf{Free Group on \(X\)}. More generally, the free group \(F\) on \(X\) is a group \(F\) together with an injection \(\sigma: X \xhookrightarrow{} F\) such that any \(\alpha: X \to G\), with \(G\) being an arbitrary group, extends to a unique homomorphism \(\beta: F  \to G \) such that \(\overline{\alpha} \circ \sigma = \alpha\).
+	For an alphabet \(X\), we define \(F\left( X \right) \) to be the \textbf{Free Group on \(X\)}. More generally, the free group \(F\) on \(X\) is a group \(F\) together with an injection \(\sigma: X \xhookrightarrow{} F\) such that any \(\alpha: X \to G\), with \(G\) being an arbitrary group, extends to a unique homomorphism \(\beta: F  \to G \) such that \(\beta \circ \sigma = \alpha\).
 \end{definition}
 \begin{figure}[ht]
     \centering
