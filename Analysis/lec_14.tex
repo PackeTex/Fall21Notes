@@ -1,0 +1,19 @@
+\lecture{14}{Thu 07 Oct 2021 12:58}{Measurable Functions (2)}
+\begin{recall}
+	A function \(f: S \to \R\) was measurable if \(S\) is measurable and \(f^{-1}\left( \left( c, \infty \right]  \right) \) is measurable for all \(c \in \R\). There was an equivalent definition using the extended borel \(\sigma\)-algebra that we will use occasionally.
+\end{recall}
+\begin{proposition}
+	Suppose \(f: S \to \overline{\R}\) is continuous on the measurable set \(S\), then \(f\) is measurable.
+\end{proposition}
+\begin{proof}
+	Let \(H\) be an extending function, then we must show \(H \circ f\) is continuous. We see any subray , \(f\left( X_0 \right) = \left( c , \infty \right] \) will have \((H \circ f)\left( X_0 \right) = \left( \hat{c}, 1 \right] \). We know the preimage of this to be open in \(S\), hence measurable.
+\end{proof}
+\begin{proposition}
+	Let \(S \subseteq \R\)	. Suppose \(f: S \to \R\) is measurable. and let \(g: B \to \R\) with \(B \in \overline{\mathscr{B}}\)  and \(f\left( S \right) \subseteq B\). Then, \(g \circ f: S \to \R\) is measurable.
+\end{proposition}
+\begin{proof}
+	For \(c \in \R\), we note that \(\left( g \circ f \right) ^{-1} \left( \left( c, \infty \right]  \right)  = f^{-1}\left( g^{-1}\left( \left( c, \infty \right]  \right)  \right) \) . By continuity of \(g\), we know \(g^{-1}\left( \left( c, \infty \right]  \right) \in \overline{\mathscr{B}}\) . And, since \(f\) is measurable, we find \(f^{-1}\left( g^{-1}\left( \left( c, \infty \right]  \right)  \right) \).
+\end{proof}
+\begin{corollary}[]
+
+\end{corollary}
