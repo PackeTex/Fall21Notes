@@ -15,5 +15,11 @@
 	For \(c \in \R\), we note that \(\left( g \circ f \right) ^{-1} \left( \left( c, \infty \right]  \right)  = f^{-1}\left( g^{-1}\left( \left( c, \infty \right]  \right)  \right) \) . By continuity of \(g\), we know \(g^{-1}\left( \left( c, \infty \right]  \right) \in \overline{\mathscr{B}}\) . And, since \(f\) is measurable, we find \(f^{-1}\left( g^{-1}\left( \left( c, \infty \right]  \right)  \right) \).
 \end{proof}
 \begin{corollary}[]
-
+Let \(S \subseteq \R\)	 and \(f: S \to \R\)	to be a measurable function. Then, for every \(\alpha \in \R\)	and \(0 < \rho < \infty\)	, we find \(\alpha f\)	 and \(\left| f \right| ^{\rho}\)	 are measurable.
 \end{corollary}
+\begin{proof}
+	We see the functions \(g\left( u \right) = \alpha u\)	on \(\overline{\R}\)	and \(h\left( u \right)  = \left| u \right| ^{\rho}\)	 on \(\overline{\R}\)	 to be the corresponding functions. We see the case \(h\)	is clearly continuous and well defined. On the other hand \(g\)	may be poorly defined if \(\alpha = 0\)	 and \(f\left( x \right)  = \infty\)	. Recall, however, we had \(0 \cdot  \pm \infty = 0\)	so \(g\)	 is just the zero functions and we see continuity holds.
+\end{proof}
+\begin{definition}[Almost-everywhere]
+	Let \(S\)	 be measurable, then a property is  said to hold true \textbf{almost everywhere} on \(S\)	 or \textbf{for almost all}	 \(x \in S\)	if there is a set \(T\)	 with \(\mu\left( T \right) = 0\)	 and the property holds on all of \(S \setminus T\)	.
+\end{definition}
