@@ -32,3 +32,45 @@ Let \(S \subseteq \R\)	 and \(f: S \to \R\)	to be a measurable function. Then, f
 \begin{remark}
 	Suppose \(f: S \to \overline{\R}\)  is a measurable set and \(S \subseteq X \subseteq \R\) . If \(\mu (X \setminus S) = 0 \)  and \(h: X \to \overline{\R}\)  is any extension of \(f\) , then \(h\)  is measurable since \(h^{-1}\left( \left( c, \infty \right]  \right)  = f^{-1}\left( \left( c, \infty \right]  \right)  \cup \{x \in X \setminus S : h\left( x \right)  \in \left( c, \infty \right] \} \). This is the union of a measurable set with a set of measure \(0\),  so we see \(h\)  is measurable.
 \end{remark}
+\begin{notation}
+	Instead of saying that every extension of a measurable function \(f: S \to \overline{\R}\) to a function \(h: X \to \overline{\R}\) , we often just say \(f\)  is measurable on \(X\)  as long as it is defined almost everywhere on \(X\) and is measurable on that set.
+\end{notation}
+\begin{proposition}
+Suppose \(f: I \to \overline{\R}\) is monotone on \(I \subseteq \R\). Then, the set of all points in \(I\)  where \(f\) fails to be continuous is countable, hence measure \(0\). Another characterization is that \(f\)  is continuous almost everywhere, hence \(f\)  is measurable.
+\end{proposition}
+\begin{proof}
+	It suffices to consider the case \(f\)  is increasing and \(I\) open. Let \(E\)  be the set of all \(x \in I\)  where \(f\)  fails to be continuous. For \(x \in E\)  let \(\alpha_{x} = \sup ( \{f\left( z \right)  : z < x \} z \in J )\) and \(\beta_{x} = \inf (\{f\left( z \right)  : z > x \} z \in J) \). Since \(f\)  is not continuous at \(x\), we find the interval \(\left( \alpha_{x}, \beta_{x} \right) = I_{x} \)  to be nonempty. Also, if \(x, y \in E\)  are distinct with \(x < y\)  we find \(\beta_{x} <= \alpha_{y}\) . Hence, we find \(I_{x} \cap I_{y} = \O\) . Since each interval \(I_{x}\)  for \(x \in E\) contains a rational number, we see \(E\)  is countable. Hence, \( \mu\left( E \right) = 0\) and we see \( f\mid_{I \setminus E}\) is continuous on \(I \setminus E\) which is measurable, hence the restriction is measurable and as \(f\)  coincides with its restriction almost everywhere, we see \(f\)  is measurable.
+\end{proof}
+\begin{definition}[Finite Functions]
+\begin{itemize}
+	\item Let \(S \subseteq \R\) . A function \(f: S \to \overline{\R}\)  is called \textbf{finite on \(S\) } if \(\left| f\left( x \right)  \right| < \infty\)  for all \(x \in S\) .
+	\item Let \(f, g: S \to \overline{\R}\)  Then we say \(f < g\)  if \(f\left( x \right) < g\left( x \right) \) for all \(x \in S\) . Similarly for all other inequalities.
+	\item \(f\)  is called \textbf{nonnegative} if \(f \ge 0\) and \textbf{positive} if the inequality is strict.
+\end{itemize}
+\end{definition}
+\begin{proposition}
+	Let \(f, g: S \to \overline{\R}\)  be measurable and finite almost everywhere. Then, \(f + g, f - g, f \cdot g\)  are measurable.\\
+	If \(g \left( x \right) \neq 0\)  for almost every \(x \in S\) , then \(\frac{f}{g}\)  is measurable.
+\end{proposition}
+\begin{proof}
+	\begin{enumerate}
+		\item 	First, we prove addition. We may assume \(f, g\)  are finite on \(S\) . Then, \(h = f +g\) is well defined. Since for \(x \in S\) , we have \(h\left( x \right) > q\)  for \(c \in R\) if and only if there is a \(q \in \Q\)  such that \(f\left( x \right)  > q\)  and \(g\left( x \right)  > c-q\) , we have
+	\begin{align*}
+		h^{-1}\left( \left( c, \infty \right]  \right) &=  h^{-1}\left( \left( c, \infty \right)  \right) \text{ by finiteness.} \\
+							       &= \bigcup_{q\in \Q} f^{-1}\left( \left( q, \infty \right)  \right) \cup g^{-1}\left( c - q, \infty \right)
+	.\end{align*}
+	Hence, \(h\)  as measurable as these are all measurable sets. If \(f, g\)  are measurable, then so are \(f, -g\) , hence \(f + \left( -g \right)  = f-g\)
+	\item With addition, subtraction is completely trivial,
+	\item Now multiplication, Let \(h\) be any measurable finite function on \(S\). Consider \(\left( h \right) ^2\). If \(c \ge 0\) , we have \[
+			\left( \left( h \right) ^2 \right) ^{-1} \left( \left( c, \infty \right)  \right) &=  h^{-1}\left( \left( -\infty, \sqrt{c}  \right)  \right) \cup h^{-1}\left( \left( \sqrt{c} , \infty \right)  \right)
+		.\]
+		If \(c < o\) , then
+		\[
+			\left( \left( h \right)^2  \right) ^{-1} \left( \left( c, \infty \right)  \right) = h^{-1}\left( \R \right) = S
+		.\]
+		As in either case we had the preimage being measurable, we see \(\left( h \right) ^2\) is measurable. Since \(f\cdot g = \frac{1}{2}\left( f + g \right) ^2 - \frac{1}{2} \left( f \right) ^2 - \frac{1}{2}\left( g^2 \right) \)  being the sum, constant multiple and square of measurable functions yields \(f \cdot g\)  to be measurable.
+	\item Lastly, let \(h = \frac{1}{g}\), and note we can assume \(g\)  is nonzero for all \(S\) , hence \(h\)  is well defined on \(S\) and \(h\)  is finite. If \(c>0\)  we see \(h^{-1}\left( \left( c, \infty \right)  \right) = g^{-1}(\left( 0, \frac{1}{c} \right)) \). As this interval is open and borel, we see \(g^{-1}\left( \left( 0, \frac{1}{c} \right)  \right) \)   is borel, hence \(h^{-1}\left( \left( c, \infty \right)  \right) \) is measurable.\\
+		Similairly, if \(c = 0\) , we see \(h^{-1}\left( \left( 0, \infty \right)  \right) = g^{-1}\left( \left( 0, \infty \right)  \right) \).\\
+		Lastly, if \(c < 0 \)  we have \(h^{-1}\left( c, \infty \right) = g^{-1}(\left( -\infty, \frac{1}{c} \right)) \cup g^{-1}\left( \left( 0, \infty \right)  \right) = g^{-1}\left( \left[ \frac{1}{c}, 0 \right) ^{c} \right)   \)  hence measurable. This completes the proof.
+	\end{enumerate}
+\end{proof}

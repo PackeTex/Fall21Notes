@@ -1,7 +1,7 @@
 PWD /home/memphisrex/school/masters/semester-1/Analysis
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/memphisrex/school/masters/semester-1/Analysis/master.tex
+INPUT master.tex
 OUTPUT master.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -1191,6 +1191,8 @@ INPUT ./lec_14.tex
 INPUT lec_14.tex
 INPUT ./lec_14.tex
 INPUT lec_14.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0700.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm0500.tfm
 INPUT master.aux
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
