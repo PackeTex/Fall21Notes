@@ -24,8 +24,11 @@ Let \(S \subseteq \R\)	 and \(f: S \to \R\)	to be a measurable function. Then, f
 	Let \(S\)	 be measurable, then a property is  said to hold true \textbf{almost everywhere} on \(S\)	 or \textbf{for almost all}	 \(x \in S\)	if there is a set \(T\)	 with \(\mu\left( T \right) = 0\)	 and the property holds on all of \(S \setminus T\)	.
 \end{definition}
 \begin{proposition}
-	Let \(S \subseteq \R\) and suppose \(f, g: S \to \overline{\R}\) such that \(f\) is measurable and \(g=f\) almost everywhere on \(S\)
-
-
-
+	Let \(S \subseteq \R\) and suppose \(f, g: S \to \overline{\R}\) such that \(f\) is measurable and \(g=f\) almost everywhere on \(S\), then \(g\)  is measurable.
 \end{proposition}
+\begin{proof}
+	Let \(T = \{x\in S : f\left( x \right)  \neq g\left( x \right) \} \) . Fix \(c \in \R\)  and let \(F = f^{-1}\left( \left( c, \infty \right] \right) \setminus T\)  and \(G = f^{-1}\left( \left( c, \infty \right]\right) \cup T \). Clearly, both \(F\)  and \(G\)  are measurable. Furthermore, \(F \subseteq G\)  and \( \mu\left( G \setminus F \right) = \mu\left( T \right) = 0\) . Since, \(F \subseteq g^{-1}\left( \left( c, \infty \right]  \right)  \subseteq G\). And, by an earlier characterization we recall that a set \(X\)  is measurable if and only if there were nested sets around it with a difference of measure \(0\) . Hence, \(g\)  is measurable.
+\end{proof}
+\begin{remark}
+	Suppose \(f: S \to \overline{\R}\)  is a measurable set and \(S \subseteq X \subseteq \R\) . If \(\mu (X \setminus S) = 0 \)  and \(h: X \to \overline{\R}\)  is any extension of \(f\) , then \(h\)  is measurable since \(h^{-1}\left( \left( c, \infty \right]  \right)  = f^{-1}\left( \left( c, \infty \right]  \right)  \cup \{x \in X \setminus S : h\left( x \right)  \in \left( c, \infty \right] \} \). This is the union of a measurable set with a set of measure \(0\),  so we see \(h\)  is measurable.
+\end{remark}

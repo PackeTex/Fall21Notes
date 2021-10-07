@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1633631311 "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" "full.pdf" "full" 1633631312
+["pdflatex"] 1633631835 "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" "full.pdf" "full" 1633631836
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" 1633629510 522 0bd621ed0ecd0d4aca49b5202c79160a ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -247,9 +247,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
-  "full.aux" 1633631312 1014 bd338156381d2ed782b46b84c3f755a4 "pdflatex"
+  "full.aux" 1633631835 1014 bd338156381d2ed782b46b84c3f755a4 "pdflatex"
   "full.tex" 1633629510 522 0bd621ed0ecd0d4aca49b5202c79160a ""
-  "full.toc" 1633631312 575 3f9875095355e8bcfb02ccbadedb3f05 "pdflatex"
+  "full.toc" 1633631835 575 3f9875095355e8bcfb02ccbadedb3f05 "pdflatex"
   "lec_01.tex" 1630348652 7261 5653de60f5cca5cb9b37bfa0db899035 ""
   "lec_02.tex" 1630348714 7860 e95af571f2a3d1d0319b3f59879ea3ba ""
   "lec_03.tex" 1630610253 7701 7cf04a5cb5a802c1ab89b1bdbb06dd52 ""
@@ -263,10 +263,10 @@
   "lec_11.tex" 1632857167 8416 0a9d7e0da60b1c745a10e21fc6633121 ""
   "lec_12.tex" 1633461149 72 db7957c3d3d35786fe87940d6dbc647e ""
   "lec_13.tex" 1633461994 7808 8a98749210b081e4a47650262c587dc7 ""
-  "lec_14.tex" 1633631310 2737 2a908bd906918a0252461642e326ff54 ""
+  "lec_14.tex" 1633631832 3975 c5da25ecc17bbd30566769130a2a5e6a ""
   "ops.tex" 1630610909 124 ca20916fdf76fdc657317c94218b5396 ""
   (generated)
-  "full.toc"
+  "full.aux"
   "full.log"
   "full.pdf"
-  "full.aux"
+  "full.toc"
