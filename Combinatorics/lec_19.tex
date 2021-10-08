@@ -39,7 +39,7 @@ Recall we had many equivalent conditions, cleverly names properties \(I\)-\(VII\
 			\sum_{1\le i, j \le n}^{} \hat{d}_{i, j}^2= \frac{n^{4}}{32} + o\left( n^{4} \right) 		.\]
 	Hence, \[
 		\sum_{1 \le i, j \le n}^{} \left( \hat{d}_{ij} - \frac{n^2}{16} \right) = o\left( n^{4} \right)
-	.\] Then, we see as \(\sum_{1 \le i, j \le n}^{}\hat{d}_{i, j} =  \sum_{i= 1}^{n} \binom{d_{i}}{2} = \sum_{i= 1}^{n} \frac{d_{i}^2}{2} \le \frac{n}{2} \lambda_1^2 = \frac{n^3}{8} + o\left( n^3 \right) \). Then, applying subadditivity yields the desired value of \(\sum_{1\le i, j \le n}^{} \left| \hat{d}_{i, j} - \frac{n}{4} \right| = o\left( n^3 \right) \).
+	.\] Then, we see as \(\sum_{1 \le i, j \le n}^{}\hat{d}_{i, j} =  \sum_{i= 1}^{n} \binom{d_{i}}{2} = \sum_{i= 1}^{n} \frac{d_{i}^2}{2}  - 1/2 \sum_{i= 1}^{n} d_{i} \le \frac{n}{2} \lambda_1^2 = \frac{n^3}{8} + o\left( n^3 \right) \). Then, applying subadditivity yields the desired value of \(\sum_{1\le i, j \le n}^{} \left| \hat{d}_{i, j} - \frac{n}{4} \right| = o\left( n^3 \right) \).
 	\end{itemize}
 \end{proof}
 \begin{proposition}
