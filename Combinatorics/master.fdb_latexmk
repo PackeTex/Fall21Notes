@@ -1,6 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1633707673 "master.tex" "master.pdf" "master" 1633707673
+["pdflatex"] 1633709915 "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" "master.pdf" "master" 1633709915
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
+  "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" 1633709914 249 2589433988c0c82985df58c26a7d0014 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -236,13 +237,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
   "lec_19.tex" 1633707668 3265 4dcb91fe3768c0cb12d6e729b585b366 ""
-  "lec_20.tex" 1633706498 63 7cccc111895f8b1fae7a3614aee31243 ""
-  "master.aux" 1633707672 106 e860c4f38b7f6e1623795c4e9833df5e "pdflatex"
-  "master.tex" 1633707671 249 2589433988c0c82985df58c26a7d0014 ""
-  "master.toc" 1633707672 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "ops.tex" 1631289469 334 24d1d10e1c0997cd2bd2c17f8f9a3358 ""
+  "lec_20.tex" 1633709484 2648 0e6970a9fd827b1c67af37a13b5c31af ""
+  "master.aux" 1633709915 106 6fa4e66ed6c1022018f2ea2acd92b641 "pdflatex"
+  "master.tex" 1633709914 249 2589433988c0c82985df58c26a7d0014 ""
+  "master.toc" 1633709915 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "ops.tex" 1633707999 366 8454741d16875dd142d1e2e1794a5523 ""
   (generated)
-  "master.toc"
-  "master.pdf"
-  "master.log"
   "master.aux"
+  "master.pdf"
+  "master.toc"
+  "master.log"
