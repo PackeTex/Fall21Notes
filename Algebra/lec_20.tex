@@ -24,3 +24,10 @@ Then, for an arbitrary element in \(F\)  of the form \(x = x_1^{\epsilon_1}\ldot
 \begin{theorem}
 	Let \(F\)  be a free group with \(H, G\)  being groups. Suppose \(\alpha: F \to H\)  is a homomorphism and \(\beta: G \to H\)  is a surjective homomorphism. Then, there is a \(\gamma : F \to G\)  such that \(\beta \gamma = \alpha\) .
 \end{theorem}
+\begin{proof}
+	Let \(F\)  be free on \( X \subseteq F\) . Then, each \(x \in X\)  has \(\alpha\left( x \right) \in H = \IM\left( \beta \right) \) . Then, there is some \(g_{x} \in G\)  such that \(\beta\left( g_{x} \right) = \alpha\left( x \right)  \) . By the universal mapping property of \(F\) , we have the map \(X \to G, x \mapsto g_{x}\) extends to a homomorphism \begin{align*}
+		\gamma: F &\longrightarrow G \\
+		x &\longmapsto \gamma(x) = g_{x}
+	.\end{align*}
+	Then, for \(x \in X\) we see \(\beta\left( \gamma\left( x \right)  \right)  = \beta\left( g_{x} \right) = \alpha\left( x \right)  \)  , so \(\beta \circ \gamma = \alpha\)  on \(X\)  which generates \(F\) , so \(\beta \circ \gamma = \alpha\)  on \(F\)  as \(\beta, \gamma\)  are homomorphisms.
+\end{proof}
