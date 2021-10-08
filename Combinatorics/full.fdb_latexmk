@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1633709917 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1633709918
+["pdflatex"] 1633709917 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1633713804
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1633706020 663 790a31991f6d23f02e11f8d9be3c6e69 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -290,6 +290,6 @@
   "ops.tex" 1633707999 366 8454741d16875dd142d1e2e1794a5523 ""
   (generated)
   "full.aux"
+  "full.toc"
   "full.log"
   "full.pdf"
-  "full.toc"
