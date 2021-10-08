@@ -1,0 +1,26 @@
+\lecture{20}{Fri 08 Oct 2021 11:26}{Free Groups (3)}
+\begin{recall}
+	\(F\)  is a free group on the set \(X\)  when there is an injection \(\sigma: X \xhookrightarrow F\)  such that for all maps \(\alpha: X \to G\) , there is a homomorphism \(\beta: F \to G\)  such that \(\beta \circ\sigma = \alpha\).
+\end{recall}
+\begin{remark}
+	\(F\)  is also a free group on \(\sigma\left( X \right) \subseteq F\) , using a similair inclusion map, so often we will assume \(X \subseteq F\).
+\end{remark}
+\begin{theorem}
+	If \(F_1\)  is free on \(X_1\)  and \(F_2\)  is free on \(X_2\)  and \(\left| X_1 \right|  = \left| X_2 \right| \) , then \(F_1 \simeq F_2\).
+\end{theorem}
+\begin{proof}
+	Since \(\left| X_1 \right|  = \left| X_2 \right| \)  we find a bijection \(\alpha : X_1 \to X_2\)  and we can assume WLOG that \(X_1 \subseteq F_1\)  and \(X_2 \subseteq F_2\). Then, the free property of \(F_1\)  implies there is a unique homomorphism \(\beta: F_1 \to F_2\)  such that \(\beta\left( x \right)  = \alpha\left( x \right) \) for all \(x \in X_1\) . Similairly, thee is a unique map \(\gamma : F_2 \to F_1\)  extending \(\alpha^{-1} : X_2 \to X_1\)  such that \(\gamma \left( y \right)  = \alpha^{-1}\left( y \right) \)  for all \(y \in X_2\) . So, we see \begin{align*}
+		\beta \mid_{X_1}:X_1	  &\longrightarrow  X_2 \\
+		x&\longmapsto \beta(x) = \alpha\left( x \right)
+	\end{align*}
+and \begin{align*}
+	\gamma \mid_{X_2}: X_2  &\longrightarrow  X_1 \\
+	y&\longmapsto \gamma(y) = \alpha^{-1}\left( y \right)
+\end{align*}
+are inverses.\\
+Hence, we have \(\beta\) and \(\gamma\) are a pair of inverse homomorphisms as \(X_1\)  generates \(F_1\)  and likewise \(X_2\)  generates \(F_2\) .\\
+Then, for an arbitrary element in \(F\)  of the form \(x = x_1^{\epsilon_1}\ldots x_{\ell}^{\epsilon_{\ell}}\)  with \(\epsilon_{i} \in \Z\)  and \(x_{i} \in X_1\) , then we see \(\gamma(\beta\left(  x \right)) =   x\) , hence this completes the proof.
+\end{proof}
+\begin{theorem}
+	Let \(F\)  be a free group with \(H, G\)  being groups. Suppose \(\alpha: F \to H\)  is a homomorphism and \(\beta: G \to H\)  is a surjective homomorphism. Then, there is a \(\gamma : F \to G\)  such that \(\beta \gamma = \alpha\) .
+\end{theorem}
