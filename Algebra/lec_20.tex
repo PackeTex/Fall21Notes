@@ -31,3 +31,16 @@ Then, for an arbitrary element in \(F\)  of the form \(x = x_1^{\epsilon_1}\ldot
 	.\end{align*}
 	Then, for \(x \in X\) we see \(\beta\left( \gamma\left( x \right)  \right)  = \beta\left( g_{x} \right) = \alpha\left( x \right)  \)  , so \(\beta \circ \gamma = \alpha\)  on \(X\)  which generates \(F\) , so \(\beta \circ \gamma = \alpha\)  on \(F\)  as \(\beta \circ \gamma, \alpha\)  are homomorphisms.
 \end{proof}
+\begin{definition}[Group Presentations]
+	Any group \(G\) is a homomorphic image of a free group \(F\). An explicit homomorphism \(\alpha: F \to G\)  with \(F\) is called a \textbf{presentation} of \(G\). Its kernel \(N = \ker \left( \alpha \right)  \trianglelefteq F\)  has \(F / N \simeq G\). So, we may write \(\left<X : Y \right>  = G\)  where \(F\)  is a free group on \(X\)  and \(Y \subseteq F\) has normal closure, \(\bigcap_{H \trianglelefteq G, Y \le H} H = N \).
+\end{definition}
+\begin{example}
+	\(D_{2n} = \left<\alpha, \tau : \alpha ^{n}, \tau^2, \tau \alpha\tau \alpha\right>  \). Here, we see \(F\)  is free on the set \(\{\alpha, \tau\} \)  and \(N\)  is the normal closure of \(\left<\alpha ^{n}, \tau ^2, \tau \alpha \tau \alpha \right> \), that being the smallest normal subgroup of \(F\)  containing these three elements.\\
+	In general if \(H \le G\) , then \(\bigcap_{N \trianglelefteq G, H \le N} N \trianglelefteq G \) is the normal closure of \(H\).
+\end{example}
+\begin{remark}
+	In general, a group of relations can generate other relations that we may not account for, so it is good to know what elements in the normal closure look like. If \(X \subseteq G\) , we find elements in the normal closure \(N\) of \(\left<X \right> \) in \(G\) include inverses and products of elements from \(X\). Furthermore, arbitrary conjugates and their products/inverses will be in \(N\). We see this yields \[
+		N \supseteq \{\prod_{i= 1}^{\ell} \left( g_{i} x_{i} g_{i}^{-1} \right)  : \ell \ge 0, g_{i} \in G, x_{i} \in X \cup X^{-1}\}
+	.\]
+Furthermore, we see this set is in fact a normal subgroup itself, so equality holds.
+\end{remark}
