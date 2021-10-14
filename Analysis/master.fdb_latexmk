@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1634234565 "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" "master.pdf" "master" 1634234566
+["pdflatex"] 1634239500 "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" "master.pdf" "master" 1634239548
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" 1634234564 246 c8a5db3610f40916eb44fa814e4da168 ""
+  "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" 1634239548 246 c8a5db3610f40916eb44fa814e4da168 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -62,6 +62,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary8.tfm" 1617692618 848 6125cdd3627e68d3db8013b98e587508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1617738065 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1617738065 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1617738065 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1617738065 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1617738065 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1617738065 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
@@ -239,13 +240,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
   "lec_14.tex" 1633634552 8941 ada581605b9e111cd69fe7483906ea07 ""
-  "lec_15.tex" 1634234564 62 8d3958e42a7991ed9a7fc6c8827b2b9e ""
-  "master.aux" 1634234566 106 6fa4e66ed6c1022018f2ea2acd92b641 "pdflatex"
-  "master.tex" 1634234564 246 c8a5db3610f40916eb44fa814e4da168 ""
-  "master.toc" 1634234565 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "lec_15.tex" 1634239500 8243 91424886b4049fce869e87e5038b3880 ""
+  "master.aux" 1634239501 323 94985fa6b44a3b0a95d64a832c13e171 "pdflatex"
+  "master.tex" 1634239548 246 c8a5db3610f40916eb44fa814e4da168 ""
+  "master.toc" 1634239501 135 fdcca04b9f6fe81bd2b20480a314ba3d "pdflatex"
   "ops.tex" 1630610909 124 ca20916fdf76fdc657317c94218b5396 ""
   (generated)
   "master.pdf"
-  "master.log"
   "master.aux"
+  "master.log"
   "master.toc"

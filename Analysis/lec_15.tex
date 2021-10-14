@@ -1,1 +1,93 @@
-\lecture{15}{Thu 14 Oct 2021 13:01}{Measurable Functions (3)}
+\lecture{15}{Thu 14 Oct 2021 13:01}{Measurable Functions (3) and Simple Functions}
+\begin{proposition}
+	Let \(\left( f_{n} \right) \)  be a sequence of measurable functions \(f_{n}:S  \to\overline{\R} \). Then, we define \(f, g, F, G: S \to \overline{\R}\)  with
+	\begin{itemize}
+		\item \(f\left( x \right)  = \sup \{ f_{n}\left( x \right)  : n \in \N  \} \),
+		\item \(g\left( x \right)  = \inf \{ f_{n}\left( x \right)  :n \in \N  \} \),
+		\item \(F\left( x \right) = \limsup_{n \to \infty} f_{n}\left( x \right) \),
+		\item \(G\left( x \right) = \liminf_{n \to \infty} f_{n}\left( x \right) \)
+	\end{itemize}
+all being measurable.
+\end{proposition}
+\begin{proof}
+	\begin{itemize}
+	\item Note that \(f\left( x \right) > c\)  if and only if there is an \(n\) such that \(f_{n}\left( x \right) > c\). Hence, \(f^{-1}\left( \left( c, \infty \right]  \right)= \bigcup_{n \in \N}f_{n}^{-1}\left( (}c, \infty \right)   \) is measurable.
+	\item It it clear \(g\left( x \right)  = -\sup \{ -f_{n}\left( x \right)  : n \in \N  \} \).
+	\item Next, note that \(F\left( x \right)  = \inf \{ \sup \{ f_{k}\left( x \right)  :k \ge n  \}  : n \in \N \} \)  and \(G\left( x \right)  = \sup \{ \inf \{ f_{k}\left( x \right)  : k \ge n \}  :n \in \N  \} \), hence they are measurable by the first two theorems.
+	\end{itemize}
+\end{proof}
+\begin{remark}
+	It is also true that for a measurable function \(f: S \to \overline{\R}\)  is measurable implies
+	\begin{align*}
+		f^{+}\left( x \right) &= \sup \{ f\left( x \right)  , 0 \}  \\
+		f^{-}\left( x \right) &= \sup \{ -f\left( x \right), 0  \}
+	\end{align*} are also measurable.
+\end{remark}
+\section{Simple Functions}
+\begin{definition}
+	Let \(S \subseteq \R\). Then, \begin{align*}
+		\chi{S}: \R &\longrightarrow \R \\
+		x &\longmapsto \chi_{S}(x) = \left \{
+			\begin{array}{11}
+				1, & \quad x \in S \\
+				0, & \quad x \not\in S
+			\end{array}
+			\right.
+	\end{align*} is the \textbf{characteristic function of \(S\) }.\\
+	A measurable function \(s: \R \to \overline{\R}\) is a \textbf{simple functions} if \(s\left( \R \right) \) is finite.
+\end{definition}
+\begin{proposition}
+	If \(s\) is a simple function. Then, there exists a finite, disjoint collection of measurable sets \(\{S_{k} : 1\le k \le K\} \)  and a finite sequence of distinct real numbers \(\left( a_{k} \right)_{1 \le k \le K} \)  such that \(\R = \bigcup_{k=1} ^{K} S_{k}\)  and \(s = \sum_{k=1}^{K} a_{k} \chi_{S_{k}}\). Furthermore, this combination is unique up to permutation of the \(a_{k}, s_{k}\). This representation is called the \textbf{canonical representation}.
+\end{proposition}
+\begin{lemma}
+	Let \(f: \R \to \R\)  be nonnegative and measurable with \(f\left( \R \right) \)  being bounded, then for each \(\epsilon > 0\)  there is a nonegative simple function \(s\)  such that \(f \ge s \)   and \(f\left( x \right)  - s\left( x \right)  < \epsilon\) for all \(x \in \R\).
+\end{lemma}
+\begin{proof}
+	There is a \(M > 0\)  such that \(f\left( \R \right) \subseteq \left[ 0, M \right) \). Given \(\epsilon\), let \(y_{k} = k\epsilon\) for \(k \in \N_{0}\). Since, \(y_{k} - y_{k-1} = \epsilon\) , there is \(N \in \N\) such that \(\left[ 0, M \right] \subseteq \bigcup_{k \in \N}\left[y_{k-1}, y_{k}  \right)  \). Let \(S_{k} = f^{-1}\left( \left[ y_{k-1}, y_{k} \right)  \right) \) for \(1 \le k \le N\). Define \(s = \sum_{k=1}^{N} y_{k-1}\chi _{S_{k}}\). Then, \(s \ge 0\)  and \(s\) is simple. Furthermore, for each \(x \in \R\) , there is a unique \(k\), with \(1 \le k \le N\) such that \(f\left( x \right) \in \left[ y_{k-1}, y_{k} \right) \). Consequently, \(s\left( x \right) = y_{k-1} \le f\left( x \right) < y_{k} \). Hence, \(f\left( x \right)  - s\left( x \right)  < y_{k} - y_{k-1} = \epsilon\).
+\end{proof}
+\begin{theorem}
+	\(f: \R \to \overline{\R}\)  is measurable if and only if there is a sequence of simple functions \(\left( s_{n} \right) \)a such that \(\left( s_{n} \right) \) converges pointwise to \(f\) and \(\left| f \right| \ge \left| s_{n} \right| \)   for all \(n \in \N\).
+\end{theorem}
+\begin{proof}
+Suppose the sequence \(\left( s_{n} \right) \). Then, \(f\) is measurable as \[f = \lim_{n \to \infty}s_{n} = \limsup_{n \to \infty} s_{n} = \liminf_{n \to \infty} s_{n}.\]
+Now, assume \(f\) is measurable. Then, \(f = f^{+} - f^{-}\). Both \(f^{+}\)  and \(f^{-}\)  are measurable and nonnegative. Since the difference of two simple functions is simples, it suffices to assume \(f\ge 0\), that is \(f^{-} = 0\). Let \(B_{n} = \{x \in \R : f\left( x \right) \le n\} \)  and \(g_{n} = f\chi_{B_{n}}\)  for all \(n \in \N\). Since \(g_{n}\left( x \right) = \inf \{ f\left( x \right), n\chi_{B_{n}}  \} \). Then, we see \(g_{n}\) is measurable as \(f\)  and the simple function \(n\chi_{B_{n}}\)  are measurable. Furthermore, \(g_{n}\) is bounded. Hence, there is a measurable simple function \(r_{n}\) such that \(g_{n} \ge r_{n}\)  and \(g_{n}(x) - r_{n}(x) < \frac{1}{n}\) for all \(x\). Finally, define \[
+s_{n} = r_{n} + n\chi_{B_{n}^{c}}
+.\]
+Then, we find \(\left( s_{n} \right) \)  is the sequence of functions desired.
+\end{proof}
+\begin{corollary}
+	Let \(\left( f_{n} \right) \) be a sequence of nonnegative measurable functions \(f_{n}:\R  \to\overline{\R} \). Then, \(x \mapsto \sum_{i= 1}^{\infty} f_{k}\left( x \right) \)  is measurable. In particular, if \(f, g: \R \to \overline{\R}\) are nonnegative and measurable, then so is \(f + g\).
+\end{corollary}
+\begin{proof}
+	For \(N \in \N\), let \(F_{n} = \sum_{k=1}^{N} f_{k}\) . For each \(k\) there is  sequence of simple functions \(\left( s_{k, n} \right) _{n}\)  such that \(\left( s_{k, n} \right) _{n}\) converges pointwise to \(f_{k}\)  and \(f_{k} \ge s_{k, n} \ge 0\)  for all \(n\).\\
+	Hence, \(\left( \sum_{k=1}^{N} s_{k, n} \right)_{n} \)  is a sequence of nonnegative simple functions such that \(F_{N} \le \sum_{k=1}^{N} s_{k, n}\)  for all \(n\)  and \[
+		\lim_{n \to \infty}\sum_{k=1}^{N} s_{k, m}\left( x \right)  = F_{N}\left( x \right)
+	\] for all \(x \in \R\).\\
+	So, \(F_{N}\) is the limit of a sequence of measurable functions, so it is measurable. Furthermore, we have that for each \(x \in \R\), \(\left( F_{N\left( x \right) } \right) _{N}\)  is increasing, we find \[
+		\sum_{k=1}^{\infty} f_{k} = \limsup_{N \to \infty} F_{N} = \lim_{N \to \infty}F_{N}
+	.\]
+
+\end{proof}
+\section{Littlewood's 3 Principles}
+\begin{remark}
+	\begin{enumerate}
+		\item Every measurable set is "nearly" the union of a finite collection of intervals.
+			\item Every measurable function is "nearly" continuous.
+				\item Every pointwise convergent sequence of measurable functions is "nearly" uniformly continuous.
+	\end{enumerate}
+\end{remark}
+We state these princeiples rigorously in the following way:
+\begin{theorem}
+	If \(S\) is measurable, with \( \mu\left( S \right) < \infty\), then for each \(\epsilon > 0\) there is a finite disjoint collection of open intervals \(\{I_{k} : 1 \le k \le n\} \) such that for \(U = \bigcup_{k=1} ^{n} I_{k}\) we find \[
+		\mu\left( S \triangle U \right)  < \epsilon
+	.\]
+\end{theorem}
+\begin{theorem}[Lucin's Theorem]
+	Let \(f: S \to \R\) be measurable with \( \mu\left( S \right)  < \infty\). Then, for each \(\epsilon > 0\)  there is a compact \(K \subseteq S\)  such that \(f\mid _{K} : K \to \R\)  is continuous and \( \mu\left( S \setminus K \right)  < \epsilon\).
+\end{theorem}
+\begin{theorem}[Lucin's Theorem for functions on \(\R\)]
+	Let \(f: \R \to \R\) 	 be measurable. Then, for all \(\epsilon > 0\) there is a continuous \(g: \R \to \R\)  and a closed set \(E \subseteq \R\)  such that \(f = g\)  on \(E\)  and \( \mu\left( E^{c} \right) < \epsilon\). Moreover, \(\sup \{ \left| g\left( x \right)  \right|  : x \in \R  \} \le \sup \{ \left| f\left( x \right)  \right|  : x \in \R \} \).
+\end{theorem}
+\begin{theorem}[Egoroff's Theorem]
+	Let \(S\) be measurable with \( \mu\left( S \right) < \infty\). Suppose \(\left( f_{n} \right) \)  is a sequence of measurable functions \(f_{n}:S  \to\R \) which converges pointwise almost everywhere to \(f: S \to \R\). Then, for all \(\epsilon > 0\), there is a measurable \(E \subseteq S\) such that \( \mu\left( E \right)  < \epsilon\) and \(\left( f_{n} \right) \) converges uniformly to \(f\) on \(S \setminus E\).
+\end{theorem}

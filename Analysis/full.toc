@@ -6,3 +6,5 @@
 \contentsline {section}{\numberline {6}Extended \(\ensuremath {\mathbb {R}}\)}{20}{}%
 \contentsline {section}{\numberline {7}Measure Theory}{23}{}%
 \contentsline {section}{\numberline {8}Measurable Functions}{35}{}%
+\contentsline {section}{\numberline {9}Simple Functions}{38}{}%
+\contentsline {section}{\numberline {10}Littlewood's 3 Principles}{40}{}%
