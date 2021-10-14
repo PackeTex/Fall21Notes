@@ -1,0 +1,50 @@
+\documentclass[a4paper]{article}
+\input{../../preamble.tex}
+\usepackage{pdfpages}
+\title{Algebraic Theory I: Homework III}
+\date{Thu 14 Oct 2021 11:07}
+\input{../ops.tex}
+\begin{document}
+\maketitle
+\begin{solution}[1]
+
+\end{solution}
+\newpage
+\begin{lemma}
+	Automorphisms preserve maximality of subgroups.\\
+	Let \(\phi :G \to G\)  be an automorphism and let \(M < G\)  be a maximal subgroup. Suppose \(\phi\left( M \right) = M^{\prime} \) is not maximal. That is, there is a \(\overline{M}^{\prime}\)  such that \(M^{\prime} < \overline{M}^{\prime} < G\). Then, we find
+	\begin{align*}
+		\phi ^{-1}\left( \overline{M}^{\prime} \right) &=  \phi ^{-1} \left( M^{\prime} \cup \left( \overline{M}^{\prime} \setminus M^{\prime} \right)\right)  \\
+							       &= \phi ^{-1}\left( M^{\prime} \right) \cup \phi ^{-1}\left( \overline{M}^{\prime} \setminus M^{\prime}\right)  \\
+							       &= M \cup \{\phi^{-1}\left( m \right) : m \in \overline{M}^{\prime} \setminus M^{\prime}\}  \\
+							       &> M
+	.\end{align*}
+Furthermore, \(\overline{M}^{\prime} < G\)  by assumption, hence \(M < \overline{M}^{\prime} < G\). \(\lightning\) .
+\end{lemma}
+\begin{solution}[2]
+	\begin{proof}
+		Now, let \(\alpha: G \to G\)  be an automorphism of \(G\) and denote \(\alpha \left( M \right)  = M^{\prime}\) . Then, we see
+\begin{align*}
+\alpha \left( \Phi \left( G \right)  \right)  &= \alpha\left( \bigcap_{\underset{M \text{ is maximal}}{M < G}} M \right)  \\
+						      &= \bigcap_{ \underset{ M \text{ is maximal}}{M < G}} \alpha \left( M \right)   \\
+						      &= \bigcap_{\underset{M \text{ is maximal}}{M < G}} M^{\prime} \\
+.\end{align*}
+Then, as \(M^{\prime}\) is maximal and \(\alpha\) is an injection, we see if \(N \neq M\) are both maximal subgroups, we have \(\alpha \left( N \right)  \neq \alpha \left( M \right) \), hence \[\{ M :  \underset{ M \text{ is maximal}}{M < G}\}  = \{M^{\prime} :  \underset{ M \text{ is maximal}}{M < G}\} .\] So, we have \[
+	\alpha\left( \Phi \left( G \right)  \right)  = \bigcap_{ \underset{ M \text{ is maximal}}{M < G}} M^{\prime} = \bigcap_{ \underset{ M \text{ is maximal}}{M < G}} M = \Phi\left( G \right)
+.\]
+\end{proof}
+\end{solution}
+\newpage
+\begin{solution}[3]
+
+\end{solution}
+\newpage
+
+\begin{solution}[4]
+\end{solution}
+\newpage
+\begin{solution}[5]
+
+
+\end{solution}
+\end{document}
