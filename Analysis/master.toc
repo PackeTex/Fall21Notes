@@ -1,1 +1,2 @@
-\contentsline {section}{\numberline {1}Measurable Functions}{3}{}%
+\contentsline {section}{\numberline {1}Simple Functions}{4}{}%
+\contentsline {section}{\numberline {2}Littlewood's 3 Principles}{6}{}%
