@@ -7,7 +7,32 @@
 \begin{document}
 \maketitle
 \begin{solution}[1]
+\begin{enumerate}
+	\item First, we note that
+		\begin{align*}
+			\overline{\phi}\left( xK yK \right) &= \overline{\phi}\left( xyKK \right)  \\
+			&=  \overline{xy} H\\
+			&= \phi\left( xy \right) H\\
+			&= \phi\left( x \right) \phi\left( y \right) H \\
+			&= \overline{x} \overline{y} H\\
+			&= \overline{x}\overline{y} H H \text{ as \(H = H H\) by closure }\\
+		&= \overline{x} H \overline{y} H \\
+		&= \overline{\phi}\left( xK \right) \overline{\phi}\left( yK \right)
+		.\end{align*}
+		Furthermore, we see \(\overline{\phi}\left( 1K \right) = \overline{1}H = 1H\) as \(\phi\left( 1 \right)  = \overline{1} = 1\)  by homomorphism properties.
 
+		\begin{itemize}
+			\item  First, note that \(Z_0 \left( \overline{G} \right) = \{1\} = \overline{Z_0\left( G \right) }\). Now, we induce on \(n\) and we see \(Z_{n-1}\left( G \right) \trianglelefteq G\)  and \(Z_{n-1}\left( \overline{G} \right) \trianglelefteq \overline{G}\) with \(\overline{Z_{n-1}\left( G \right) } \le Z_{n-1}\left( \overline{G} \right) \) by inductive hypothesis,  so \(\overline{\phi}: Z_{n}\left( G \right) / Z_{n-1}\left( G \right)  \to Z_{n}\left( \overline{G} \right) / Z_{n-1}\left( \overline{G} \right) \) is a well defined homomorphism. Hence, letting \(\overline{x} \in \overline{Z_{n}\left( G \right) }\), hence \(x \in Z_{n}\left( G \right) \) and hence \(xZ_{n-1}\left( G \right)  \in Z_{n}\left( G \right) / Z_{n-1}\left( G \right) \)  implies \(\overline{\phi}xZ_{n-1}\left( G \right)  = \overline{x}Z_{n-1}\left( \overline{G} \right) \in Z_{n}\left( \overline{G} \right) / Z_{n-1}\left( \overline{G} \right)  \) . Hence, we find \(\overline{x} \in Z_{n}\left( \overline{G} \right) \). This completes the induction.
+			\item Suppose \(G\) is nilpotent and let \(n\) be the nilpotence class of \(G\). Then, we see \(\overline{Z_{n}\left( G \right) } = \overline{G} \le Z_{n}\left( \overline{G} \right) \). Hence, \(\overline{G}\) is of nilpotence class at most \(n\), so we see \(\overline{G}\) is nilpotent.
+			\item Let \(\overline{G} = H\) with \(\phi: G \to H\)  being the restriction to \(H\) homomoprhism. That being \(\phi\left( x \right)  = \left \{
+				\begin{array}{11}
+					x, & \quad x \in H \\
+					1, & \quad x \not\in H
+				\end{array}
+				\right.\) It is clear this is well defined
+				\item Suppose \(n\) is the nilpotence class of \(G\). Then \(Z_{n}\left( G \right) \cap H = G \cap H = H \le Z_{n}\left( H \right) \), so \(H\) is of nilpotence class at most \(n\), hence \(H\) is nilptent.
+		\end{itemize}
+\end{enumerate}
 \end{solution}
 \newpage
 \begin{lemma}
@@ -39,8 +64,29 @@ Then, as \(M^{\prime}\) is maximal and \(\alpha\) is an injection, we see if \(N
 
 \end{solution}
 \newpage
-
 \begin{solution}[4]
+	\begin{lemma}
+		\(\left[ M, M \right] \)  and \(\left<x^{p} : x \in M \right> \)  are characteristic in \(M\).\\
+		Let \(\alpha: M \to M\) be an automorphism. Then, denote \(\alpha\left( x \right)  = x^{\prime}\)  for \(x \in M\) and we see,
+		\begin{align*}
+			\alpha\left( \left[ M, M \right]  \right) &= \alpha\left( \left<xyx^{-1}y^{-1} : x, y \in M \right> \right)  \\
+								  &= \left<\alpha\left( xyx^{-1}y^{-1} \right) x, y \in M \right>  \\
+								  &= \left<\alpha\left( x \right) \alpha\left( y \right) \alpha\left( x \right) ^{-1} \alpha\left( y \right)^{-1} : x, y \in M  \right>  \\
+								  &= \left<x^{\prime} y^{\prime} x^{\prime}^{-1} y^{\prime}^{-1} : x, y \in M \right>  \\
+								  &\le \left<x^{\prime}y^{\prime}x^{\prime}^{-1}y^{\prime}^{-1} : x^{\prime}, y^{\prime} \in  M \right>  \\
+								  &=  \left[ M, M \right]
+		.\end{align*}
+		Similairly,
+		\begin{align*}
+			\alpha \left( \left<x^{p} : x\in M \right>  \right) &= \left<\alpha\left( x^{p} \right): x \in M  \right>  \\
+									    &= \left<\alpha\left( x \right) ^{p} : x \in M \right>  \\
+									    &= \left<x^{\prime}^{p} : x \in M \right>  \\
+									    &\le \left<x^{\prime}^{p} : x^{\prime} \in M \right>
+									    &= \left<x^{p} : x \in M \right>  \\
+		.\end{align*}
+Then, we see as \(M \trianglelefteq G\) and these two groups are characteristic we also have \(\left<x^{p}: x\in M \right> \trianglelefteq G \) and \(\left[ M, M \right] \trianglelefteq G\). Furthermore, we note that as \(xyx^{-1}y^{-1} \in M\)  for \(x, y \in M\) we have \(\left\{ M, M \right\}  \le \left<x^{p}: x\in M \right> \). Now,
+Suppose \(M\) is not an elementary abelian \(p\)-group. Then, we find either \(\left[ M, M \right] > 1\)  or there is an element \(x\) of order \(q \neq p\).
+	\end{lemma}
 \end{solution}
 \newpage
 \begin{solution}[5]

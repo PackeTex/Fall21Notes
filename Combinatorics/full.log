@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  13 OCT 2021 11:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  15 OCT 2021 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1810,12 +1810,52 @@ cmr/m/n/10 .
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 39.
-) [35] (./full.aux) ) 
+) (./lec_22.tex
+Overfull \hbox (28.8262pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+[35]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 22.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 28.
+! Missing delimiter (. inserted).
+<to be read again> 
+                   \lambda 
+l.33 ...i}\left( A \right) + \inf \{ \left \lambda
+                                                  _{i} \left( B \right) \rig...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+! Missing delimiter (. inserted).
+<to be read again> 
+                   :
+l.33 ...eft \lambda_{i} \left( B \right) \right  :
+                                                   1 \le i \le n \}   \le \l...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+[36]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 51.
+) [37] (./full.aux) ) 
 Here is how much of TeX's memory you used:
- 21740 strings out of 478994
- 425513 string characters out of 5864752
- 724546 words of memory out of 5000000
- 38624 multiletter control sequences out of 15000+600000
+ 21744 strings out of 478994
+ 425551 string characters out of 5864752
+ 725546 words of memory out of 5000000
+ 38625 multiletter control sequences out of 15000+600000
  427753 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,17n,105p,1409b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1840,10 +1880,10 @@ c/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss
 0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/
 share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dis
 t/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on full.pdf (35 pages, 427297 bytes).
+Output written on full.pdf (37 pages, 434070 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
+ 289 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
