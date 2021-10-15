@@ -1,0 +1,56 @@
+\lecture{22}{Fri 15 Oct 2021 10:24}{}
+\begin{recall}
+	A quasi-random graph could be characterized as one with a gray adjacency matrix.
+\end{recall}
+\begin{example}
+	A paley graph of order \(q\) is quasi-random.\\
+For this graph \(G\), we see
+\begin{itemize}
+	\item \(e\left( G \right) = \frac{1}{2}q \frac{q-1}{2} = \frac{1}{4}q^2 + o\left( q^2 \right) \) ,
+	\item \(\lambda_1\left( G \right) = \frac{q-1}{2} = \frac{1}{2}q + o\left( q \right)   \), and
+	\item \(\sigma_2 \left( G \right) = \frac{1 + \sqrt{q} }{2} = o\left( q \right) \).
+\end{itemize}
+Hence, \(G\) is \(P_3\), so it is quasirandom.\\
+We also have a conference graph \(\SRG \left( 4 k + 1, 2k, k-1, k \right) \) has
+\begin{itemize}
+	\item \(\lambda_1 = 2k = \frac{n}{2} + o\left( n \right) \),
+	\item \(\sigma_2 = \frac{1 + \sqrt{n} }{2} = o\left( n \right) \), and
+	\item \(e\left( G \right)  = k\left( 4k+1 \right) = \frac{1}{4}n^2 + o\left( n^2 \right) \).
+\end{itemize}
+We also have \(K_{n, n} \)  and \(cK_{n} \) are trivially \(\SRG\), but not quasi-random. As it turns out these are the only \(\SRG\) which are not quasi-random.
+\end{example}
+\begin{proposition}
+	All nontrivial \(\SRG\) (not \(K_{n, n} \) or \(cK_{n} \)) are quasi-random.
+\end{proposition}
+\begin{remark}
+	A random graph of order \(n\) is quasi-random with probability \(1\) as \(n \to \infty\).
+\end{remark}
+\begin{definition}[Perturbation]
+	Let \(G\) be a quasi-random graph of order \(n\) with adjacency matrix \(A\). We may perturb \(G\) by choosing a set \(E\) of edges such that \(\left| E \right| = o\left( n^2 \right) \) and deleting them. From this we obtain a graph \(G^{\prime} = G - E\). We find \(G^{\prime}\) is also quasi-random.
+\end{definition}
+\begin{proof}
+	Let \(G^{\prime}\) be the result of perturbing a quasi-random graph \(G\) having adjacency matrix \(A\) and let \(A^{\prime}\) be the adjacency matrix of \(G^{\prime}\). Then, denote \(B\) to be the adjacency matrix containing only the deleted edges. So, we find \(A^{\prime} = A - B\). We wish to show \(\lambda\left( A^{\prime} \right) = \lambda\left( A \right)  + o\left( n \right) \) and \(\sigma_2\left( A^{\prime} \right)  = \sigma_2\left( A \right)  + o\left( n \right) = o\left( n \right) \). Now employing Weyl's inequalities:	\[
+		\lambda_{i}\left( A \right) + \inf \{ \left \lambda_{i} \left( B \right) \right  : 1 \le i \le n \}   \le \lambda_{i}\left( A + B \right) \le \lambda_{i}\left( A \right)  + \lambda_{i}\left( B \right)
+	\] yields
+	\begin{align*}
+		\lambda_{i}\left( A \right) + \lambda_{\min}\left( -B \right) \le \lambda_{i}\left( A^{\prime} \right)  \le \lambda_{i}\left( A \right)  + \lambda_1 \left( -B \right)
+	.\end{align*}
+	We see it suffices to show \(\lambda_{\min}\left( -B \right) = o\left( n \right) \)  and \(\lambda_{1}\left( -B \right) = o\left( n \right)  \).\\
+	Recall that \(\lambda_1^2\left(- B \right)  + \ldots + \lambda_{n}^2\left( -B \right) = \left| -B \right| _{2}^2 = 2\left| E \right|  \), hence \(\lambda_1^2 \left( -B \right) \le 2\left| E \right| = o\left( n \right)  \)  and likewise for \(\lambda_{\min}^2\left( -B \right) \). Hence, we have \(\lambda_{i}\left( B \right)  = o\left( n \right) \), so  \[
+		\lambda_1\left( A \right)  + o\left( n \right) \le \lambda_1 \left( A^{\prime} \right) \le \lambda_1\left( A \right)  + o\left( n \right)
+	.\]
+	So, \(\lambda_1\left( A^{\prime} \right) \)  is desired. Similairly, WLOG we can assume \(\lambda_2\left( A \right) = \sigma_2 \left( A \right) \) , so we see \[
+		\lambda_2\left( A \right)  + o\left( n \right)  \le \lambda_2\left( A^{\prime} \right)  \le \lambda_2\left( A \right)  + o\left( n \right)
+	.\]
+	and as \(\lambda_2\left( A \right) = o\left( n \right) \) by quasi-randomness, we see \(\lambda_2\left( A^{\prime} \right) = \sigma_2\left( A^{\prime} \right) = o\left( n \right)   \).
+
+\end{proof}
+\begin{remark}
+	This also clearly works with addition of \(o\left( n^2 \right) \) edges (provided they will fit). Furthermore, we can union a quasi-random graph with a graph of sufficiently small order and obtain a quasi-random graph.
+\end{remark}
+\begin{proposition}
+	Let \(G\) be quasi-random with adjacency matrix \(A\) and construct the following matrix \[
+	J_2 \otimes A = 	\begin{bmatrix} A & A \\A & A \end{bmatrix}
+	.\]
+	Then, the graph \(G^{\prime}\) obtained from this matrix is the blowup of \(G\). We see for \(G\) being regular, we have \(G^{\prime}\)  is regular. It turns out \(G^{\prime}\)  is also quasi-random. However, we find \(G\) being \(\SRG\)  does not guarantee \(G^{\prime}\) to be \(\SRG\).
+\end{proposition}

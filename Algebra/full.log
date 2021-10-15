@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  13 OCT 2021 19:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  15 OCT 2021 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1677,7 +1677,66 @@ Overfull \hbox (35.79677pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 5.
-) [36]
+) (./lec_22.tex
+Overfull \hbox (28.8262pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 8.
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 		\begin{array}{11}
+                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 		\begin{array}{11}
+                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Double superscript.
+l.17 ...t( m^{-1} \right) ^{\prime} = m^{\prime} ^
+                                                  {-1}\). Hence, \(m^{\prime...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+[36]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 28.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 31.
+! Undefined control sequence.
+l.32 ...eq F\left( Y \right) \). We define \(\rank
+                                                   \left( F\left( X \right) ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 34.
+) [37]
 
 ! LaTeX Error: \begin{proof} on input line 51 ended by \end{document}.
 
@@ -1685,7 +1744,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31 \end{document}
+l.32 \end{document}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1697,15 +1756,15 @@ or  <return>  to continue without it.
 ### semi simple group (level 1) entered at line 51 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 21627 strings out of 478994
- 422029 string characters out of 5864752
- 725388 words of memory out of 5000000
- 38538 multiletter control sequences out of 15000+600000
+ 21633 strings out of 478994
+ 422074 string characters out of 5864752
+ 725402 words of memory out of 5000000
+ 38541 multiletter control sequences out of 15000+600000
  427753 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,17n,105p,1254b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
-c}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
@@ -1721,16 +1780,16 @@ e1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs7.
 pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share
 /texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fon
 ts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1
-200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist
-/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/s
-tmary10.pfb>
-Output written on full.pdf (36 pages, 430797 bytes).
+/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1
+000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist
+/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/pu
+blic/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+fti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on full.pdf (37 pages, 451706 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
+ 265 PDF objects out of 1000 (max. 8388607)
+ 180 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
