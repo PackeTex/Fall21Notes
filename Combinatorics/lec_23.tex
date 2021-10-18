@@ -1,0 +1,56 @@
+\lecture{23}{Mon 18 Oct 2021 10:21}{Quasi-Random Graphs (6)}
+We prove the preservation of Regularity and Quasi-Randomness and provide a counterexample for  SRG from last time.
+\begin{proof}
+	First, we prove regularity. If \(G\) is \(k\)-regular, then we see all rowsums are \(k\). Hence, we find all row sums of \(G^{\prime}\) to \(2k\), so \(G^{\prime}\) is \(2k\)-regular.\\
+	For quasi-randomness, denote our adjacency matrix of \(G^{\prime}\) to be \(B = J_2 \otimes A\) and recall the eigenvalues of this product are simply the products of the eigenvalues of the factors. Hence, our eigenvalues are \(2\lambda_1, 2\lambda_2, \ldots, 2\lambda_{n}, 0, \ldots, 0\). Furthermore, as \(G\) is quasi-random, we have that \(\lambda_1 = \frac{1}{2}n + o\left( n \right) \) and \(\left| \lambda_{i} \right|  = o\left( n \right) \) for \(n \ge 2\). Applying this yields \(2\lambda_1 = n + o\left( n \right) \) and \(\left| 2\lambda_{i} \right|  = o\left( n \right) \), \(i \ge 2\). Hence, \(G^{\prime}\)  is quasirandom.\\
+\end{proof}
+\begin{remark}
+	In general \(J_i \otimes A\) preserves regularity and quasi-randomness of \(A\)  by the same argument.
+\end{remark}
+\begin{proposition}
+	If \(G, H\) are quasi-random graphs with adjacency matrices \(A, B\) we have \(A \otimes B\) induces a quasi-random graph.
+\end{proposition}
+\begin{proof}
+	Let \(\lambda_1, \ldots, \lambda_{n}\)  be the eigenvalues of \(G\) and \( \mu_1, \ldots, \mu_{n}\) to be the eigenvalues of \(H\). Then, the eigenvalues of \(A \otimes B\)  would have eigenvalues \(\lambda_{i}\mu_{j}\) and we see \(\lambda_1 \mu_1\) is the largest eigenvalue. For the second largest (in magnitude) eigenvalues, we see there are four potential candidates, \(\lambda_1 \mu_2\), \(\lambda_1 , \mu_{n}\), \(\mu_1 \lambda_2\), \(\mu_1 \lambda_n\). Then, we know \(\lambda_1 \le n-1\) and \(\mu_2 = o\left( m \right) \), hence \(\left| \lambda_1 \mu_2 \right| = o\left( nm \right) \). Similair constructions follow for the other candidates to prove that \(G \otimes H\)  is infact quasi-random.
+\end{proof}
+\begin{proposition}
+	Let \(A_{ij}\), \(1 \le i, j \le k\)   be the adjacency matrices of quasi-random graphs of order \(n\) and \(e\left( A_{ij} \right) = \frac{1}{4}n^2 + o\left( n^2 \right)  \) with \(A_{ij} = A_{ji}\). We arrange these matrices in a \(kn \times kn\) matrix	\[
+		B = \begin{bmatrix} A_{11} & A_{12} & \ldots & A_{1k}\\
+		A_{21}  & A_{22} & \ldots & A_{2k}\\
+	\vdots & \vdots & \vdots & \vdots \\
+A_{k1} & A_{k2} & \ldots & A_{k k}\end{bmatrix}
+	.\]
+	Then, we find the graph induced by \(B\) to be quasi-random.
+\end{proposition}
+\begin{definition}[Bipartite Quasi-Random Graph]
+	A bipartite graph, \(G \left( A, B \right) \) with \(\left| A \right|  = \left| B \right| \) and density \(p\)  ,  is \textbf{Bipartite Quasi-Random} if it obeys one of the following (equivalent) tweaked quasi-random properties
+\begin{itemize}
+	\item \(\left( P_2 \right) \). \(e\left( G \right)  \ge pn^2 + o\left( n^2 \right) \)  and \(\# CW_4 \le p^{4} n^{4} + o\left( n^{4} \right) \).
+	\item \(\left( P_3 \right) \). \(e\left( G \right) \ge pn^2 + o\left( n^2 \right) \)  and \(\lambda_1 = pn + o\left( n \right) \) and \(\lambda_2 = o\left( n \right) \).
+	\item \(\left( P_4 \right) \). For all \(X \subseteq A\), \(Y \subseteq B\), we find \(\left| e\left( X, Y \right) - p\left| X \right| \left| Y \right|  \right| \le o\left( n^2 \right) \).
+\end{itemize}
+\end{definition}
+\begin{recall}
+	\(G\) is bipartite on two sets of size \(k \) if and only if the eigenvalues of \(G\) are \(\lambda_1, \lambda_2, \ldots, \lambda_{k}, -\lambda_{k}, -\lambda_{k-1}, \ldots, -\lambda_1\).
+\end{recall}
+\begin{definition}[Bipartite Double]
+We define the \textbf{Bipartite Double} of a graph \(G\) with adjacency matrix \(A\) to be the graph induced by \[
+B = 	\begin{bmatrix} 0_{n \times n} & A\\
+	A & 0_{n \times n}\end{bmatrix}
+.\]
+\end{definition}
+Essnetially, this splits \(G\) into two graphs \(G, G^{\prime}\) such that a vertex \(x \in G\) is connected to all of its neighbors, but in \(G^{\prime}\) and similairly, a \(x^{\prime} \in G^{\prime}\) will be connected to all of its neighbors, but in \(G\). Hence, this induces a bipartite graph yielding some interesting properties.
+\begin{example}
+	If \(G\) is regular, we find the bipartite double of \(G\) to be regular.\\
+	Furthermore, the bipartite double of \(C_3\) is \(C_6\).\\
+	Similarly, the bipartite double of \(K_{3}\) is \(K_{3, 3} \).\\
+	The bipartite double of a graph which is already bipartite is simply \(2\) independent of the original graph.\\
+	For example, the double of \(K_{2, 2}} \) is \(2K_{2, 2} \).
+\end{example}
+Using the bipartite double we can construct new bipartite quasi-random graphs.
+\begin{proposition}
+	If \(G\) is quasi-random and \(A\) is its adjacency matrix, then the bipartite double induced by \[ \begin{bmatrix}		0 & A\\
+		A & 0
+	\end{bmatrix}
+	\] is bipartite quasi-random.
+\end{proposition}
