@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  18 OCT 2021 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  18 OCT 2021 11:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -873,20 +873,12 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
-(./lec_21.tex
+(./lec_22.tex
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
 .
 (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (35.79677pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-) (./lec_22.tex
 Overfull \hbox (28.8262pt too wide) in paragraph at lines 1--1
 [][] 
  []
@@ -921,14 +913,14 @@ l.13 		\begin{array}{11}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 ! Double superscript.
 l.17 ...t( m^{-1} \right) ^{\prime} = m^{\prime} ^
                                                   {-1}\). Hence, \(m^{\prime...
 I treat `x^1^2' essentially like `x^1{}^2'.
 
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 28.
@@ -947,15 +939,20 @@ and I'll forget about whatever was undefined.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 35.
+) (./lec_23.tex
+Overfull \hbox (35.90091pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
 ) [2] (./master.aux) ) 
 Here is how much of TeX's memory you used:
- 21502 strings out of 478994
- 420400 string characters out of 5864752
- 719395 words of memory out of 5000000
- 38479 multiletter control sequences out of 15000+600000
- 427418 words of font info for 96 fonts, out of 8000000 for 9000
+ 21464 strings out of 478994
+ 419508 string characters out of 5864752
+ 715395 words of memory out of 5000000
+ 38442 multiletter control sequences out of 15000+600000
+ 426657 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,12n,105p,1083b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 107i,12n,105p,1083b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-
 t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dis
@@ -972,12 +969,11 @@ fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sf
 rm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></us
 r/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-d
-ist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1
-/public/cm-super/sfti1000.pfb>
-Output written on master.pdf (2 pages, 223485 bytes).
+ist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on master.pdf (2 pages, 212341 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
