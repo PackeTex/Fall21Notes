@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  14 OCT 2021 14:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  19 OCT 2021 14:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -817,58 +817,174 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 6.
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
- (./lec_14.tex
+ (./lec_16.tex
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1.
  (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (34.29019pt too wide) in paragraph at lines 1--1
+Overfull \hbox (32.85304pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
 
-Overfull \hbox (3.26714pt too wide) in paragraph at lines 3--4
-[]\T1/cmr/bx/n/10 Recall. []\T1/cmr/m/n/10 A func-tion $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 S \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 R$ \T1/cmr/m/n/10 was mea-sur-able if $\OML/cmm/m/it/10 S$ \T1/cmr/m/n/10 is mea-sur-able and $\OML/cmm/m/it/10 f[] []$
+Overfull \hbox (2.56319pt too wide) in paragraph at lines 9--10
+\T1/cmr/m/n/10 By as-sump-tion, $\OML/cmm/m/it/10 ^^V [] \OT1/cmr/m/n/10 = 0$\T1/cmr/m/n/10 . Since $\OML/cmm/m/it/10 f [] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 f[] [] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 f[] []$
  []
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 5.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 11.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 17.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 23.
+(mdframed)              on input line 15.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 26.
+(mdframed)              on input line 20.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 38.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 44.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 51.
- [2]
-./lec_14.tex:65: Misplaced alignment tab character &.
-l.65 ...\left( \left( c, \infty \right)  \right) &
-                                                  =  h^{-1}\left( \left( -\i...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+(mdframed)              on input line 27.
 
+./lec_16.tex:30: Missing $ inserted.
+<inserted text> 
+                $
+l.30 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./lec_16.tex:30: Missing } inserted.
+<inserted text> 
+                }
+l.30 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./lec_16.tex:30: Display math should end with $$.
+<to be read again> 
+                   \@@par 
+l.30 
+     
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+./lec_16.tex:30: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.30 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./lec_16.tex:31: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 .\]
+        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./lec_16.tex:31: Missing $ inserted.
+<inserted text> 
+                $
+l.31 .\]
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./lec_16.tex:31: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.31 .\]
+        
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (30.38098pt too wide) in paragraph at lines 34--36
+[]\T1/cmr/m/n/10 Clearly, mul-ti-ply-ing the sum times $\OML/cmm/m/it/10 $ \T1/cmr/m/n/10 yields $\OML/cmm/m/it/10  [][] a[]^^V [] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 a[]^^V []$\T1/cmr/m/n/10 . 
+ []
+
+[2]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 43.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 53.
+
+
+./lec_16.tex:62: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 	.\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./lec_16.tex:62: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 	.\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./lec_16.tex:62: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 	.\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./lec_16.tex:62: LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 	.\end{align*}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 65.
+[3]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 75.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 83.
 ) (./lec_15.tex
 Overfull \hbox (34.29019pt too wide) in paragraph at lines 1--1
 [][] 
@@ -877,7 +993,7 @@ Overfull \hbox (34.29019pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
-[3]
+[4]
 ./lec_15.tex:14: Extra }, or forgotten \right.
 l.14 ...ht)= \bigcup_{n \in \N}f_{n}^{-1}\left( (}
                                                   c, \infty \right)   \) is ...
@@ -944,14 +1060,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 42.
-[4]
+[5]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 48.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 58.
- [5]
+ [6]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 80.
@@ -964,20 +1080,20 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 91.
-) [6] (./master.aux) ) 
+) [7] (./master.aux) ) 
 Here is how much of TeX's memory you used:
  21467 strings out of 478994
  419450 string characters out of 5864752
- 720371 words of memory out of 5000000
+ 719371 words of memory out of 5000000
  38445 multiletter control sequences out of 15000+600000
  426992 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,15n,105p,985b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 107i,15n,105p,1968b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on master.pdf (6 pages, 235801 bytes).
+Output written on master.pdf (7 pages, 241534 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 135 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 

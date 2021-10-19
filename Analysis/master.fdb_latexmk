@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1634239500 "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" "master.pdf" "master" 1634319141
+["pdflatex"] 1634671534 "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" "master.pdf" "master" 1634671566
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" 1634319141 246 c8a5db3610f40916eb44fa814e4da168 ""
+  "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" 1634671566 246 7de3ef8ea045a678a6d592c2c178528c ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -239,14 +239,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
-  "lec_14.tex" 1633634552 8941 ada581605b9e111cd69fe7483906ea07 ""
   "lec_15.tex" 1634239500 8243 91424886b4049fce869e87e5038b3880 ""
-  "master.aux" 1634239501 323 94985fa6b44a3b0a95d64a832c13e171 "pdflatex"
-  "master.tex" 1634319141 246 c8a5db3610f40916eb44fa814e4da168 ""
-  "master.toc" 1634239501 135 fdcca04b9f6fe81bd2b20480a314ba3d "pdflatex"
+  "lec_16.tex" 1634671533 9641 38e34ce718e8e10682584285f0da6ebe ""
+  "master.aux" 1634671535 431 950f4e8287604510bda9280cb8321d85 "pdflatex"
+  "master.tex" 1634671566 246 7de3ef8ea045a678a6d592c2c178528c ""
+  "master.toc" 1634671535 202 f73c0b9aed77f131e5f6eac41f68e5fe "pdflatex"
   "ops.tex" 1630610909 124 ca20916fdf76fdc657317c94218b5396 ""
   (generated)
-  "master.log"
-  "master.aux"
-  "master.toc"
   "master.pdf"
+  "master.aux"
+  "master.log"
+  "master.toc"
