@@ -65,6 +65,18 @@ Let \(s, t\) be nonnegative and simple and \(\alpha \ge 0\). Then \[
 \begin{definition}[Lebesque Integral of a General Nonnegative Function]
 	Let \(f: \R \to \overline{\R}\) 	be a nonnegative measurable function and \(\mathscr{S}\left( f \right) \) be the collection of all nonnegative simple functions, \(s\), such that \(s \le f\). Then, the \textbf{Lebesque Integral} of \(f\) over \(\R\) is defined to be
 	\begin{align*}
-		\int f = \int_{\R} f\left( x \right)dx int
+		\int f = \int_{\R} f\left( x \right)dx &= \sup \{ \int s : s \in \mathscr{S}\left( f \right)  \}  \\
+	.\end{align*}
+	If \(f: S \to \overline{\R}\) is nonnegative and measurable, then
+	\begin{align*}
+		\int_{S} f = \int_{S}f\left( x \right) dx &= \int_{\R} f^{*} \\
 	.\end{align*}
 \end{definition}
+\begin{theorem}[Chebyshev's Inequality]
+	Let \(f: \R \to \overline{\R}\) 	be nonnegative and measurable. Then, for any \(\lambda \in \left( 0, \infty \right) \) , then \[
+		\mu\left( \{x \in \R : f\left( x \right)  \ge \lambda\}  \right) \le \frac{1}{\lambda} \int f
+	.\]
+\end{theorem}
+\begin{proof}
+	Let \(E = \{x \in \R : f\left( x \right)  \ge \lambda\}\). This is the preimage of an extended borel set, hence measurable. Let \(s = \lambda \)
+\end{proof}
