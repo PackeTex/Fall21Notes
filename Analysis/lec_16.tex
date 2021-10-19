@@ -78,5 +78,17 @@ Let \(s, t\) be nonnegative and simple and \(\alpha \ge 0\). Then \[
 	.\]
 \end{theorem}
 \begin{proof}
-	Let \(E = \{x \in \R : f\left( x \right)  \ge \lambda\}\). This is the preimage of an extended borel set, hence measurable. Let \(s = \lambda \)
+	Let \(E = \{x \in \R : f\left( x \right)  \ge \lambda\}\). This is the preimage of an extended borel set, hence measurable. Let \(s = \lambda \chi_{E}\). Then, \(s \in \mathscr{S}\left( f \right) \). Hence, \(\int s = \lambda \mu\left( E \right) \le \int f \). Hence the inequality holds.
+\end{proof}
+\begin{theorem}
+	Let \(f: \R \to \overline{\R}\)  be nonnegative ad measurable. Then \(\int f = 0\) if and only if \(f\left( x \right) = 0\) for almost every \(x \in \R\).
+\end{theorem}
+\begin{proof}
+	Suppose \(\int f = 0\) , then by chebyshev \begin{align*}
+		\mu\left( \{x \in \R : f\left( x \right)  > 0\}  \right) &= \mu (\bigcup_{n \in \N} \{x \in \R : f\left( x \ge n \right) \}  ) \\
+									 &\le \sum_{n=1}^{\infty} \mu\left( \{ x\in \R : f\left( x \right)  \ge \frac{1}{n}\}  \right) \\
+									 &= \sum_{i= 1}^{\infty} \int f \\
+									 &= 0
+	.\end{align*}
+	Conversely, if \(f\left( x \right)  = 0\) almost everywhere, then for every \(s \in \mathscr{S}\left( f \right) \) , we see \(s\) is zero almost everywhere, hence \(\int s = 0\) , so \(\int f = \sup \{ 0 : s \in \mathscr{S}\left( f \right)  \}  = 0\).
 \end{proof}
