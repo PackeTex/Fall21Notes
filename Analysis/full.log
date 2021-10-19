@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  19 OCT 2021 14:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  19 OCT 2021 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1934,121 +1934,7 @@ Overfull \hbox (30.38098pt too wide) in paragraph at lines 34--36
 ML/cmm/m/it/10 a[]^^V []$\T1/cmr/m/n/10 . 
  []
 
-! Argument of \align* has an extra }.
-<inserted text> 
-                \par 
-l.39 	iiintn*}
-              
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
- \int \left ( s+t \right ) &= \sum _{k=1}^{K} \sum _{j=1}^{J} \left (\ETC.
-! Paragraph ended before \align* was complete.
-<to be read again> 
-                   \par 
-l.39 	iiintn*}
-              
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.39 	iiintn*}
-              
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.39 	iiintn*}
-              
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.39 	iiintn*}
-              
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \@@par 
-l.39 	iiintn*}
-              
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.39 	iiintn*}
-              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten \endgroup.
-<recently read> }
-                 
-l.39 	iiintn*}
-              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: \begin{align*} on input line 36 ended by \end{proof}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.40 \end{proof}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-) [42]
-
-! LaTeX Error: \begin{proof} on input line 33 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.26 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(./full.aux) )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 33 (\begingroup)
-### bottom level 
+) [42] (./full.aux) ) 
 Here is how much of TeX's memory you used:
  21571 strings out of 478994
  421095 string characters out of 5864752
@@ -2057,30 +1943,31 @@ Here is how much of TeX's memory you used:
  430587 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,16n,105p,2018b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
-}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/
-rsfs10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb></usr/share
-/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fon
-ts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1
-000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist
-/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-fti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on full.pdf (42 pages, 464564 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
+1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf-dist/fonts/type1/public/
+rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dis
+t/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
+sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></
+usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf
+-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
+per/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pf
+b>
+Output written on full.pdf (42 pages, 464791 bytes).
 PDF statistics:
  276 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams

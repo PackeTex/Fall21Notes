@@ -35,6 +35,8 @@ Let \(s, t\) be nonnegative and simple and \(\alpha \ge 0\). Then \[
 	For the second claim. Suppose \(s = \sum_{k=1}^{K} a_{k} \chi_{S_{k}}\) and \(g = \sum_{j=1}^{J} b_{j} \chi_{T_{j}}\) are canonical representations. Then, \(s + t = \sum_{k=1}^{K} \sum_{j=1}^{J} \left( a_{k} + b_{j} \right) \chi_{S_{k} \cap T_{j}}\) with \(\{S_{k} \cap T_{j} : 1 \le k \le K, 1\le j \le J\} \) is a disjoint collection and
 	\begin{align*}
 		\int\left( s+t \right) &= \sum_{k=1}^{K} \sum_{j=1}^{J} \left( a_{k} + b_{j} \right) \mu\left( S_{k} \cap T_{j} \right)  \\
-		&=  \\
-	iiintn*}
+				       &= \sum_{k=1}^{K} a_{k} \sum_{j=1}^{J} \mu\left( S_{k} \cap T_{j} \right) + \sum_{j=1}^{J} b_{j} \sum_{k=1}^{K} \mu\left( S_{k} \cap T_{j} \right)  \\
+				       &= \sum_{k=1}^{K} a_{k} \mu\left( S_{k} \right) + \sum_{j=1}^{J} b_{j} \mu\left( T_{j} \right)   \\
+				       &= \int s + \int t.
+	\end{align*}
 \end{proof}
