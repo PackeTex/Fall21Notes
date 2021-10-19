@@ -1,7 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1634670470 "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" "master.pdf" "master" 1634670471
+["pdflatex"] 1634670844 "master.tex" "master.pdf" "master" 1634670844
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Analysis/master.tex" 1634670470 246 7de3ef8ea045a678a6d592c2c178528c ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -78,6 +77,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb" 1617738065 131438 3aa300b3e40e5c8ba7b4e5c6cebc5dd6 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb" 1617738065 94648 b03e7f03878c9582819008e1f17e2327 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb" 1617738065 186554 e8f0fa8ca05e038f257a06405232745f ""
+  "/usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb" 1617738065 16077 4737ac34f0fb5608550f3780a0202c22 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1617738065 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1617738065 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1617738065 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
@@ -239,13 +239,13 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
   "lec_15.tex" 1634239500 8243 91424886b4049fce869e87e5038b3880 ""
-  "lec_16.tex" 1634670430 6814 fac5d4c4e0d158718d5da6f628203aec ""
-  "master.aux" 1634670471 431 4a719304a4c04ec91bc901bfcf4cdbb9 "pdflatex"
-  "master.tex" 1634670470 246 7de3ef8ea045a678a6d592c2c178528c ""
-  "master.toc" 1634670471 202 b63546e7b4d3c881dd97c98f8f802234 "pdflatex"
+  "lec_16.tex" 1634670842 7980 0b0c7b62b92144a62e6a88b36e5e0ca3 ""
+  "master.aux" 1634670844 431 379843adfa40adbfb6108cf655e8c5c1 "pdflatex"
+  "master.tex" 1634670843 246 7de3ef8ea045a678a6d592c2c178528c ""
+  "master.toc" 1634670844 202 e9bb292614e89e61c069c5949dc7f414 "pdflatex"
   "ops.tex" 1630610909 124 ca20916fdf76fdc657317c94218b5396 ""
   (generated)
-  "master.toc"
   "master.aux"
   "master.log"
   "master.pdf"
+  "master.toc"

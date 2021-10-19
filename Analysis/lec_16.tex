@@ -12,7 +12,7 @@
 \end{proof}
 This concludes measure theory.
 \section{Lebesque Integration}
-\begin{definition}[Lebesque Integral: Nonnegative Functions]
+\begin{definition}[Lebesque Integral: Nonnegative Simple Functions]
 Let \(s\) be a	nonnegative simple function of the form \(s = \sum_{k= 1}^{K} a_{k}\chi_{S_{k}}\) where \(\{S_{k} : 1\le k \le K\} \) is a disjoint collection of measurable sets. Then, the \textbf{Lebesque Integral} of \(s\) is defined to be \[
 	\int s = \int s\left( x \right) dx = \int s d\mu = \sum_{k=1}^{K} a_{k} \mu\left( S_{k} \right)
 .\]
@@ -40,3 +40,31 @@ Let \(s, t\) be nonnegative and simple and \(\alpha \ge 0\). Then \[
 				       &= \int s + \int t.
 	\end{align*}
 \end{proof}
+\begin{lemma}
+	Let \(s, t\) be nonnegative and simple such that \(s \le t\). Then, \(\int s \le \int t\).
+\end{lemma}
+\begin{proof}
+	\begin{align*}
+		\int t &= \int \left( t-s + s \right) \\
+		       &= \int \underbrace{\left( t-s \right)}_{\ge 0}  + \int s \\
+		       &\ge \int s
+	.\end{align*}
+\end{proof}
+\begin{definition}
+	Let \(f: S \to \overline{\R}\), then the \textbf{zero extension} of \(f\) to \(\R\) is \begin{align*}
+		f^{*}: \R &\longrightarrow \overline{\R} \\
+		x &\longmapsto f^{*}\left( x \right)  = \left \{
+			\begin{array}{11}
+				f\left( x \right) , & \quad x \in S \\
+				0, & \quad x\not\in S
+			\end{array}
+			\right.
+	.\end{align*}
+	Moreover, this function preserves measurability.
+\end{definition}
+\begin{definition}[Lebesque Integral of a General Nonnegative Function]
+	Let \(f: \R \to \overline{\R}\) 	be a nonnegative measurable function and \(\mathscr{S}\left( f \right) \) be the collection of all nonnegative simple functions, \(s\), such that \(s \le f\). Then, the \textbf{Lebesque Integral} of \(f\) over \(\R\) is defined to be
+	\begin{align*}
+		\int f = \int_{\R} f\left( x \right)dx int
+	.\end{align*}
+\end{definition}
