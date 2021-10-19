@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Summary of Group Theory}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Basic Group Theory}{1}{}%
+\contentsline {subsection}{\numberline {1.2}P-groups}{2}{}%
+\contentsline {subsection}{\numberline {1.3}Semidirect products}{4}{}%
+\contentsline {subsection}{\numberline {1.4}Simple Groups}{5}{}%
+\contentsline {subsection}{\numberline {1.5}Nilpotent Groups}{6}{}%
+\contentsline {subsection}{\numberline {1.6}Solvable Groups}{7}{}%
+\contentsline {subsection}{\numberline {1.7}Free Groups}{8}{}%

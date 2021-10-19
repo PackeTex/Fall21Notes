@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1634658356 "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" "full.pdf" "full" 1634658357
+["pdflatex"] 1634666339 "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" "full.pdf" "full" 1634666340
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" 1634598380 760 d41840acdf05a491df6783c8d7725aac ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -71,6 +71,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1617738065 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1617738065 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1617738065 32716 08e384dc442464e7285e891af9f45947 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb" 1617738065 30457 bc0868ebece724ed7c3d37e3d9bff7bd ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1617738065 31764 459c573c03a4949a528c2cc7f557e217 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb" 1617738065 33366 60462f3d16c3d0f024f1f856e64b09cd ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1617738065 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
@@ -250,9 +251,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
   "figures//fig.pdf" 1633541785 2057 a914d9b4643677cdcadde4231eed649d ""
   "figures/fig.pdf_tex" 1633541785 3038 4ac0fbc395b2b15e7ddf59a951eae8ff ""
-  "full.aux" 1634658357 1273 a9d27f958e8c1da84c42be04f3e41b17 "pdflatex"
+  "full.aux" 1634666340 2143 fa5eff6485192a1e8e63dc35717f82e8 "pdflatex"
   "full.tex" 1634598380 760 d41840acdf05a491df6783c8d7725aac ""
-  "full.toc" 1634658357 522 e77ba6e2e719c34004087e39a49f2aba "pdflatex"
+  "full.toc" 1634666340 1064 90589c78002d1989fda84c590e64c29f "pdflatex"
   "lec_01.tex" 1630348463 5182 133fa37d242ebaea609d25a8da2441d4 ""
   "lec_02.tex" 1630081950 6174 4b17074657d927f37da44945ca5dc830 ""
   "lec_03.tex" 1631028717 5514 978522504aa9f6bab90a59b10354640b ""
@@ -276,10 +277,10 @@
   "lec_21.tex" 1634146114 1083 7b9dcf77cba820aece29dc1e2c7d0a28 ""
   "lec_22.tex" 1634319105 4138 9ee7db6369f3cdaf5017b74abed99bd3 ""
   "lec_23.tex" 1634578068 4218 2889cff45158c52b1d4f7162f6ccfbd3 ""
-  "lec_24.tex" 1634658355 8375 a1e2b930d464a21d286784db80b336d8 ""
+  "lec_24.tex" 1634664238 20852 e731e22b8e67c2f1a2ea69ed090eb152 ""
   "ops.tex" 1634574732 194 ec8d3cf68a872ce7d2c248a648ddb49a ""
   (generated)
-  "full.aux"
   "full.log"
   "full.pdf"
   "full.toc"
+  "full.aux"

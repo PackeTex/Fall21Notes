@@ -1,5 +1,7 @@
 \lecture{24}{Mon 18 Oct 2021 18:06}{Summary of Group Theory}
+\section{Summary of Group Theory}
 This is a study guide for the midterm and not an actual lecture.
+\subsection{Basic Group Theory}
 \begin{theorem}[Isomorphism Theorems]
 	The isomorphism theorems go roughly as follows:
 \begin{itemize}
@@ -50,6 +52,7 @@ This is a study guide for the midterm and not an actual lecture.
 \begin{proof}
 	Take the map \(f: \{ gG_{x}: g \in G\} \to \Omega, \ x\mapsto f\left( gG_{x} \right) = x^{g}  \) and show its a bijection. For the second equation let the orbit be the whole set and peel of the first term of the summation.
 \end{proof}
+\subsection{P-groups}
 \begin{definition}
 	\(H\) and \(K\) are conjugate if \(K = gHg^{-1}\) for some \(g\). Note that the number of subgroups conjugate to \(H\) is \(\left| G : N_{G}\left( H \right)  \right| \) by appealing to definitions.
 \end{definition}
@@ -62,9 +65,9 @@ This is a study guide for the midterm and not an actual lecture.
 \begin{remark}
 A subgroup of index of the smallest prime divisor of \(G\) is normal by the same argument.
 \end{remark}
-\begin{definitions}
+\begin{definition}
 	A group is a \(p\)-group if the order of every element is \(p^{n}\). A subgroup is a sylow \(p\)-group if its order is the highest prime power of \(p\)  in \(\left| G \right| \).
-\end{definitions}
+\end{definition}
 \begin{theorem}[Cauchy's Theorem]
 	If \(p \mid \left| G \right| \) 	then there is a \(\ord \left( g \right)  = p\) (hence a subgroup of order \(p\)).
 \end{theorem}
@@ -121,6 +124,7 @@ A subgroup of index of the smallest prime divisor of \(G\) is normal by the same
 \begin{proof}
 	We see \(n_{p} = 1 = n_{q}\) by sylow's theorem, Hence every \(g \in G\) fixes \(P, Q\) by conjugation. Then, we see \(pq || \left| PQ \right| \) , so \(\left| PQ \right|  = G\)  THen appealing to the size of the subgroups and normality yields \(xy = yx^{\prime} = x^{\prime}y^{\prime} = xy \implies xy = yx\).
 \end{proof}
+\subsection{Semidirect products}
 \begin{definition}
 	\(\left( x, y \right) \left( a, b \right)  = (xa^{y}, b)\)
 \end{definition}
@@ -135,4 +139,189 @@ A subgroup of index of the smallest prime divisor of \(G\) is normal by the same
 \end{proof}
 \begin{theorem}
 	\(NH \simeq N\rtimes_{\alpha} H\) if \(\alpha: h \mapsto hxh^{-1}\).
+\end{theorem}
+\begin{proof}
+	Appeal to 2nd isomorphism theorem and we see \(\frac{NH}{N} \simeq H\). So, we see there are \(\left| H \right| \) \(N\)-cosets in \(NH\). So every \(Nh\) is distinct. So, \(\alpha: xh \mapsto \left( x, h \right) \) is a bijective homomorphism. So they are isomorphic.
+\end{proof}
+\subsection{Simple Groups}
+\begin{definition}[Simple Groups]
+\(G\) is simple if it has no nontrivial proper normal subgroups.
+\end{definition}
+\begin{remark}
+	Methods for Determining if a group is simple
+	\begin{itemize}
+		\item Counting elements of \(p\)-groups of power \(1\).
+			\item Permutation representations.
+				\item Small index subgroups.
+					\item Playing \(p\)-groups off each other.
+	\end{itemize}
+\end{remark}
+\begin{remark}
+	Counting elements of \(p\)-groups of order \(1\) consists of finding sylow \(p\)-groups of order \(p^{1}\) and then it is clear all elements of the sylow \(p\)-groups must be distinct (except identity). Adding these up for all \(p\) yields a contradiction.
+\end{remark}
+\begin{remark}
+	For small index subgroups we know a subgroup of index \(k\) implies \(G \simeq H \le S_{k}\). Hence, \(\left| G \right| \mid \left| S_{k} \right| \). Then, we know if \(k\) is the smallest integer such that \(\left| G \right| \mid k!\), then \(k\) is also the minimal index over all proper subgroups. From here we can induce a contradiction by appealing to sylows theorem.
+\end{remark}
+\begin{remark}
+	For Permutation Representations we appeal to one of the following facts. If \(G\) has an element of order of \(k\) , then so does \(S_{k}\)  and if \(P\) is a sylow \(p\)-group of \(G\), then \(\left| N_{G}\left( P \right)  \right| \mid \left| N_{S_{k}}\left( P \right)  \right|  \). Then, we see the number of \(p\)-groups in \(S_{k}\) is \(\frac{\prod_{i=k-p+1}^{k} i}{p\left( p-1 \right) } \). Hence \(\left|N_{S_{k}}\left( p \right) \right| = p\left( p-1 \right)  \), so \(\left|N_{G}\left( P \right) \right| \mid p\left( p-1 \right) \).
+\end{remark}
+\begin{remark}
+	For playing \(p\)-groups off of each other. Take a \(p\)-group in a \(p\)-group, for example \(P \le Q\) and force it to be normal. Then, it is eithere a \(P\)-group in \(G\) or its contained in one, \(P^{*}\)  (which is contained in \(N_{G}\left( P \right) \)). Hence, we  find \(\left<N_{G}(Q), P^{*} \right> \le N_{G}\left( P \right)  \), so \(\left| N_{G}\left( Q \right)  \right| \left| P^{*} \right|  \mid \left| N_{G}\left( P \right)  \right|  \). We can induce a contradiction from here.
+\end{remark}
+\subsection{Nilpotent Groups}
+\begin{definition}
+	The upper central series is \(Z_1\left( G \right)  = Z\left( G \right) \) , and \(Z_{n}\left( G \right) / Z_{n-1}\left( G \right)  = Z\left( G / Z_{n}\left( G \right)  \right) \). If this is \(G\) eventually, then \(G\) is nilpotent.\\
+	Equivalently the lower central series is \(G^{1} = \left[ G, G \right] \), \(G^{n} = \left\{ G, G^{n-1} \right\} \). If this is trivial eventually, then \(G\) is nilpotent.
+\end{definition}
+\begin{theorem}
+	Every finite \(p\)-group is nilpotent.
+\end{theorem}
+\begin{proof}
+	We know the center of a \(p\)-grop is nontrivial. From here we show \(Z_1 < Z_2\) and induce up to the size of the group.
+\end{proof}
+\begin{definition}
+	A subgroup \(H\)  is characteristic if every automorphism has \(\alpha\left( H \right)  \le H\).
+\end{definition}
+\begin{remark}
+	\(K\trianglelefteq H\) and \(H\) characteristic is \(G\)  yields \(K\trianglelefteq G\).
+\end{remark}
+\begin{theorem}
+	TFAE
+	\begin{itemize}
+		\item \(P\) is the unique sylow \(p\)-group in \(G\).
+			\item \(P\trianglelefteq G\)
+				\item \(P\) characteristic in \(G\).
+					\item A subgroup generated by elements of order \(p^{i}\) is a \(p\)-group.
+	\end{itemize}
+\end{theorem}
+\begin{proof}
+	\begin{itemize}
+		\item \(1 \iff 2\) is already shown and \(1 \implies 3\) follows as \(\alpha\left( P \right) \) is also a sylwo \(p\)-group.
+\item \(1 \implies 4\) If \(X\) is such a group \(\left<x \right> \subseteq P\)  for all \(x\) so \(X \subseteq p\) is a \(p\)-group.
+	\item \(4 \implies 1\) if they were not unique we have that such a group \(X\) would be \( P \subseteq \left< P \cup P^{\prime} \right>  \subseteq X \subseteq P\) so contradiction.
+	\end{itemize}
+\end{proof}
+\begin{remark}
+	If \(H, K\) are groups then \(Z\left( H \times K \right)  = Z\left( H \right) \times Z\left( K \right) \)
+\end{remark}
+\begin{proof}
+	Appeal to definitions.
+\end{proof}
+\begin{theorem}
+	For a homomorphism with \(\ker \left( \alpha \right)  = K \le H\), then \(N_{G}\left( H \right)  = f^{-1}\left( N_{G^{\prime}}\left( \phi\left( H \right)  \right)  \right) \).
+\end{theorem}
+\begin{proof}
+	Appeal to homomorphism properties in both directions with \(x \in N_{G}\left( H \right) \) \(xHx^{-1}\)
+\end{proof}
+\begin{theorem}
+	TFAE
+	\begin{itemize}
+		\item G is nilpotent
+		\item Proper subgroups are proper in their normalizers
+			\item All \(p\)-groups are normal
+				\item \(G\) is the direct product of its sylow \(p\)-groups.
+	\end{itemize}
+\end{theorem}
+\begin{proof}
+	\begin{itemize}
+		\item \(2\implies 3\) \(G\) must be abelian with a \(P\) not normal. Then as \(P\) is characteristic in \(N_{G}\left( P \right) \), we see its normal in \(N_{G}\left( N_{G}\left( P \right)  \right) \) so by definition the normalizers are equal. Hence we have a non normal \(P\)-group implies there is a subgroup not in its normalizer contradiction.
+	\end{itemize}
+\end{proof}
+\begin{theorem}
+If \(G\) has \(n \mid \left| G \right| \) with at most \(n\) \(x\) , \(x^{n}= 1\) , then \(G\) is cyclic.
+\end{theorem}
+\begin{proof}
+	First, we see there are at most \(\left| P \right| = p^{\alpha}\) elements with \(x^{p^{\alpha}}=1\), so \(P\) must be distinct. So, all \(P\)-groups are normal \(G\) is the product of the \(P\)-groups. Then, we can show each \(P_{i}\) group is cyclic and the product of their generators is a generator of \(G\) as the primes are distinct.
+\end{proof}
+\begin{theorem}[Frattini Argument]
+	If \(H \trianglelefteq G\) 	and \(P \le H\) is a sylow group of \(H\) , then \(G = HN_{G}\left( P \right) \).
+\end{theorem}
+\begin{proof}
+	\(HN_{G}\left( P \right)  \le G\) by an earlier lemma so letting \(G\) act by conjugation yields \(P^{g} \le H\) so \(P^{g}\)  is a sylow \(p\)-group which is conjugate to \(P\), so there is a \(P^{h} = P^{g}\) and we find \(h^{-1}g \in N_{G}\left( P \right) \), so \(g \in hN_{G}\left( P \right) \). Appealing to third isomorphismtheorem yields \(\left| G:H \right|  \mid \left| N_{G}\left( P \right)  \right| \).
+\end{proof}
+\begin{theorem}
+	\(G\) is nilpotent iff every maximal subgroup is normal.
+\end{theorem}
+\begin{proof}
+	\(\implies\) If \(M\) is maximal  then \( M = N_{G}\left( M \right) \) or \(M\) is normal. If \(M = N_{G}\left( M \right) \) this is contradiction as nilpotent groups do not admit proper subgroups equal to their normalizer.
+	\(\impliedby\) We need only show all sylow groups are normal. Take a maximal subgroup containing \(N_{G}\left( P \right) \). Applying frattini argument yields \(G = N_G\left( P \right) M\), so \(G \subseteq MM = M < G\) contradiction.
+\end{proof}
+\subsection{Solvable Groups}
+\begin{definition}
+	A group is solvable if it admite a normal chain \(H_0 \trianglelefteq H_1 \ldots \trianglelefteq H_{n} = G\) with the quotient of consecutive \(H_{i}\) being abelian.\\
+	An equivalent characterization is the iterated commutator \(G^{\left( 1 \right) } = \left[ G, G \right] \) and \(G^{\left( n \right) } = \left[ G^{\left( n-1 \right) }, G^{\left( n-1 \right) } \right] \). If this is trivial at some point then \(G\) is solvable.
+\end{definition}
+\begin{proof}
+	\(\implies\)  We show each \(G^{\left( i \right) } \le H_{i}\). Induce \(G^{\left( i \right) } \le H_{n-i} \) on \(i\) and the base case is trivial. For the i case note \(G^{\left( i \right) }\le \left[ H_{n-\left( i-1 \right) }, H_{n-\left( i-1 \right) } \right] \) and we get \(G^{\left( n \right)} \le H_{n-n} = \{1\}  \).\\
+	\(\impliedby\). Let \(H_{i} = G^{\left( n-i \right) }\) and induce on \(i\) to show the quotient \(H_{i} / H_{i-1}\) is abelian as it is the quotient of a commutator..
+\end{proof}
+\begin{theorem}
+	A subgroup of a solvable group is solvable.
+\end{theorem}
+\begin{proof}
+	Induce to show \(H^{\left( n \right) } \le G^{\left( n \right) }\).
+\end{proof}
+\begin{theorem}
+	Homomorphisms preserve solvability.
+\end{theorem}
+\begin{proof}
+	Induce on \(G^{\left( i \right) }\) to show \(\phi\left( G^{\left( i \right) } \right) = \phi\left( G \right) ^{\left( i \right) } \)
+\end{proof}
+\begin{theorem}
+	Let \(G\) and \(H \trianglelefteq G\) then \(G\) solvable iff \(H\) and \(G / H\) are solvable.
+\end{theorem}
+\begin{proof}
+	\(\implies\) Already shown.
+	\(\impliedby\). Take normal chains of \(H\) and \(G / H\) and append then to each other.
+\end{proof}
+\subsection{Free Groups}
+\begin{definition}
+	\(X\) is an alphabet, then \(F\left( X \right) \) is the free group on \(X\).
+\end{definition}
+\begin{theorem}[Universal Mapping Property]
+	\(F\left( X \right) \) is a group \(F\) with an injection \(\sigma : X \xhookrightarrow F\) so that for any \(\alpha : X \to G\) there is a \(\beta : F\to G\) such that \(\beta\left( \sigma \right) = \alpha\).
+\end{theorem}
+\begin{theorem}
+Use universal mapping property to induce bijective homomorphisms from \(F_1 \to F_2\) which is an extension of the assymed bijection \(\alpha: X_1 \to X_2\).
+\end{theorem}
+\begin{theorem}
+	For \(\alpha: F\to H\) and \(\beta: G\to H\) , we find a \(\gamma : F \to G\) so that \(\beta \gamma = \alpha\).
+\end{theorem}
+\begin{proof}
+	Let \(\beta\left( g_{x} \right)  = \alpha\left( x \right) \) for some \(g_{x}\) , then we find a homomorphism \(x \mapsto g_{x}\).
+\end{proof}
+\begin{definition}[Group Presentations]
+	A group presentation is a set \(X\) and a set of relators \(Y\) such that \(\bigcap_{H \trianglelefteq G, H \ge Y} H = N\) yields a group \(F\left( X \right)  / N\) following the relations.
+\end{definition}
+\begin{remark}
+	\(\{\prod_{i= 1}^{\ell} \left( g_{i}x_{i}g_{i}^{-1} \right): g_{i} \in G, g\times \in X \cup X^{-1}  \} \)
+\end{remark}
+\begin{theorem}
+	If \(G = \left<X : R \right> \) and \(H=\left<X : R^{\prime} \right> \) with all relations in \(R\) being relations in \(R^{\prime}\) , then \(\alpha\left( G \right) = H\) for some \(\alpha\) homomorphism.
+\end{theorem}
+\begin{proof}
+	\(N \le N^{\prime}\) so appealing to isomorphism theorems yields \(F\left( X \right) / N^{\prime} = G / \left( N^{\prime} / N \right) \).
+\end{proof}
+\begin{theorem}
+	Every word is equivalent to a uniqe reduced word.
+\end{theorem}
+\begin{proof}
+	For each letter define a map multiplying elements by \(m\) on the left. It is a permutation on the set of redued words hence each letter corresponds to a symmetry of \(R\) via a homormophism. Then for any two reduced words which are equivalent we find their representation in the symmetry group is the same, hence the words are the same.
+\end{proof}
+\begin{definition}
+	\(V_{X}\left( w \right) = \) the sum of total powers of a letter in a word.
+\end{definition}
+\begin{definition}
+	\(\rank\left( F\left( X \right)  \right) = \left| X \right| \).
+\end{definition}
+\begin{theorem}
+	If \(F\left( X \right) \simeq F\left( Y \right) \) , then \(\left| X \right| = \left| Y \right|  \)
+\end{theorem}
+\begin{proof}
+	Take a subgroup generated by squares and remark that it is characteristic hence normal. Then, we see \(G / H \simeq \phi\left( G \right) / \phi\left( F\left( X \right)  \right)  \simeq G^{\prime} / H^{\prime}\). Then as every elements square is \(1\) in \(G / H\) , so it is an abelian \(2\)-group. Then, we see all products of cosets are unique by multiplying any two and noting the multiplicity of elements versus the multiplicity of their generators.\\
+	Hence, we find \(G / H = \bigoplus _{x \in X}\left<x \right> = \left( \Z / 2\Z \right)^{\left| X \right| }  \). This is a vector space over \(\mathbb{F}_2\) with elements corresponding to the power \(1\) or \(0\) of some \(\overline{x} \in X\). Then, we find the dimensions of \(G/ H\) and \(G^{\prime} / H^{\prime}\) are equal and as the dimensions are simply \(\left| X \right| \),   \(\left| X^{\prime} \right| \) this completes the proof.
+\end{proof}
+\begin{theorem}
+	Subgroups of free groups are free.
+	A subgroup of finite index, \(m\),  has \(\rank\left( H \right)  = \rank\left( F \right) m +1 - m\).
 \end{theorem}

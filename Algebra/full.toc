@@ -6,3 +6,11 @@
 \contentsline {section}{\numberline {6}Nilpotent Groups}{25}{}%
 \contentsline {section}{\numberline {7}Solvable Groups}{30}{}%
 \contentsline {section}{\numberline {8}Free Groups}{32}{}%
+\contentsline {section}{\numberline {9}Summary of Group Theory}{38}{}%
+\contentsline {subsection}{\numberline {9.1}Basic Group Theory}{38}{}%
+\contentsline {subsection}{\numberline {9.2}P-groups}{39}{}%
+\contentsline {subsection}{\numberline {9.3}Semidirect products}{41}{}%
+\contentsline {subsection}{\numberline {9.4}Simple Groups}{42}{}%
+\contentsline {subsection}{\numberline {9.5}Nilpotent Groups}{42}{}%
+\contentsline {subsection}{\numberline {9.6}Solvable Groups}{44}{}%
+\contentsline {subsection}{\numberline {9.7}Free Groups}{45}{}%
