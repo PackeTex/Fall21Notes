@@ -1,4 +1,4 @@
-\lecture{16}{Tue 19 Oct 2021 13:02}{Conclusion of Measure Theory and Lebesque Integrations}
+\lecture{16}{Tue 19 Oct 2021 13:02}{Conclusion of Measure Theory and Lebesque Integration}
 \begin{recall}
 	We stated the theorems behind littlewood's \(3\) principles, now we prove them.
 \end{recall}
@@ -10,4 +10,31 @@
 
 	\end{enumerate}
 \end{proof}
+This concludes measure theory.
 \section{Lebesque Integration}
+\begin{definition}[Lebesque Integral: Nonnegative Functions]
+Let \(s\) be a	nonnegative simple function of the form \(s = \sum_{k= 1}^{K} a_{k}\chi_{S_{k}}\) where \(\{S_{k} : 1\le k \le K\} \) is a disjoint collection of measurable sets. Then, the \textbf{Lebesque Integral} of \(s\) is defined to be \[
+	\int s = \int s\left( x \right) dx = \int s d\mu = \sum_{k=1}^{K} a_{k} \mu\left( S_{k} \right)
+.\]
+\end{definition}
+\begin{proposition}
+	If \(s\) is nonnegative and simple with two representations, \(s = \sum_{k=1}^{K} a_{k} \chi _{S_{k}} = \sum_{j=1}^{J} b_{j} \chi _{T_{j}}\) for disjoint collections of measurable sets \(\{S_{k} : 1 \le k \le K\} \) and \(\{T_{j} : 1\le j \le J\} \). Then \[
+		\sum_{k=1}^{K} a_{k} \mu\left( S_{k} \right)  = \sum_{j=1}^{J} b_{j} \mu\left( T_{j} \right)
+	.\]
+	In particular, \(\int s\) is well defined.
+\end{proposition}
+The proof of this is trivial.
+\begin{lemma}
+Let \(s, t\) be nonnegative and simple and \(\alpha \ge 0\). Then \[
+	\alpha \cdot \int s  = \int \alpha \cdot s \text{ and } \int (s+t) = \int s + \int t
+
+.\]
+\end{lemma}
+\begin{proof}
+	Clearly, multiplying the sum times \(\alpha\) yields \(\alpha \sum_{k=1}^{K} a_{k} \mu\left( S_{k} \right)  = \sum_{k=1}^{K} \alpha a_{k} \mu\left( S_{k} \right) \).\\
+	For the second claim. Suppose \(s = \sum_{k=1}^{K} a_{k} \chi_{S_{k}}\) and \(g = \sum_{j=1}^{J} b_{j} \chi_{T_{j}}\) are canonical representations. Then, \(s + t = \sum_{k=1}^{K} \sum_{j=1}^{J} \left( a_{k} + b_{j} \right) \chi_{S_{k} \cap T_{j}}\) with \(\{S_{k} \cap T_{j} : 1 \le k \le K, 1\le j \le J\} \) is a disjoint collection and
+	\begin{align*}
+		\int\left( s+t \right) &= \sum_{k=1}^{K} \sum_{j=1}^{J} \left( a_{k} + b_{j} \right) \mu\left( S_{k} \cap T_{j} \right)  \\
+		&=  \\
+	iiintn*}
+\end{proof}
