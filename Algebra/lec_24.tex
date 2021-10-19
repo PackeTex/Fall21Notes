@@ -1,0 +1,138 @@
+\lecture{24}{Mon 18 Oct 2021 18:06}{Summary of Lectures Thus Far}
+This is a study guide for the midterm and not an actual lecture.
+\begin{theorem}[Isomorphism Theorems]
+	The isomorphism theorems go roughly as follows:
+\begin{itemize}
+	\item Kernel's of surjective homomorphisms are normal subgroups.
+	\item Quotients behave like division: \(\frac{G}{H} = \frac{\frac{G}{K}}{\frac{H}{K}}\) (if \(K \le H\)).
+		\item Quotients "cancel" into simpler quotients: \(\frac{HK}{K} = \frac{H}{H\cap K}\).
+			\item Quotients perserve group structure: Bijecetion between \(H \trianglelefteq G\) and \(\frac{H}{K}\trianglelefteq \frac{G}{K}\) if \(\ker \left( \phi \right) \trianglelefteq H\).
+\end{itemize}
+\end{theorem}
+
+\begin{definition}
+	We denote the following sets
+	\begin{align*}
+		G_{x} &= \{g \in G :  x^{g} = x  \} \\
+		G_{X} &= \{g \in G : x^{g} = x \forall x \in X\}  \\
+		N_{G}\left( X \right) &= \{y\in G : yXy^{-1} = X \}  \\
+		Z_{G}\left( X \right) &= \{y \in G : yxy^{-1} = x  \forall \ x \in X\}  \\
+		\left[ X, Y \right] &= \{xyx^{-1}y^{-1} : x \in X, y \in Y\}  \\
+		\mathscr{O}_{X} = \{x^{g} : x \in X, g \in G\}
+	.\end{align*}
+
+\end{definition}
+\begin{definition}[Group Action]
+	A group \(G\) acts on \(\Omega\) by permuting its elements. Formally \(\alpha : G \to \perm \left( \Omega \right) \) such that each \(g\) permutes \(\Omega\). A special group action is the conjugation map \(x \mapsto yxy^{-1}\).
+\end{definition}
+\begin{remark}
+	We need only check \(\left( x^{g} \right)^{h} = x^{hg} \) and \(x^{1} = 1\).
+\end{remark}
+\begin{definition}
+	A group action is faithful if it has trivial kernel.
+\end{definition}
+\begin{theorem}
+	\(G_{x^{g}} = gG_{x}g^{-1} \).
+\end{theorem}
+\begin{proof}
+	Allude to definitions and take a change of variables to the conjugation.
+\end{proof}
+\begin{theorem}
+	\(x^{g} = x^{h}\) if and only if \(x, y\) are in a common left \(G_{x}\)-coset.
+\end{theorem}
+\begin{proof}
+	Show \(g \in hG_{x}\) by definitions.
+\end{proof}
+\begin{theorem}[Orbit-Stabilizer]
+\(\left| \mathscr{O}_{x} \right|  = \left| G : G_{x} \right| \) .\\
+\(\left| \Omega \right|  = \left| Z_{G}\left( G \right)  \right|  + \sum_{x \in C^{\prime}}^{} \left| G : Z_{G}\left( x \right)  \right| \).
+\end{theorem}
+\begin{proof}
+	Take the map \(f: \{ gG_{x}: g \in G\} \to \Omega, \ x\mapsto f\left( gG_{x} \right) = x^{g}  \) and show its a bijection. For the second equation let the orbit be the whole set and peel of the first term of the summation.
+\end{proof}
+\begin{definition}
+	\(H\) and \(K\) are conjugate if \(K = gHg^{-1}\) for some \(g\). Note that the number of subgroups conjugate to \(H\) is \(\left| G : N_{G}\left( H \right)  \right| \) by appealing to definitions.
+\end{definition}
+\begin{theorem}
+	A subgroup of index \(2\) is normal.
+\end{theorem}
+\begin{proof}
+	Let \(G\) act on all conjugate subgroups by conjugation. It is trivial that \(N_{G}\left( H \right)  = H\)  or \(G\). \(G\) is proof and if it is \(H\) we see there are two conjugate subgroups \(\Omega = \{H, K\} \)  so there is a homomorphism into \(S_2\) and its kernel is \(H\).
+\end{proof}
+\begin{remark}
+A subgroup of index of the smallest prime divisor of \(G\) is normal by the same argument.
+\end{remark}
+\begin{definitions}
+	A group is a \(p\)-group if the order of every element is \(p^{n}\). A subgroup is a sylow \(p\)-group if its order is the highest prime power of \(p\)  in \(\left| G \right| \).
+\end{definitions}
+\begin{theorem}[Cauchy's Theorem]
+	If \(p \mid \left| G \right| \) 	then there is a \(\ord \left( g \right)  = p\) (hence a subgroup of order \(p\)).
+\end{theorem}
+\begin{proof}
+	There are two cases, the abelian and nonabelian.
+	\begin{itemize}
+		\item For the abelian case we proceed as follows:
+		\item Let \(H = \left<x \right> \) and note  that if \(p \mid H\), then \(\ord \left( x^{\left| H \right|/p} \right) = p \), so such an element exists.
+\item If \(p \nmid \left| H \right| \) , then appeal to the quotient group so \(p \mid \left| G / H \right| \) and define a homomorphism to the quotient where the IH guaranteed an element of order \(p\) which we can pullback.
+\item For the nonabelian case we cite the class equation. If \(p \mid \left| Z\left( G \right)  \right| \), then appeal to the abelian case. Else, we find atleast one \(p \nmid \left| G : Z_{G}\left( x \right)  \right| \) by appealing to the class equation mod p. Then, we see \(p \mid \left| Z_{G}\left( x \right)  \right| \). If \(Z_{G}\left( x \right) \) is smaller than \(G\) we apply IH else we see if a point centralizer is \(G\) this implies that element is in \(Z\left( G \right) \), a contradiction.
+	\end{itemize}
+\end{proof}
+\begin{theorem}
+	A \(p\) group acting on a finite set has a number of fixed points congruent to \(\left| \Omega \right| \)  mod p.
+\end{theorem}
+\begin{proof}
+	Seperate out all orbits of index \(\ge 2\) and note that \(\left| G : G_{x} \right|  = p^{m}\), and the congruency follows.
+\end{proof}
+\begin{theorem}
+	A sylow \(p\)-group has \(H \le N_{G}\left( P \right) \implies H \le P\).
+\end{theorem}
+\begin{proof}
+	Appeal to the 3rd isomorphism theorem to see \(\left| HP \right|/ \left| P \right|  = \left| H \right| / \left| H \cap P \right| \). Then, we sandwich \(\left| HP \right| \) between \(\left| P \right| \)  to induce the result.
+\end{proof}
+\begin{theorem}[Sylow's Theorem]
+	\begin{itemize}
+		\item  \(n_{p} \ge 1\).
+			\item A \(p\)-group is contained in a sylow \(p\)-group.
+				\item \(p\)-groups are conjugate.
+				\item \(n_{p} \equiv 1 \mod p\)
+				\item \(n_{p} = \left| G : N_{G}\left( P \right)  \right| \) hence \(n_{p}\mid \frac{\left| G \right| }{n^{p}}\)
+	\end{itemize}
+\end{theorem}
+\begin{proof}
+	\begin{itemize}
+		\item 1 is already shown
+		\item Let \(\Omega\) be the set of subgroups conjugate to \(P\) and \(G\) act by conjugation. \(G\) acts transitively, hence \(\left| \Omega \right|  = \left| G : G_{P} \right| \) Then, \(p \nmid \left| G : N_{G}\left( P \right)  \right| \). THen, restricting the action to \(H\) yields by an earlier lemma the number of fixed points a multiple of \(p\). Hence, there is some fixed point \(P^{\prime}\) which is conjugate to \(P\) and \(H \le P^{\prime}\).
+		\item We find a \(P^{\prime}\) conjugate to \(P\) and we see \(P^{\prime} \le P\) but \(\left| P \right|  = \left| P^{\prime} \right| \) , so equality holds and we see the claim holds.
+		\item As all \(p\)groups are conjuagte applying orbit stabilizer yields \(n_{p}= \left| \Omega \right|  = \left| G : G_{P} \right| = N_{G}\left( P \right) \)  hence \(n_{p}\equiv \left| \Omega \right| \mod p\). Letting \(P^{\prime}\)  be another \(P\) group which is fixed we see \(P^{\prime} = P\) and \(P \subseteq N_{G}\left( P^{\prime} \right) \) and \(P^{\prime} = P\) is the only fixed point so \(n_{p} \equiv 1 \mod p\).
+	\end{itemize}
+\end{proof}
+\begin{theorem}
+	A group of order \(p^2\) is abelian.
+\end{theorem}
+\begin{theorem}
+	A nontrivial \(p\)-group admits a nontrivial \(Z\left( G \right) \).
+\end{theorem}
+\begin{proof}
+	Appeal to the class equation to see \(p \mid \left| Z\left( G \right)  \right| \). As the center is nontrivial wee it has order \(p\) or \(p^2\). If \(\left| Z\left( G \right)  \right|  = p\) hence cylic hence \(G = Z\left( G \right) \cup G / Z\left( G \right) \). Then, we see generators \(x, Z\left( G \right) \) which commute, so \(G\) is abelian.
+\end{proof}
+\begin{theorem}
+	If \(\left| G \right|  = pq\) \(p < q\)  and \(p \nmid q-1\) , then \(G\) is abelian.
+\end{theorem}
+\begin{proof}
+	We see \(n_{p} = 1 = n_{q}\) by sylow's theorem, Hence every \(g \in G\) fixes \(P, Q\) by conjugation. Then, we see \(pq || \left| PQ \right| \) , so \(\left| PQ \right|  = G\)  THen appealing to the size of the subgroups and normality yields \(xy = yx^{\prime} = x^{\prime}y^{\prime} = xy \implies xy = yx\).
+\end{proof}
+\begin{definition}
+	\(\left( x, y \right) \left( a, b \right)  = (xa^{y}, b)\)
+\end{definition}
+\begin{remark}
+	\(\left( x, y \right) ^{-1} = \left( \left( x^{-1} \right) ^{h^{-1}} , h^{-1}\right) \)
+\end{remark}
+\begin{theorem}
+	If \(H \trianglelefteq N \rtimes_{\alpha} H\) , then \(\alpha = 1\)
+\end{theorem}
+\begin{proof}
+	Examine \(\left( x, 1 \right) \left( 1, h \right) \left( x^{-1}, 1 \right) \) and we find \(\left( x^{-1} \right)^{h} = x^{-1}\)
+\end{proof}
+\begin{theorem}
+	\(NH \simeq N\rtimes_{\alpha} H\) if \(\alpha: h \mapsto hxh^{-1}\).
+\end{theorem}
