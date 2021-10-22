@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1634573853 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1634671569
+["pdflatex"] 1634919225 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1634923667
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1634570489 732 b835a00116e5c9c0f6856346757dcd10 ""
+  "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1634916217 778 fd59001296afa73742031f1194d89be7 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -264,9 +264,9 @@
   "figures/payley.pdf_tex" 1631115245 2059 0b91c99b5fd99e4774f413b6c22f554f ""
   "figures/payleycomp.pdf_tex" 1630339611 2948 45814b4925974531e34d9a1484a3d05e ""
   "figures/vtxpart.pdf_tex" 1630007510 2803 48b61298a71ce9ea94733a5e4fb9d77f ""
-  "full.aux" 1634573854 3213 f844b6b98e3b16d21b7e8c2a74bbd01c "pdflatex"
-  "full.tex" 1634570489 732 b835a00116e5c9c0f6856346757dcd10 ""
-  "full.toc" 1634573854 341 e13130c8fb387adf4e86a7ac47f3e479 "pdflatex"
+  "full.aux" 1634919226 3322 27f8323f39e737e2fe2825ca9e67a03f "pdflatex"
+  "full.tex" 1634916217 778 fd59001296afa73742031f1194d89be7 ""
+  "full.toc" 1634919226 409 89ddcc4603d1a0b449046691aec1b6ef "pdflatex"
   "lec_01.tex" 1630074911 4786 253c868570e2277982ae23ed9d3004d9 ""
   "lec_02.tex" 1630083598 5538 9581b86871bbd1d4dd77805f14d5246f ""
   "lec_03.tex" 1630348573 5027 6bdc26c53c96ced1b834208657298f55 ""
@@ -290,9 +290,11 @@
   "lec_21.tex" 1634141708 4997 cfefdaaa6dbea4fd3e4fd8a533100553 ""
   "lec_22.tex" 1634570477 4591 088eb1ae9f9372faae53efce1b330f7d ""
   "lec_23.tex" 1634573847 5127 dbf7ce78caa721e832afbfadcffe6f98 ""
+  "lec_24.tex" 1634916199 97 7d0dbe95506679860d7c363a5bfe984d ""
+  "lec_25.tex" 1634919222 2504 85dcef4891d08e33aceb188a8004dd82 ""
   "ops.tex" 1633707999 366 8454741d16875dd142d1e2e1794a5523 ""
   (generated)
-  "full.pdf"
   "full.log"
   "full.toc"
+  "full.pdf"
   "full.aux"
