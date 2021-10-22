@@ -6,3 +6,4 @@
 \contentsline {subsection}{\numberline {1.5}Nilpotent Groups}{6}{}%
 \contentsline {subsection}{\numberline {1.6}Solvable Groups}{7}{}%
 \contentsline {subsection}{\numberline {1.7}Free Groups}{8}{}%
+\contentsline {section}{\numberline {2}Intro to Ring Theory}{10}{}%
