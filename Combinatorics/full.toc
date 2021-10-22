@@ -3,3 +3,4 @@
 \contentsline {section}{\numberline {3}Hadamard Matrices}{17}{}%
 \contentsline {section}{\numberline {4}Random Graphs}{27}{}%
 \contentsline {section}{\numberline {5}Quasi-Random Graphs}{31}{}%
+\contentsline {section}{\numberline {6}Psuedo-Random Graphs}{39}{}%
