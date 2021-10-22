@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  18 OCT 2021 11:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  22 OCT 2021 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -888,7 +888,7 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
-(./lec_22.tex
+(./lec_24.tex
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
 .
 (/usr/share/texmf-dist/tex/latex/base/t1cmss.fd
@@ -898,60 +898,26 @@ Overfull \hbox (28.8262pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 22.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 28.
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-! Missing delimiter (. inserted).
-<to be read again> 
-                   \lambda 
-l.33 ...i}\left( A \right) + \inf \{ \left \lambda
-                                                  _{i} \left( B \right) \rig...
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Missing delimiter (. inserted).
-<to be read again> 
-                   :
-l.33 ...eft \lambda_{i} \left( B \right) \right  :
-                                                   1 \le i \le n \}   \le \l...
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 51.
 ) (./lec_23.tex
 Overfull \hbox (35.90091pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-[2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 10.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 16.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 25.
 
 Overfull \hbox (14.55746pt too wide) in paragraph at lines 26--28
-[]\T1/cmr/bx/n/10 Definition 0.2 \T1/cmr/m/n/10 (Bi-par-tite Quasi-Ran-dom Grap
+[]\T1/cmr/bx/n/10 Definition 0.1 \T1/cmr/m/n/10 (Bi-par-tite Quasi-Ran-dom Grap
 h)\T1/cmr/bx/n/10 . []\T1/cmr/m/n/10 A bi-par-tite graph, $\OML/cmm/m/it/10 G [
 ]$
  []
@@ -959,7 +925,6 @@ h)\T1/cmr/bx/n/10 . []\T1/cmr/m/n/10 A bi-par-tite graph, $\OML/cmm/m/it/10 G [
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 36.
-[3]
 ! Extra }, or forgotten $.
 l.48 	For example, the double of \(K_{2, 2}}
                                              \) is \(2K_{2, 2} \).
@@ -977,34 +942,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 51.
-) [4] (./master.aux) ) 
+[2]) [3] (./master.aux) ) 
 Here is how much of TeX's memory you used:
- 21473 strings out of 478994
- 419569 string characters out of 5864752
- 719463 words of memory out of 5000000
- 38452 multiletter control sequences out of 15000+600000
+ 21507 strings out of 478994
+ 420387 string characters out of 5864752
+ 716463 words of memory out of 5000000
+ 38486 multiletter control sequences out of 15000+600000
  425458 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,11n,105p,818b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-
-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-s
-uper/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.p
-fb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/
-texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/font
-s/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/
-cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti10
-00.pfb>
-Output written on master.pdf (4 pages, 195916 bytes).
+ 107i,11n,105p,818b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
+er-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts
+/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx144
+0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sft
+i1000.pfb>
+Output written on master.pdf (3 pages, 183346 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
