@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  25 OCT 2021 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  25 OCT 2021 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1943,6 +1943,12 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 60.
 
+Overfull \hbox (28.51161pt too wide) in paragraph at lines 63--65
+\T1/cmr/m/n/10 General el-e-ments of $[]$ (in a com-mu-ta-tive ring $\OML/cmm/m
+/it/10 R$\T1/cmr/m/n/10 ) have the form $[][] \OML/cmm/m/it/10 r[] [][] x[]$
+ []
+
+
 Overfull \hbox (14.28824pt too wide) in paragraph at lines 67--68
 []\T1/cmr/bx/n/10 Remark. []\T1/cmr/m/n/10 The in-ter-sec-tion of (right/left/t
 wo-sided) ide-als is it-self a (right/left/two-
@@ -2001,7 +2007,7 @@ cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss09
 00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/
 fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on full.pdf (49 pages, 535277 bytes).
+Output written on full.pdf (49 pages, 535376 bytes).
 PDF statistics:
  316 PDF objects out of 1000 (max. 8388607)
  215 compressed objects within 3 object streams
