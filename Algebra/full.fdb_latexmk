@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1635181045 "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" "full.pdf" "full" 1635181046
+["pdflatex"] 1635182841 "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" "full.pdf" "full" 1635182842
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" 1635179505 806 563da0efd254c13f708077fd7ef3188d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -79,6 +79,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb" 1617738065 145408 43d44302ca7d82d487f511f83e309505 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb" 1617738065 140176 d4962f948b4cc0adf4d3dde77a128c95 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb" 1617738065 135942 859a90cad7494a1e79c94baf546d7de5 ""
+  "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb" 1617738065 180418 5fa231fda2d05a9c0eca9fd483cc7254 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb" 1617738065 154599 ded6d7c21788a8930eadc7fef7518942 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1617738065 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1617738065 136101 f533469f523533d38317ab5729d00c8a ""
@@ -251,9 +252,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
   "figures//fig.pdf" 1633541785 2057 a914d9b4643677cdcadde4231eed649d ""
   "figures/fig.pdf_tex" 1633541785 3038 4ac0fbc395b2b15e7ddf59a951eae8ff ""
-  "full.aux" 1635181046 2253 b177069b927ffe99f036734b0b3445cb "pdflatex"
+  "full.aux" 1635182842 2253 c3bef6a48cc772866b1fdf3f2dc0e469 "pdflatex"
   "full.tex" 1635179505 806 563da0efd254c13f708077fd7ef3188d ""
-  "full.toc" 1635181046 1133 557d4de60fde739485c4a360a8c626d0 "pdflatex"
+  "full.toc" 1635182842 1133 557d4de60fde739485c4a360a8c626d0 "pdflatex"
   "lec_01.tex" 1630348463 5182 133fa37d242ebaea609d25a8da2441d4 ""
   "lec_02.tex" 1630081950 6174 4b17074657d927f37da44945ca5dc830 ""
   "lec_03.tex" 1631028717 5514 978522504aa9f6bab90a59b10354640b ""
@@ -279,10 +280,10 @@
   "lec_23.tex" 1634578068 4218 2889cff45158c52b1d4f7162f6ccfbd3 ""
   "lec_24.tex" 1634664238 20852 e731e22b8e67c2f1a2ea69ed090eb152 ""
   "lec_25.tex" 1634923658 1976 43f28363ed116dc625d6299f8b5b3be2 ""
-  "lec_26.tex" 1635181031 2306 f4d5e85984e101de022b13dfbeb6a860 ""
+  "lec_26.tex" 1635182808 5150 c9a094fd1c95f3954e48c759e530b03f ""
   "ops.tex" 1634574732 194 ec8d3cf68a872ce7d2c248a648ddb49a ""
   (generated)
-  "full.pdf"
+  "full.toc"
   "full.aux"
   "full.log"
-  "full.toc"
+  "full.pdf"
