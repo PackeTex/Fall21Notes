@@ -1,0 +1,31 @@
+\lecture{26}{Mon 25 Oct 2021 11:31}{Ring Theory}
+\begin{recall}
+	A ring is a set, an abelian addition and an associative multiplication with identity.
+\end{recall}
+\begin{definition}[Subring]
+	A \textbf{subring},  \(R^{\prime}\) of \(R\) is a subset \(R^{\prime} \subseteq R\) such that \(R^{\prime}\) is closed under its operations and \(1 \in R^{\prime}\).
+\end{definition}
+This object turns out to be mostly uninteresting, so we introduce the following concept.
+\begin{definition}[Ideal]
+	A \textbf{left ideal} of the ring \(R\) is a nonempty subset \(I \subseteq R\) so that \(I \le R\) under addition and \(rI \subseteq I\) for all \(r \in R\). This second condition is equivalent to for all \(x \in I\), \(r \in R	\)  \(\implies rx \in I\).\\
+	\textbf{Right ideals} follow the same first condition and for the second condition we have \(Ir \subseteq I\) for all \(r \in R\).\
+	A \textbf{(two-sided) ideal} is a set \(I\) which is both a left and a right ideal.
+\end{definition}
+\begin{example}
+	\(I = p\Z\) is an ideal of \(\Z\).\\
+\end{example}
+Ideals will play a similar role as that of normal subgroups.
+\begin{definition}[Ring Homomorphisms]
+If \(R, R^{\prime}\) 	are rings and \(\psi: R \to R^{\prime}\) is a map. \(\psi\) is a \textbf{ring homomorphism} if
+\begin{itemize}
+	\item \(\psi\left( x + y \right) = \psi (x) + \psi (y) \) for all \(x, y \in R\),
+	\item \(\psi\left( xy \right)  = \psi\left( x \right) \psi\left( y \right) \) for all \(x, y \in R\),
+	\item \(\psi\left( 1_{R} \right) = 1_{R^{\prime}}\)  (if \(R, R^{\prime}\) are rings with identities).
+\end{itemize}
+\end{definition}
+\begin{example}
+	If \(R = \Z / 6\Z\). Consider the map \(f: \Z / 6\Z \to \Z / 6\Z, \ x \mapsto 3x\). We see the first two conditions hold under standard modular arithmetic, but the identity condition clearly fails, so we would consider this a ring homomorphism of rings without identity, but it is not a homomorphism of rings with identity.
+\end{example}
+\begin{definition}
+	If \(R\) is a ring and \(I \subseteq R\) is an ideal. \\ Then, we define \(R / I = \{x + I : x \in R\} \), with \(\left( x + I \right)  + \left( y + I \right) \coloneqq \left( x + y \right) + I\) and \(\left( x + I \right) \left( y + I \right)  \coloneqq xy + I\),   to be the ring quotient of \(R \mod I\).
+\end{definition}
