@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1634671567 "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" "full.pdf" "full" 1635182996
+["pdflatex"] 1635272169 "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" "full.pdf" "full" 1635272170
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" 1634666531 568 52a82499496bfdc4169725fd225fb180 ""
+  "/home/memphisrex/school/masters/semester-1/Analysis/full.tex" 1635272149 591 7afddc3dedab1c2f55086ed188aa8f92 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -247,9 +247,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
-  "full.aux" 1634671569 1344 1f4087c32fab14296b007a5253d634ae "pdflatex"
-  "full.tex" 1634666531 568 52a82499496bfdc4169725fd225fb180 ""
-  "full.toc" 1634671569 782 db345e7847833e3b27dea698032b1071 "pdflatex"
+  "full.aux" 1635272170 1344 1f4087c32fab14296b007a5253d634ae "pdflatex"
+  "full.tex" 1635272149 591 7afddc3dedab1c2f55086ed188aa8f92 ""
+  "full.toc" 1635272170 782 db345e7847833e3b27dea698032b1071 "pdflatex"
   "lec_01.tex" 1630348652 7261 5653de60f5cca5cb9b37bfa0db899035 ""
   "lec_02.tex" 1630348714 7860 e95af571f2a3d1d0319b3f59879ea3ba ""
   "lec_03.tex" 1630610253 7701 7cf04a5cb5a802c1ab89b1bdbb06dd52 ""
@@ -266,9 +266,10 @@
   "lec_14.tex" 1633634552 8941 ada581605b9e111cd69fe7483906ea07 ""
   "lec_15.tex" 1634239500 8243 91424886b4049fce869e87e5038b3880 ""
   "lec_16.tex" 1634671533 9641 38e34ce718e8e10682584285f0da6ebe ""
+  "lec_17.tex" 1635272167 63 1e3fab72068423f0b3a7cad1ab2e1217 ""
   "ops.tex" 1630610909 124 ca20916fdf76fdc657317c94218b5396 ""
   (generated)
-  "full.pdf"
-  "full.log"
-  "full.toc"
   "full.aux"
+  "full.log"
+  "full.pdf"
+  "full.toc"
