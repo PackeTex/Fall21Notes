@@ -1,3 +1,2 @@
-\contentsline {section}{\numberline {1}Lebesque Integration}{2}{}%
-\contentsline {section}{\numberline {2}Simple Functions}{5}{}%
-\contentsline {section}{\numberline {3}Littlewood's 3 Principles}{7}{}%
+\contentsline {section}{\numberline {1}Functions of Bounded Variation and Absolutely Continuous Functions}{4}{}%
+\contentsline {section}{\numberline {2}Derivatives and Fundamental Theorem of Calculus}{7}{}%
