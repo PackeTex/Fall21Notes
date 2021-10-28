@@ -1,1 +1,106 @@
-\lecture{19}{Thu 28 Oct 2021 13:02}{}
+\lecture{19}{Thu 28 Oct 2021 13:02}{End of Convergence and Functions of Bounded Variation}
+Recall we had the dominated convergence theorem. A similair version of the theorem makes use of convergence in measure as follows.
+\begin{theorem}[Dominated Convergence - Convergence in Measure]
+	Let \(\left( f_{n} \right) \) 	be a sequence of measurable functions \(f_{n}:\R  \to\overline{\R} \) and suppose there is an integrable function \(g: \R \to \overline{\R}\) so that \(\left| f_{n} \right|\le g \) for all \(n \in \N\). If \(\left( f_{n} \right)\to f: \R \to \overline{\R} \) in measure, (with \(f\) measurable), then \(f\) is integrable and \(\lim_{n \to \infty}\int \left| f_{n} - f \right|= 0 \) and \(\lim_{n \to \infty}\int f_{n} = f\).
+\end{theorem}
+\begin{proof}
+	First, note a subsequence of \(\left( f_{n} \right) \) converges to \(f\) pointwise almost everywhere. Hence, we find \(\left| f \right|  \le g\) almost everywhere, so \(f\) is integrable. We cam assume \(\left| f_{n} - f \right|\le 2g \) (almost) everywhere. Then, we find a subsequence \(\left( g_{n} \right) = \left( f_{n_{k}} \right) \) such that \(\limsup_{n \to \infty} \left| f_{n} - f \right| = \lim_{n \to \infty}\left| g_{k} - f \right|  \). Then, as \(\left( g_{k} \right) \to f\) in measure, we find another subsequence \(\left( h_{j} \right) = \left( g_{k_{j}} \right)  = \left( f_{n_{k_{j}}} \right)  \) which converges pointwise to \(f\) almost everywhere.\\
+	Applying dominated convergence theorem yields \[
+	\lim_{n \to \infty} \int\left| h_{j} - f \right| = 0
+	.\]
+Then, we find
+\begin{align*}
+	\limsup_{n \to \infty} \int \left| f_{n} - f \right| &=  \lim_{n \to \infty} \int \left| g_{k} - f \right|  \\
+	&= \lim_{n \to \infty} \left| h_{j} - f \right|  \\
+	&= 0
+.\end{align*}
+This completes the proof.
+\end{proof}
+\section{Functions of Bounded Variation and Absolutely Continuous Functions}
+\begin{remark}
+	For this chapter \(\left[ a, b \right] \subseteq R\) will always denote a compact interval on \(\R\).
+\end{remark}
+\begin{definition}[Partition]
+	A finite sequence \(P = \left( x_{k} \right)_{k = n}^{N} \) with \(n, N \in \Z\) and \(n < N\) is called a \textbf{partition} of \(\left[ a, b \right] \) if \(x_{n} = a\), \(x_{N} = b\) and \(x_{k-1}\le x_{k}\) for \(n < k \le N\). We denote the collection of all partitions of \(\left[ a, b \right] \) to be \(\mathscr{P}\left( \left[ a, b \right]  \right) \).
+\end{definition}
+\begin{definition}[]
+	Let \(f: \left[ a, b \right]  \to \R\) be a function. Then,
+	\begin{itemize}
+		\item For a partition \(P = \left( x_{k} \right)_{k=n}^{N} \), we denote \[
+			V\left( f, P \right) = \sum_{k= n+1}^{N} \left| f\left( x_{k} \right) - f_\left( x_{k-1} \right)   \right| \] to be the \textbf{variation of \(f\) with respect to \(P\)}.
+		\item We define the quantity \(\TV \left( f \right)  = \sup \{ V\left( f, P \right)  : P \in \mathscr{P}\left( \left[ a, b \right]  \right)  \} \) to be the \textbf{total variation of \(f\) }.
+	\end{itemize}
+\end{definition}
+\begin{remark}
+	If \(f: \left[ a, b \right]  \to \R\) and \(c\in \left[ a, b \right] \) with partitions \(P_1 = \left( x_{k} \right)_{k=n}^{N} \) of \(\left[ a, c \right] \) and \(P_2 = \left( x_{k} \right)_{k=N}^{K} \) of \(\left[ c, b \right] \) . Then denote, \(P = \left( x_{k} \right)_{k=n}^{K} \) to be a partition of \(\left[ a, b \right] \) and we find \[
+		V\left( f, P \right) = V\left( f\mid_{\left[ a, c \right], P_1 } \right)  + V\left( f\mid_{\left[ c, b \right] }, P_2 \right)
+	.\]
+
+	Moreover, \[
+		\TV\left( f \right) = \TV\left( f\mid_{\left[ a, c \right] }  \right) + \TV\left( f\mid_{\left[ c, b \right] } \right)
+	.\]
+\end{remark}
+\begin{definition}[Bounded Variation]
+	A function \(f: \R \to \overline{\R}\) has \textbf{bounded variation} if \(\TV\left( f \right) < \infty\).
+\end{definition}
+\begin{theorem}[Jordan's Theorem]
+A function \(f:\left[ a, b \right]  \to \R\) 	is of bounded variation if and only if there are increasing functions \(g, h: \left[ a, b \right]  \to \R\) so that \(f = g - h\).
+\end{theorem}
+\begin{proof}
+	Suppose \(\TV\left( f \right) < \infty\) and let \(x, y \in \left[ a, b \right] \) with \(x < y\). Then, we find
+	\begin{align*}
+		\TV\left( f\mid_{\left[ a, y \right] } \right) &= \TV\left( f\mid_{\left[ a, x \right] } \right)   + \TV\left( f\mid_{\left[ x, y \right] } \right) \\
+							       &\ge \TV\left( f\mid_{\left[ a, x \right] } \right) + \left| f\left( y \right)  - f\left( x \right)  \right| \\
+							       &\ge \TV\left( f\mid_{\left[ a, x \right] } \right) + f\left( x \right)  - f\left( y \right)
+	.\end{align*}
+	Furtheromre, \(h: x \mapsto \TV\left( f\mid_{\left[ a, x \right] } \right)\) and \(g: x \mapsto \TV\left( f\mid_{\left[ a, x \right] } \right) + f\left( x \right)  \) are increasing. This fact is trivial for \(h\) and we find , adding \(f\left( y \right) \) to both sides of the former inequality yields \(g\left( y \right)  \ge g\left( x \right) \) for arbitrary \(y \ge x\), so this claim holds as well.\\
+	Taking the difference, \(g - h = f\).\\
+	Conversely, suppose \(f = g - h\) for increasing \(g, h : \left[ a, b \right]  \to \R\). Then, let \(x, y \in \left[ a, b \right] \) with \(y \ge x\). Then, we find
+	\begin{align*}
+		\left| f\left( y \right) - f\left( x \right)   \right| &=  \left| g\left( y \right) - g\left( x \right) + h\left( x \right) - h\left( y \right)     \right|  \\
+								       &\le \left| g\left( y \right) - g\left( x \right)   \right| + \left| h\left( x \right) - h\left( y \right)   \right| \\
+								       &= g\left( y \right) - g\left( x \right)  + h\left( y \right) - h\left( x \right)
+	.\end{align*}
+	Hence, for a partition \(P = \left( x_{k} \right) _{k = n}^{N}\), we find
+	\begin{align*}
+		V\left( f, P \right)  &= \sum_{k=n + 1}^{N} \left| f\left( x_{k} \right) - f\left( x_{k-1} \right)   \right|  \\
+				      &\le \sum_{k=n+1}^{N} \left( g\left( x_{k} \right)  - g\left( x_{k-1} \right)  + h\left( x_{k} \right) - h\left( x_{k-1} \right)   \right)
+				      &= g\left( b \right) - g\left( a \right)  + h\left( b \right) - h\left( a \right) \\
+				      &< \infty
+	.\end{align*}
+\end{proof}
+\begin{definition}[Absolute Continuity]
+	A function \(f: \left[ a, b \right]  \to \R\) is \textbf{absolutely continuous} if for each \(\epsilon > 0\) we find a \(\delta > 0\) such that for every finite disjoint collection of nonempty intervals \(\{\left( a_{k}, b_{k} \right) \subseteq \left[ a, b \right] : 1\le k \le K \} \) with \(\sum_{k=1}^{K} \left( b_{k} - a_{k} \right)  < \delta\), we have \(\sum_{k=1}^{K} \left| f\left( a_{k} \right) - f\left( b_{k} \right)  \right| < \epsilon\).
+\end{definition}
+\begin{remark}
+	Absolute continuity is stronger than uniform continuity, but weaker than lipschitz continuity.
+\end{remark}
+\begin{theorem}
+	If a function \(f: \left[ a, b \right] \to \R \to \) is absolutely continuous, then \(f\) is continuous and \(f\) has bounded variation.
+\end{theorem}
+\begin{proof}
+	\(f\) is trivially continuous, taking a finite disjoint collection consisting only of \(1\) interval \(\{\left( x, y \right) \} \) 	yields the definition of continuity.\\
+	Now we show bounded variation. For \(\epsilon = 1\), let \(\delta > 0\) be the number such that the definition of absolute continuity holds for \(f\).\\
+	Now fix \(\left( x_{k} \right) _{k=n}^{N} \in \mathscr{P}\left( \left[ a, b \right]  \right) \) so that \(x_{k} - x_{k-1} < \delta\) for all \(n < k \le N\). Then, if \(P \in \mathscr{P}\left( \left[ x_{k-1}, x_{k} \right]  \right) \), we see \(V\left( f\mid_{\left[ x_{k-1}, x_{k} \right] }, P \right) < 1 \) by definition of absolute continuity.\\
+	So, we have \(\TV\left( \left[ x_{k-1} , x_{k} \right]  \right) \le 1 \), so \(\TV\left( f \right)  = \sum_{k=n+1}^{N} \TV\left( f\mid_{\left[ x_{k-1}, x_{k} \right] } \right) \le N - n \) by the \(\epsilon\) assumption.
+\end{proof}
+As it turns out, absolutely continuous functions have a relation to integrable functions, particularly, an integrable function \(f\) is simply the anti-integral of an absolutely continuous one.
+\begin{proposition}
+	If \(f: \left[ a, b \right]  \to \overline{\R}\) is integrable, then, \[F: \left[ a, b \right]  \to \R, \ x\mapsto \int_{\left[ a, x \right] }f \] is absolutely continuous.
+\end{proposition}
+This claim can be generalized into a sort of fundamental theorem of calculus for the lebesque integrals to characterize integrals and derivatives. For now, we only prove the weak version.
+\begin{proof}
+	For \(\epsilon > 0\) 	there is a \(\delta > 0\) such that \(\int _{S} \left| f \right| < \epsilon\) for every measurable set \(S \subseteq \left[ a, b \right] \) with \(m\left( S \right) < \delta\).\\
+	Now, let \(\{\left( a_{k}, b_{k} \right) : 1 \le k \le K\} \) be a disjoint collection of intervals in \(\left[ a, b \right] \) with \(\sum_{k=1}^{K}\left( b_{k} - a_{k} \right) < \delta\). Fix \(S = \bigcup_{k=1} ^{K}\left( a_{k}, b_{k} \right) \). Then, since \(m\left( S \right)  < \delta\) and
+	\begin{align*}
+		\sum_{k=1}^{K} \left| F\left( b_{k} \right)  - F\left( a_{k} \right)  \right| &=  \sum_{k=1}^{K} \left| \int_{\left[ a_{k}, b_{k} \right] } f \right|  \\
+											      &\le \sum_{k=1}^{K}  \int_{\left[ a_{k}, b_{k} \right] } \left| f \right| \\
+											      &= \int_{S} \left| f \right|   \\
+											      &< \epsilon \text{ by assumption}
+	.\end{align*}
+	Hence, absolute continuity holds.
+\end{proof}
+\section{Derivatives and Fundamental Theorem of Calculus}
+\begin{proposition}
+	Let \(f: \left[ a, b \right]  \to \overline{\R}\) be monotone on \(\left( a, b \right) \subseteq \R\) with \(a, b \in \overline{\R}\) and  \(a < b\). Then, the following limits
+\end{proposition}
