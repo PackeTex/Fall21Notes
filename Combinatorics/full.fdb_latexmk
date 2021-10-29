@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1635179503 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1635520821
+["pdflatex"] 1635524007 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1635524011
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1635119452 801 fe64c9c80efa4de35ff45163c79be3af ""
+  "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1635520824 824 9a550b96b8c1024ab330ba7aaffe058c ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -264,9 +264,9 @@
   "figures/payley.pdf_tex" 1631115245 2059 0b91c99b5fd99e4774f413b6c22f554f ""
   "figures/payleycomp.pdf_tex" 1630339611 2948 45814b4925974531e34d9a1484a3d05e ""
   "figures/vtxpart.pdf_tex" 1630007510 2803 48b61298a71ce9ea94733a5e4fb9d77f ""
-  "full.aux" 1635179504 3322 e656bb6bb9161273fc0be551427ca1ee "pdflatex"
-  "full.tex" 1635119452 801 fe64c9c80efa4de35ff45163c79be3af ""
-  "full.toc" 1635179504 409 89ddcc4603d1a0b449046691aec1b6ef "pdflatex"
+  "full.aux" 1635524010 3322 e656bb6bb9161273fc0be551427ca1ee "pdflatex"
+  "full.tex" 1635520824 824 9a550b96b8c1024ab330ba7aaffe058c ""
+  "full.toc" 1635524010 409 89ddcc4603d1a0b449046691aec1b6ef "pdflatex"
   "lec_01.tex" 1630074911 4786 253c868570e2277982ae23ed9d3004d9 ""
   "lec_02.tex" 1630083598 5538 9581b86871bbd1d4dd77805f14d5246f ""
   "lec_03.tex" 1630348573 5027 6bdc26c53c96ced1b834208657298f55 ""
@@ -293,9 +293,10 @@
   "lec_24.tex" 1634916199 97 7d0dbe95506679860d7c363a5bfe984d ""
   "lec_25.tex" 1634919222 2504 85dcef4891d08e33aceb188a8004dd82 ""
   "lec_26.tex" 1635179500 113 1d8b2489570185dc7d8fbea0feabb7cc ""
+  "lec_27.tex" 1635523999 272 519ae6f48a8d99948e8aafc4833e3d2e ""
   "ops.tex" 1633707999 366 8454741d16875dd142d1e2e1794a5523 ""
   (generated)
+  "full.pdf"
   "full.toc"
   "full.log"
   "full.aux"
-  "full.pdf"
