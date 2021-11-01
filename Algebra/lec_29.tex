@@ -11,8 +11,59 @@ We will again denote all rings \(R\) to be commutative.
 \end{proposition}
 \begin{proof}
 	\(x \mid y\) 	implies \(y \in \left( x \right) \), so \(\left( y \right) \subseteq \left( x \right) \).\\
-	Similarly, \(y \mid x\) implies \(x \in \left( y \right) \), so \(\left( x \right) \subseteq \left( y \right) \).
+	Similarly, \(y \mid x\) implies \(x \in \left( y \right) \), so \(\left( x \right) \subseteq \left( y \right) \).\\
+	Conversely, if \(\left( x \right)  = \left( y \right) \) , then \(x = ry\) and \(y = sx\) for some \(r, s \in R\), hence \(x \mid y\) and \(y \mid x\).
 \end{proof}
 \begin{proposition}
-	If \(R\) is an integral domain with \(x \neq 0\), then \(x \mid y\) and \(y \mid x\) if and only if \(\left( x \right)  = \left( y \right) \).
+	If \(R\) is an integral domain with \(x \neq 0\), then \(x \mid y\) and \(y \mid x\) if and only if \(y = mx\) for a unit \(m \in R\).
 \end{proposition}
+\begin{proof}
+	If \(\left( x \right)  = \left( y \right) \), then \(y = rx\) and \(x = sy\) for some \(r, s \in R\) hence \(x =sy =sr x\), so \( s r = 1\), hence \(s\) and \(r\) are units. The other direction is immediately clear, if \(x = my\) , then \(x \in\left( y \right) \) so \(m^{-1}x = y \in \left( x \right) \), hence \(\left( x \right)  = \left( y \right) \).
+\end{proof}
+\begin{remark}
+	If \(x = my\) for a unit \(m\), then we say \(x\) and \(y\) are associated if \(x\) and \(y\) are equal up to multiplication by a unit.
+\end{remark}
+\begin{definition}[Principal Ideal Domain]
+	A commutative integral domain \(R\) in which every ideal is principal is called a \textbf{principal ideal domain} (or PID).
+\end{definition}
+\begin{definition}[Euclidean Domain]
+	Suppose \(R\) is an integral domain and there is a size function (sometimes called a norm) \(f: \R \setminus \{0\}  \to \N_{0} \) such that for all \(a, b \in R\)  with \(b \neq 0\) , there is \(q, r \in R\) such that \(a = qb + r\) and either \(r = 0\) or \(f\left( r \right)  < f\left( b \right) \), then \(R\) is a \textbf{euclidean domain} or ED.
+\end{definition}
+\begin{example}
+\(\Z\) is a PID. \(\Z\) is also a euclidean domain under norm \(\left| x \right| \).
+\end{example}
+\begin{proposition}
+	A euclidean domain is a principal ideal domain.
+\end{proposition}
+\begin{proof}
+	Let \(I\) be a proper nontrivial ideal and let \(x \in I\) be a nonzero element with \(f\left( x \right) \) being minimal (where \(f\) is the norm from the definition). We know such an \(x\) to exist by the well ordering of \(\N_{0}\). Now, let \(y \in I\) and we find by the division algorithm that \( y= qx + r\) for some \(q, r \in R\) with \(f\left( r \right)  < f\left( x \right) \) and \(r = 0\). Hence, we find \(r = y - qx \in I\) as \(x \in I\) , \(y \in I\) . Suppose \(f\left( r \right)  < f\left( x \right) \), then \(\lightning\) as \(x\) is the minimal element of \(I\), hence, we find \(r = 0\), so \(y = qx\). Hence, we find \(y \in \left( x \right) \), so \(I = \left( x \right) \).
+\end{proof}
+
+\begin{definition}[Factorization]
+Let \(R\) be a commutative ring
+\begin{itemize}
+	\item A non-zero, non-unit \(p \in R\) so that for all \(x, y \in R\), we have \(p \mid xy\) implies \(p \mid x\) or \(p \mid y\) is called a \textbf{prime element}.
+	\item A non-zero, non-unit such that \(x = yz\) with \(y, z \in R\) implies either \(y\) or \(z\) is a unit is called an \textbf{irreducible} or an \textbf{atom}.
+\end{itemize}
+\end{definition}
+\begin{proposition}
+	\(p \in R\) is prime implies \(\left( p \right) \) is prime.
+\end{proposition}
+\begin{proof}
+	Suppose \(xy \in \left( p \right) \), so \(p \mid xy\) . Hence, \(p \mid x\) or \(p \mid y\) as \(p\) is prime. Hence, \( x \in \left( p \right) \) or \(y \in \left( p \right) \). As \(p\) is not a unit, we see \(\left( p \right) \neq R\), so \(\left( p \right) \) is prime.
+\end{proof}
+\begin{proposition}
+	If \(p \in R\) is irreducible, then \(\left( p \right) \) is maximal by inclusion among all proper principal ideals of \(R\).
+\end{proposition}
+\begin{proof}
+	Suppose \(\left( p \right) \subset \left( x \right) \subset R\), that is \(x\) is not a unit. Then, \(p \in \left( p \right) \subset \left( x \right) \), so \(p = rx\) for some \(r \in R\), but \(p\) is irreducible, so either \(r\) or \(x\) is a unit, but we know \(x\) to be a non-unit, so \(r\) must be a unit. So, \(\left( p \right)  = \left( rx \right) = \left( x \right) \), \(\lightning\),  as the unit will not change the ideal generated and \(\left( p \right) \) must be properly contained in \(\left(x  \right) \) .
+\end{proof}
+\begin{corollary}
+	If \(R\) is a PID, then \(p \in R\) being irreducible implies \(\left( p \right) \) is maximal.
+\end{corollary}
+\begin{proposition}
+	If \(R\) is an integral domain with \(p \neq 0\) and \(\left( p \right) \) being maximal among all proper principal ideals, then \(p\) is irreducible.
+\end{proposition}
+\begin{proof}
+	Suppose \( p = xy\), hence \(p \in \left( x \right) \) and \(p \in \left( y \right) \). Hence, \( \left( p \right) \subseteq \left( y \right) \) and as \(\left( p \right) \) is maximal, we have \(\left( y \right)  = \left( p \right) \) or \(\left( y \right)  = R\). If \(\left( y \right) = \left( p \right) \), then \( p = uy\) for some unit \(y\). But, \(p = xy = uy\), hence \(x = u\) as we're in an integral domain (with \(x, y \neq 0\)), so \(x\) is a unit. If \(\left( y \right)  = R\), then \(y\) is a unit, hence \(p\) is irreducible by an earlier lemma.
+\end{proof}
