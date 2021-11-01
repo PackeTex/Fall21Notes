@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1635524004 "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" "master.pdf" "master" 1635612523
+["pdflatex"] 1635784278 "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" "master.pdf" "master" 1635787714
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" 1635612523 249 ac9bf3f3281996cd47d2241f09ac7017 ""
+  "/home/memphisrex/school/masters/semester-1/Combinatorics/master.tex" 1635787714 249 0121575a5eb2b2a706cf79bb5ef36b3d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1617738065 3584 2d666ecf6d466d8b007246bc2f94d9da ""
@@ -225,14 +225,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
-  "lec_26.tex" 1635179500 113 1d8b2489570185dc7d8fbea0feabb7cc ""
   "lec_27.tex" 1635523999 272 519ae6f48a8d99948e8aafc4833e3d2e ""
-  "master.aux" 1635524006 106 2c926ee4d631683a28c0e9495aa48ee9 "pdflatex"
-  "master.tex" 1635612523 249 ac9bf3f3281996cd47d2241f09ac7017 ""
-  "master.toc" 1635524006 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "lec_28.tex" 1635780054 38 207d05761237f060976331fa756187db ""
+  "master.aux" 1635784280 106 2c926ee4d631683a28c0e9495aa48ee9 "pdflatex"
+  "master.tex" 1635787714 249 0121575a5eb2b2a706cf79bb5ef36b3d ""
+  "master.toc" 1635784280 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "ops.tex" 1633707999 366 8454741d16875dd142d1e2e1794a5523 ""
   (generated)
-  "master.toc"
-  "master.aux"
-  "master.log"
   "master.pdf"
+  "master.log"
+  "master.aux"
+  "master.toc"
