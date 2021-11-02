@@ -1,1 +1,45 @@
-\lecture{20}{Tue 02 Nov 2021 12:58}{}
+\lecture{20}{Tue 02 Nov 2021 12:58}{Derivatives (2)}
+\begin{recall}
+A monotone function on an interval has well defined limits at both its endpoints.
+\end{recall}
+
+\begin{definition}[Upper/Lower Derivatives]
+Let \(S \subseteq \R\), \(f: S \to \R\)
+\begin{itemize}
+	\item We define \(\overline{D}f\left( x \right) = \lim_{\tau \to 0}\sup \{ \frac{f\left( x+h \right) - f\left( x \right) }{h} : 0 < \left| h \right| < \tau \} \) to be the \textbf{upper derivative}.
+	\item We define \(\underline{D} f\left( x \right) = \lim_{\tau \to 0} \inf \{ \frac{f\left( x+h \right) - f\left( x \right) }{h} : 0 < \left| h \right| < \tau \} \) to be the \textbf{lower derivative}.
+	\item If, for some \(x \in \overset{\circ}{S}\), we find \(\overline{D}f\left( x \right) , \underline{D}f\left( x \right) \in \R\), with the upper and lower derivatives being equal, we say \(f\) is \textbf{differentiable} at \(x\).\\
+		We denote \(f^{\prime}\left( x \right) = \overline{D}f\left( x \right) = \underline{D}f\left( x \right) \).
+\end{itemize}
+\end{definition}
+We know, the limits of the upper and lower derivatives to be well defined as the supremum and infimum are monotone functions with respect to \(\tau\).
+\begin{proposition}
+	Let \(f: S \to \R\) and let \(x \in \overset{\circ}{S}\). Then, \(f\) is differentiable at \(x\) if and only if \[
+		\lim_{y \to x} \frac{f\left( y \right)  - f\left( x \right) }{y-x} = \lim_{h \to 0}\frac{f\left( x+h \right) - f\left( x \right) }{h} \in \R
+.	\]
+\end{proposition}
+That is, the classical derivative is equivalent to the lebesque derivative, so we will use the new definition for most proofs, but the old for most computations.
+\begin{theorem}[Mean-Value Theorem]
+	Let \(f: \left[ a, b \right]  \to \R\) be continuous and differentiable at every \(x \in \left( a, b \right) \) . Then, there exists \(\xi \in \left( a, b \right) \) so that \(f\left( b \right) - f\left( a \right)  = f^{\prime}\left( \xi \right) \left( b-a \right) \).
+\end{theorem}
+\begin{lemma}
+	Let \(f: \left[ a, b \right]  \to \R\) be increasing and suppose \(\overline{D}f\left( x \right) = \underline{D}f\left( x \right) \) for almost every \(x \in \left[ a, b \right] \). Then, \(\overline{D}f\left( x \right) \) and \(\underline{D}f\left( x \right) \) are finite almost everywhere. Moreover, \(f \) is differentiable almost everywhere (on \(\left[ a, b \right] \)). Furthermore, \(f^{\prime}\) is an integrable function and \[
+		\int_{\left[ a,b  \right] } f^{\prime} \le f\left( b \right) - f\left( a \right)
+	.\]
+\end{lemma}
+\begin{proof}
+	Extend \(f\) to \(\left[ a, \infty \right) \) by letting \(f\left( c \right) = f\left( b \right) \) for all \(c \ge b\). Define a sequence \(\left( g_{n} \right) \), \(g_{n}: \left[ a, b \right] \to \overline{\R}\) with \[
+		x \mapsto n\left( f\left( x + \frac{1}{n} \right) - f\left( x \right)  \right)
+	.\]
+	Then, b assumption, we know \(\left( g_{n}\left( x \right)  \right) \) to be convergent in \(\overline{\R}\) with limit \(f^{\prime}\left( x \right) \)  for almost every \(x \in \left( a, b \right) \). Each \(g_{n}\) is measurable, hence \(\lim_{n \to \infty}g_{n}\) is increasing, we see \(g\left( n \right) \ge 0\), hence \(\overline{D}f \ge 0\).\\
+	Applying Fatou's lemma yields
+	\begin{align*}
+		\int_{\left[ a, b \right] }\overline{D}f &=  \int_{\left[ a, b \right] }\liminf_{n \to \infty} f_{n} \\
+							 &\le \liminf_{n \to \infty} \int_{\left[ a, b \right] }g_{n} \\
+							 &= \liminf_{n \to \infty} n \left( \int_{\left[ a + \frac{1}{n}, b + \frac{1}{n} \right] }f - \int_{\left[ a, b \right] }f \right)  \\
+							 &= \liminf_{n \to \infty} \left( \underbrace{n\int_{\left[b, b+\frac{1}{n}\right]}f}_{= f\left( b \right) }  - \underbrace{n\int _{\left[ a, a + \frac{1}{n} \right] } f}_{\le f\left( a \right) } \right)   \\
+							 &\le f\left( b \right) - f\left( a \right)
+	.\end{align*}
+	We know the final inequality holds because \(f\) is constant on \(\left[ b, b + \frac{1}{n} \right] \) and though \(f\) is not constant, it is increasing on \(\left[ a, a + \frac{1}{n} \right] \) hence the upper bound of their difference is attained by \(f\left( a \right) \).\\
+	Consequently, \(\overline{D} f\) is integrable (so finite almost everywhere). And, since \(\overline{D}f = \underline{D}f\) , we find \(f^{\prime}\left( x \right) \) exists and equals \(\overline{D}f\left( x \right) \) for almost every \(x \in \left[ a, b \right] \).
+\end{proof}
