@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  2 NOV 2021 13:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  2 NOV 2021 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,6 +926,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 46.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48724pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48724pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
+
 [2]
 Overfull \hbox (33.7483pt too wide) detected at line 70
 []
@@ -937,6 +945,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 78.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48724pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48724pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
+
 [3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -977,7 +993,7 @@ re/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/f
 onts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/cm-super/sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sft
 i1000.pfb>
-Output written on master.pdf (4 pages, 231358 bytes).
+Output written on master.pdf (4 pages, 231780 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream

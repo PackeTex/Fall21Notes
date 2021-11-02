@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  2 NOV 2021 13:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  2 NOV 2021 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2040,6 +2040,14 @@ Overfull \hbox (34.29019pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48724pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48724pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
+
 [46]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2068,6 +2076,14 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48724pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48724pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
+
 [47]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2087,6 +2103,14 @@ Overfull \hbox (33.7483pt too wide) detected at line 70
 []
  []
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48724pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48724pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
+
 [48]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -2097,6 +2121,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 88.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 22.48724pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.48724pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
+
 [49]
 Overfull \hbox (0.98108pt too wide) in paragraph at lines 103--103
 []\T1/cmr/bx/n/14.4 Derivatives and Fun-da-men-tal The-o-rem of Cal-
@@ -2143,7 +2175,7 @@ usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf
 e1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
 per/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pf
 b>
-Output written on full.pdf (50 pages, 494850 bytes).
+Output written on full.pdf (50 pages, 495159 bytes).
 PDF statistics:
  303 PDF objects out of 1000 (max. 8388607)
  206 compressed objects within 3 object streams
