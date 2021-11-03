@@ -12,19 +12,19 @@
 
 \begin{solution}[18]
 	As \(\left[ a, b \right] \) is compact, we see \(f\) is uniformly continuous. Hence, there is a \(\delta > 0\) such that for all \(\epsilon > 0\) and \(x, y \in \left[ a, b \right] \) we find \(\left| x - y \right| < \delta\)  implies \(\left| f\left( x \right)  - f\left( y \right)  \right|  < \epsilon\).\\
-	Define the following sequence. Let \(y_0 = a\) and \(y_{i} = \max \{a + \delta  \cdot i, b\}\) for \(i \ge 0\). Then, we see \(\{\left[ y_{i-1}, y_{i } \right] : i \in \N\} \) is a cover and there is a \(n \ge 0\)  such that \(y_{n} = b\), hence \(y_{m} = b\) for \(m \ge n\) and we see \(\{\left[ y_{i-1}, y_{i} \right] : 1 \le i \le n\} \) is a finite subcover. Define \begin{align*}
+	Fix \(\epsilon > 0\), and  define the following sequence. Let \(y_0 = a\) and \(y_{i} = \max \{a + \delta  \cdot i, b\}\) for \(i \ge 0\). Then, we see \(\{\left[ y_{i-1}, y_{i } \right] : i \in \N\} \) is a cover and there is a \(n \ge 0\)  such that \(y_{n} = b\), hence \(y_{m} = b\) for \(m \ge n\) and we see \(\{\left[ y_{i-1}, y_{i} \right] : 1 \le i \le n\} \) is a finite subcover. Define \begin{align*}
 		g: \left[ a, b \right]  &\longrightarrow \R \\
-		x &\longmapsto g(x) = 	\left \{
-			\begin{array}{11}
-				f\left( y_{i-1} \right) , & \quad x \in \left[ y_{i-1}, y_{i} \right)  \\
-				f\left( b \right) , & \quad x = b
-			\end{array}
-			\right.
+		x &\longmapsto g(x) =
+				\frac{f\left( y_{i} \right) - f\left( y_{i-1} \right) }{y_{i} - y_{i-1}} \left( x - y_{i} \right) + f\left( y_{i} \right)   , & \quad \text{ for } x \in \left[ y_{i-1}, y_{i} \right]
 	.\end{align*}
-	That is, \(g\) is the piecewise constant (hence linear) interpolation of \(f\) on the \(y_{i}\)'s. Hence, for all \(x \in \left[ a, b \right] \)  there is a \(i \ge 1\) so that  \(x \in \left[ y_{i-1}, y_{i} \right) = \left[ y_{i-1}, y_{i-1} + \delta \right)  \) or \(x = b\) , hence \(\left| y_{i-1} - x \right| < \delta\) implies \(\left| f\left( y_{i-1} \right)  - f\left( x \right)  \right| < \epsilon \). Therefore, if \(g\left( x \right)  = f\left( y_{i-1} \right) \) we see \[
-		\left| g\left( x \right) - f\left( x \right)  \right|  < \epsilon
-	.\]
-	Otherwise, if \(x = b\), we have \(g\left( b	 \right) = f\left( b \right)  \) so the claim holds.
+	We see \(g\) is simply the piecewise linear interpolation of \(f\) on the \(y_{i}\)'s and it is well defined (the endpoints agree for each closed interval). Hence, for all \(x \in \left[ a, b \right] \) there is an \(i\ge 1\) such that \(x \in \left[ y_{i-1}, y_{i} \right]  = \left[ y_{i-1}, y_{i-1} + \delta \right] = \left[ y_{i} - \delta, y_{i} \right]  \), hence \(\left| y_{i-1} - x \right| < \delta\) and \(\left| y_{i} - x \right| < \delta\)  so we see \(\left| f \left( y_{i-1} \right)  - f\left( x \right)  \right| < \frac{\epsilon}{3} \) and \(\left| f\left( y_{i} \right) - f\left( x \right)  \right| < \frac{\epsilon}{3}\). Then, either \(f\left( y_{i-1} \right) \le g\left( x \right) \le f\left( y_{i} \right) \) or \(f\left( y_{i} \right) \le g\left( x \right) \le f\left( y_{i-1} \right) \) as \(g\) is the linear interpolation between these two points. Then, we see \(\left| f\left( y_{i} \right)  - g\left( x \right)  \right| \le \left| f\left( y_{i} \right)  - f\left( y_{i-1} \right)  \right| \). Hence, we find
+	\begin{align*}
+		\left| g\left( x \right) - f\left( x \right)  \right| &\le \left| f\left( y_{i} \right) - g\left( x \right)  \right|  + \left| f\left( x \right) - f\left( y_{i} \right)  \right| \\
+								      &\le \left| f\left( y_{i} \right) - f\left( y_{i-1} \right)  \right|  + \frac{\epsilon}{3}\\
+								      &\le \left| f\left( y_{i} \right) - f\left( x \right)  \right|  + \left| f\left( x \right) - f\left( y_{i-1} \right)  \right|  + \frac{\epsilon}{3}\\
+								      &< \frac{\epsilon}{3} + \frac{\epsilon}{3} + \frac{\epsilon}{3}\\
+								      &= \epsilon
+	.\end{align*}
 \end{solution}
 \newpage
 \begin{solution}[19]
@@ -110,8 +110,8 @@ Similairly, define \(x_{n}\) to be the same and \(y_{n} = 0\) for all \(n\). Hen
 \newpage
 \begin{solution}[22]
 \begin{enumerate}
-	\item It suffices to assume \(m\left( S \right)  < \infty\), because for all sets of infinite measure, we can choose a subset of finite measure and for a set of finite measure \(S^{\prime} \subseteq S\), we have \(S \cap \left( a, b \right)  \supseteq S^{\prime} \cap S\), so \(m\left( S \cap \left( a, b \right)  \right) \ge m\left( S^{\prime} \cap \left( a, b \right)  \right) \).\\
-		Then assuming \(m\left( S \right) \) finite, for \(\epsilon = \frac{1}{3} m\left( S \right) \), we find an open \(U\) with \(S \subseteq U\) and \(m\left( U \setminus S \right)  = \epsilon = \frac{1}{3} m\left( S \right) \). Hence, \(m\left( U \right)  = \frac{4}{3} m\left( S \right) \). As \(U\) is open it is the countable union of disjoint intervals \(\left( a_{i}, b_{i} \right) \) and \( m\left( U \right)  = \sum_{i= 1}^{\infty} \left( b_{i} - a_{i} \right) = \frac{4}{3} m\left( S \right)  \). Hence, \[
+	\item It suffices to assume \(m\left( S \right)  < \infty\), because for all sets of infinite measure, we can choose a subset of finite measure  \(S^{\prime} \subseteq S\)  and  \(S \cap \left( a, b \right)  \supseteq S^{\prime} \cap \left( a, b \right) \), so \(m\left( S \cap \left( a, b \right)  \right) \ge m\left( S^{\prime} \cap \left( a, b \right)  \right) \).\\
+		Then assuming \(m\left( S \right) \) finite, for \(\epsilon = \frac{1}{3} m\left( S \right) \), we find an open \(U\) with \(S \subseteq U\) and \(m\left( U \setminus S \right)  < \epsilon = \frac{1}{3} m\left( S \right) \). Hence, \(m\left( U \right)  < \frac{4}{3} m\left( S \right) \). As \(U\) is open it is the countable union of disjoint intervals \(\left( a_{i}, b_{i} \right) \) and \( m\left( U \right)  = \sum_{i= 1}^{\infty} \left( b_{i} - a_{i} \right) < \frac{4}{3} m\left( S \right)  \). Hence, \[
 			\sum_{i= 1}^{\infty} \frac{3}{4}\left( b_{i} - a_{i} \right) < m\left( S \right)
 		.\]
 		Suppose \(m\left( S \cap \left( a_{i}, b_{i} \right)  \right) \le \frac{3}{4}\left( b_{i}-a_{i} \right) \) for all the intervals \(\left( a_{i}, b_{i} \right) \) . Then,
@@ -156,15 +156,16 @@ Similairly, define \(x_{n}\) to be the same and \(y_{n} = 0\) for all \(n\). Hen
 \end{solution}
 \newpage
 \begin{solution}[28]
-	As \(\inf \{ \left| x-y \right|  : x \in A, y \in B \} = p > 0\), we see \(A \cap B = \O\). Then, we see for any coverings \(\{A_{k}\} \), \(\{B_{k}\} \) of \(A\) and \(B\) by open disjoint intervals, with \(A_{k} \cap B_{j} \neq \O\), for some \(k, j \in \N\), we find \(m^{*}\left( A_{k} \setminus B_{j} \right)  \le m^{*}\left( A_{k} \right)  + m^{*}\left( B_{j}^{c} \right) \le m^{*}\left( A_{k}  \right)  \) by subadditivity. Moreover, \(A_{k} \setminus B_{j}\) either empty, an interval, or the union of \(2\) intervals, hence a sufficient reordering of the covers \(\{A_{k}\}, \{B_{k}\}  \) yields a new pair of covers by disjoint open intervals \(\{\overline{A_{k}}\} , \{\overline{B}_{k}\} \) with \(\sum_{i= 1}^{\infty} \overline{A_{k}} \le \sum_{i= 1}^{\infty} A_{k}\) . Hence, every pair of coverings with intersection admits a disjoint pair of smaller cumulative measure, so we can assume all pairs of coverings are disjoint when passing to the infimum .\\
+	As \(\inf \{ \left| x-y \right|  : x \in A, y \in B \} = p > 0\), we see \(A \cap B = \O\). Then, we see for any coverings \(\{A_{k}\} \), \(\{B_{k}\} \) of \(A\) and \(B\) by open disjoint intervals, with \(A_{k} \cap B_{j} \neq \O\), for some \(k, j \in \N\), we find \(m^{*}\left( A_{k} \setminus B_{j} \right)  = m^{*}\left( A_{k} \cap B_{j}^{c} \right)  \le m^{*}\left( A_{k} \right)   \). Moreover, denoting \(A_{k} \setminus B_{j} = C_{k,j}\) , we see each \(C_{k, j}\) is either empty, an interval, or the union of \(2\) intervals (depending on how \(A_{k}\) and \(B_{j}\) intersect). If \(C_{k, j}\) is an interval or empty denote \(C_{k, j, 1} = C_{k, j}\), otherwise if \(C_{k, j}\) is the union of two intervals denote the one with a smaller left endpoint \(C_{k, j, 1}\) and the one with larger left endpoint \(C_{k, j, 2}\). Similairly, we see \(m^{*}\left( B_{j} \setminus A_{k} \right) \le m^{*}\left( B_{j} \right) \) and we can denote new intervals \(D_{k, j, 1} = B_{j} \setminus A_{k}\) if the difference is a single interval or \(D_{k, j, 1}, D_{k, j, 2}\) if the difference is the union of two intervals. All together, this yields two new coverings \(\{C_{k, j, n} : k, j \in \N, n \in \{1, 2\} \}\) and \( \{D_{k, j, n} : k, j \in \N, n \in \{1, 2\} \}  \). Now, as these collections are still countable we may reindex them to yield equivalent covers \(\{\overline{A}_{k} : k \in \N\} \), \(\{\overline{B}_{k} : k \in \N\} \) of \(A\) and \(B\) respectively  with \(\sum_{i= 1}^{\infty} m^{*}(\overline{A_{k}}) \le \sum_{i= 1}^{\infty} m^{*}(A_{k})\)  and \(\sum_{i= 1}^{\infty} m^{*}\left( \overline{B}_{k} \right) \le \sum_{i= 1}^{\infty} m^{*}\left( B_{k} \right) \) . Hence, every pair of coverings with intersection admits a disjoint pair of smaller cumulative measure, so we can assume all pairs of coverings are disjoint when passing to the infimum .\\
 	Now, we see
 	\begin{align*}
 		m^{*}\left( A \cup B \right) &=  \inf \{ \sum_{k= 1}^{\infty} \ell\left( J_{k} \right)  : \{J_{k} : k \in \N\} \in J\left( A \cup B \right)   \}  \\
 					     &= \inf \{ \sum_{k= 1}^{\infty} \ell\left( A_{k} \cup B_{k} \right)  : \{A_{k} : k \in \N\} \in J\left( A \right) , \{B_{k} : k \in \N\} \in J\left( B \right) , A_{k} \cap B_{j} = \O, j, k \in \N  \}  \\
-					     &= \inf \{ \sum_{k= 1}^{\infty} \ell\left( A_{k} \right)  + \ell\left( B_{k} \right)  : \{A_{k} : k \in \N\} \in J\left( A \right) , \{B_{k} : k \in \N\} \in B_{k}, A_{k} \cap B_{j} =\O, k, j \in \N  \}  \\
+					     &= \inf \{ \sum_{k= 1}^{\infty} \ell\left( A_{k} \right)  + \ell\left( B_{k} \right)  : \{A_{k} : k \in \N\} \in J\left( A \right) , \{B_{k} : k \in \N\} \in J(B), A_{k} \cap B_{j} =\O, k, j \in \N  \}  \\
 					     &\ge \inf \{ \sum_{k= 1}^{\infty} \ell\left( A_{k} \right)  : \{A_{k} : k \in \N\} \in J\left( A \right)   \}  + \inf \{ \sum_{k=1}^{\infty} \ell\left( B_{k} \right)  : \{B_{k} : k \in \N\} \in J\left( B \right)   \}\\
 					     &= m^{*}\left( A \right) + m^{*}\left( B \right)
 	.\end{align*}
+	We know this second step to be
 	But, applying subadditivity implies \(m^{*}\left( A \cup B \right)  \le m^{*}\left( A \right)  + m^{*}\left( B \right) \) for \(A, B\) disjoint. Hence \(m^{*}\left( A \cup B \right)  = m^{*}\left( A \right)  + m^{*}\left( B \right) \).
 \end{solution}
 \newpage

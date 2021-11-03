@@ -43,3 +43,49 @@ That is, the classical derivative is equivalent to the lebesque derivative, so w
 	We know the final inequality holds because \(f\) is constant on \(\left[ b, b + \frac{1}{n} \right] \) and though \(f\) is not constant, it is increasing on \(\left[ a, a + \frac{1}{n} \right] \) hence the upper bound of their difference is attained by \(f\left( a \right) \).\\
 	Consequently, \(\overline{D} f\) is integrable (so finite almost everywhere). And, since \(\overline{D}f = \underline{D}f\) , we find \(f^{\prime}\left( x \right) \) exists and equals \(\overline{D}f\left( x \right) \) for almost every \(x \in \left[ a, b \right] \).
 \end{proof}
+Later, we will prove equality holds precisely in the case of absolute continuity.
+\begin{definition}[Vitali Covering]
+	Let \(S \subseteq \R\). We call a collection of closed, bounded intervals (denoted \(\mathscr{C}\)) of positive length a \textbf{Vitali covering} of \(S \subseteq \R\) if for every \(x \in S\) and \(\epsilon > 0\) we find an \(I \in \mathscr{C}\) such that \(x \in I\) and \(l\left( I \right) < \epsilon \).
+\end{definition}
+\begin{example}
+	A vitali covering of \(S = \left[ 0, 1 \right] \) goes as follows. Let \(H = \Q \cap \left[ 0, 1 \right] \), then \( \mathscr{C} = \{\left[ x, x + h \right] : h \in H, x \in \left[ 0, 1 \right]  \} \).
+\end{example}
+\begin{theorem}[Vitali Covering Lemma]
+	Let \(\mathscr{C}\) be a Vitali covering of the set \(S \subseteq \R\) with \(m^{*}\left( S \right) < \infty\). Then, for every \(\epsilon > 0\) there is a finite, disjoint collection of intervals \(\{I_{k} \in \mathscr{C} : 1 \le k \le n\} \) such that \[
+		m^{*}\left( S \setminus \bigcup_{k=1} ^{n}I_{k} \right) < \epsilon
+	.\]
+\end{theorem}
+\newpage
+\begin{theorem}[Lebesque's Theorem]
+	Let \(f: I \to \R\) be a monotone function on an interval \(I \subseteq \R\). Then, \(f\) is differentiable at almost every \(x \in I\) and \(f^{\prime}\) is integrable on every interval \(\left[ a, b \right] \subseteq I\). In particular, if \(f\) is increasing, then \[
+		\int_{\left[ a, b \right] }f^{\prime} \le f\left( b \right)  - f\left( a \right)
+	.\]
+\end{theorem}
+\begin{proof}
+	It suffices to show \(I\) is open and bounded, else we could replace \(I\) by \(\overset{\circ}{I} \cap \left( -n, n \right) \) for \(n \in N\) and we find \(\overset{\circ}{I} = \bigcup_{n \in \N} \overset{\circ}{I}\cap \left( -n, n \right) \) . Similarly, we can assume \(f\) to be increasing. Hence, for all \(x \in I\), we have \(0 \le \underline{D} f\left( x \right)  \le \overline{D}f\left( x \right) \le \infty\). So, we need only show \(\overline{D}f\left( x \right)  = \underline{D} f\left( x \right) \) with this quantity being finite for almost every \(x \in I\).\\
+	For \(p, q \in \Q\) and \(p > q > 0\), define \(E_{p, q} = \{x \in I : \underline{D} f\left( x \right) < q < p < \overline{D}f\left( x \right) < \infty\} \). Then, \[
+		\{x \in I : \underline{D} f\left( x \right) < \overline{D}f\left( x \right) < \infty\} = \bigcup_{p, q \in Q^{+}} E_{p, q}
+	.\]
+	If \(f\) fails to be differentiable at \(x \in I\), then either \(x \in E_{p, q}\) for some \(p, q \in \Q\) or \(\overline{D}f\left( x \right) = \infty\). We know \(\overline{D}f\) to be finite almost everywhere, so by subadditivity, we need only show the other component, \(E_{p, q}\), has measure \(0\).\\
+	Fix \(p, q \in \Q\) and suppose \(m^{*}\left( E_{p, q} = m_0 \right) \). Then, \(m_0 \in \left[ 0, \infty \right) \) by the boundedness assumption. Given \(\epsilon > 0\) there is a nonempty open \(U\) such that \(E_{p, q} \subseteq U\) and \(m\left( U \right) < m_0 + \epsilon\). Suppose \(x \in E_{p, q}\) . Since \( \underline{D}f\left( x \right) < q\) by definition of \(E_{p, q}\); for every \(\delta > 0\) we find a \(0 < h < \delta\) such that \(\left[ x, x+ h \right] \subseteq U\) and \(f\left( x + h \right) - f\left( x \right)  < qh\) or \(\left[ x - h, x \right] \subseteq U\) and \(f\left( x \right) - f\left( x-h \right) \le qh\).\\
+	The collection \(\mathscr{L}\) of all such intervals \(\left[ x, x + h \right] \) or \(\left[ x - h, x \right] \)  for a fixed \(\delta > 0\) and \(x \in E_{p, q}\) forms a Vitali covering of \(E_{p, q}\). We find all intervals \(\left[ a, b \right] \in \mathscr{L}\) have the property \(f\left( b \right)  - f\left( a \right) < q \left( b-a \right) \) by the earlier observation. Then, by the Vitali covering lemma, there is a finite, disjoint collection of intervals \(\{I_{n} \in \mathscr{L} : 1 \le n \le N\} \) such that for \(V = \bigcup_{ n=1} ^{N}I_{n}\), we have \(m^{*}\left( E_{p, q}\setminus V \right)< \epsilon \). Note that \(m\left( V \right) < m_0 + \epsilon\) since \(V \subseteq U\). Since \(m^{*}\left( E_{p, q}\setminus V \right) + m^{*}\left( E_{p, q}\cap V \right) \ge m_0 \) since the two sets together contain \(E_{p, q}\) , we have \(m^{*}\left( E_{p, q}\cap V \right)\ge m_0 - \epsilon \).\\
+	Now, we follow a similair construction. If \(x \in E_{p, q}\cap V\) , then \(p < \overline{D}f\left( x \right) \) implies for all \(\delta > 0\) there is an \( 0 < h < \delta\) such that \(\left[ x, x + h \right] \subseteq V\) and \(f\left( x + h \right) - f\left( x \right) \ge ph\) or \(\left[ x-h ,x \right] \subseteq V\) and \(f\left( x \right) - f\left( x-h \right) \ge ph\) . The collection \(\mathscr{U}\) of all such intervals \(\left[ x, x+h \right] \) or \(\left[ x-h, x \right] \) for a fixed \(\delta >0\) and \(x \in E_{p, q}\cap V\) is a vitali covering of \(E_{p, q}\cap V\). Moreover, if \(\left[ c, d \right] \in \mathscr{U}\) , then \(f\left( d \right) -f\left( c \right)  \ge p\left( d-c \right) \). Applying Vitali Covering lemma yields a finite disjoint collection of intervals \(\{I_{k} \in \mathscr{U} : 1\le k \le K\} \) such that for \(W = \bigcup_{k=1} ^{K}J_{k}\) , we have \(m^{*}\left( \left( E_{p, q}\cap V \right) \setminus W \right) < \epsilon\). Since \[
+		m^{*}\left( \left( E_{p, q}\cap V \right)\setminus W  \right) + m\left( W \right)  \ge m^{*}\left( E_{p, q}\cap V \right)
+	\] we have that \(m\left( W \right) \ge m_0 - 2\epsilon \).\\
+	We know each interval \(J_{k} = \left[ c_{k} ,d_{k} \right] \) from \(W\)  must be contained in \(V\), furthermore it is contained in an interval \(I_{n} = \left[ a_{n}, b_{n} \right] \) of \(V\). As each interval is disjoint and monotonic, we must have that \[
+		\sum_{k=1}^{K} \left( f\left( d_{k} \right) - f\left( c_{k} \right)   \right)  \le \sum_{n=1}^{N} \left( f\left( b_{n} \right)- f\left( a_{n} \right)   \right)
+	.\]
+	Now, since \(I_{n} \in \mathscr{L}\) and \(J_{k} \in \mathscr{U}\) , we have
+	\begin{align*}
+		p \sum_{k=1}^{K} \left( d_{k} - c_{k} \right)  &=  pm\left( w \right)  \\
+							       &\le qm\left( V \right) \\
+							       &= q \sum_{n=1}^{N} \left( b_{n} - a_{n} \right)  \\
+	.\end{align*}
+	Hence, \(p\left( m_0 - 2\epsilon \right) \le q\left( m_0 + \epsilon \right) \) for each \(\epsilon > 0\), so \(pm_0 \le qm_0\) and as \(p > q\), we must have \(m_0 = 0\), so \(f\) is differentiable on all but sets of measure \(0\), so it is differentiable almost everywhere.
+\end{proof}
+\begin{corollary}
+	If the function \(f: \left[ a, b \right]  \to \R\) is of bounded variation on the interval \(\left[ a, b \right] \subseteq \R\), then it is differentiable at almost every \(x \in \left[ a, b \right] \). Consequently, if \(f\) is absolutely continuous on \(\left[ a, b \right] \), then it is differentiable at almost every \(x \in \left[ a, b \right] \).
+\end{corollary}
+\begin{proof}
+	Bounded variation implies \(f = g-h\) for increasing functions \(g, h\). Applying lebesque's theorem yields \(g, h\) are differentiable almost everywhere, hence \(f\) is differentiable almost everywhere.
+\end{proof}
