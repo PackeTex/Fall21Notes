@@ -1,1 +1,25 @@
 \lecture{30}{Wed 03 Nov 2021 11:32}{Ring Theory (5)}
+Again, we suppose \(R\) to be commutative unless otherwise stated.
+\begin{proposition}
+	If \(R\) is an integral domain with \(p \in R\) being prime, then \(p\) is irreducible.
+\end{proposition}
+\begin{proof}
+	We know \(p\) is nonzero and a non-unit. Then, suppose \(p = xy\)  \(x, y \in R\). Since \(p\) prime, we see \(p \mid xy\) implies \(p \mid x\) or \(p \mid y\). WLOG, suppose \(p \mid x\), then \(x \in\left( p \right) \) , so \(x = rp\) for an \(r \in R\). Then, we see \[
+		p = xy = \left( rp \right) y = \left( ry \right) p
+	.\]
+	Canceling \(p\) yields \(1 = ry\), so \(y\) is a unit. Hence, \(p\) is irreducible.
+\end{proof}
+\begin{remark}
+	Here are a few basic facts about principal ideals, prime ideals, etc. we have shown, compiled together:
+	\begin{itemize}
+		\item \(x \mid y \iff y \in \left( x \right) = Rx\).
+		\item \(x \mid y\) and \(y \mid x \iff \left( x \right)  = \left( y \right) \).
+		\item  If \(R\) is an integral domain with \(x \neq 0\) then \(\left( x \right)  = \left( y \right) \iff ux = y\) for a unit \(u\).
+		\item \(\left( x \right)  = R \iff x\) is a unit.
+		\item \(p \in R\) is prime implies \(\left( p \right)\)  is a prime ideal.
+		\item \(\left( p \right) \) is a prime ideal and \(p \neq 0\) implies \(p \in R\) is prime.
+		\item \(p \in R\) irreducible implies \(\left( p \right) \)  is maximal among all proper principal ideals.
+		\item If \(R\) is an integral domain and \(p \neq 0\) , then \(\left( p \right) \subset R\) is maximal among principal ideals \(\iff p \in R\) is irreducible.
+		\item If \(R\) is an integral domain with \(p \in R\) being prime then \(p\) is also irreducible.
+	\end{itemize}
+\end{remark}
