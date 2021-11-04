@@ -1,0 +1,84 @@
+\lecture{21}{Thu 04 Nov 2021 13:03}{Fundamental Theorem of Calculus}
+For the duration of this lecture, \(\left[ a, b \right] \) will denote a compact interval in \(\R\), principally, it is not in \(\overline{\R}\).
+\begin{lemma}
+	Suppose \(f: \left[ a, b \right]  \to \overline{\R}\) is integrable. Then, \(f = 0\) almost everywhere if and only if \(\int_{\left[ a, x \right] } f = 0\) for all \(x \in \left[ a, b \right] \).
+\end{lemma}
+\begin{proof}
+	If \(f = 0\) almost everywhere, then the integral must be \(0\) for all \(x \in \left[ a, b \right] \) so the forward implication holds.\\
+	Conversely, assume \(\int _{\left[ a, x \right] } f = 0\) for all \(x \in \left[ a,b \right] \). Then, let \(E = \{x \in \left[ a, b \right] : f\left( x \right)  > 0 \} \) and assume \(m\left( E \right) > 0\). Then, there is a closed set \(C \subset E\) so that \(m\left( C \right) > 0\). Letting \(O = \left( a, b \right) \setminus C\)  (an open set) we see \(\int _{\left[ a, b \right] } f = \int_{C} f + \int _{O} f\) and as \(\int_{C}f > 0\) as \(C \subseteq E\) with \(m\left( C \right) > 0\). Hence, we find \(\int _{O} f \neq 0\). Hence, \(m\left( O \right)  > 0\), and there is an interval \(\left( c, d \right) \subseteq O\) so that \(\int_{\left[ c, d \right] } \neq 0\). Since \(\int_{\left[ a, d \right] = 0}\) by assumption, then we find \(\int_{\left[ a, d \right] }f = \int_{\left[ a, c \right] } f + \int_{\left[ c, d \right] } f\), hence \(\int_{\left[ a, c \right] }f \neq 0\) \(\lightning\).
+\end{proof}
+\begin{proposition}
+	Syppose \(g: \left[ a , b \right]  \to \R\) is continuous. For every \(x \in \left[ a, b \right) \) and \(\epsilon > 0\) there is a \(\delta\) with \(0 < \delta < b-x\) such that \[
+		\left| \frac{1}{h} \int_{x, x+h} (g - g\left( x \right))  \right|  < \epsilon \text{ for \(0 < h < \delta\) }
+	.\]
+
+\end{proposition}
+\begin{proof}
+	Write \(g\left( x \right)  = g\left( x \right) \chi_{\left[ x, x + h \right] }\). Then the claim immediately follows.
+\end{proof}
+\begin{theorem}[Fundamental Theorem of Calculus I]
+Suppose \(f: \left[ a, b \right]  \to \overline{\R}\) is integrable. Then the function \begin{align*}
+	F: \left[ a, b \right]  &\longrightarrow \R \\
+	x &\longmapsto F(x) = \int_{\left[ a, x \right] }f
+\end{align*} is absolutely continuous and differentiable almost everywhere with \(F^{\prime} = f\) almost everywhere.
+\end{theorem}
+\begin{proof}
+	It is clear that \(F\) is absolutely continuous and differentiable almost everywhere by a result from last lecture and the fact that absolute continuity \(\implies\) bounded variation \(\implies\) differentiable a.e.\\
+	Moreover, we can assume \(f \ge 0\), otherwise replacing \(f\) by \(f^{+}\) or \(f^{-}\). We can temporarily assume \(f\) is bounded (though we will later remove this requirement). Let \(f\left( x \right) \le M\) for all \(x \in \left[ a, b \right] \). Then, extend \(f, F\) to functions on \(\left[ a, \infty \right) \) by letting \(f\left( x \right) = f\left( b \right) \) for all \(x \ge b\). Define the following sequence of continuous functions \(\left( g_{n} \right) \) \begin{align*}
+		g_{n}: \left[ a, b \right]  &\longrightarrow \overline{\R} \\
+		x &\longmapsto g_{n}(x) = n\left( F\left( x + \frac{1}{n} \right) - F\left( x \right)  \right) &= n \left( \int_{a, x + \frac{1}{n}}f - \int_{a, x} f \right)\\
+		  & &= n \int_{\left[ x, x + \frac{1}{n} \right] }f
+	.\end{align*}
+	Then, we find the sequence is pointwise convergent with limit \(F^{\prime}\left( x \right) \) for almost every \(x \in \left[ a, b \right] \). Furthermore, \(F^{\prime}\) is measurable and \(0 \le g_{m} \le M\) for all \(x \in \left[ a, b \right] \). So,applying dominated convergence and the previous proposition yields \(g_{m}\) is dominated by \(M\) with pointwise limit \(F^{\prime}\), so \(F^{\prime} \le M\) almost everywhere. So, \(F^{\prime}\) is integrable and for all \(x \in \left[ a, b \right] \) we find \begin{align*}
+		\int_{\left[ a, x \right] }F^{\prime} &= \lim_{n \to \infty}\int_{\left[ a, x \right] }g_{n}\\
+						      &= \lim_{n \to \infty} n( \int_{\left[ a + \frac{1}{n}, x + \frac{1}{n} \right] } F - \int_{\left[ a, x \right] } F ) \\
+						      &= \lim_{n \to \infty} n \left(  \int_{\left[x, x + \frac{1}{n}\right]} F - \int_{\left[ a, a + \frac{1}{n} \right] } F \right)  \\
+						      &= F\left( x \right)  - F\left( a \right)\\
+						      &=  F\left( x \right)
+.\end{align*}
+Now, if \(f\) was unbounded, then define the sequences \(\left( f_{n} \right) \) and \(\left( F_{n} \right) \) with \begin{align*}
+	f_{n}: \left[ a, b \right]  &\longrightarrow \overline{\R} \\
+	x &\longmapsto f_{n}\left(x  \right) = \inf \{ f\left( x \right) , n  \} \\
+	F_{n}: \left[ a, b \right]   &\longrightarrow \overline{\R} \\
+	x &\longmapsto F_{n}\left( x \right) = \int_{\left[ a, x \right] }f_{n}
+.\end{align*}
+Since \(f - f_{n} \ge 0\) , we see \(F - F_{n}\) is increasing for each \(n\). Hence, \(F - F_{n}\) is differentiable almost everywhere with \(\left( F - F_{n} \right)^{\prime} \ge 0 \) almost everywhere. Consequently for \(x \in \left[ a,b \right] \) we see \[
+	\int_{\left[ a, x \right] } F^{\prime} \ge \int_{\left[ a, x \right] } F_{n}^{\prime}
+\] for all \(x \in \left[ a, b \right] \). Since \(F_{n}\) is bounded for all \(n\) , we see \(\int_{\left[ a, x \right] }F_{n}^{\prime} = F_{n}\left( x \right) \) by the bounded case. Thus, \(\int_{\left[ a, x \right] }F^{\prime} \ge F_{n}\left( x \right) \) for all \(x \in \left[ a, b \right] \).\\
+Now, applying \(MCT\), we see \(\left( f_{n} \right) \) is a pointwise convergent sequence of functions which are increasing the \(F_{n}\)s also converge pointwise to \(F\) on \(\left[ a, b \right] \).  Hence, \(\int_{\left[ a, x \right] }F ^{\prime} \ge F\left( x \right) \) for ever \(x \in \left[ a, b \right] \)  by passing the earlier inequality to the limit. Since \(f\) is nonnegative, we see \(F\) is increasing, so we also have \(\int_{\left[ a, x \right] }F^{\prime} \le F\left( x \right) - F\left( a \right) = F\left( x \right) \). Hence \(\int_{\left[ a, x \right] }F^{\prime} = F\left( x \right) \) since \[
+	\int_{\left[ a, x \right] }\left( F^{\prime} - f \right) = \int_{\left[ a, x \right] } F^{\prime} - \int_{\left[ a, x \right] } f = \int_{\left[ a, x \right] }F^{\prime} - F\left( x \right) = 0   \text{ for a.e. }  x \in \left[ a ,b \right]
+.\]
+\end{proof}
+In order to prove the other part of the fundamental theorem of calculus, we will need the following lemma:
+\begin{lemma}
+If the function \(f: \left[ a, b \right]  \to \R\) is absolutely continuous with \(f^{\prime} = 0\) almost everywhere then \(f\) is a constant function.
+\end{lemma}
+\begin{proof}
+	We will show \(f\left( c \right)  = f\left( a \right) \) for all \(c \in \left( a, b \right] \). Fix \(c \in \left( a, b \right] \) and let \(E = \{x \in \left( a, c \right) : f^{\prime} \text{ exists at } x,  f^{\prime}\left( x \right)  = 0\}\).\\
+	By assumption, \(m\left( E \right)  = c - a > 0\) , hence for \(\epsilon > 0\) choose \(\delta > 0\) such that absolute continuity holds. For each \(x \in E\) and \( k > 0\) , we see there is an \(h \in \left( 0, k \right) \) with either \(\left[ x, x + h \right] \subseteq \left[ a, c \right] \) and \(\left| f\left( x + h \right) - f\left( x \right)   \right| < \epsilon h \) or \(\left[ x - h, x \right] \subseteq \left[ a, c \right] \) and \(\left| f\left( x - h \right) - f\left( x \right)  \right| < \epsilon h\) (or both). Then, the collection \(\mathscr{C}\) of these intervals for all \(k > 0\) and \(x \in E\) is a vitali covering of \(E\). By the Vitali covering lemma, we find a finite disjoint collection \(\{\left[ x_{k}, y_{k} \right] \in \mathscr{C} : 1 \le k \le n\} \) so that \(V = \bigcup_{k=1} ^{N}\left[ x_{k}, y_{k} \right] \) has \(m\left( E \setminus V \right)  < \delta\). Reindex these intervals such that \(x_{k} < x_{k+1}\) for all \(k\) and let \(y_0 = a\) , \(x_{n + 1} = c\). Then, we see \[
+	a = y_0 \le x_1 < y_1 < x_2 < y_2 < \ldots < x_{n} < y_{n} \le x_{n + 1} = c
+	.\]
+	Hence, the set \(P = \{x_{i} : 1 \le i \le n + 1\} \cup \{y_{i} : 1 \le i \le n + 1\}  \) is a partition of \(\left[ a, c \right] \). Since \[
+		\sum_{k=1}^{n} \left( y_{k} - x_{k} \right)  = m\left( V \right)  > m\left( E \right)  = c - a - \delta
+	\]
+	we see the leftover pieces \[
+		\sum_{k=0}^{n} \left( x_{k+1} - y_{k} \right) \le m\left( E \setminus V \right) < \delta
+	.\]
+	Since \(f\) is absolutely continuous, we see \(\sum_{k=0}^{n} \left| f\left( x_{k+1} \right) - f\left( y_{k} \right)\right| < \epsilon  \).\\
+Consequently,
+\begin{align*}
+	\left| f\left( c \right)  - f\left( a \right)  \right| &\le \sum_{k=1}^{n} \left| f\left( y_{k} \right) - f\left( x_{k} \right)   \right| + \sum_{k=0}^{n} \left| f\left( x_{k+1}- f\left( y_{k} \right)  \right)  \right| \\
+							       &< \sum_{k=1}^{n} \epsilon\left( y_{k} - x_{k} \right) + \epsilon \\
+							       &\le \epsilon\left( c-a \right)  + \epsilon
+\end{align*} for all \(\epsilon > 0\), so we see \(f\left( c \right) - f\left( a \right)  = 0\) for all \(c \in \left( a, b \right] \) and the claim follows.
+\end{proof}
+\begin{theorem}[Fundamental Theorem of Calculus II]
+Suppose the function \(F: \left[ a, b \right]  \to \R\) is absolutely continuous. Then, \(F\) is differentiable almost everywhere and its derivative, \(F^{\prime}\), is integrable with \[
+	\int_{\left[ a, x \right] }F^{\prime} = F\left( x \right) - F\left( a \right)
+\] for all \(x \in \left[ a, b \right] \).
+\end{theorem}
+\begin{proof}
+Since \(F\) is absolutely continuous, it is of bounded variation, so there are two increasing functions, \(T, S : \left[ a, b \right] \to \R\) 	with \(F = T - S\). Moreover, the derivatives \(T^{\prime}, S^{\prime}\) exist almost everywhere and are integrable.\\
+Hence, \(F^{\prime}\) exists almost everywhere and \(F^{\prime} = T^{\prime} - S^{\prime}\) almost everywhere, so it is integrable as well.\\
+Then, letting \(G\left( x \right) = \int_{\left[ a, x \right] } F^{\prime}\). We see \(G\) is absolutely continuous, so \(F - G\) must be absolutely continuous. Then, by the FTC part \(1\), we see \(\left( F - G \right) ^{\prime}\) exists almost everywhere and \(\left( F - G \right) ^{\prime}\left( x \right) = 0 \) for almost every \(x \in \left[ a, b \right] \). Hence \(F - G\) is a constant function. So, we see \(F\left( x \right) - G\left( x \right)  = F\left( x \right)  - \int_{\left[ a, x \right] }F^{\prime} = F\left( a \right) \) by letting \(x = a\).
+\end{proof}

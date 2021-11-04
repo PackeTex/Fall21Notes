@@ -1,15 +1,11 @@
 \documentclass[a4paper]{article}
 \input{preamble.tex}
 \usepackage{pdfpages}
-\title{Analysis I: Homework III}
+\title{Analysis I: Homework III Corrections}
 \date{Fri 10 Sep 2021 12:58}
 \input{../ops.tex}
 \begin{document}
 \maketitle
-\begin{solution}[17]
-\end{solution}
-\newpage
-
 \begin{solution}[18]
 	As \(\left[ a, b \right] \) is compact, we see \(f\) is uniformly continuous. Hence, there is a \(\delta > 0\) such that for all \(\epsilon > 0\) and \(x, y \in \left[ a, b \right] \) we find \(\left| x - y \right| < \delta\)  implies \(\left| f\left( x \right)  - f\left( y \right)  \right|  < \epsilon\).\\
 	Fix \(\epsilon > 0\), and  define the following sequence. Let \(y_0 = a\) and \(y_{i} = \max \{a + \delta  \cdot i, b\}\) for \(i \ge 0\). Then, we see \(\{\left[ y_{i-1}, y_{i } \right] : i \in \N\} \) is a cover and there is a \(n \ge 0\)  such that \(y_{n} = b\), hence \(y_{m} = b\) for \(m \ge n\) and we see \(\{\left[ y_{i-1}, y_{i} \right] : 1 \le i \le n\} \) is a finite subcover. Define \begin{align*}
@@ -27,87 +23,6 @@
 	.\end{align*}
 \end{solution}
 \newpage
-\begin{solution}[19]
-	First, we prove the second inequality.	\\If one of \(\limsup_{n \to \infty} x_{n}, \limsup_{n \to \infty} y_{n} = \infty\) (and the other is not \(-\infty\)), we have \[
-		\limsup_{n \to \infty} \left( x_{n} + y_{n} \right)  \le \infty
-	.\]
-	Hence, we may assume neither limit superior to be \(\infty\). Similarly, if \(\liminf_{n \to \infty} x_{n} = -\infty\) we see \(-\infty \le \limsup_{n \to \infty} \left( x_{n} + y_{n} \right) \). Hence, we can assume the limit inferior to not take on \(-\infty\).  Then, we know
-	\[
-	\inf \{ x_{n} : n \ge K\} +\sup \{ y_{n} : n\ge K \} \le \sup \{ x_{n} + y_{n} : n \ge K \} \le \sup \{ x_{n} : n\ge K \} + \sup \{ y_{n} : n\ge K \}
-	.\]  Hence, we have
-	\begin{align*}
-		\lim_{K \to \infty}\sup \{ x_{n}  + y_{n}: n\ge K \} &\le \lim_{K \to \infty} \left( \sup \{ x_{n} : n\ge K  \}  + \sup \{ y_{n} :n \ge K  \}  \right) \\
-								     &= \lim_{K \to \infty}\sup \{ x_{n} : n\ge K \} + \lim_{K \to \infty}\sup \{ y_{n} : n \ge K \} \\
-								     &= \limsup_{n \to \infty} x_{n} + \limsup_{n \to \infty} y_{n}
-	.\end{align*}
-Moreover,
-\begin{align*}
-	\liminf_{n \to \infty} x_{n} + \limsup_{n \to \infty} y_{n} &= \lim_{K \to \infty}\left( \inf \{ x_{n} : n\ge K \} + \sup \{ y_{n} : n \ge K \}  \right)  \\
-								    &\le \lim_{K \to \infty} \left( \sup \{ x_{n} + y_{n} : n \ge K \}  \right)\\
-								    &= \limsup_{n \to \infty} (x_{n} + y_{n})
-.\end{align*}
-Consider the following two sequences
-\begin{align*}
-	x_{n} &= \left \{
-		\begin{array}{11}
-			1, & \quad n \equiv 1 \left( \mod 2 \right)  \\
-			-1, & \quad n \equiv 0 \left( \mod 2 \right)
-		\end{array}
-		\right.\\
-		y_{n} &=  \left \{
-			\begin{array}{11}
-				-1, & \quad n \equiv 1 \left( \mod 2 \right)  \\
-				1, & \quad n \equiv 0 \left( \mod 2 \right)
-			\end{array}
-			\right. \\
-.\end{align*}
-Obviously \(\sup \{ x_{n} : n \ge K \} = \sup \{ y_{n} : n\ge K \} = 1\) for all \(K\). On the other hand, we see \(x_{n} + y_{n} = 0\) for every \(n \in \N\), hence \(\sup \{ x_{n} + y_{n} : n \ge K \}  = 0\) for all \(K\). As these values hold for all \(K\), we see the limit has no effect hence
-\begin{align*}
-	\limsup_{n \to \infty} x_{n} + y_{n} &= \lim_{k \to \infty}\left( \sup \{ x_{n} + y_{n} : n \ge K \}  \right) \\
-&= \lim_{K \to \infty} 0 \\
-&= 0 \\
-&< 1\\
-&= \lim_{K \to \infty}(\sup \{ x_{n} : n\ge K \}  + \sup \{ y_{n} : n\ge K \} ) \\
-&= \limsup_{n \to \infty} x_{n} + \limsup_{n \to \infty} y_{n} \\
-.\end{align*}
-Similairly, define \(x_{n}\) to be the same and \(y_{n} = 0\) for all \(n\). Hence, \(\sup \{ y_{n} :  n\ge k \} = 0\) and \(\inf \{ x_{n} : n\ge K \} = -1\) for all \(K\) with \(\sup \{ x_{n} + y_{n} : n \ge K \} = 1\) for all \(K\). Hence as these hold for all \(K\), we find
-\begin{align*}
-	\liminf_{n \to \infty} x_{n} + \limsup_{n \to \infty} y_{n} &= -1 + 0 \\
-	&= -1 \\
-	&\le \limsup_{n \to \infty} \left( x_{n} + y_{n} \right)\\
-	&= 1 \\
-.\end{align*}
-\end{solution}
-\newpage
-\begin{solution}[20]
-	\begin{itemize}
-		\item If \(x \in A \triangle B\), then WLOG let \(x \in A \setminus B\). So, \(x \in A \subseteq C\) and \(a \not\in B\). Hence, \(x \in C \setminus B\) and \(x\not\in C \setminus A\), so \(x \in \left( C \setminus B \right) \setminus \left( C \setminus A \right) \). So, \(x \in \left( C \setminus A \right) \triangle \left( C \setminus B \right) \).
-		\item If \(x \in \left( C \setminus A\right) \triangle \left( C \setminus B \right)  \), then WLOG let \(x \in (\left( C \setminus A \right) \setminus \left( C \setminus B \right) \). Then, note if \(x \in C\) and \(x \not\in C \setminus B\), then \(x \in B\). So, we see
-			\begin{align*}
-				x \in \{x \in C\setminus A : x \not\in C \setminus B\} &=  \{x \in C : x \not\in A, x \not\in C \setminus B\}  \\
-				&= \{x \in C : x\not\in A, x \in B\} \\
-				&= \{x \in C : x \in B \setminus A\}  \\
-				&= C \cap (B\setminus A) \\
-				&= B \setminus A \\
-			.\end{align*}
-			Hence, \(x \in B \setminus A\), so \(x \in  A \triangle B\).
-	\end{itemize}
-	If \(C = \R\), we see \(A \triangle B = \left( \R \setminus A \right) \triangle \left( R \setminus B \right) = A^{c} \triangle B^{c}\).
-\end{solution}
-\newpage
-\begin{solution}[21]
-	As \(S\) is measurable and finite, there is an open \(O\) of finite measure such that \(S \subseteq O\) and for all \(\epsilon > 0\), we find \(m\left( O \setminus S \right)  < \frac{\epsilon}{4}\). As \(O\) is the countable disjoint union of intervals \(\{I_{j} : j \in \N\} \) , we see \( m\left( O \right) = \sum_{i= 1}^{\infty} m( I_{j} )  \) , by countable additivity. As this series is finite we see for all \(\epsilon > 0\), there is a \(K\)  such that \[\left| \sum_{j= 1}^{\infty} m (I_{j}) - \sum_{k= 1}^{K} m (I_{k}) \right| = \left| m \left( O \right) - \sum_{k= 1}^{K} m\left( I_{k} \right)  \right| < \frac{\epsilon}{4}  .\] Denote \(U = \bigcup_{i=1} ^{K} I_{j}\). Clearly, \(U\) is measurable and of finite measure and  \[\left| m\left( O \right) - m\left( U \right)  \right| = m\left( O \setminus U \right)  < \frac{\epsilon}{4} . \]	Hence as \(U, S \subseteq O\) , we find \[
-		S \triangle U = \left( O \setminus S \right) \triangle \left( O \setminus U \right)
-	.\]
-	So, as \(\left( O \setminus S \right)  \setminus \left( O \setminus U \right) \) is disjoint from \(\left( O \setminus U \right)  \setminus \left( O \setminus S \right) \) and all measures are finite, we see
-	\begin{align*}
-		m\left( S \triangle U \right) &=  m\left( \left( O \setminus S \right) \setminus \left( O \setminus U \right)  \right) \right| + \left| m\left( \left( O \setminus U \right) \setminus \left( O\setminus S \right)  \right) \right|  \\
-						&\le \left| m\left( O\setminus S \right) - m\left( O\setminus U \right) \right| + \left|m\left( O\setminus U \right)  - m\left( O \setminus S \right) \right|   \\
-						&\le 2 m\left( O \setminus S \right)  +  2 m\left( O \setminus U \right) \\
-						&< \frac{2\epsilon}{4} + \frac{2\epsilon}{4} = \epsilon \\
-	.\end{align*}
-\end{solution}
-\newpage
 \begin{solution}[22]
 \begin{enumerate}
 	\item It suffices to assume \(m\left( S \right)  < \infty\), because for all sets of infinite measure, we can choose a subset of finite measure  \(S^{\prime} \subseteq S\)  and  \(S \cap \left( a, b \right)  \supseteq S^{\prime} \cap \left( a, b \right) \), so \(m\left( S \cap \left( a, b \right)  \right) \ge m\left( S^{\prime} \cap \left( a, b \right)  \right) \).\\
@@ -122,67 +37,8 @@ Similairly, define \(x_{n}\) to be the same and \(y_{n} = 0\) for all \(n\). Hen
 					   &< m\left( S \right) \lightning
 		.\end{align*}
 		Hence, we have atleast one \(\left( a_{i}, b_{i} \right) \) such that \(m\left( S \cap \left( a_{i}, b_{i} \right)  \right) > \frac{3}{4}\left( b_{i}-a_{i} \right)  \).
-\item First, note that \(S \cap \left( r + S \right)  = \{s - r \in S : s \in S\} \), and suppose \\\(S \cap \left( r + S \right)  \cap \left( a, b \right)  = \O\). \\That is, for all \(s \in S \cap \left( a, b \right) \), we have \(s + r \not\in S \cap \left( a, b \right) \subseteq \left( a, b \right)  \). Hence, \(s \in \left( b-r, b \right) \subseteq \left( b -  \frac{1}{4}\left( b-a \right) , b \right)  \right) = \left( \frac{1}{4}a + \frac{3}{4}b, b \right)  \). But, we see \(m\left( \left( \frac{1}{4}a + \frac{3}{4}b, b \right)  \right)  = \frac{1}{4} ( b - a) < \frac{3}{4} \left( b-a \right)  \). \\So, we have \(S \cap \left( a, b \right) \subseteq \left( \frac{1}{4}a + \frac{3}{4}b, b \right) \), \(\lightning\). \\ Hence there is a \(s \in S \cap \left( a, a + \frac{3}{4}(b - a) \right) \), so \(s + r \in \left( a, b \right) \), so \[S \cap \left( r + S \right)  \cap \left( a, b \right) \neq \O .\]
+	\item First, note that \(S \cap \left( r + S \right)  = \{s - r \in S : s \in S\} \), and suppose \\\(S \cap \left( r + S \right)  \cap \left( a, b \right)  = \O\). \\That is, for all \(s \in S \cap \left( a, b \right) \), we have \(s + r \not\in S \cap \left( a, b \right) \subseteq \left( a, b \right)  \). Hence, \(s \in \left( b-r, b \right) \subseteq \left( b -  \frac{1}{4}\left( b-a \right) , b \right)   = \left( \frac{1}{4}a + \frac{3}{4}b, b \right)  \). But, we see \(m\left( \left( \frac{1}{4}a + \frac{3}{4}b, b \right)  \right)  = \frac{1}{4} ( b - a) < \frac{3}{4} \left( b-a \right)  \). \\So, we have \(S \cap \left( a, b \right) \subseteq \left( \frac{1}{4}a + \frac{3}{4}b, b \right) \), \(\lightning\). \\ Hence there is a \(s \in S \cap \left( a, a + \frac{3}{4}(b - a) \right) \), so \(s + r \in \left( a, b \right) \), so \[S \cap \left( r + S \right)  \cap \left( a, b \right) \neq \O .\]
 	For each \(x \in \left[ -\frac{1}{4}\left( b-a \right) , \frac{1}{4}\left( b-a \right)   \right] \) , note that we have some \(s \in S\) such that \(s + x \in S \) or \(s - x \in S\) since \(S \cap \left( r + S \right) \) is nonempty, \(0 \le r \le \frac{1}{4}\left( b-a \right) \). Denote \(s + x = \overline{s}\) and \(s - x = \hat{s}\). If \(\overline{s} \in S\), then \(\overline{s} - s = x \in S - S\). Otherwise, if \(\hat{s} \in S\), then \(s - \hat{s} = x \in S - S\). Hence, \(\left[ -\frac{1}{4} \left( b-a \right) , \frac{1}{4}\left( b-a \right) \right] \subseteq S - S\).
 \end{enumerate}
-\end{solution}
-\newpage
-\begin{solution}[23]
-\end{solution}
-\newpage
-\begin{solution}[24]
-\end{solution}
-\newpage
-\begin{solution}[25]
-
-\end{solution}
-\newpage
-\begin{solution}[26]
-	Let \(S_{i} = \left( i, \infty \right) \) for each \(i \in \N\). Clearly, each \(s_{i}\) is measurable and \(\bigcap_{n \in \N} S_{n} = \O\). However, \(m\left( S_{i} \right) = \infty - i = \infty  \) for all \(i\), so we find \(m\left( \bigcap_{n \in \N} S_{n} \right) = 0 \neq \infty = \lim_{n \to \infty}m\left( S_{n} \right)  \).\\
-	For the second claim consider \(M = \Q\). Then, recall by the density of \(\Q\) in \(\R\), we have that for all \(r \in \R\) and some fixed \(\epsilon = \frac{1}{n}> 0\) , we have a \(x \in Q\) so that \(x - \frac{1}{n} < r \le x < x + \frac{1}{n}\), hence   \(r \in \bigcup_{x \in \Q} \left(x-\frac{1}{n}, x + \frac{1}{n} \right) \), so this union is simply \(\R\). Then, we have
-	\begin{align*}
-		\bigcap_{n \in \N} \bigcup_{x \in \Q} \left( x-\frac{1}{n}, x+\frac{1}{n} \right) &= \bigcap_{n \in \N} \R \\
-		&= \R \\
-		&\neq \Q
-	.\end{align*}
-
-\end{solution}
-\newpage
-\begin{solution}[27]
-\begin{itemize}
-	\item Consider the following construction. Let \(A_{i} = \left( a_{i}, b_{i} \right) \) and \(C_{i} = \left( c_{i}, d_{i}  \right) \), where \(\left( a_1, b_1 \right)  = \left( 0, 1 \right) \), \(\left( c_1, d_1 \right) = \left( 1, 2 \right) \)  and \(a_{i} = d_{i-1}\), \(b_{i} = a_{i} + \frac{1}{i^2}\),  \(c_{i} = b_{i}\), \(d_{i} = c_{i} + \frac{1}{i}\) . Define \(A = \bigcup_{i \in \N} A_{i}\) and \(C = \bigcup_{i \in \N} C_{i}\). Then, note all \(A_{i}\) are disjoint and all \(C_{i}\) are disjoint. Then, we see \(m\left( C \right)  = \sum_{i= 1}^{\infty} m\left( C_{i} \right) = \sum_{i= 1}^{\infty} \frac{1}{i} = \infty \) and \(m\left( A \right)  = \sum_{i= 1}^{\infty} m\left( A_{i} \right) = \sum_{i= 1}^{\infty} \frac{1}{n^2} < \infty \), hence \(A\) is of finite measure. However, we have \(a_{i} = d_{i-1} = c_{i-1} + \frac{1}{i}\) and \(c_{i} = b_{i} = a_{i-1} + \frac{1}{i^2} \). Hence, \(a_{i} = a_{i-1} + \frac{1}{i^2} + \frac{1}{i} = \sum_{j= 1}^{i}\frac{1}{j} + \frac{1}{j^2} + a_1\), so for any bounded interval \(I \subseteq \left[ -M, M \right] \) and bound \(M\), we see there is a \(n\) such that \(\sum_{i= 1}^{n} \frac{1}{i} > M\), hence \( a_{n} = \sum_{i= 1}^{n} \frac{1}{i^2} + \frac{1}{i} + a_1 > \sum_{i= 1}^{n} \frac{1}{i} > M\), so \(A \nsubseteq I\).
-	\item Recall for a measurable \(E\) there is a finite collection of open intervals \(\{I_{k} : 1 \le k \le K\} \) such that for \(\epsilon > 0\), and \(U = \bigcup_{k=1} ^{K} I_{k} \)  \(m\left( E \triangle U \right) < \epsilon \). Moreover, every \(I_{k}\) is bounded, as if one was of the form \(\left( a, \infty \right) \)  or \((-\infty, a)\) we would find \(m\left( U \right) = \infty\) and \(m\left( E \triangle U \right)  = m\left( E \setminus U \right)  + m\left( U \setminus E \right)  = m\left( E \setminus U \right)  + \infty = \infty\) as \(m\left( E \setminus U \right) \) is finite by assumption. Hence, a finite union of bounded intervals is bounded, so \(U\) is a bounded set with \(m\left( E \triangle U \right) < \epsilon\), but \(m \left( E \triangle U \right)  = m\left( E \setminus U \right)  + m\left( U \setminus E \right) \ge m\left( E \setminus U  \right)  \). Hence, \(m\left( E \setminus U \right)  < \epsilon\).
-\end{itemize}
-\end{solution}
-\newpage
-\begin{solution}[28]
-	As \(\inf \{ \left| x-y \right|  : x \in A, y \in B \} = p > 0\), we see \(A \cap B = \O\). Then, we see for any coverings \(\{A_{k}\} \), \(\{B_{k}\} \) of \(A\) and \(B\) by open disjoint intervals, with \(A_{k} \cap B_{j} \neq \O\), for some \(k, j \in \N\), we find \(m^{*}\left( A_{k} \setminus B_{j} \right)  = m^{*}\left( A_{k} \cap B_{j}^{c} \right)  \le m^{*}\left( A_{k} \right)   \). Moreover, denoting \(A_{k} \setminus B_{j} = C_{k,j}\) , we see each \(C_{k, j}\) is either empty, an interval, or the union of \(2\) intervals (depending on how \(A_{k}\) and \(B_{j}\) intersect). If \(C_{k, j}\) is an interval or empty denote \(C_{k, j, 1} = C_{k, j}\), otherwise if \(C_{k, j}\) is the union of two intervals denote the one with a smaller left endpoint \(C_{k, j, 1}\) and the one with larger left endpoint \(C_{k, j, 2}\). Similairly, we see \(m^{*}\left( B_{j} \setminus A_{k} \right) \le m^{*}\left( B_{j} \right) \) and we can denote new intervals \(D_{k, j, 1} = B_{j} \setminus A_{k}\) if the difference is a single interval or \(D_{k, j, 1}, D_{k, j, 2}\) if the difference is the union of two intervals. All together, this yields two new coverings \(\{C_{k, j, n} : k, j \in \N, n \in \{1, 2\} \}\) and \( \{D_{k, j, n} : k, j \in \N, n \in \{1, 2\} \}  \). Now, as these collections are still countable we may reindex them to yield equivalent covers \(\{\overline{A}_{k} : k \in \N\} \), \(\{\overline{B}_{k} : k \in \N\} \) of \(A\) and \(B\) respectively  with \(\sum_{i= 1}^{\infty} m^{*}(\overline{A_{k}}) \le \sum_{i= 1}^{\infty} m^{*}(A_{k})\)  and \(\sum_{i= 1}^{\infty} m^{*}\left( \overline{B}_{k} \right) \le \sum_{i= 1}^{\infty} m^{*}\left( B_{k} \right) \) . Hence, every pair of coverings with intersection admits a disjoint pair of smaller cumulative measure, so we can assume all pairs of coverings are disjoint when passing to the infimum .\\
-	Now, we see
-	\begin{align*}
-		m^{*}\left( A \cup B \right) &=  \inf \{ \sum_{k= 1}^{\infty} \ell\left( J_{k} \right)  : \{J_{k} : k \in \N\} \in J\left( A \cup B \right)   \}  \\
-					     &= \inf \{ \sum_{k= 1}^{\infty} \ell\left( A_{k} \cup B_{k} \right)  : \{A_{k} : k \in \N\} \in J\left( A \right) , \{B_{k} : k \in \N\} \in J\left( B \right) , A_{k} \cap B_{j} = \O, j, k \in \N  \}  \\
-					     &= \inf \{ \sum_{k= 1}^{\infty} \ell\left( A_{k} \right)  + \ell\left( B_{k} \right)  : \{A_{k} : k \in \N\} \in J\left( A \right) , \{B_{k} : k \in \N\} \in J(B), A_{k} \cap B_{j} =\O, k, j \in \N  \}  \\
-					     &\ge \inf \{ \sum_{k= 1}^{\infty} \ell\left( A_{k} \right)  : \{A_{k} : k \in \N\} \in J\left( A \right)   \}  + \inf \{ \sum_{k=1}^{\infty} \ell\left( B_{k} \right)  : \{B_{k} : k \in \N\} \in J\left( B \right)   \}\\
-					     &= m^{*}\left( A \right) + m^{*}\left( B \right)
-	.\end{align*}
-	We know this second step to be
-	But, applying subadditivity implies \(m^{*}\left( A \cup B \right)  \le m^{*}\left( A \right)  + m^{*}\left( B \right) \) for \(A, B\) disjoint. Hence \(m^{*}\left( A \cup B \right)  = m^{*}\left( A \right)  + m^{*}\left( B \right) \).
-\end{solution}
-\newpage
-\begin{solution}[29]
-
-\end{solution}
-\newpage
-\begin{solution}[30]
-	Let \begin{align*}
-		f:\left[ 0, 1 \right]   &\longrightarrow \R \\
-		x&\longmapsto f\left( x \right)= \left \{
-			\begin{array}{11}
-				x, & \quad x \in C  \\
-				x - 2, & \quad x \not\in C
-			\end{array}
-			\right.
-	.\end{align*}
-	Where \(C \subseteq \R\) is a nonmeasurable set. We see \(f\) is injective, so \(f^{-1}\left( \{c\}  \right) = \{ \hat{c}\}  \) for some \(\hat{c} \in \left[ -2, 1 \right] \), hence as all singeltons are measurable, we see all singleton preimages are measurable. However, \(f^{-1}\left( [0, \infty] \right) = C\) and \(C\) is not measurable, so \(f\) is not measurable.
 \end{solution}
 \end{document}
