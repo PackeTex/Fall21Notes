@@ -1,4 +1,4 @@
-\contentsline {section}{\numberline {1}Review of Group Theory}{1}{}%
+\contentsline {section}{\numberline {1}Review of Group Theory}{2}{}%
 \contentsline {section}{\numberline {2}Group Actions}{6}{}%
 \contentsline {section}{\numberline {3}Conjugacy and Normality Proofs}{10}{}%
 \contentsline {section}{\numberline {4}Sylow Theorems}{12}{}%
@@ -15,3 +15,4 @@
 \contentsline {subsection}{\numberline {9.6}Solvable Groups}{44}{}%
 \contentsline {subsection}{\numberline {9.7}Free Groups}{45}{}%
 \contentsline {section}{\numberline {10}Intro to Ring Theory}{46}{}%
+\contentsline {section}{\numberline {11}Noetherian Rings}{54}{}%

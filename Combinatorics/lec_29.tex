@@ -10,5 +10,18 @@ For an example, we may take the graph \(K_{n, n} \) and add an edge within one o
 More generally, adding cross edges between two subsets of size \(\epsilon n\) within one of the partite sets will yield \(\frac{\epsilon^2}{2}n^3\) triangles which may be removed by simply deleting all of the edges which we added.
 
 \begin{proof}
-Fix \(\epsilon\) and apply the regularity lemma with \(\frac{\epsilon}{4}\) and \(m > \frac{2}{\epsilon}\)
+	Fix \(\epsilon\) and apply the regularity lemma with \(\frac{\epsilon}{4}\) and \(m > \frac{2}{\epsilon}\). Then, there is \(n_0 \left( \frac{\epsilon}{4}, m \right) \) so that for all \(G\) of order \(n > n_0\)  we find \(V\left( G \right) = \bigcup_{i=0} ^{k} V_{i}\) with \(\left| V_{i} \right|< \frac{\epsilon}{4}n \) and \(\left| V_1 \right|  = \ldots = \left| V_{k} \right| \). Moreover, \(m < k < M\) and all but \(\frac{\epsilon}{4} k^2\) of the pairs \(\left( V_{i}, V_{j} \right) \) , \(1 \le i < j \le k\) are \(\frac{\epsilon}{4}\)-regular.\\
+	Then, we delete all edges incident to \(V_0\). We see this is at most \(\sum_{x \in V_0}^{}d\left( x \right) < \frac{\epsilon}{4}n^2\) edges being removed. Now, fix \(1 \le i \le k\) are delete all edges within \(V_{i}\). Again, we see this is at most \( \binom{\left| V_{i} \right| }{2}\) edges, hence doing this for all sets \(V_{i}\) , \(1 \le i \le k\) we see we remove at most \(k \binom{\left| V_{i} \right| }{2} < k \frac{n^2}{2k^2} = \frac{n^2}{2k}< \frac{n^2}{2m} \le \frac{\epsilon}{4}n^2\).\\
+Next, we delete all edges within the non \(\frac{\epsilon}{4}\)-regular pairs. Again, we see this is at most \(\left| V_{i} \right|\left| V_{j} \right| < \frac{n^2}{k^2}  \) pairs. Summing over all non \(\frac{\epsilon}{4}\)-regular pairs yields \(\frac{\epsilon}{4}n^2\) more edges to remove.\\
+Finally, we delete all edges in the remaining pairs with \(d\left( V_{i}, V_{j} \right) < \frac{\epsilon}{2} \). We see \(e\left( V_{i}, V_{j} \right) \le \frac{\epsilon}{2} \frac{n^2}{k^2} \). Summing over all \(\binom{k}{2}\) pairs \(\left( V_{i}, V_{j} \right) \), we see once again we remove less than \(\frac{\epsilon}{4}n^2\) edges.\\
+Hence, in total we have removed strictly less than \(\epsilon n^2\) edges. Now, we verify that we have removed all triangles. Suppose there remains a triangle. Of course, this triangle will not be incident to \(V_0\). Moreover, this triangle will have edges contained in \(3\) distinct \(V_{i}\)s. This is because we removed all edges within each \(V_{i}\). Suppose WLOG, that the edges are in \(V_1, V_2, V_3\). Then, as we have removed edges between irregular and low density pairs, \(d\left( V_1, V_2 \right) , d\left( V_2, V_3 \right) , d\left( V_1, V_3 \right) \ge \frac{\epsilon}{2}\).\\
+Now, recall for \(3\) mutually \(\frac{\epsilon}{4}\)-regular pairs \(V_1, V_2, V_3\) of equal cardinality we had \(k_3\left( V_1, V_2, V_3 \right) \ge \left( 1 - 2 \frac{\epsilon}{4} \right) \left( d_{1,2} - \frac{\epsilon}{4} \right) \left( d_{1, 3} - \frac{\epsilon}{4} \right) \left( d_{2, 3} - \frac{\epsilon}{4} \right)\left| V_1 \right| ^3   \). Hece, we see as \(\left| V_1 \right| > \left( 1-\epsilon \right) \frac{n}{k} > \left( 1-\epsilon \right) \frac{n}{M}\), and letting \(\delta = \left( 1 - \frac{\epsilon}{2} \right) \left( \frac{\epsilon}{4} \right) ^3 \frac{\left( 1-\epsilon \right) ^3}{M^3}\), we see
+\begin{align*}
+	K_3\left( V_1, V_2, V_3 \right) &\ge \left( 1- \frac{\epsilon}{2} \right) \left( \frac{\epsilon}{4} \right) ^3 \left| V_1 \right| ^3\\
+					&> \delta n^3
+.\end{align*}
+Hence, there will only be triangles remaining if the initial assumptions are violated so the claim is shown.
 \end{proof}
+\begin{remark}
+	We have shown this for \(n > n_0\). If instead we wish to show for \(n \le n_0\) we can choose \(\delta = \frac{1}{\binom{n_0}{3}}\) which will exclude the possibilities of any triangles before removing any edges, hence the lemma is trivially true in this case.
+\end{remark}

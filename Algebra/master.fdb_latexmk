@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1635960632 "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" "master.pdf" "master" 1636126349
+["pdflatex"] 1636133466 "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" "master.pdf" "master" 1636133493
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" 1636126349 254 b2b333529d81f959dc0d23eec51f7c8c ""
+  "/home/memphisrex/school/masters/semester-1/Algebra/master.tex" 1636133493 254 1f5e0ddae21386b1beb753291594a2bf ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -241,14 +241,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
-  "lec_29.tex" 1635958232 5628 2535f72228e4450c59923d5620ad3ca7 ""
   "lec_30.tex" 1635960630 5499 2275fadfa06f786c61dd986f53572b7f ""
-  "master.aux" 1635960632 106 6bfbacf4cc16b3ea8ec2cd48e183892a "pdflatex"
-  "master.tex" 1636126349 254 b2b333529d81f959dc0d23eec51f7c8c ""
-  "master.toc" 1635960632 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "lec_31.tex" 1636133466 5517 5e826ca8d2b9d40e4a70580f251239fd ""
+  "master.aux" 1636133467 210 e9b6440c3c54184cd31e5283bfedb90a "pdflatex"
+  "master.tex" 1636133493 254 1f5e0ddae21386b1beb753291594a2bf ""
+  "master.toc" 1636133467 63 f7d4165b33d3aadbaf250ca69962a98d "pdflatex"
   "ops.tex" 1635960007 226 3bc97a9d693354155c3669bed001332e ""
   (generated)
-  "master.pdf"
-  "master.log"
-  "master.aux"
   "master.toc"
+  "master.aux"
+  "master.log"
+  "master.pdf"

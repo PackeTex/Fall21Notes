@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  3 NOV 2021 12:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.7.3)  5 NOV 2021 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -883,12 +883,12 @@ Overfull \hbox (37.1992pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
@@ -901,10 +901,10 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 27.
+[2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 33.
-[2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 39.
@@ -2048,7 +2048,19 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 70.
-) [54]
+) (./lec_31.tex
+Overfull \hbox (29.97176pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+[54]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 20.
+[55]) [56]
 
 ! LaTeX Error: \begin{proof} on input line 51 ended by \end{document}.
 
@@ -2056,7 +2068,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.40 \end{document}
+l.41 \end{document}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2068,10 +2080,10 @@ or  <return>  to continue without it.
 ### semi simple group (level 1) entered at line 51 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 21671 strings out of 478994
- 422428 string characters out of 5864752
- 724431 words of memory out of 5000000
- 38555 multiletter control sequences out of 15000+600000
+ 21675 strings out of 478994
+ 422466 string characters out of 5864752
+ 725431 words of memory out of 5000000
+ 38556 multiletter control sequences out of 15000+600000
  427753 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,17n,105p,1275b,653s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2101,10 +2113,10 @@ cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss09
 00.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/
 fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on full.pdf (54 pages, 557857 bytes).
+Output written on full.pdf (56 pages, 565163 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
+ 338 PDF objects out of 1000 (max. 8388607)
+ 230 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  119 words of extra memory for PDF output out of 10000 (max. 10000000)
 
