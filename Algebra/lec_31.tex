@@ -1,0 +1,36 @@
+\lecture{31}{Fri 05 Nov 2021 11:34}{Noetherian Rings}
+\section{Noetherian Rings}
+\begin{recall}
+A commutative ring is noetherian if it satisfies the ascending chain condition on ideals. We claimed this to be equivalent to the property that all ideals are finitely generated.
+\end{recall}
+\begin{proof}
+	First, we assume \(R\) to be noetherian. Suppose there is an ideal \(I\) which is not finitely generated. Then, let \(x_1 \in I\) be a nonzero element of \(I\). Hence, we have \(\left( 0 \right) \subset \left( x_1 \right) \) with \(\left( x_1 \right) \neq I \) by assumption. Moreover, there is an \(x_2 \neq x_1\) which is also nonzero such that \(\left( 0 \right) \subset \left( x_1 \right) \subset \left( x_1, x_2 \right) \) and \(\left( x_1, x_2 \right) \neq I\) by assumption. Recursing, we see there are \(x_1, x_2, \ldots \in I\) such that \(\left( x_1, x_2, \ldots, x_{n} \right) \subset \left( x_1, x_2, \ldots, x_{n}, x_{n+1} \right) \subset I\) for all \(n\). Hence, letting \(I_{n} = \left( x_1, \ldots, x_{n} \right) \) we obtain an infinite strictly ascending chain of ideals \(\lightning\). Hence,  \(I_{n} = I\) for some \(n\), so \(I\) is finitely generated.\\
+Now, assume all ideals are finitely generated. Suppose there is an infinite proper chain of ideals \[
+I_0 \subset I_1 \subset \ldots
+\] with each containment being proper. Then, we see \(\bigcup_{k \in N_0} I_{k} = I \)  is an ideal. Moreover since \(I\) is finitely generated there are \(y_1, y_2, \ldots, y_{n} \in I\) such that \(I = \left( x_1, x_2, \ldots, x_{n} \right) \). Then, since \(y_1, y_2, \ldots, y_{n} \in \bigcup_{k \in N_0}I_{k} \), we see each one is in \(I_{k}\) for some \(k\). Since each \(I_{k} \subset I_{k+1}\), let \(I_{m}\) be an ideal containing all \(y_1, y_2, \ldots, y_{n}\). Then, we see \(I \subset I_{m}\), but this is a contradiction as \(I \neq I_{m}\) by the proper containment assumption and \(I \nsubseteq I_{m}\) as \(I_{m}\) is within the union. \(\lightning\). Hence, the chain cannot be strictly ascending.
+\end{proof}
+\begin{proposition}
+	Let \(R\) be a commutative ring. If \(R\) satisfies the ascending chain condition on all principal ideals, then every nonzero element in \(R\) has a factorization.
+\end{proposition}
+\begin{proof}
+Let \(x \in R\) be a nonzero, nonunit. If \(x\) is irreducible, \(x =x\) is a factorization. Hence, we can assume \(x = x_1 x_2\) with \(x_1, x_2\) being nonzero, nonunits. Similarly, we see \(x_1, x_2\) cannot both be irreducible else this would be a factorization. Hence define \(x_1 = x_{11} x_{12}\) and \(x_2 = x_{21} x_{22}\) with atleast \(3\) of \(x_{11} x_{12} x_{21} x_{22}\) being non-units. Hence, \(x_1 = x_{11}x_{12} x_{21} x_{22}\). Recursing \(n\) times yields \[
+x= \prod_{i= 1}^{2^{n}} x_{i}
+\] with atleast \(2^{n-1}\) elements being nonunits. If for some \(n\), we find all \(x_{i}\), \(1 \le i \le 2^{n}\) to be irreducible (or units), then \(x\) has been factored. Hence, we may assume atleast one \(x_{i}\) to be not an irreducible for all \(n\). Then, we see there must be a sequence \(k_{i}\) such that   \(\left( x \right) \subset \left( x_1 \right) \subset\left( x_{k_1} \right) \subset \left( x_{k_2} \right)\subset \ldots  \) as each \(x_{k_i}\) splits into a product of elements which are not both irreducble or units. Moreover, each containment must be proper, so letting \(n\) grow yields \(\lightning\), as such a chain will continue indefinitely unless all \(x_{i}\) are irreducble or units at some step. Hence we must have at some point all \(x_{i}\) to be irreducibles, hence \(x\) is factorable.
+\end{proof}
+\begin{theorem}
+	If \(R\) is a noetherian domain then \(R\) is a unique factorization domain if and only if all irreducible elements are prime.
+\end{theorem}
+\begin{proof}
+	Note, we have already shown all primes to be irreducible in an integral domain (hence noetherian domain) and we know UFD implies primes are irreducibles. Hence, only one implication remains to be shown, that all irreducible being prime implies UFD.\\
+	Since \(R\) is a noetherian domain, factorizations exist. Hence, we need only show these factorizations are unique. Suppose
+	\begin{align*}
+		x &= u x_1 x_2 \ldots x_{n}\\
+		&= u^{\prime} y_1 y_2 \ldots y\text{} \\
+	\end{align*} with \(u, u^{\prime}\) being units and \(x_i, y_{i}\) being irreducibles for each \(i\). We proceed by induction on \(\left| \fac(x) \right| \). If \(\left| \fac(x) \right| =1\), then \(x\) is irreducible and the claim is obviously true. Of course the case \(\left| \fac(x) \right| = 0\) implies \(x\) a unit, hence not factorable, so the claim is vacuously true in this case.\\
+	Now, assuming the case \(n-1\), if \(\left| \fac(x) \right| = n\) (as is the case in the original \(x\)), we see \(x_1 \mid x\) with \(x_1\) being irreducible, hence prime. Supposing the claim false, we see \(x_1 \mid u^{\prime} y_1 y_2 \ldots y_{t}\), so WLOG, \(x_1 \mid y_1\) up to units. As \(y_1\) is irreducible and divided by \(x_1\) , we see \(y_1 = x_1 r_1\) with \(r_1\) being a unit, hence \(x_1 = y_1\) up to units. Repeating yields for each \(1 \le i \le n\), \(x_{i} = y_{j}\) for some \(1 \le j \le t\)  (up to permutation of the \(y_{i}\)'s) up to units, hence
+	\begin{align*}
+		x &=  u x_1 x_2 \ldots x_{n} \\
+		&=  \hat{u}x_1 x_2 \ldots x_{n} y_{s} \ldots y_{t} \text{ for a unit } \hat{u} \text{ and some \(s \le t\) }
+	.\end{align*}
+	This yields, \(y_1 y_2 \ldots y_{t} = 1\) up to units, \(\lightning\) as the \(y_{i}\)'s were assumed nonunits.
+\end{proof}

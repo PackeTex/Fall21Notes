@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1635960634 "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" "full.pdf" "full" 1636054004
+["pdflatex"] 1636133496 "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" "full.pdf" "full" 1636133497
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" 1635957137 898 a67f8132c0be075cb39fc36117680380 ""
+  "/home/memphisrex/school/masters/semester-1/Algebra/full.tex" 1636130089 921 61cf67d877e77f348aad338fb21c9c97 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -252,9 +252,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
   "figures//fig.pdf" 1633541785 2057 a914d9b4643677cdcadde4231eed649d ""
   "figures/fig.pdf_tex" 1633541785 3038 4ac0fbc395b2b15e7ddf59a951eae8ff ""
-  "full.aux" 1635960635 2253 1367129b31f9a5111efadb5eaf85e472 "pdflatex"
-  "full.tex" 1635957137 898 a67f8132c0be075cb39fc36117680380 ""
-  "full.toc" 1635960635 1133 557d4de60fde739485c4a360a8c626d0 "pdflatex"
+  "full.aux" 1636133497 2359 666fab8e6a5e0f636f303cc8570a47fa "pdflatex"
+  "full.tex" 1636130089 921 61cf67d877e77f348aad338fb21c9c97 ""
+  "full.toc" 1636133497 1198 b57835f40f509b25624bd656a4a38e2e "pdflatex"
   "lec_01.tex" 1630348463 5182 133fa37d242ebaea609d25a8da2441d4 ""
   "lec_02.tex" 1630081950 6174 4b17074657d927f37da44945ca5dc830 ""
   "lec_03.tex" 1631028717 5514 978522504aa9f6bab90a59b10354640b ""
@@ -285,9 +285,10 @@
   "lec_28.tex" 1635528560 4308 4c9327353340a4a9536daa33fc337e6e ""
   "lec_29.tex" 1635958232 5628 2535f72228e4450c59923d5620ad3ca7 ""
   "lec_30.tex" 1635960630 5499 2275fadfa06f786c61dd986f53572b7f ""
+  "lec_31.tex" 1636133466 5517 5e826ca8d2b9d40e4a70580f251239fd ""
   "ops.tex" 1635960007 226 3bc97a9d693354155c3669bed001332e ""
   (generated)
-  "full.toc"
-  "full.log"
   "full.aux"
   "full.pdf"
+  "full.toc"
+  "full.log"
