@@ -1,0 +1,14 @@
+\lecture{29}{Fri 05 Nov 2021 10:21}{}
+\begin{note}{}
+I skipped taking notes on a few lectures. See the paper in the onedrive for info on the szemerdi lemma.
+\end{note}
+\begin{lemma}[Triangle Removal Lemma]
+	Denote \(K_{3} \left( G \right) \) 	to be the number of triangles in \(G\).\\
+	Then, for all \(0 < \epsilon < 1\) there is \(\delta > 0\) so that if \(G\) is a graph of order \(n\) with \(K_{3} \left( G \right) < \delta n^3\) there are edges \(e_1, e_2, \ldots ,e_{p}\) with \(p < \epsilon n^2\) and \(K_{3} \left( G - e_1 -e_2 - \ldots -e_{p} \right) = 0\).
+\end{lemma}
+For an example, we may take the graph \(K_{n, n} \) and add an edge within one of the partite sets. Then, we see the only triangles are the ones incident to this new edge. Hence, we need only remove one edge to obtain a triangle-less graph.\\
+More generally, adding cross edges between two subsets of size \(\epsilon n\) within one of the partite sets will yield \(\frac{\epsilon^2}{2}n^3\) triangles which may be removed by simply deleting all of the edges which we added.
+
+\begin{proof}
+Fix \(\epsilon\) and apply the regularity lemma with \(\frac{\epsilon}{4}\) and \(m > \frac{2}{\epsilon}\)
+\end{proof}
