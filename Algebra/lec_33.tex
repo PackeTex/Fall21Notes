@@ -1,4 +1,4 @@
-\lecture{33}{Wed 10 Nov 2021 17:33}{}
+\lecture{33}{Wed 10 Nov 2021 17:33}{Localization of Rings}
 \begin{recall}
 	Recall \(R\) denotes a commutative ing. If \(S \subseteq R\) is a multiplicative subset, we see \(x, y \in S\) implies \(xy\in S\) and \(0 \not\in S\) but \(1 \in S\).\\
 	Then, we define \(S^{-1} R = \{X / s : x\in R, s \in S\} \). Then, we see \(\frac{x_1}{s_1} = \frac{x_2}{s_2}\) if and only if there is an \(s \in S\) so that \(s\left( s_2 x_1 - s_1 x_2 \right) = 0\). Of course, if \(R\) is an integral domain we see this iplies \(s_2 x_1 - s_1 x_2 = 0\), the normal definition of fraction equality.
@@ -22,3 +22,4 @@ Note that \(s \in S\) is nonzero by definition, so \(\frac{1}{s} \cdot \frac{s}{
 	If \(R\) is a commutative ring and \(P \subseteq R\) is a prime ideal, then \(S \coloneqq R \setminus P\) is a multiplicative set. Moreover, \(0 \in P\) so \( 0 \not\in S\)  and \(P \subset R\) is proper, so \(1 \in S\).\\
 	If \(x, y \in S\) with \(xy \not\in S\), then \(xy \in P\) so \(x \in P\) or \(y \in P\) \(\lightning\). So, \(S\) is closed under multiplication. Then the localization \(S^{-1} R\) is often denoted \(R_{P}\). This is the canonical example of localization which we will study more next class.
 \end{example}
+The use of this construction is that it allows us to embed an integral domain \(R\) in a field \(R_{\left( 0 \right) }\) called the \textbf{field of fractions}.
