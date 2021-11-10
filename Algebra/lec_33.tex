@@ -16,5 +16,9 @@ Note that \(s \in S\) is nonzero by definition, so \(\frac{1}{s} \cdot \frac{s}{
 \end{proposition}
 \begin{proof}
 	If \(x, y \in R\) then \(\pi\left( x \pm y \right) = \frac{x \pm y}{1} = \frac{x}{1} \pm \frac{y}{1} = \pi\left( x \right) \pm \pi\left( y \right) \). Furthermore \(\pi\left( 1 \right) = \frac{1}{1} = 1\).\\
-	Lastly, \(\pi\left( xy \right) = \frac{xy}{1} = \frac{x}{1}\frac{y}{1} = \pi\left( x \right) \pi\left( y \right) \). Hence, \(\pi\) is a ring homomorphism. Now consider \(\ker \left( \pi \right) = \{x \in R : \frac{x}{1} = \frac{0}{1}\} \). We see this implies an \(s \in S\) so that \(s\left( 1x - 1\cdot 0 \right) = sx = 0 \), hence \(s\) is a zero divisor \(\lightning\).
+	Lastly, \(\pi\left( xy \right) = \frac{xy}{1} = \frac{x}{1}\frac{y}{1} = \pi\left( x \right) \pi\left( y \right) \). Hence, \(\pi\) is a ring homomorphism. Now consider \(\ker \left( \pi \right) = \{x \in R : \frac{x}{1} = \frac{0}{1}\} \). We see this implies an \(s \in S\) so that \(s\left( 1x - 1\cdot 0 \right) = sx = 0 \), hence \(s\) is a zero divisor if \(x \neq 0\) \(\lightning\). So, the kernel is trivial.
 \end{proof}
+\begin{example}
+	If \(R\) is a commutative ring and \(P \subseteq R\) is a prime ideal, then \(S \coloneqq R \setminus P\) is a multiplicative set. Moreover, \(0 \in P\) so \( 0 \not\in S\)  and \(P \subset R\) is proper, so \(1 \in S\).\\
+	If \(x, y \in S\) with \(xy \not\in S\), then \(xy \in P\) so \(x \in P\) or \(y \in P\) \(\lightning\). So, \(S\) is closed under multiplication. Then the localization \(S^{-1} R\) is often denoted \(R_{P}\). This is the canonical example of localization which we will study more next class.
+\end{example}
