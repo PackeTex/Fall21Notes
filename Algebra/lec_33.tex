@@ -8,3 +8,13 @@ Now, we turn this set into a ring. We define \(\frac{x_1}{s_1}\cdot \frac{x_2}{s
 We denote this new fraction ring \(S^{-1} R\) to be the \textbf{localization of \(R\) } with additive identity \(\frac{0}{1}\), multiplicative identity \(\frac{1}{1}\) and \(\frac{tx}{ts}= \frac{x}{s}\) for all \(t \in S\).
 \end{definition}
 Note that \(s \in S\) is nonzero by definition, so \(\frac{1}{s} \cdot \frac{s}{1} = \frac{1}{1} = 1_{S^{-1} R}\) , so every element has an inverse.
+\begin{proposition}
+	If \(R\) is a commutative ring with \(S \subseteq R\) being a multplicative subset. Then the map \begin{align*}
+		\pi: R &\longrightarrow S^{-1}R \\
+		x &\longmapsto \pi(x) = \frac{x}{1}
+	\end{align*} is a ring homomorphism. Moreover, if \(S\) has no zero-divisors, then \(\pi\) is an injection.
+\end{proposition}
+\begin{proof}
+	If \(x, y \in R\) then \(\pi\left( x \pm y \right) = \frac{x \pm y}{1} = \frac{x}{1} \pm \frac{y}{1} = \pi\left( x \right) \pm \pi\left( y \right) \). Furthermore \(\pi\left( 1 \right) = \frac{1}{1} = 1\).\\
+	Lastly, \(\pi\left( xy \right) = \frac{xy}{1} = \frac{x}{1}\frac{y}{1} = \pi\left( x \right) \pi\left( y \right) \). Hence, \(\pi\) is a ring homomorphism. Now consider \(\ker \left( \pi \right) = \{x \in R : \frac{x}{1} = \frac{0}{1}\} \). We see this implies an \(s \in S\) so that \(s\left( 1x - 1\cdot 0 \right) = sx = 0 \), hence \(s\) is a zero divisor \(\lightning\).
+\end{proof}
