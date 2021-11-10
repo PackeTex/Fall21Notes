@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1636133499 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1636133501
+["pdflatex"] 1636565582 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1636565583
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1636125684 870 f183f245d4780c62606d92f24685c2f5 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -242,8 +242,8 @@
   "/usr/share/texmf-dist/tex/latex/zref/zref-abspage.sty" 1621766596 2275 d29aca6fd67823551cb07584e3681d5d ""
   "/usr/share/texmf-dist/tex/latex/zref/zref-base.sty" 1621766596 20688 beaddf14d96104d4bf016523be5395c5 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1625328342 334625 4b142f77edfe92dd22429a0318fc6886 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1625328339 2812672 e44935508044aaccf24bdfef0a0d14a2 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1636562417 354350 3691811c303220ae16c19ccf26366b8c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1636562416 2812676 37f3a3276de1335b49e6be9255744fc8 ""
   "figures//c5.svg.2021_08_25_13_14_48.0.pdf" 1629915318 2493 f3e3be7d22c378636f23a50e372e7d97 ""
   "figures//coneig.pdf" 1631116740 1803 58b1ab038973515659611bece675f157 ""
   "figures//eigen.pdf" 1631115560 1201 23eb97584b69e636bc2954e8df209ecb ""
@@ -264,9 +264,9 @@
   "figures/payley.pdf_tex" 1631115245 2059 0b91c99b5fd99e4774f413b6c22f554f ""
   "figures/payleycomp.pdf_tex" 1630339611 2948 45814b4925974531e34d9a1484a3d05e ""
   "figures/vtxpart.pdf_tex" 1630007510 2803 48b61298a71ce9ea94733a5e4fb9d77f ""
-  "full.aux" 1636133501 3322 028a8eca8dd48b7142fa7c67abc6d9ac "pdflatex"
+  "full.aux" 1636565583 3322 028a8eca8dd48b7142fa7c67abc6d9ac "pdflatex"
   "full.tex" 1636125684 870 f183f245d4780c62606d92f24685c2f5 ""
-  "full.toc" 1636133501 409 89ddcc4603d1a0b449046691aec1b6ef "pdflatex"
+  "full.toc" 1636565583 409 89ddcc4603d1a0b449046691aec1b6ef "pdflatex"
   "lec_01.tex" 1630074911 4786 253c868570e2277982ae23ed9d3004d9 ""
   "lec_02.tex" 1630083598 5538 9581b86871bbd1d4dd77805f14d5246f ""
   "lec_03.tex" 1630348573 5027 6bdc26c53c96ced1b834208657298f55 ""
@@ -296,9 +296,9 @@
   "lec_27.tex" 1635523999 272 519ae6f48a8d99948e8aafc4833e3d2e ""
   "lec_28.tex" 1635780054 38 207d05761237f060976331fa756187db ""
   "lec_29.tex" 1636127865 4577 fcbbfc84ab0f093a0f41b085ac2297dc ""
-  "ops.tex" 1633707999 366 8454741d16875dd142d1e2e1794a5523 ""
+  "ops.tex" 1636562788 336 896d4018dcea668f4168e1e81713412a ""
   (generated)
+  "full.log"
+  "full.toc"
   "full.pdf"
   "full.aux"
-  "full.toc"
-  "full.log"
