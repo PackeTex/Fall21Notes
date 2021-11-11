@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.10)  10 NOV 2021 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.10)  11 NOV 2021 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -886,12 +886,12 @@ Overfull \hbox (34.15134pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 13.
@@ -904,6 +904,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 26.
+[2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 37.
@@ -914,7 +915,6 @@ Overfull \hbox (10.59523pt too wide) in paragraph at lines 38--40
 hen $\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 \ [] \OT1/cmr/m/n/10 = [][] []$
  []
 
-[2]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 41.
@@ -937,10 +937,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
+[3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 62.
-) (./lec_02.tex [3]
+) (./lec_02.tex [4]
 Overfull \hbox (35.58849pt too wide) in paragraph at lines 2--2
 [][] 
  []
@@ -954,7 +955,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 22.
-[4]
+[5]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 26.
@@ -976,7 +977,7 @@ Overfull \hbox (3.19751pt too wide) in paragraph at lines 41--42
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 50.
-[5]
+[6]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 57.
@@ -1012,7 +1013,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[6]
+[7]
 Overfull \hbox (9.20277pt too wide) in paragraph at lines 11--13
 []\T1/cmr/m/n/10 Now, we ex-am-ine the equiv-a-lence classes, that be-ing the q
 uo-tient space $[] [] \OML/cmm/m/it/10 = \OMS/cmsy/m/n/10 ^^X$\T1/cmr/m/n/10 ,
@@ -1029,7 +1030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-[7]
+[8]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 41.
@@ -1065,7 +1066,7 @@ or  <return>  to continue without it.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 52.
-[8]
+[9]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
@@ -1138,7 +1139,7 @@ mm/m/it/10 Thisis\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 indeedarationalcauchysequenc
 esuchthat [] [] \OT1/cmr/m/n/10 =
  []
 
-[9]
+[10]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
@@ -1239,7 +1240,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 60.
-[10]
+[11]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 68.
@@ -1248,7 +1249,7 @@ Overfull \hbox (4.77956pt too wide) detected at line 81
 []
  []
 
-[11]
+[12]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 91.
@@ -1288,14 +1289,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 26.
-[12]
+[13]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 47.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 53.
-[13]
+[14]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 62.
@@ -1307,7 +1308,7 @@ Overfull \hbox (34.03334pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
-[14]
+[15]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 15.
@@ -1330,7 +1331,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 42.
-[15]
+[16]
 Overfull \hbox (9.08652pt too wide) in paragraph at lines 52--56
 \T1/cmr/m/n/10 find a fi-nite in-ter-sec-tion. Then, by the fi-nite in-ter-sec-
 tion prop-erty, $[][] [] \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 =
@@ -1345,7 +1346,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 67.
-[16]) (./lec_07.tex
+[17]) (./lec_07.tex
 Overfull \hbox (32.59619pt too wide) in paragraph at lines 1--1
 [][] 
  []
@@ -1368,7 +1369,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 27.
-[17]
+[18]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 33.
@@ -1384,7 +1385,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
-[18]
+[19]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 63.
@@ -1408,7 +1409,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
-[19]
+[20]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 25.
@@ -1421,7 +1422,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 49.
-[20]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
@@ -1432,7 +1433,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 83.
-[21]
+[22]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 96.
@@ -1444,7 +1445,7 @@ Overfull \hbox (32.59619pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2.
-[22]
+[23]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 7.
@@ -1464,7 +1465,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--34
 
  []
 
-[23]
+[24]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 40.
@@ -1481,7 +1482,7 @@ of sets, then $\OML/cmm/m/it/10 ^^V[] [] \OMS/cmsy/m/n/10 ^^T [][] \OML/cmm/m/i
 t/10 ^^V[] []$\T1/cmr/m/n/10 . 
  []
 
-[24]
+[25]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 77.
@@ -1492,7 +1493,7 @@ mm/m/it/10 " > \OT1/cmr/m/n/10 0$\T1/cmr/m/n/10 , then $\OMS/cmsy/m/n/10 f[]g 2
 
  []
 
-[25]) (./lec_10.tex
+[26]) (./lec_10.tex
 Overfull \hbox (34.03334pt too wide) in paragraph at lines 1--1
 [][] 
  []
@@ -1509,7 +1510,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 19.
-[26]
+[27]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 33.
@@ -1520,14 +1521,14 @@ mr/m/n/10 = \OML/cmm/m/it/10 ^^V[] [] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 ^
 ^V[] [] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^V[] []$\T1/cmr/m/n/10 .
  []
 
-[27]
+[28]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 55.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 58.
-[28]
+[29]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 79.
@@ -1539,14 +1540,14 @@ Overfull \hbox (32.59619pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-[29] [30]
+[30] [31]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 43.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 50.
-[31]
+[32]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 77.
@@ -1653,7 +1654,7 @@ l.14 	\end{align*}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[32]
+[33]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 17.
@@ -1667,14 +1668,14 @@ on-tin-u-ous in-creas-ing func-tion such that $\OML/cmm/m/it/10 ' [] \OT1/cmr/m
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
-[33]
+[34]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 47.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 73.
-[34]
+[35]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 80.
@@ -1711,7 +1712,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 11.
-[35]
+[36]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 17.
@@ -1724,7 +1725,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 38.
-[36]
+[37]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
@@ -1741,7 +1742,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[37]) (./lec_15.tex
+[38]) (./lec_15.tex
 Overfull \hbox (34.29019pt too wide) in paragraph at lines 1--1
 [][] 
  []
@@ -1812,7 +1813,7 @@ If that doesn't work, type  X <return>  to quit.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 39.
-[38]
+[39]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 42.
@@ -1822,7 +1823,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 58.
-[39]
+[40]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 80.
@@ -1835,7 +1836,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 91.
-[40]) (./lec_16.tex
+[41]) (./lec_16.tex
 Overfull \hbox (32.85304pt too wide) in paragraph at lines 1--1
 [][] 
  []
@@ -1847,7 +1848,7 @@ Overfull \hbox (2.56319pt too wide) in paragraph at lines 9--10
 10 f[] [] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 f[] []$
  []
 
-[41]
+[42]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 15.
@@ -1937,7 +1938,7 @@ ML/cmm/m/it/10 a[]^^V []$\T1/cmr/m/n/10 .
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 43.
-[42]
+[43]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 53.
@@ -1995,7 +1996,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 75.
-[43]
+[44]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 83.
@@ -2015,7 +2016,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 10.
-[44]
+[45]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 18.
@@ -2025,7 +2026,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 29.
-[45]
+[46]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 48.
@@ -2048,7 +2049,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
 
-[46]
+[47]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
@@ -2084,7 +2085,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
 
-[47]
+[48]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 43.
@@ -2111,7 +2112,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
 
-[48]
+[49]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 72.
@@ -2129,7 +2130,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-10.48724pt}.
 
-[49]
+[50]
 Overfull \hbox (0.98108pt too wide) in paragraph at lines 103--103
 []\T1/cmr/bx/n/14.4 Derivatives and Fun-da-men-tal The-o-rem of Cal-
  []
@@ -2148,25 +2149,25 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 16.
-[50]
+[51]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 22.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 25.
-[51]
+[52]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 47.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 53.
-[52]
+[53]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
-[53]
+[54]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 86.
@@ -2181,24 +2182,168 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 10.
-[54]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 19.
 [55]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 53.
+(mdframed)              on input line 19.
 [56]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
+(mdframed)              on input line 53.
+[57]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
 (mdframed)              on input line 75.
-) [57] (./full.aux) ) 
+) (./lec_22.tex
+Overfull \hbox (35.43575pt too wide) in paragraph at lines 2--2
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4.
+[58]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 9.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 16.
+! Undefined control sequence.
+l.17 ...ns \(f: S \to \overline{\R}\) so that \(\f
+                                                  \|_{p}< \infty\). Then, fu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 23.
+[59]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 41.
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 		\begin{array}{11}
+                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Illegal character in array arg.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 		\begin{array}{11}
+                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.56 		\right\)
+                has \(\|f\| = 0\) even though \(f\) is not the zero function...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 58.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 61.
+! Extra }, or forgotten \right.
+<template> }
+            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \hfil \endtempl...
+l.69 	.\end{align*}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.69 	.\end{align*}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.69 	.\end{align*}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \right.
+<template> }
+            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \hfil \endtempl...
+l.69 	.\end{align*}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.69 	.\end{align*}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.69 	.\end{align*}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) [60] (./full.aux) ) 
 Here is how much of TeX's memory you used:
- 21593 strings out of 478994
- 421290 string characters out of 5864750
- 725382 words of memory out of 5000000
- 38512 multiletter control sequences out of 15000+600000
+ 21599 strings out of 478994
+ 421335 string characters out of 5864750
+ 725399 words of memory out of 5000000
+ 38515 multiletter control sequences out of 15000+600000
  430587 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,18n,105p,2018b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2226,10 +2371,10 @@ usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf
 e1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-su
 per/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pf
 b>
-Output written on full.pdf (57 pages, 525387 bytes).
+Output written on full.pdf (60 pages, 535613 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 221 compressed objects within 3 object streams
+ 334 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
