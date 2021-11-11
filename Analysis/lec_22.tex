@@ -1,5 +1,5 @@
 \section{Intro to Functional Analysis}
-\lecture{22}{Thu 11 Nov 2021 19:29}{Minkowski Spaces}
+\lecture{22}{Thu 11 Nov 2021 19:29}{\(L^{p}\) spaces}
 I skipped a chapter on supporting lines and Jensen's inequality because the material was rather simple and well explained in Hagen's notes.\\
 \begin{definition}[Essential Supremum]
 	Let \(f: S \to \overline{\R}\) be measurable. Then, we denote the quantity \[
@@ -65,6 +65,8 @@ A linear space \(V\) is a \textbf{normed linear space} if there is a function \(
 \begin{proof}
 	It suffices to assume \(a, b\) positive as the \(0\) case is trivial. Then, define \(F\left( t \right) = a^{p\left( 1-t \right) }b^{qt} = a^{p} \left( \frac{b^{q}}{a^{p}} \right)^{t} \). We see \(F\) is convex on \(\R\) as it is exponential. Hence,
 	\begin{align*}
-		ab &= F\left( \frac{1}{p}\cdot 00right)  \\
-	.\end{align*}
+		ab &= F\left( \frac{1}{p}\cdot 0 + \left( 1-\frac{1}{p} \right) q\right)  \\
+		   &\le \frac{1}{p}F\left( 0 \right) + \left( 1-\frac{1}{p} \right) F\left( 1 \right) \\
+&= \frac{a^{p}}{p} + \frac{b^{q}}{q}
+	.\end{align*} As \(F\) is strictly convex (except in the case \(\frac{b^{q}}{a^{p}} = 1\)), we see equality will not arrive except in this exceptional case.
 \end{proof}
