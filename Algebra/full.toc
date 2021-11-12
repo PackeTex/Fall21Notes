@@ -16,3 +16,4 @@
 \contentsline {subsection}{\numberline {9.7}Free Groups}{45}{}%
 \contentsline {section}{\numberline {10}Intro to Ring Theory}{46}{}%
 \contentsline {section}{\numberline {11}Noetherian Rings}{54}{}%
+\contentsline {section}{\numberline {12}Ring Localization}{56}{}%
