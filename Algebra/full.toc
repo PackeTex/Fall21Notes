@@ -17,3 +17,4 @@
 \contentsline {section}{\numberline {10}Intro to Ring Theory}{46}{}%
 \contentsline {section}{\numberline {11}Noetherian Rings}{54}{}%
 \contentsline {section}{\numberline {12}Ring Localization}{56}{}%
+\contentsline {section}{\numberline {13}Chinese Remainder Theorem}{57}{}%
