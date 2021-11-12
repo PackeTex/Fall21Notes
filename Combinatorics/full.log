@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.10)  10 NOV 2021 17:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.11.10)  12 NOV 2021 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1944,40 +1944,80 @@ Overfull \hbox (29.97176pt too wide) in paragraph at lines 1--1
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 5.
-[40]) [41] (./full.aux) ) 
+[40]) (./lec_30.tex
+Overfull \hbox (36.94232pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 2.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 5.
+! Double superscript.
+l.10 ...{\prime}_{2} \right) = o\left( n^{\prime}^
+                                                  2 \right) \) and \(e\left(...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+! Double superscript.
+l.10 ... n^{\prime} \right)  + o\left( n^{\prime}^
+                                                  2 \right) = n\left( n^2 \r...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 13.
+[41]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 20.
+) (./lec_31.tex
+Overfull \hbox (29.97176pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 9.
+[42]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 13.
+) [43] (./full.aux) ) 
 Here is how much of TeX's memory you used:
- 21777 strings out of 478994
- 425918 string characters out of 5864750
+ 21785 strings out of 478994
+ 425994 string characters out of 5864750
  725546 words of memory out of 5000000
- 38637 multiletter control sequences out of 15000+600000
+ 38639 multiletter control sequences out of 15000+600000
  427753 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,17n,105p,1409b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-sup
-er-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
-r/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fo
-nts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx
-1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/
-share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/
-sfss0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></
-usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf
--dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on full.pdf (41 pages, 454034 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t
+1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/
+type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm
+-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440
+.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fo
+nts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/cm-super/sfrm1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss
+0900.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/
+share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dis
+t/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on full.pdf (43 pages, 465991 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
+ 309 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
