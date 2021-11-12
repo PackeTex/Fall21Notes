@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1636565582 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1636662531
+["pdflatex"] 1636737017 "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" "full.pdf" "full" 1636738185
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
-  "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1636125684 870 f183f245d4780c62606d92f24685c2f5 ""
+  "/home/memphisrex/school/masters/semester-1/Combinatorics/full.tex" 1636734174 916 7caf2bf6b3f0209325d2e03e40791da2 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1617738065 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1617738065 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1617738065 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -264,9 +264,9 @@
   "figures/payley.pdf_tex" 1631115245 2059 0b91c99b5fd99e4774f413b6c22f554f ""
   "figures/payleycomp.pdf_tex" 1630339611 2948 45814b4925974531e34d9a1484a3d05e ""
   "figures/vtxpart.pdf_tex" 1630007510 2803 48b61298a71ce9ea94733a5e4fb9d77f ""
-  "full.aux" 1636565583 3322 028a8eca8dd48b7142fa7c67abc6d9ac "pdflatex"
-  "full.tex" 1636125684 870 f183f245d4780c62606d92f24685c2f5 ""
-  "full.toc" 1636565583 409 89ddcc4603d1a0b449046691aec1b6ef "pdflatex"
+  "full.aux" 1636738184 3322 6e3ffe1fa51df8af50906d96e5f120e4 "pdflatex"
+  "full.tex" 1636734174 916 7caf2bf6b3f0209325d2e03e40791da2 ""
+  "full.toc" 1636738184 409 89ddcc4603d1a0b449046691aec1b6ef "pdflatex"
   "lec_01.tex" 1630074911 4786 253c868570e2277982ae23ed9d3004d9 ""
   "lec_02.tex" 1630083598 5538 9581b86871bbd1d4dd77805f14d5246f ""
   "lec_03.tex" 1630348573 5027 6bdc26c53c96ced1b834208657298f55 ""
@@ -296,9 +296,11 @@
   "lec_27.tex" 1635523999 272 519ae6f48a8d99948e8aafc4833e3d2e ""
   "lec_28.tex" 1635780054 38 207d05761237f060976331fa756187db ""
   "lec_29.tex" 1636127865 4577 fcbbfc84ab0f093a0f41b085ac2297dc ""
+  "lec_30.tex" 1636564572 4038 13cceb1f37a7c1dd71d37e3de4603f9e ""
+  "lec_31.tex" 1636736948 3792 ed2e13a8cd3ea03629539d496d5cb013 ""
   "ops.tex" 1636562788 336 896d4018dcea668f4168e1e81713412a ""
   (generated)
-  "full.pdf"
+  "full.aux"
   "full.log"
   "full.toc"
-  "full.aux"
+  "full.pdf"
