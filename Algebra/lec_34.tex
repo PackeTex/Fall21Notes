@@ -1,0 +1,37 @@
+\section{Chinese Remainder Theorem}
+\lecture{34}{Fri 12 Nov 2021 17:29}{Chinese Remainder Theorem}
+
+\begin{theorem}[Classical Chinese Remainder Theorem]
+	If \(m_1, \ldots, m_{r}\) are relatively prime integers, then for \(a_1, \ldots, a_{r}\) we find an \(x \in \Z\) so that \(x \equiv a_{i} \mod m_{i}\) for each \(1 \le i \le r\).
+\end{theorem}
+\begin{theorem}[Generalized Chinese Remainder Theorem]
+Let \(R\) be a commutative ring with \(I_1, \ldots, I_{n} \subseteq R\)	being ideals so that \(I_{i} + I_{j} = R\) for all \(i \neq j\). That is, the \(I_{i}\)s are pairwise co-maximal. Then for any \(x_1, \ldots, x_{n} \in R\) we find an \(x \in R\) so that \(x \equiv x_{i} \mod I_{i}\) for all \(1 \le i \le n\).
+\end{theorem}
+\begin{recall}
+	\(x \equiv x_{i} \mod I_{i}\) if \(x - x_{i} \in I_{i}\).
+\end{recall}
+\begin{proof}
+If \(n = 1\) this is trivial. Of course, \(x = x\).\\
+For the case \(n = 2\) we have \(I_1 + I_2 = R\), hence \(1 \in R = I_1 + I_2\). Hence, \(1 = a_1 + a_2\) with \(a_1 \in I_1, a_2 \in I_2\). Then, let \(x = x_1a_1 + x_2a_2\), and we see \(a_1 + a_2 = 1\) but \(a_1 \equiv 0 \mod I_1\) and likewise \(a_2 \equiv 0 \mod I_2\), hence \(a_1 \equiv 1 \mod I_2\) and \(a_2 \equiv 1 \mod I_1\). Hence, \begin{align*}
+x &= x_1a_2 + x_2a_1 \\
+  &\equiv x_1 a_2 \mod I_1\\
+  &\equiv x_1 \mod I_1\\
+\text{ and } x &\equiv x_2a_1  \\
+	       &\equiv x_2 \mod I_2
+.\end{align*}
+Hence, the claim holds for \(n=2\). Now, we induce on \(n\).\\
+Let \(n \ge 3\) and suppose the case \(n-1\) to be true. Then, we find Then, we see \(I_1 + I_{i} = R\) for all \(i \ge 2\) by hypothesis. Hence, \(1 = a_{i} + b_{i}\) with \(a_{i} \in I_1\), \(b_{i} \in I_{i}\). Then, we find \[1 = \underbrace{1\cdot \ldots \cdot 1}_{n \text{ times}} = \prod_{i= 1}^{n} (a_{i}+ b_{i}) \in \prod_{i= 1}^{n} \left( I_1 + I_{i} \right) \subseteq I_1 + \prod_{i=2}^{n} I_{i}     .\] Moreover, we know \(I_1 + \prod_{i=2}^{n} I_{i} \) to be an ideal as the product and sum of ideals are still ideals.\\
+Then applying the case \(n=2\), we find a \(y \in R\) so that \(y_1 \equiv 1 \mod I_1\) and \(y_1 \equiv 0 \mod \prod_{i=2}^{n} I_{i} \). Repeating for each \(1 \le i \le n\) yields a \(y_{j} \in R\) so that \(y_{j} \equiv 1 \mod I_{j}\) and \(y_{j} \equiv 0 \mod \prod_{1 \le i \le n; i \neq j}^{} I_{i} \). Now, define \(x = \prod_{i= 1}^{n} x_{i} y_{i} \). We see \(y_{j} \in I_{i}\) for all \(i \neq j\), hence \(y_{j} x_{j} \equiv 0 \mod I_{i}\) for all \(i \neq j\). Hence \(x \equiv x_{i} y_{i} \equiv x_{i} \mod I_{i}\).
+\end{proof}
+Note that in the preceding proof \(\prod I_{i} \) denotes the ideal product as defined in the homework. In the next theorem we will use this symbol for the cartesian product, so ideal products will be written without product notation when the context is not necessarily clear.
+\begin{corollary}[Alternative Statement of the Chinese Remainder Theorem]
+Let \(R\) be a commutative ring with \(I_1, \ldots, I_{n} \subseteq R\) being pairwise comaximal distinct ideals of \(R\). Then the map \begin{align*}
+	f: R &\longrightarrow \prod_{i= 1}^{n} R / I_{i}  \\
+	x&\longmapsto \left( x \mod I_{i} \right)_{1 \le i \le n}
+	\end{align*} is a surjective ring homomorphism with kernel \(\ker \left( f \right)  = \bigcap_{1} ^{n} I_{i}\). Specifically, \[
+R / \left( \bigcap_{i=1} ^{n} I_{i} \right) \simeq \prod_{i= 1}^{n} \left( R / I_{i} \right)
+.\]
+\end{corollary}
+\begin{proof}
+	It is easily confirmed that \(f\) is a ring homomorphism with the prescribed kernel. Hence, the only claim that remains to be shown is the surjectivity. For \(f\) to be surjective, we need to take an arbitrary congruence system \( \hat{x} = \left(x_1 \mod I_1, x_2 \mod I_2, \ldots, x_{n} \mod I_{n}  \right) \) in the codomain of \(f\) and find a solution \(x \in R\) so that \(x \equiv x_{i} \mod I_{i}\) for all \(1 \le i \le n\) (that is \(f\left( x \right) = \hat{x}\)). We see the generalized remainder theorem yields such an \(x\), so \(f\) is surjective.
+\end{proof}
