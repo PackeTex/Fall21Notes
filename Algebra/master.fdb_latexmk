@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1636926916 "master.tex" "master.pdf" "master" 1636926916
+["pdflatex"] 1636926935 "master.tex" "master.pdf" "master" 1636926936
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/share/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -60,7 +60,6 @@
   "/usr/local/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary8.tfm" 1302307949 848 6125cdd3627e68d3db8013b98e587508 ""
   "/usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "/usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
@@ -240,13 +239,11 @@
   "/usr/local/share/texmf-dist/web2c/texmf.cnf" 1635988059 31993 99636c7cdb6bfcdeed281f4a9987770c ""
   "/usr/local/share/texmf-var/web2c/pdftex/pdflatex.fmt" 1636003938 3846757 8ad1ea890c6807fddfeb3bb7a544c3ee ""
   "/var/db/tlpkg/texmf.cnf" 1635988352 31993 99636c7cdb6bfcdeed281f4a9987770c ""
-  "lec_31.tex" 1636133466 5517 5e826ca8d2b9d40e4a70580f251239fd ""
-  "lec_32.tex" 1636926551 146 ffee6c7134e8afd5b79ec9f6f523f58b ""
   "lec_33.tex" 1636926551 3727 83f3781d8eaf3689999e699bdff57f25 ""
   "lec_34.tex" 1636926551 3987 97cf9512ab9dd9dbcd067fbe3f11df68 ""
-  "master.aux" 1636926916 326 3cdf48328a0425f3b93ba14d51708e00 ""
-  "master.tex" 1636926551 370 ed4a3a78c3c71388b24520012c4b1829 ""
-  "master.toc" 1636926916 190 4d3bd4bc52be90022f21290e38b64ad5 ""
+  "master.aux" 1636926935 248 34603c19e6ac11be1c17e0f993021872 ""
+  "master.tex" 1636926933 254 3ad95600c6f984356d18b24af825025d ""
+  "master.toc" 1636926935 130 cafa1a48c454e80edbbc675a7a138e1e ""
   "ops.tex" 1635960007 226 3bc97a9d693354155c3669bed001332e ""
   (generated)
   "master.log"
