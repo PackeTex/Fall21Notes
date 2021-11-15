@@ -17,6 +17,9 @@ For the polynomial \(f = 0\), we specifically define \(\deg \left(  f \right) = 
 \end{remark}
 We see \(R\left[ X \right] \) forms a ring with two polynomials \(f, g \in R\left[ X \right] \) as defined earlier having sum \[
 	\left( f + g \right)  = \sum_{i=0}^{\infty} \left( a_{i} + b_{i} \right) x^{i}
-\] and for an \(\alpha \in R\)  \[
-
+\] and \[
+fg = \sum_{i=0}^{\infty} a_{i} x^{i} \sum_{j=0 }^{\infty} b_{j}x^{j} = \sum_{n=0}^{\infty} \sum_{\underset{i + j = n}{i ,j}}^{}a_{i}b_{j} x^{n}
 .\]
+\begin{definition}[Multivariate Polynomial Rings]
+We define a \textbf{multivariate polynomial ring}	\(R \left[ x_1, \ldots, x_{n} \right] = \left( R\left[ x_1, \ldots, x_{n-1} \right]  \right) \left[ x_{n} \right]  \) with addition and multiplication defined similairly.
+\end{definition}
