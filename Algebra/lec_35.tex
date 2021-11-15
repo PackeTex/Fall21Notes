@@ -21,5 +21,8 @@ We see \(R\left[ X \right] \) forms a ring with two polynomials \(f, g \in R\lef
 fg = \sum_{i=0}^{\infty} a_{i} x^{i} \sum_{j=0 }^{\infty} b_{j}x^{j} = \sum_{n=0}^{\infty} \sum_{\underset{i + j = n}{i ,j}}^{}a_{i}b_{j} x^{n}
 .\]
 \begin{definition}[Multivariate Polynomial Rings]
-We define a \textbf{multivariate polynomial ring}	\(R \left[ x_1, \ldots, x_{n} \right] = \left( R\left[ x_1, \ldots, x_{n-1} \right]  \right) \left[ x_{n} \right]  \) with addition and multiplication defined similairly.
+We define a \textbf{multivariate polynomial ring}	\(R \left[ x_1, \ldots, x_{n} \right] = \left( R\left[ x_1, \ldots, x_{n-1} \right]  \right) \left[ x_{n} \right]  \) with addition and multiplication defined similairly. It is worth noting that while degree and constants are well defined, the leading coefficient may be poorly defined without adding extra constraints.
+\end{definition}
+\begin{definition}[Projected Degree]
+	For a multivariate polynomial \(f \in R\left[ x_1, \ldots, x_{n} \right] \) we define \(\deg \left(  f \right) _{x_{i}}\) to be the degree when considered only in the variable \(x_{i}\).
 \end{definition}
