@@ -362,3 +362,6 @@ INPUT /usr/local/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary7.tfm
 INPUT /usr/local/share/texmf-dist/fonts/tfm/public/stmaryrd/stmary5.tfm
 OUTPUT master.pdf
 INPUT /usr/local/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1000.tfm
+INPUT lec_31.tex
+INPUT lec_31.tex
