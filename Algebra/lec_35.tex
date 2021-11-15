@@ -26,3 +26,9 @@ We define a \textbf{multivariate polynomial ring}	\(R \left[ x_1, \ldots, x_{n} 
 \begin{definition}[Projected Degree]
 	For a multivariate polynomial \(f \in R\left[ x_1, \ldots, x_{n} \right] \) we define \(\deg \left(  f \right) _{x_{i}}\) to be the degree when considered only in the variable \(x_{i}\).
 \end{definition}
+\begin{remark}
+	It is of note that polynomials are more formal objects and not necessarily functions. The distinction is mostly moot, but we can induce a function from a polynomial by defining a function \begin{align*}
+		f: R &\longrightarrow R \\
+		b &\longmapsto f(b) = \sum_{i=0}^{\infty} a_{i}b^{i}
+	.\end{align*}
+\end{remark}
