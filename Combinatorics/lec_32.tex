@@ -5,7 +5,42 @@
 	.\]
 \end{definition}
 \begin{remark}
-	If \(A \ge 0\) is a nonnegative real matrix, we find \(\|A\|_{\square} = \left| A \right| _{1} = \sum_{i \in \left[ m \right] , j \in \left[ n \right] } a_{ij}\).\\
+	If \(A \ge 0\) is a nonnegative real matrix, we find \[\|A\|_{\square} = \left| A \right| _{1} = \sum_{i \in \left[ m \right] , j \in \left[ n \right] } a_{ij}.\]\\
 	Similairly, for a nonpositive real matrix we find the cut norm to again be the modulus of the sum of entries.\\
-Moreover, the cut norm is in fact a norm, as it is always nonnegative, it is only zero in the case of a zero matrix, it behaves linearly with real multiplication, and
+Moreover, the cut norm is in fact a norm, as it is always nonnegative, it is only zero in the case of a zero matrix, it behaves linearly with real multiplication, and with a bit of derivation we find it obeys the triangle inequality.
 \end{remark}
+\begin{example}
+	\(\| \begin{bmatrix} -1&1\\1&-1 \end{bmatrix}  \|_{\square} = 1 \) as any rectangle yields a sum \(0\) and the square consisting of just \(a_{11}\) yields a sum \(1\).\\
+	\(\| \begin{bmatrix} 1&1\\
+	1&-1\end{bmatrix}  \|_{\square} = 2 \) taking either \(a_{11}, a_{12}\), or \(a_{11}, a_{21}\), or simply summing over the whole matrix.\\
+	\[
+		\| J_{n} - 2I_{n} \|_{\square} = \|\begin{bmatrix} -1 & 1 & \ldots & 1\\
+		1 & -1 & \ldots & 1\\
+	\vdots & \vdots & \ddots & \vdots\\
+1 & 1 & \ldots & -1\end{bmatrix} \|_{\square} = n\left( n-2 \right)
+	\] by taking the whole matrix. It is simple to show that if \(\left| S \right| \) or \(\left| T \right| \le n-2\) , then the sum over their entries must be strictly less than \(n\left( n-2 \right) \). Then, this leaves only four possibilities, the possible permutations of sets of size \(n-1\) and \(n\). If \(\left| S \right| = n-1\) and \(\left| T \right|  = n\) (WLOG) we see the sum of entries is at most \(\left( n-1 \right) \left( n-2 \right) < n\left( n-2 \right) \). Lastly, if \(\left| T \right| = \left| S \right| = n-1\), then we have exactly one row and one column missing, so the sum of their entries will be \[
+	n\left( n-2 \right) - r_{i} - c_{j} + 1 \le n\left( n-2 \right)
+	.\] Hence, we have the claim is shown.
+\end{example}
+\begin{proposition}
+	The \(2n \times 2n\) matrix \(J_{n} \otimes \left( J_2 - 2I_2  \right) = A\) has \[
+		\| A \|_{\square} = \| J_{n} \otimes (J_2 - 2I_2)  \|_{\square} =  \| \begin{bmatrix} -J_{n} & J_{n} \\
+		J_{n} & -J_{n}\end{bmatrix}  \|_{\square} 	= n^2
+	.\]
+\end{proposition}
+\begin{proof}
+	Note that for any individual row of length \(\ell\), we find the row sum \\ \(r_{i} \le \left \{
+		\begin{array}{11}
+			\ell, & \quad \ell \le n  \\
+			\ell - 2\left( \ell - n \right) , & \quad \ell > n
+		\end{array}
+		\right.\) and similairly for the column sums. Denoting \(\left| S \right|  = a\) , \(\left| T \right| = b\) for sets \(S, T\) which maximize the element sums, we first,note one of \(a, b > n\) else the sum would be less than \(n^2\). Hence,  we find \(\| A \|_{\square} \le \inf \{ a\left( n-2\left( b-n \right)  \right) , b\left( n-2\left( b-n \right)  \right)    \} \). Moreover, we find both \(a\) and \(b > n\), hence we can assume WLOG \(a \ge b > n\) and the solution follows by minimizing the two quadratic upper bounds.
+\end{proof}
+\begin{remark}
+	We wish to examine the cut norm of a hadamard matrix. We will show a hadamard matrix \(H\) has \(\| H \|_{\square} \le n^{\frac{3}{2}} = n\sqrt{n} \).\\
+	The key to this proof is to let \(x, y\) be the indicator vectors for the sets \(S, T\) on which the maximum is obtained respectively. Then we find \(\| H \|_{\square} = \left| \left<Hy, x \right>  \right|  \le \sigma_1 \left( H \right) \|x\|_{2} \|y\|_{2}\) (this is true for any value). Applying the fact that \(\sigma_1\left( H \right) = \sqrt{n} \) and \(\|x\|, \|y\| \le \sqrt{n} \) as \(H\) is hadamard and \(x, y\) are indicator vectors of length \(n\) and from this we obtain the earlier upper bound.
+\end{remark}
+We can generalize the first steps of this argument to any matrix \(A\) in the following way:
+\begin{proposition}
+	For an arbitrary \(m \times n \) matrix \(A\), we find \[\| A \|_{\square} \le \sigma_1\left( A \right) \sqrt{mn} .\]
+\end{proposition}
