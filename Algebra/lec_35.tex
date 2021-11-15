@@ -1,0 +1,43 @@
+\section{Polynomial Rings}
+\lecture{35}{Mon 15 Nov 2021 11:32}{Polynomials}
+\begin{definition}[Polynomial Ring]
+	Let \(R\) be a commutative ring and we define \(R\left[ X \right] \) to be the ring of polynomials in the variable \(x\) with coefficients from \(R\) defined as follows.\\
+	An element \(f \in R\left[ X \right] \) has the form \[
+	f = a_0 + a_1x + \ldots + a_{n} x^{n}
+	\] for some \(n \ge 0\) and each \(a_{i} \in R\). This is a formal sum in the sense that two polynomials
+	\begin{align*}
+		f&= a_0 + a_1x + \ldots + a_{n}x^{n} \\
+		g&= b_0 + b_1 x + \ldots b_{m} x^{m}  \\
+	\end{align*} have \(f = g\) if and only if \(a_{i} = b_{i}\) for every \(i\).\\
+For the polynomial \(f\), we call \(a_0\) the \textbf{constant term} and \(a_{n}\) to be the \textbf{leading coefficient} and \(n\) to be the \textbf{degree}, denoted \(\deg \left( f \right) = n\) .\\
+For the polynomial \(f = 0\), we specifically define \(\deg \left(  f \right) = -1\). For all other constant polynomials \(g\), we define \(\deg \left( g \right) = 0\).
+\end{definition}
+\begin{remark}
+	Occasionally, we will write \(f = \sum_{i=0}^{\infty} a_{i} x^{i}\) with almost every \(a_{i} = 0\). With this form we see elements of \(R\left[ X \right] \) are in a bijective correspondence with finite support tuples from \(R^{\N}\).
+\end{remark}
+We see \(R\left[ X \right] \) forms a ring with two polynomials \(f, g \in R\left[ X \right] \) as defined earlier having sum \[
+	\left( f + g \right)  = \sum_{i=0}^{\infty} \left( a_{i} + b_{i} \right) x^{i}
+\] and \[
+fg = \sum_{i=0}^{\infty} a_{i} x^{i} \sum_{j=0 }^{\infty} b_{j}x^{j} = \sum_{n=0}^{\infty} \sum_{\underset{i + j = n}{i ,j}}^{}a_{i}b_{j} x^{n}
+.\]
+\begin{definition}[Multivariate Polynomial Rings]
+We define a \textbf{multivariate polynomial ring}	\(R \left[ x_1, \ldots, x_{n} \right] = \left( R\left[ x_1, \ldots, x_{n-1} \right]  \right) \left[ x_{n} \right]  \) with addition and multiplication defined similarly. It is worth noting that while degree and constants are well defined, the leading coefficient may be poorly defined without adding extra constraints.
+\end{definition}
+\begin{definition}[Projected Degree]
+	For a multivariate polynomial \(f \in R\left[ x_1, \ldots, x_{n} \right] \) we define \(\deg \left(  f \right) _{x_{i}}\) to be the degree when considered only in the variable \(x_{i}\).
+\end{definition}
+\begin{remark}
+	It is of note that polynomials are more formal objects and not necessarily functions. The distinction is mostly moot, but we can induce a function from a polynomial by defining a function \begin{align*}
+		f: R &\longrightarrow R \\
+		b &\longmapsto f(b) = \sum_{i=0}^{\infty} a_{i}b^{i}
+	.\end{align*}
+	The point of this distinction is that polynomials over finite (or otherwise nonstandard spaces) may not be distinct. For example \(x \mapsto x^{5} - x\) and \(x \mapsto 0\) are completely equivalent in \(\mathbb{F}_5\). This, of course, cannot happen over \(\R\) unless the coefficients are precisely equal.
+\end{remark}
+We can construct a function in a different way as follows:
+\begin{definition}[Evaluation Map]
+	Fixing \(b \in R\) we define the \textbf{evaluation map} on \(R\left[ x \right] \)  as \begin{align*}
+		\ev_{b}: R\left[ x \right]   &\longrightarrow  R\\
+		f &\longmapsto \ev_{b}(f) = f\left( b \right)
+	.\end{align*}
+	We find this map to be a ring homomorphism, essentially compressing \(R\left[ x \right] \) down into \(R\).
+\end{definition}
