@@ -47,5 +47,8 @@ We can construct a function in a different way as follows:
 \end{lemma}
 \begin{proof}
 	Let \(c_1 = \cnt\left( f \right) \) , \(c_2 =\cnt\left( g \right) \). Then, \(f = c_1 f_1\) and \(g = c_2 g_1\) for some \(f_1, g_1 \in R\left[ x \right] \) with \(\cnt\left( f_1 \right)  = \cnt\left( g_1 \right)  = 1\). So, \(fg = \cnt\left( f \right) \cnt\left( g \right) f_1g_1\).\\
-	Thus, it suffices to show \(\cnt\left( f_1g_1 \right) = 1 \).
+	Thus, it suffices to show \(\cnt\left( f_1g_1 \right) = 1 \). Since \(f_1, g_1 \in R\left[ x \right]  \), we see \(f_1g_1 \in R\left[ x \right] \). Hence, we need to show no \(p\) divides all the coefficients of \(f_1g_1\). Suppose by contradiction that \(p\) is a prime dividing all coefficients of \(f_1g_1\). Then, the map \begin{align*}
+		\phi: R\left[ x \right]  &\longrightarrow R / \left( p \right) \left[ x \right]   = \overline{\R}\left[ x \right] \\
+	.\end{align*}
+Clearly \(\left( p \right) \) is a prime ideal, so \(\overline{\R}\) is an integral domain with \( 0 = \phi\left( f_1g_1 \right) = \phi\left( f_1 \right) \phi\left( g_1 \right) \). Hence either \(\phi\left( f_1 \right) = 0\) or \(\phi\left( g_1 \right) = 0\), so WLOG \(p \mid a_{i}\) for all \(a_{i}\) in the representation of \(f_1\), hence \(\cnt\left( f_1 \right) \ge p \) \(\lightning\). So the claim holds.
 \end{proof}
