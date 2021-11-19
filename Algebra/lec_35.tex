@@ -1,4 +1,5 @@
 \section{Polynomial Rings}
+
 \lecture{35}{Mon 15 Nov 2021 11:32}{Polynomials}
 \begin{definition}[Polynomial Ring]
 	Let \(R\) be a commutative ring and we define \(R\left[ X \right] \) to be the ring of polynomials in the variable \(x\) with coefficients from \(R\) defined as follows.\\
@@ -41,3 +42,10 @@ We can construct a function in a different way as follows:
 	.\end{align*}
 	We find this map to be a ring homomorphism, essentially compressing \(R\left[ x \right] \) down into \(R\).
 \end{definition}
+\begin{lemma}[Gauss Lemma]
+	Let \(R\) be a UFD with \(K\) its quotient field. If \(f, g \in K\left[ x \right] \), then \(\cnt\left( fg \right) = \cnt\left( f \right) \cnt\left( g \right) \).
+\end{lemma}
+\begin{proof}
+	Let \(c_1 = \cnt\left( f \right) \) , \(c_2 =\cnt\left( g \right) \). Then, \(f = c_1 f_1\) and \(g = c_2 g_1\) for some \(f_1, g_1 \in R\left[ x \right] \) with \(\cnt\left( f_1 \right)  = \cnt\left( g_1 \right)  = 1\). So, \(fg = \cnt\left( f \right) \cnt\left( g \right) f_1g_1\).\\
+	Thus, it suffices to show \(\cnt\left( f_1g_1 \right) = 1 \).
+\end{proof}
