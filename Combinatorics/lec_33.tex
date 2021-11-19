@@ -1,0 +1,22 @@
+\lecture{33}{Mon 07 May 2018 03:04}{Cut Norm Proofs}
+Let \(A\) be a \(m\times n\) matrix with \(\vec{x} \in \R^{n}\), \(\vec{y} \in \R^{m}\) and \(\left| \vec{x} \right| _{\infty}\le 1\) and \(\left| \vec{y} \right|_{\infty} \le 1 \). Then, we consider \(\max \left| \left<  A\vec{x}, \vec{y} \right>  \right| = \|A\|_{\pi} \).
+\begin{proposition}
+We claim \[
+\| A \|_{\square} \le \|A\|_{\pi}
+.\]
+\end{proposition}
+\begin{proof}
+	If \(S, T\) are submatrices inducing \(\| A \|_{\square} \). That is  \[
+	\left| \sum_{i \in T, j \in S}a_{i,j}  \right| = \| A \|_{\square}
+	.\]
+Letting \(\vec{x}, \vec{y}\) be indicator vectors for \(S, T\) respectively, we see this sum is simply \[
+\left| \sum_{i \in T, j \in S} a_{ij}\right| = \left| \left<Ax, y \right>  \right|  \le \max \left| \left<Ax, y \right>  \right|
+.\]
+It is also possible to set an upper bound, \(\|A\|_{\pi} \le 4 \| A \|_{\square} \).
+Let \(x, y\) be vectors such that \(\left| \left<Ax, y \right>  \right| = \|A\|_{\pi}\). Then, we see we can fix \(k\) and  perform a sort of division such that \(\left| \sum_{i= 1}^{m} \sum_{j=1}^{n} a_{ij}x_{j}y_{i} \right| = \left| Px_{k} + Q  \right|  \) for some matrices \(P, Q\). Then, as this is a linear with \(x_{k} \in \left[ -1, 1 \right] \) we see the maximum modulus must be achieved on an endpoint, hence we can restrict \(x \in \{-1, 1\} ^{n}\), \(y \in \{-1, 1\} ^{m}\).\\
+Then dividing the columns of the matrix into two pieces, those for which \(x_{i} = 1\) and those for which \(x_{i} = -1\), and denoting them \(T^{+}, T^{-}\) and similairly dividing the rows into \(S^{+}, S^{-}\) according to the sign of \(y_{i}\), we see
+\begin{align*}
+	\|A\|_{\pi}&= \left| \sum_{i, j}^{}a_{ij}x_{j}y_{i} \right| \\
+.\end{align*}
+Then, we can split this sum into four pieces according to the elements belonging to \(T^{+}, S^{+}\) , \(T^{+}, S^{-}\) and so on, we see each piece is less than \(\| A \|_{\square} \) so triganle inequality yields the upper bound.
+\end{proof}

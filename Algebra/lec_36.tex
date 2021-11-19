@@ -1,0 +1,55 @@
+\lecture{36}{Mon 07 May 2018 03:55}{Polynomials (2)}
+\begin{recall}
+	For a commutative ring \(R\), we define the polynomial ring \(R\left[ x_1, \ldots, x_{n} \right] \) as formal sums of powers of \(x_{i}\) with coefficients in \(R\).
+\end{recall}
+Moreover, if we have two commutative rings \(R, R^{\prime}\) with a ring homomoprhism \(\phi: R \to \overline{\R}\) , then there is a complementary ring homomorphism extending to the polynomial ring: \begin{align*}
+	\overline{\phi}:  R\left[ x \right] &\longrightarrow \overline{\R}\left[ x \right]  \\
+	 \sum_{i=0}^{\infty} \alpha_{i}x^{i} \longmapsto \sum_{i=0}^{\infty} \phi\left( a_{i} \right) x^{i}
+.\end{align*}
+\begin{definition}[Map Space]
+	Now, define \(\map\left( Y \to R \right) \) to be the set of all maps \(f : Y \to R\) with \(R\) being a commutative ring and \(Y\) being an arbitrary set. We equip \(\map\left( Y\to R \right) \) with pointwise operations \(\times, +\) such that
+	\begin{align*}
+		\left( f+g \right) \left( x \right) &= f\left( x \right) + g\left( x \right)   \\
+		\left( fg \right) \left( x \right) &=  f\left( x \right) g\left( x \right)   \\
+	.\end{align*}
+	These operations induce a ring over \(\map \left( Y\to R \right) \).
+\end{definition}
+Then, we see a polynomial \(f \in R\left[ x \right] \) defines a corresponding map \(\overline{f} \in \map\left( R\to R \right) \) with \(\overline{f}\left( a \right) = \ev_{a}\left( f \right)  \) for all \(a \in R\).\\
+\begin{remark}
+	The map \(f \mapsto \overline{f}\) need not be injective. See the example \(f = x^{5} - x\) and \(g = 0\) in \(\mathbb{F}_{5}\).
+\end{remark}
+\begin{proposition}
+	If \(R\) is an integral domain, then \(R\left[ x \right] \) is also an integral domain. Moreover, for nonzero polynomials \(f, g \in R\left[ x \right] \) we have \(\deg \left( fg \right) = \deg \left( f \right)  + \deg \left( g \right) \).
+\end{proposition}
+This prove is completely trivial hence it is omitted.
+\begin{theorem}
+	If \(F\) is a field, then \(F\left[ x \right] \) is a euclidean domain, a principal ideal domain, and a unique factorization domain.
+\end{theorem}
+\begin{proof}
+	Applying standard (euclidean) polynomial division with euclidean norm \(\deg \left( f \right) \) for \(f \in F\left[ x \right] \) yields a euclidean domain (hence a PID and UFD).
+\end{proof}
+\begin{theorem}
+	If \(R\) is a commutative ring then \(R\left[ x \right] \) is a principal ideal domain if and only if \(R\) is a field.
+\end{theorem}
+\begin{proof}
+One direction has already been shown.\\
+Moreover if \(R\left[ x \right] \) is a PID, then \(R\) is an integral domain. Hence, if \(ab = a\) with \(a, b \in R\), then \(a = 0\) or \(b = 0\), so \(R\) is an integral domain as its a subring of \(R\left[ x \right] \).\\
+Now, let \(y \in R\)be an arbitrary nonzero element. We wish to show \(y\) a unit. Let \(I = \left( y, x \right) \subseteq R\left[ x \right] \). Then, since \(R\left[ x \right] \) is a Principal ideal domain, we have an \(f \in I\) so that \(\left( y, x \right) = \left( f \right)  \). Note that we must have \(f \neq 0\) as \(x \neq 0\) and as \(y \in \left( f \right) \) we see \(y = hf\) for an \(h \in R\left[ x \right] \) which is nonzero. Since \(R\) is an integral domain, we see \(\deg \left( f \right) = \deg \left( h \right)  = 0\). Hence, \(f\) is a nonzero constant \(\alpha \in R\) .\\
+Hence, we have \(x \in I = \left( \alpha \right) \) so \(x = g\alpha\) for some \(g \in \left[ x \right] \). But, \(R\) is an integral domain, so \(1 = \deg \left( x \right)  = \deg \left( \alpha \right)  + \deg \left( g \right) = \deg \left( g \right) \). So, we have \(g= ax + b\) for some nonzero \(a \in R\setminus \{0\} \) and \(b \in R\). Thus, \(x = \left( ax + b \right) \alpha = \left( a \alpha x + b\alpha \right) \), hence \(a \alpha=1\) and \(b \alpha =0\) by the coefficient property of polynomial rings. Thus, \[
+	\left( \alpha \right) = \left( f \right) = I = \left( y, x \right) = R\left[ x \right]
+.\]
+Hence, \(1 \in \left( y, x \right)  = R\left[ x \right] \left( y \right) + R\left[ x \right] \left( x \right) \). So, \(1 = g_1 y + g_2 x\) for some \(g_1, g_2 \in R\left[ x \right] \). Hence letting \(g_1 = g_{11} + g_{12}x\) and similairly \(g_2 = g_{21} + g_{22}x\) for some \(g_{11}, g_{12}, g_{21}, g_{22} \in R\),  we see \(1 = yg_{11}\).   So, \(y\) is a unit, hence \(R\) is a field.
+\end{proof}
+\begin{corollary}
+	If \(F\) is a field \(F\left[ x, y \right] \) is not a principal ideal domain.
+\end{corollary}
+\begin{proof}
+	\(F\left[ x, y \right] = \left( F\left[ x \right]  \right) \left[ y \right]  \) and \(F\left[ x \right] \) is not a field (take \(f = x\), there is no inverse), so \(F\left[ x, y \right] \) is not a principal ideal domain by applying the previous characterization.
+\end{proof}
+\begin{theorem}
+	If \(F\) is a field with \(f\) being a polynomial having \(\deg \left( f \right) = n \ge 0\) in \(F\left[ x \right] \). If, \(f\left( a \right) = 0\) for \(a \in R\), then \(\left( x-a \right) \mid f\). Moreover, \(f\) has at most \(n\) roots in \(F\).
+\end{theorem}
+\begin{proof}
+	Since \(f \neq 0\) and \(f\) has a zero, we see \(\deg \left( f \right) \ge 1\) . Hence, using polynomial long division yields \(f = q\left( x-a \right) + r\) for some \(q, r \in F\left[ x \right] \) with \(\deg \left( r \right) < \deg \left( \left( x-a \right)  \right) \), hence \(\deg \left( r \right) \le 0\), that is \(r\) is a constant polynomial.\\
+	We see \(f\left( a \right) = r = 0\), hence \(f = q\left( x-a \right)  \), so \(\left( -a \right) \mid f\). Letting \(a_1, \ldots, a_{n}\) be distinct real zeros of \(f\), then \(\left( x-a_1 \right) \mid f\) implying \(f = f_1\left( x - a_1 \right) \) with \(\deg \left( f_1 \right) = \deg \left( f \right) - 1\). Inducing on the roots \(a_{i}\), we see that more than \(n\) roots would imply \(f = f_1 \cdot f_2 \cdot \ldots \cdot f_{n} \cdot f_{n + 1} \cdot g\) where \(g\) is the final polynomial obtained by dividing by \(x - a_{n+1}\)  and is of degree \(\deg \left( g \right)  = \deg \left( f \right)  - (n+1) = -1\) implying \(g\) is the zero polynomial. But, we have \(f = g\prod_{i= 1}^{n+1} \left( x- a_{i} \right)  \), so \(f = 0\) \(\lightning\). Hence there are at most \(n\) zeroes.
+\end{proof}

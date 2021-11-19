@@ -1,0 +1,71 @@
+\documentclass[a4paper]{article}
+\input{../../preamble.tex}
+\usepackage{pdfpages}
+\title{Algebraic Theory I: Homework IV}
+\date{Thu 18 Nov 2021 03:10}
+\input{../ops.tex}
+\begin{document}
+\maketitle
+\begin{problem}[1]
+	Let \(\left( X, \subseteq \right) \) be the set of all ideals not containing \(I\) partially ordered by inclusion.\\
+	It suffices to show that for a totally ordered set \(\left( I_{\alpha} \right)_{\alpha \in \Omega} \) with ordered set \(\Omega\), and ideals \(I_{\alpha} \in X\) there is an upper bound. Take \(U = \bigcup_{\alpha \in \Omega} I_{\alpha}  \). \(U\) is the union of ideals so it is clearly an ideal. Suppose \(U \not\in X\), that is \(U \supseteq I\). Then, there is a subsequence \(\alpha_1, \ldots, \alpha_{n}\) and a permutation \(\pi\)  so that \[\left( x_{\pi\left( 1 \right) } \right) \subseteq I_{\alpha_1}, \left( x_{\pi\left( 1 \right) }, x_{\pi\left( 2 \right) } \right) \subseteq I_{\alpha_2},  \ldots, \left( x_{\pi \left( 1 \right) }, \ldots, x_{\pi(n)} \right) = I \subseteq I_{\alpha_{n}} \ \lightning .\] Hence, \(U \in X\), and \(U\) contains all \(I_{\alpha}\) so it is an upper bound. Hence, there is a maximal element \(M \in X\) by Zorn's Lemma.
+\end{problem}
+\newpage
+\begin{problem}[2]
+	\item First note that \(2, \sqrt{-D}, 1 + \sqrt{-D} \) are all non-units in \(R\) as their respective inverses in \(\C\) all have noninteger coefficients.\\
+		 Then define \begin{align*}
+			N: \Z\left[ \sqrt{-D}  \right]   &\longrightarrow \Z \\
+			\left( a+bi \right) = x &\longmapsto  x \overline{x} = a^2 + b^2
+		.\end{align*}
+	Then
+	\begin{align*}
+		N\left( \left( a+bi \right) \left( c+di \right)  \right) &= \left[ \left( ac-bd \right) + \left( bc+ad \right) i \right] \left[ \left( ac-bd \right) - \left( bc+ad \right) i \right] \\
+&= \left( ac-bd \right) ^2 + \left( bc+ad \right) ^2 \\
+\text{ and } N\left( a+bi \right) N\left( c+di \right) &= \left( a^2+b^2 \right) \left( c^2 + d^2  \right)   \\
+&= \left( ac \right) ^2 -2ac bd + \left( bd \right) ^2 + \left( ad \right) ^2 + 2ad bc  + \left( bc \right) ^2 \\
+&= \left( ac-bd \right) ^2 + \left( bc + ad \right) ^2 \\
+&= N\left( \left( a+bi \right) \left( c+di \right)  \right)  \\
+	.\end{align*}
+	In particular \(N\) is a ring homomorphism of \(R\).
+	Next, suppose \(2\) is not irreducible in \(R\). Then, there are non-units \(x = a + b\sqrt{-D}, y=  c + d\sqrt{-D} \in R \) so that \( \left( a+b\sqrt{-D}  \right) \left( c+d\sqrt{-D}  \right) = 2 \). Passing to \(N\),
+	\begin{align*}
+		N\left( 2 \right) = 4 &=  N\left( x \right)N\left( y \right)   \\
+		&= \left( a^2 + b^2 D \right) \left( c ^2 + d^2 D \right) \in \Z  \\
+	.\end{align*}
+	Since units pull back to units under homomorphisms, we can assume both of these quantities to be non-units. Hence the only possibility is \[
+	a^2 + b^2 D = c ^2 + d^2 D = 2 \text{ (up to units)}
+	.\]
+	In this case \(D > 2\)  so we see \(b = d = 0\), hence either \(a=2\), \(c =1\) or \(a=1\), \(c=2\). In either case \(\lightning\), as \(x, y\) were assumed nonunits. Hence \(2\) is irreducible in \(R\).\\
+	Now assume \(\sqrt{-D} \) non-irreducible in \(R\). Then, we find non-units \(x = a + b\sqrt{-D} , y = c + d\sqrt{-D}  \in R\) so that \(\sqrt{-D} = xy\). Passing to \(N\), we find
+	\begin{align*}
+		N\left( \sqrt{-D}  \right) = D &=  \left( a^2 + b^2D \right) \left( c^2 + d^2D \right)
+	.\end{align*}
+	If WLOG \(b =1\) , then we see \(a = d = 0\) and \(c = 1\)  \(\lightning\) as \(y\) is not a unit. If \(b > 1\) or \(d > 1\) , then \(b^2D > D\) so \(\lightning\). Hence \(b = d = 0\). Hence, \(D = a^2 c ^2\), but \(D\) was square-free \(\lightning\).\\
+	Lastly, suppose \(1 + \sqrt{-D} \) is irreducible in \(R\). Then, we find non-units \(x = a+b\sqrt{-D} , y =  c + d\sqrt{-D}  \in R\) so that \(xy = 1 + \sqrt{-D} \). Hence \[
+	N\left( 1 + \sqrt{-D}  \right) = 1+D = \left( a^2 + b^2D \right) \left( c^2 + d^2D \right)
+	.\]
+	If WLOG \( b = 1\), then \(d = 0\) otherwise \(1 + D > 2D^2\) \(\lightning\), and similarly \(c = 1\). Hence \(y\) is a unit \(\lightning\). So, \(1 + \sqrt{-D} \) is an irreducible.\\
+	Now, note that the element \(D^2 + D\) has two distinct factorizations. First, it is again clear that \(D \pm \sqrt{-D} \) is a non-unit as its complex inverse has nonintegral coefficients. Then, we note \(D\left( D + 1 \right) = D^2 + D = \left( D + \sqrt{-D}  \right)\left( D - \sqrt{-D}  \right)  \). We see \(D, \left( D+1 \right) \) are not units and likewise  for \(\left( D \pm \sqrt{-D}   \right) \). Moreover, the factorizations are not pairwise associate, hence there are two factorizations for \(D^2 + D\), so \(Z\left[ \sqrt{-D}  \right] \) is not a UFD.
+\end{problem}
+\newpage
+\begin{problem}[3]
+Let \(I, J \subseteq R\) be ideals of a commutative ring \(R\). Then, let \(x, y \in IJ\) with \(x = \sum_{i= 1}^{n} a_{i}b_{i}\) and \(y = \sum_{i=n+1}^{m} a_{i} b_{i}\) for \(a_{i} \in I\) \(b_{i} \in J\), \(1 \le i \le m\). Then, we see \(x + y = \sum_{i= 1}^{m} a_{i} b_{i} \in IJ\).\\
+Next, if \(r \in R\), and \(x \in I\) with \(x = \sum_{i= 1}^{n} a_{i} b_{i}\) for some \(a_{i} \in I\) \(b_{i} \in J\) , then \(rx = r \sum_{i= 1}^{n} a_{i} b_{i} = \sum_{i= 1}^{n} r a_{i} b_{i}\) with \(r a_{i} \in I\) by absorption property and \(b_{i} \in J\) by assumption for \(1 \le i \le n\)  . Hence \(rx \in IJ\), so \(IJ\) is an ideal.
+\end{problem}
+\newpage
+\begin{problem}[4]
+Let \(I\) be an ideal in \(R\) and \(I_i = \{x_i :  x\in I\} \subseteq R_i\) for each \(1 \le i \le n\). First, fix \(i\) and let \(r_{i} \in R_i\). Then, there is an \(\textbf{r}\in R\) so that \(\textbf{r}\) has \(r_{i}\) in its \(i\)'th coordinate. Hence, we see \(\textbf{r}\textbf{x} \in I\) for all \(\textbf{x} \in I\), so \(r_ix_i \in I_i\) for all \(x_i \in I_i\) by the pointwise multiplication. Similairly, fix \(i\) and let \(x_{i}, y_{i} \in I_{i}\). Then there are \(\textbf{x}, \textbf{y} \in I\) having \(x_{i}, y_{i}\) in their \(i\)'th coordinates respectively and \(\textbf{x} + \textbf{y}\in I\). Hence, \(x_{i} + y_{i} \in I_{i}\). So, each \(I_{i}\) is an ideal. Now, we show \(I\) to be the product of the \(I_{i}\)'s.\\
+As each \(I_{i}\) is simply the projection of \(I\) into its \(i\)'th coordinate it is clear \(I \subseteq \prod_{i= 1}^{n} I_{i} \). Hence, let \(\textbf{x} = \left( x_1, \ldots, x_{n} \right) \in \prod_{i= 1}^{n} I_{i} \). Then, we see there are vectors \(\textbf{x}_1, \textbf{x}_2, \ldots, \textbf{x}_{n} \in I\) each having \(x_{i}\) in their \(i\)'th coordinates respectively and chosen by axiom of choice such that \(\textbf{x}_i \cdot j_{i} = \left( 0, \ldots, \underbrace{x_{i}}_{\text{position } i}, \ldots, 0  \right)  \in I \) for \(j_{i} \in R\) being the indicator vector in the \(i\)'th coordinate. Hence the sum \(\textbf{x} = \sum_{i= 1}^{n} \textbf{x}_{i} j_{i} \in I\) by closure of addition. So, equality holds.
+\end{problem}
+\newpage
+\begin{problem}[5]
+	\begin{enumerate}
+		\item It is trivial that \(I \subseteq \sqrt{I} \) (taking \(n = 1\) for all \(x \in I\)). To show \(\sqrt{I} \) an ideal, let \(x_1, x_2 \in \sqrt{I} \) with \(x_1^{p} \in I\) and \(x_2^{p_2} \in I\). Then, there are \(a_0, a_1, \ldots, a_{p+q} \in R\) so that
+			\begin{align*}
+				\left( x_1 + x_2 \right) ^{p + q} &=  a_{p + q}x_1^{p+q} + a_{p+q-1}x_1^{p + q - 1} x_2^{1}  + \ldots + a_{p} x_1^{p}x_2^{q} + \ldots a_1 x_1^{1}x_2^{p + q - 1} + a_0 x_2^{p + q}
+			.\end{align*} We know each term of this sum to be in \(I\) by the absorbition property of \(x_1^{p}\) and \(x_2^{q}\), hence the sum is in \(I\), so \(x_1 + x_2 \in \sqrt{I} \). Next,    let \(x \in R, a \in \sqrt{I} \) with \(a^{n} \in I\) , then \(\left( xa \right) ^{n} = x^{n}a^{n} \in I\) by absorption, so \(xa \in \sqrt{I} \), so \(\sqrt{I} \) is an ideal.
+		\item Suppose \(\sqrt{I}  = R\). Then, \(1 \in \sqrt{I} \), hence \(1^{n} =1 \in I\), so \(I=  R\). Conversely, \(I = R \subseteq \sqrt{I} \) so the claim holds.
+		\item Let \(M\) be a maximal ideal among inclusion and \(n \ge 1\). Then \(M \subseteq \sqrt{M} \) with \(\sqrt{M} \) being an ideal so either \(\sqrt{M} = R \) or \(\sqrt{M}  = M\)  if \(\sqrt{M}  = R\), \(\lightning\) by previous part, so \(\sqrt{M} = M\). Moreover, as \(M^{n}\subseteq M\) , we see \(\sqrt{M^{n}} \subseteq \sqrt{M} \). Hence, we need only show the reverse inclusion. Let \(x \in \sqrt{M} \). Then, \(x^{m} \in M\) for some \(m \ge 1\). Then, we see \(x^{mn} = \underbrace{x^{m} \cdot x^{m} \cdot \ldots \cdot x^{m}}_{n \text{ times}} \in M^{n}\), so \(x \in \sqrt{M^{n}\). Hence equality holds.
+	\end{enumerate}
+\end{problem}
+\end{document}

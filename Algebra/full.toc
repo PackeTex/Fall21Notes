@@ -1,20 +1,21 @@
-\contentsline {section}{\numberline {1}Review of Group Theory}{2}{}%
-\contentsline {section}{\numberline {2}Group Actions}{6}{}%
-\contentsline {section}{\numberline {3}Conjugacy and Normality Proofs}{10}{}%
-\contentsline {section}{\numberline {4}Sylow Theorems}{12}{}%
-\contentsline {section}{\numberline {5}Semidirect Products}{18}{}%
-\contentsline {section}{\numberline {6}Nilpotent Groups}{25}{}%
-\contentsline {section}{\numberline {7}Solvable Groups}{30}{}%
-\contentsline {section}{\numberline {8}Free Groups}{32}{}%
-\contentsline {section}{\numberline {9}Summary of Group Theory}{38}{}%
-\contentsline {subsection}{\numberline {9.1}Basic Group Theory}{38}{}%
-\contentsline {subsection}{\numberline {9.2}P-groups}{39}{}%
-\contentsline {subsection}{\numberline {9.3}Semidirect products}{41}{}%
-\contentsline {subsection}{\numberline {9.4}Simple Groups}{42}{}%
-\contentsline {subsection}{\numberline {9.5}Nilpotent Groups}{42}{}%
-\contentsline {subsection}{\numberline {9.6}Solvable Groups}{44}{}%
-\contentsline {subsection}{\numberline {9.7}Free Groups}{45}{}%
-\contentsline {section}{\numberline {10}Intro to Ring Theory}{46}{}%
-\contentsline {section}{\numberline {11}Noetherian Rings}{54}{}%
-\contentsline {section}{\numberline {12}Ring Localization}{56}{}%
-\contentsline {section}{\numberline {13}Chinese Remainder Theorem}{57}{}%
+\contentsline {section}{\numberline {1}Review of Group Theory}{2}
+\contentsline {section}{\numberline {2}Group Actions}{6}
+\contentsline {section}{\numberline {3}Conjugacy and Normality Proofs}{10}
+\contentsline {section}{\numberline {4}Sylow Theorems}{12}
+\contentsline {section}{\numberline {5}Semidirect Products}{18}
+\contentsline {section}{\numberline {6}Nilpotent Groups}{24}
+\contentsline {section}{\numberline {7}Solvable Groups}{29}
+\contentsline {section}{\numberline {8}Free Groups}{32}
+\contentsline {section}{\numberline {9}Summary of Group Theory}{38}
+\contentsline {subsection}{\numberline {9.1}Basic Group Theory}{38}
+\contentsline {subsection}{\numberline {9.2}P-groups}{39}
+\contentsline {subsection}{\numberline {9.3}Semidirect products}{40}
+\contentsline {subsection}{\numberline {9.4}Simple Groups}{41}
+\contentsline {subsection}{\numberline {9.5}Nilpotent Groups}{41}
+\contentsline {subsection}{\numberline {9.6}Solvable Groups}{43}
+\contentsline {subsection}{\numberline {9.7}Free Groups}{44}
+\contentsline {section}{\numberline {10}Intro to Ring Theory}{45}
+\contentsline {section}{\numberline {11}Noetherian Rings}{53}
+\contentsline {section}{\numberline {12}Ring Localization}{55}
+\contentsline {section}{\numberline {13}Chinese Remainder Theorem}{56}
+\contentsline {section}{\numberline {14}Polynomial Rings}{58}

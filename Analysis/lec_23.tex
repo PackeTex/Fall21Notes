@@ -1,0 +1,77 @@
+\section{Seperability and Bounded Linear Functionals}
+\lecture{23}{Thu 18 Nov 2021 13:57}{Seperability of \(L^{p}\) spaces}
+\begin{definition}[Step-Function]
+	 A \textbf{step function}, \(\psi: \R \to \R\) 	is a simple function of the form \[
+	 x \mapsto \sum_{k=1}^{m} a_{k} \chi_{J_{k}}\left( x \right)
+	 \] where every set \(J_{k}\) is a bounded interval.
+\end{definition}
+\begin{theorem} \(\left( 22.4 \right) \).
+\end{theorem}
+\begin{proof}
+	\begin{enumerate}
+		\item For the case \(p = \infty\) , we have \(f\) bounded almost everywhere. By splitting \(f\) into functions \(f^{+}\), \(f^{-}\) we can assume \(f \ge 0\) . Then, we see a sequence of simple functions \(\left( s_{n} \right) \) converging uniformly to \(f\) almost everywhere.\\
+			For \(1 \le p < \infty\) we find a sequence of simple functions \(\left( s_{n} \right) \) converging pointwise to \(f\) so that \(\left| s_{n} \right|\le \left| f \right|  \). Consequently, we see \[
+			\left| f-s_{n} \right| ^{p} \le (\left| f \right| + \left| s \right|)^{p}  \le ( 2\left| f \right|)^{p}  = 2^{p}\left| f \right| ^{p}
+			.\]
+			So, we see dominated convergence implies \[
+			\int \left| f-s_{n} \right| ^{p} = 0
+			.\]
+		\item Assuming the case \(1\), we see we can assume \(f\) simple. Moreover, we can assume \(f = \chi_{S}\), a characteristic function in \(L^{p}\left( \R \right) \).\\
+			Then, we see \(S \) is measurable with \(\int \chi_{S} = m\left( S \right) < \infty\) , hence \(\int \chi_{S}^{p} < \infty\). Applying littlewoods first princple and finxing \(\epsilon > 0\) we find a finite disjoint collection of open intervals \(\{J_{k} : 1\le k \le n\} \) so that for \(U = \bigcup_{k=1} ^{m}J_{k}\), we find \(m\left( S\triangle U \right) < \epsilon^{p}\).\\
+			Then, we see
+			\begin{align*}
+				\int\left| \chi_{S} - \chi_{U} \right| ^{p} &=  \int \chi_{S \triangle U} ^{p}\\
+				&= m\left( S\triangle U \right)  \\
+				&< \epsilon^{p}
+			.\end{align*}
+	Since \(m\left( U \setminus S \right)< \infty \) , we see each interval \(J_{k}\) must be bounded (else \(U\) would be of infinite measure), so \( \chi_{U}\) is a step function on the interval \(\left[ a, b \right] \supseteq U\) satisfying the required conditions.
+	\item Assuming \(2\) we see it suffices to show case for the step function \(f = \chi_{\left[ c, d \right] }\) with \(c \le d\). Then, fixing \(\epsilon > 0\) and considering the function \[
+	x \mapsto g\left(x\right) = \chi_{\left[ c, d \right] }+ \left( 1 + \epsilon^{-p}\left( x-c \right)  \right) \chi_{\left( c-\frac{\epsilon^{p}}{3},  \right), c }+ \left( 1-e^{-p}\left( x-d \right)  \right) \chi\left( d, d+\frac{\epsilon^{p}}{3} \right)
+	.\]
+	We see this functions is continuous as it is simply piecewise linear, being \(1\) on \(\left[ c, d \right] \) and a linear interpolation between \(1\) and \(0\) in a small interval either side of \(\left[ c, d \right] \). Importantly, \(\int_{\left( c-\frac{1}{3}\epsilon^{p} \right)  } \left| g \right| \le \frac{1}{3}\epsilon^{p}\), the length of the interval. \\
+	Hence, we find \[
+	\int\left| \chi_{\left[ c, d \right] } - g \right| ^{p} \le (\frac{2}{3}\epsilon^{p})^{p}< \epsilon^{p}
+	.\]
+	This completes the proof.
+	\end{enumerate}
+	\end{proof}
+	Note that this proof essentially showed simple functions, step functions, and continuous functions are dense in \(L^{p}\left( \R \right) \) (given \(1 \le p < \infty\) for the last \(2\)).
+\begin{definition}[Density]
+Let \(\left( X, \|\cdot\| \right) \) 	be a normed linear space. If \(S \subseteq T \subseteq X\), then \(S\) is \textbf{dense} in \(T\) if for all \(v \in T, \epsilon > 0 \) we find a vector \(u \in S\) so that \(\|v-u\|< \epsilon\).
+\end{definition}
+\begin{definition}[Seperability]
+	A normed linear space \(\left( X, \|\cdot\| \right) \) is \textbf{seperable} if it contains a countable, dense subset.
+\end{definition}
+\begin{theorem}
+	For \(1\le p < \infty\) , \(L^{p}\left( \R \right) \) is seperable.
+\end{theorem}
+\begin{proof}
+	If \(\phi = c \chi_{\left[ a, b \right] }\) with \(a, b, c \in R\), then for any \(\epsilon > 0\) we find an interval \(I = \left[ c, d \right] \subseteq \left[ a, b \right] \) with \(c, d \in \Q\) and an \(r \in \Q\) so that \(\int \left| \phi - r \chi_{I} \right|^{p} < \epsilon^{p} \) (the function vanishes except on an arbitrarily small interval). Letting \(\Psi\) be the collection of all such step functions of the form \(\psi = \sum_{i= 1}^{n} c_{k} \chi_{I_{k}}\) with \(c_{k} \in \Q\) and \(I_{k}\)  having rational endpoints, then linearity combined with the preceding lemmas guarantees \(\Psi\)  to be a countable dense subset, so \(L^{p}\left( \R \right) \) is seperable.
+\end{proof}
+\section{Bounded Linear Functionals}
+
+\begin{definition}[Functionals]
+	\begin{itemize}
+		\item A function \( \phi: X \to \R\) on a linear space \(X\) is called a \textbf{linear functional} if the laws of linearity holds for \(\phi\).
+		\item A linear functional \(\phi: X \to \R\) on a normed linear space \(\left( X, \|\cdot\| \right) \) is called \textbf{bounded} if there is \(M \ge 0\) so that \(\left| \phi\left( x \right)  \right| \le M \|x\|\) for all \(x \in X\).
+		\item If \(\phi\) is a bounded linear functional, the quantity \[
+		\|\phi\| = \inf \{ M \ge 0 : \left| \phi\left( x \right)  \right| \le M \|x\| \ \forall \ x \in X \}
+		\] is called the \textbf{norm} of \(\phi\).
+	\end{itemize}
+\end{definition}
+\begin{proposition}
+	Let \(\phi: X \to \R\) be a bounded linear functional on a normed linear space \(\left( X, \|\cdot\| \right) \). Then, \[
+	\|\phi\| = \sup \{ \left| \phi\left( x \right)  \right|  : x \in X, \|x\|\le 1  \}
+	.\]
+\end{proposition}
+\begin{definition}[Continuity]
+	A linear functional \(\phi: X \to \R \) on \(\left( X, \|\cdot\| \right) \) is \textbf{continuous at \(x_0\) } if for every \(\epsilon > 0\) we find a \(\delta > 0\) so that \(\left| \phi\left( x \right) - \phi\left( x_0 \right)  \right| < \epsilon\) if \(\|x - x_0\| < \delta\). \\If \(\phi\) is continuous for all \(x \in X\), then \(\phi\) is \textbf{continuous.}
+\end{definition}
+\begin{proposition}
+Let \(\phi: X \to \R\) be a linear functional on \(\left( X, \|\cdot\| \right) \). Then, the following are equivalent
+\begin{itemize}
+	\item \(\phi\) is continuous,
+	\item \(\phi\) is continuous at some \(x_0 \in X\),
+	\item \(\phi\) is bounded.
+\end{itemize}
+\end{proposition}
