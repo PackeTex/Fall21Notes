@@ -1,0 +1,12 @@
+\documentclass[a4paper]{article}
+\input{preamble.tex}
+\usepackage{pdfpages}
+\title{Analysis I: Homework 7}
+\date{Fri 10 Sep 2021 12:58}
+\input{../ops.tex}
+\begin{document}
+\maketitle
+\begin{problem}[36]
+	Our function will be \(\phi\), the cantor-lebesque function. We have already shown it to be continuous and increasing with \(\phi\left( 1 \right) = 1, \phi\left( 0 \right) = 0\). Moreover, letting \(C\) be the cantor set, we see \(\left[ 0, 1 \right] \setminus C \coloneqq C ^{c}\) is open in \(\left[ 0, 1 \right] \) so for all \(x \in C ^{c} \), there is an \(\epsilon > 0\) so that \(\left( x-\epsilon, x+\epsilon \right) \subseteq C ^{c}\) . Then, since for all intervals \(I \)  in the \(\left[ 0, 1 \right] \) complement of the cantor set, we find  \(I \subseteq J_{n, k}\) for some \(n, k \in \N\)  , we have \(\xi(I) = \{\frac{n}{2^{k}}\} \), so \[\overline{D}\left( \phi\left( x \right)  \right)  = \lim_{r \to 0}\sup \{ \frac{ \phi\left( x+h \right) -  \phi\left( x \right) }{h} : 0 < \left| h \right|  < r   \} = \lim_{r \to 0}\sup \{ \frac{0}{h} : 0 < \left| h \right|  <  r\} = 0  .\] Similarly, we find \( \underline{D}  \left( \phi\left( x \right)  \right) = 0\). Hence, \( \phi\) is differentiable at \(x\) and since \( \phi^{\prime} = 0\) almost everywhere, yet \( \phi\) is not constant by the initial claim, we find \( \phi\) is not absolutely continuous.
+\end{problem}
+\end{document}
