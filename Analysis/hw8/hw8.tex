@@ -1,0 +1,42 @@
+\documentclass[a4paper]{article}
+\input{preamble.tex}
+\usepackage{pdfpages}
+\title{Analysis I: Homework 8 and 9}
+\date{Fri 10 Sep 2021 12:58}
+\input{../ops.tex}
+\begin{document}
+\maketitle
+\begin{problem}[36]
+	Our function will be \(\phi\), the cantor-lebesque function. We have already shown it to be continuous and increasing with \(\phi\left( 1 \right) = 1, \phi\left( 0 \right) = 0\). Moreover, letting \(C\) be the cantor set, we see \(\left[ 0, 1 \right] \setminus C \coloneqq C ^{c}\) is open in \(\left[ 0, 1 \right] \) so for all \(x \in C ^{c} \), there is an \(\epsilon > 0\) so that \(\left( x-\epsilon, x+\epsilon \right) \subseteq C ^{c}\) . Then, since for all intervals \(I \)  in the \(\left[ 0, 1 \right] \) complement of the cantor set, we find  \(I \subseteq J_{n, k}\) for some \(n, k \in \N\)  , we have \(\xi(I) = \{\frac{n}{2^{k}}\} \), so \[\overline{D}\left( \phi\left( x \right)  \right)  = \lim_{r \to 0}\sup \{ \frac{ \phi\left( x+h \right) -  \phi\left( x \right) }{h} : 0 < \left| h \right|  < r   \} = \lim_{r \to 0}\sup \{ \frac{0}{h} : 0 < \left| h \right|  <  r\} = 0  .\] Similarly, we find \( \underline{D}  \left( \phi\left( x \right)  \right) = 0\). Hence, \( \phi\) is differentiable at \(x\) and since \( \phi^{\prime} = 0\) almost everywhere, yet \( \phi\) is not constant by the initial claim, we find \( \phi\) is not absolutely continuous.
+\end{problem}
+\newpage
+\begin{problem}[38]
+	First, note that \(\phi: \R \to \overline{\R}, \ x\mapsto \sqrt{1 + x^2} \) is convex and since \(h\) is integrable, we see it is finite almost everywhere. Hence, discarding the points for which \(h = \infty\), we see jensens inequality yields \[
+	\sqrt{1 + A^2}  \le \int_{\left[ 0, 1 \right] } \sqrt{1 + h^2}
+	.\]
+	For the second inequality, note that since \(h\) is nonnegative and \(\sqrt{.} \) is an increasing function we have \[
+	\int_{\left[ 0, 1 \right] } \sqrt{1 + h^2} \le \int_{\left[ 0, 1 \right] } \sqrt{1 + 2h + h^2} \le \int_{\left[ 0, 1 \right] }1 + h = 1 + A
+	.\]
+\end{problem}
+\newpage
+
+\begin{problem}[39]
+	\begin{itemize}
+		\item Assume \(\left( f_{n} \right) \) does not converge to \(f\) in measure. That is, there is an \(\epsilon > 0\) so that for all \(N \in \N\) \[
+		m\left( \{x \in \R : \left| f_{n_{N}}\left( x \right) - f\left( x \right)  \right| > \epsilon\}  \right) > \epsilon
+		\] for some \(n_{N} \ge N\). Denote this set \(A_{N}\).  Then, we see \[
+		\int \left| f_{n_{N}} - f \right| \ge \int_{A_{N}} \left| f_{n_{N}} - f \right|   \ge \int \epsilon \chi_{A_{N}} = \epsilon m\left( A_{N} \right) \ge \epsilon^2
+		.\]
+		That is, for some \(\epsilon ^{\prime} = \epsilon ^2 > 0\),  and all \(N \in \N\) we find an \(n_N \ge N\), so that \(\int \left| f_{n} - f \right| \ge \epsilon^{\prime}\), so \(f_{n}\) does not converge to \(f\) in mean.
+	\item First, note that if \(x = 0\) or \(1\), then \(f_{n}\left( x \right)  = x\) for all \(n \in \N\). Then, if \(x \in \left( 0, 1 \right) \), for all \(\epsilon > 0\), there is an \(N \in \N\) so that \(x^{n} < \)
+	\end{itemize}
+\end{problem}
+\newpage
+\begin{problem}[40]
+	\begin{itemize}
+		\item The first function will be \(f_{n} = \chi_{\left( n, \infty \right) }\). We note that for all \(x \), \(x \not\in \left( n, \infty \right) \) for all \(n \ge \left\lceil x \right\rceil \), so \(\left( f_{n} \right) \) converges point wise. On the other hand for \(\epsilon = \frac{1}{2}\), we see \(m\left( \{x \in \R : \left| f_{n}\left( x \right) - f\left( x \right)  \right| > \frac{1}{2}\}  \right)  = m\left( \left( n, \infty \right)  \right) = \infty > \epsilon\), so \(\left( f_{n} \right) \) does not converge in measure (hence not in mean).
+		\item For the second function define the following sequence of intervals. \(A_{1} = \left[ 0, 1 \right] \), \(A_{2^{k}} = \left[ 0, \frac{1}{2^{k}} \right] \) and \(A_{2^{k} + c} = \left[ \frac{c}{2^{k}}, \frac{c+1}{2^{k}} \right] \) for \(c < 2^{k}\). This essentially enumerates all partitions with endpoints being a rational with denominators powers of \(2\) and consecutive numerators. Since the collection \(\{A_{2^{k} + c} : 0 \le c < 2^{k}\} \) covers \(\left[ 0, 1 \right] \) for every \(k \in \N\), we see  for all \(N \in \N\) and \(x \in \left[ 0, 1 \right] \) , the function \(f_{n} = \chi_{A_{n}}\) will have \(f_{n}\left( x \right) = 1\) for some (infinitely many) \(n \ge N\), so it will not converge to \(0\) pointwise. On the other hand, we see \(\left| f_{n} - 0 \right|= f_{n} = \chi_{A_{n}}\), so \(\int \left| f_{n} - 0 \right| = m\left( A_{n} \right) \). Moreover, for all \(k \in \N\) we find an \(N = \left\lfloor \log_{2}\left( n \right)  \right\rfloor\) so that \(m\left( A_{n} \right) < \frac{1}{2^{k}} \) for all \(n \ge N\), so \(f_{n}\) does in fact converge in mean and in measure.
+		\item For the third function we adopt the same intervals from part \(2\), but we instead define the function \(f_{n} = 2^{n} \chi_{A_{n}}\). Recalling that \(m\left( A_{n} \right)\ge \frac{1}{2^{n}} \) for all \(n\), we see \(\int \left| f_{n} - 0 \right|  = \int 2^{n} \chi_{A_{n}} = 2^{n} m\left( A_{n} \right) \ge \frac{2^{n}}{2^{n}} = 1\) for all \(n \in \N\) . Hence for all \(\epsilon < 1\) we find convergence in mean to fail. Moreover, \(f_{n}\) still fails to converge pointwise. Lastly, recall for all \(k \in \N\) there is a \(N \in \N\) so that \(m\left( A_{n} \right)\le \frac{1}{2^{k}} \) for all \(n \ge N\), hence for all \(\epsilon > \frac{1}{2^{k}}\)  we find the convergence in measure criterion holds. Since there is a \(k \in \N\) so that \(0 < \frac{1}{2^{k}} < \epsilon\) for all \(\epsilon > 0\), we see convergence in measure does in fact hold true.
+	\end{itemize}
+\end{problem}
+\end{document}

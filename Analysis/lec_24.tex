@@ -1,0 +1,18 @@
+\lecture{24}{Tue 23 Nov 2021 14:02}{}
+\begin{definition}[Signum Function]
+We define the \textbf{sign function} to bf \begin{align*}
+	\sgn \overline{\R} &\longrightarrow \{-1, 0, 1\}  \\
+	\sgn\left( x \right)  &\longmapsto \sgn(\sgn\left( x \right) ) = \chi_{\left( 0, \infty \right] }\left( x \right)  - \chi_{\left[ -\infty, 0 \right) }\left( x \right)
+.\end{align*}
+Note, if \(g\) is measurable, \(\sgn\left( g \right) \) is measurable.
+\end{definition}
+\begin{remark}
+	If \(g: S \to \overline{\R}\) is measurable, then \(\sgn\left( g^{*} \right) \) is simple. Moreover, \(g \sgn\left( g \right) = \left| g \right| \).
+\end{remark}
+\begin{theorem}
+	Let \(S \subseteq \R\) be measurable with \(1 \le p \le \infty\), and \(q\) being \(p\)'s conjugate. For \(g \in L^{q}\left( S \right) \), define the map \begin{align*}
+		\phi: L^{p}\left( S \right)   &\longrightarrow  \R \\
+		f &\longmapsto \phi\left( f \right)= \int_{S}  fg
+	.\end{align*}
+	Then \(\phi\) is a bounded linear functional on \(L^{p}\left( S \right) \) with norm \(\|\phi\| = \|g\|_{q}\). In particular \(\phi\left( f \right) = 0\) for all \(f\in L^{p}\left( S \right) \)  if and only if \(g = 0\) almost everywhere.
+\end{theorem}

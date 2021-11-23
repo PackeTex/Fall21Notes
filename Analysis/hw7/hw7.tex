@@ -6,7 +6,53 @@
 \input{../ops.tex}
 \begin{document}
 \maketitle
+\begin{problem}[32]
+
+\end{problem}
+\newpage
+\begin{problem}[33]
+	First, basic limits show \(\lim_{n \to \infty}h_{n}\left( x \right)  = \left \{
+		\begin{array}{11}
+			3, & \quad x \in \left( -1, 1 \right)  \\
+			2, & \quad x = -1 \text{ or } x=1\\
+			1, & \quad x \in \left( -\infty, -1 \right)\cup \left( 1, \infty \right)
+		\end{array}
+		\right.\)
+		Moreover, \(h_{n}\left( x \right) \) is continuous for every \(n \in \N\), hence measurable. So, we see \\\(h_{n} \cdot f\) is measurable for every \(n \in \N\). Then, \(\lim_{n \to \infty}\left( h_{n} \cdot f \right) \left( x \right) = \left \{
+			\begin{array}{11}
+				3f\left( x \right) , & \quad x \in \left( -1, 1 \right)  \\
+				2f\left( x \right) , & \quad x= \pm 1\\
+				f\left( x \right) , &\quad x\in\left( -\infty, -1 \right)\cup \left( 1, \infty \right)
+			\end{array}
+		\right\). Hence, we see \(\left| h_{n} \cdot f \right|\le 3\left| f \right|  \) with \(3 \left| f \right| \) being integrable (since \(f\) is integrable). Applying dominated convergence yields \[
+			\lim_{n \to \infty}\int h_{n} \cdot f = \int \lim_{n \to \infty} h_{n} \cdot f = \int_{\left[ -\infty, -1 \right] } f + \int_{\left[ -1, 1 \right] } 3f + \int_{\left[ 1, \infty \right] } f = \int f \DX  + 2\int_{ \left[ -1, 1 \right] }f \DX
+			.\]
+\end{problem}
+\newpage
+\begin{problem}[34]
+	First, basic limits again show \(\lim_{n \to \infty}e^{-\frac{x}{n}} = 1\). Moreover, fixing \(x\), we see \(e^{-\frac{x}{n}} < e^{-\frac{x}{n+1}}\), so we see \(e^{-\frac{x}{n}}\left| f \right| \le e^{-\frac{x}{n+1}}\left| f \right| \). Then, denoting \(e^{-\frac{x}{n}}\left| f \right| = f_{n}\), we see \(\lim_{n \to \infty}f_{n} = \lim_{n \to \infty}e^{-\frac{x}{n}} \lim_{n \to \infty}\left| f \right| = \lim_{n \to \infty}\left| f \right| \) with each \(f_{n}\) being measurable (as it is the product of continous functions) and increasing, hence passing to the \(0\)-extension and applying monotone convergence yields \[
+	1 \ge \lim_{n \to \infty}\int_{\left( 0, \infty \right) } f_{n} = \lim_{n \to \infty} \int f_{n}^{*} =  \int_{ } \lim_{n \to \infty}f_{n}^{*} = \int_{} (\left| f \right|)^{*} = \int_{\left( 0, \infty \right) } \left| f \right|
+	.\]
+	Since \(f\) is continuous, we see it is measurable, and since it is absolutely integrable on \(\left( 0, \infty \right) \), we have \(f\) being integrable on \(\left( 0, \infty \right) \).
+\end{problem}
+\newpage
+\begin{problem}[35]
+	First, recall \(\sum_{i= 1}^{\infty} \frac{1}{n^{4} } = \frac{\pi^{4}}{90}\).\\
+	Then, define \(g_{n} = \sum_{i= 1}^{n} f_{i}^2\) and note that \(g_{n} \le g_{n+1}\) as each term is finite. Moreover \(g_{n}\) is the sum of measurable functions, so it is measurable. Lastly, define \(\lim_{n \to \infty}g_{n}\left( x \right) = g\left( x \right)  = \sum_{i= 1}^{\infty} f_{n}^2\left( x \right) \) Then, monotone convergence  and zero extensions yield
+	\begin{align*}
+		\int_{\left[ 0, 1 \right] } g = \lim_{n \to \infty} \int_{\left[ 0, 1 \right] }g_{n}
+		&= \lim_{n \to \infty}\int g^{*} \\
+		&= \lim_{n \to \infty} \int (\sum_{i= 1}^{n} f_{n}^2)^{*} \\
+		&= \lim_{n \to \infty} \int_{\left[ 0, 1 \right] } \sum_{i= 1}^{n} f_{n}^2 \\
+		&= \lim_{n \to \infty} \sum_{i= 1}^{n} \int_{\left[ 0, 1 \right] }f_{n}^2 \\
+		&\le \lim_{n \to \infty} \sum_{i= 1}^{n} \frac{1}{n^{4}} \\
+		&= \frac{\pi^{4}}{90} \\
+	.\end{align*}
+	Moreover, \(0 \le \int_{\left[ 0, 1 \right] }f_{n}^2\) as the integrand is always non-negative. Hence, as the sum is bounded and strictly increasing, we see the terms tend to \(0\). That is \( \lim_{n \to \infty} \int _{\left[ 0, 1 \right] }f_{n}^2 = 0\).
+\end{problem}
+\newpage
 \begin{problem}[36]
 	Our function will be \(\phi\), the cantor-lebesque function. We have already shown it to be continuous and increasing with \(\phi\left( 1 \right) = 1, \phi\left( 0 \right) = 0\). Moreover, letting \(C\) be the cantor set, we see \(\left[ 0, 1 \right] \setminus C \coloneqq C ^{c}\) is open in \(\left[ 0, 1 \right] \) so for all \(x \in C ^{c} \), there is an \(\epsilon > 0\) so that \(\left( x-\epsilon, x+\epsilon \right) \subseteq C ^{c}\) . Then, since for all intervals \(I \)  in the \(\left[ 0, 1 \right] \) complement of the cantor set, we find  \(I \subseteq J_{n, k}\) for some \(n, k \in \N\)  , we have \(\xi(I) = \{\frac{n}{2^{k}}\} \), so \[\overline{D}\left( \phi\left( x \right)  \right)  = \lim_{r \to 0}\sup \{ \frac{ \phi\left( x+h \right) -  \phi\left( x \right) }{h} : 0 < \left| h \right|  < r   \} = \lim_{r \to 0}\sup \{ \frac{0}{h} : 0 < \left| h \right|  <  r\} = 0  .\] Similarly, we find \( \underline{D}  \left( \phi\left( x \right)  \right) = 0\). Hence, \( \phi\) is differentiable at \(x\) and since \( \phi^{\prime} = 0\) almost everywhere, yet \( \phi\) is not constant by the initial claim, we find \( \phi\) is not absolutely continuous.
 \end{problem}
+
 \end{document}
