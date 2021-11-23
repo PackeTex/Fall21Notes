@@ -1,4 +1,4 @@
-\lecture{24}{Tue 23 Nov 2021 14:02}{}
+\lecture{24}{Tue 23 Nov 2021 14:02}{Riesz Representation Theorem}
 \begin{definition}[Signum Function]
 We define the \textbf{sign function} to bf \begin{align*}
 	\sgn \overline{\R} &\longrightarrow \{-1, 0, 1\}  \\
@@ -18,6 +18,88 @@ Note, if \(g\) is measurable, \(\sgn\left( g \right) \) is measurable.
 \end{theorem}
 \begin{proof}
 	By Holder, \[
-	\left|  \right|
+	\left|  \phi\left( f \right) 	\right|\le \int_{S}\left| fg \right| \le \|f\|_{p} \cdot \|f\|_{q}
+	.\] Hence, \( \phi\) is well defined, and since \( \phi\) is linear we found it to be a bounded linear functional with \(\| \phi\| \le \| g\|_{q}\) .\\
+	It remains to be shown that \(\| \phi\| = \|g\| _{q}\).First, we can assume \(\|g\|_{q}>0\). Then, if \(1 < p \le \infty\) we have \(1 \le q < \infty\). Define \[
+	f = \|g\|_{q}^{1-q} \left| g \right| ^{q-1}\sgn\left( g \right)
 	.\]
+	We see \(f \in L^{p}\left( S \right) \) and \(\|f\|_{p} = 1\). Moreover, \begin{align*} \phi \left( f \right) &= \int_{S} \|g\|^{1-q} \left| g \right| ^{q-1} \left| g \right|
+	&= \|g\|^{1-q}_{q} \underbrace{\int_{S} \left| g \right| ^{q}}_{\|g\|_{q}^{q}}  \\
+&= \|g\|_{q}
+	.\end{align*}
+Hence, we see \(\|g\|_{q}\le \| \phi\|\).\\
+Lastly, consider the case \(p = 1\) (\(q = \infty\)). For \(\epsilon > 0\) , let \(E_{\epsilon} = \{x \in S: \left| g\left( x \right)  \right| \ge \| \phi\| + \epsilon\} \) and define \(f_{n} = \chi_{E_{\epsilon}\cap \left( -n, n \right) } \sgn\left( g \right) \) for \(n \in \N\). Then, \(f_{n} \in L_1\left( S \right) \) and \[
+\|f_{n}\|_{1} = m\left( E_{\epsilon}\cap \left( -n, n \right)  \right)
+.\]
+Then, we see
+\begin{align*}
+	\|f_{n}\|_{1} \| \phi\| &\ge \phi\left( f_{n} \right) \\
+	 &=  \int_{S}g f_{n} \\
+				 &\ge  (\|p\| + \epsilon) \cdot \|f_{n}\|_{1}
+.\end{align*}
+This implies \(\|f_{n}\|_{1} = 0\) as all other possibilities have already been ruled out. Then, we see \(m\left( E_{\epsilon} \right) = 0 \). Then, letting \(E = \bigcup_{k \in \N} E_{\frac{1}{k}} = \{x \in S : \left| g\left( x \right)  \right| > \| \phi\|\}  \) we see \(m\left( E \right)  = 0\), so \(\left| g\left( x \right)  \right| \le \| \phi\|\) almost everywhere (i.e. \(\|g\|_{\infty} \le \| \phi\|\) so the claim is shown.\\
+The additional claim about \( \phi\left( f \right)  = 0\) is then trivial.
+\end{proof}
+\begin{lemma}
+Let \(\left[ a, b \right] \subseteq \R\) 	with \(1 \le p < \infty\) and \(q\) being \(p\)'s conjugate. Suppose \(g: \left[ a, b \right]  \to \overline{\R}\) is measurable and finite almost everywhere. If there is a \(M \ge 0\) so that \(\left| \int_{\left[ a, b \right] } gs \right| \le M \|s\|_{p} \) for every simple function \(s \in L^{p}\left( \R \right) \), then \(g \in L^{q}\left( \left[ a, b \right]  \right) \) and \(\|g\|_{q}\le M\).
+\end{lemma}
+\begin{proof}
+	Consider \(p = 1\) and let \(E_{\epsilon}  = \{x \in \left[ a, b \right] : \left| g\left( x \right)  \right| \ge M + \epsilon\} \) for some \(\epsilon > 0\). Define \(f_{\epsilon} = \chi_{E_{\epsilon}} \sgn\left( g^{*} \right) \). Since \(E_{\epsilon}\) is measurable and contained within \(\left[ a, b \right] \) , then \(m\left( E_{\epsilon} \right) < \infty \) and \(f_{\epsilon}\) is simple in \(L^{1}\left(\R  \right) \) so that \[
+	M m\left( E_{\epsilon} \right)  = M\left( \|f_{\epsilon}\|_{1} \right) \ge \int_{\left[ a, b \right] }g f_{\epsilon} = \int_{E_{\epsilon}} g f_{\epsilon}
+	\ge \left( M + \epsilon \right) m\left( E\epsilon \right)
+	.\]
+	Again, we find \(m\left( E_{\epsilon} \right) = 0 \), so taking the union over all such \(E_{\frac{1}{k}}\) yields \(\left| g\left( x \right)  \right| \le M\) almost everywhere, hence the claim is shown.\\
+	For the case \( 1 < p < \infty\), we see \(g\) measurable implies a sequence of simple functions \(\left( s_{n} \right) \) so that \(\lim_{n \to \infty}s_{n}\left( x \right) = \left| g^{*}\left( x \right)  \right| \) for all \(x \in \R\) and \(0 \le s_{n} \le \left| g^{*} \right| \) for all \(n\). Next, define a sequence of simple functions \(\left( t_{n} \right) \) with \(t_{n} = s_{n}^{q-1} \sgn\left( g^{*} \right) \). Since \(\left| g^{*} \right| \ge s_{n} \ge 0\) , we find \(t_{n}\left( x \right)  = 0\) for \(x \not\in \left[ a, b \right] \). Hence, \(t_{n} \in L^{p}\left( \R \right) \) with \[
+	\int \left| t_{n} \right|^{p} = \int \left| s_{n} \right|\left( pq-p \right)   = \int \left| s_{n} \right|^{q}
+	.\]
+	Moreover, \begin{align*}
+	\|s_{n}\|_{q}^{q} &= \int s_{n}^{q} \\
+			  &= \int s_{n}^{q-1}s_{n}
+			  &\le \int_{\left[ a, b \right] } s_{n}^{q-1} \left| g \right| \\
+			  &= \int_{\left[ a, b \right] } g \sgn\left( g \right) s_{n}^{q-1} \\
+			  &= \int_{\left[ a, b \right] }g t_{n} \\
+			  &\le M \cdot \|t_{n}\|_{p}\\
+	&= M \cdot \left( \int \underbrace{\left( s_{n}^{q-1} \right)^{p} }_{s_{n} ^{q}}   \right)^{\frac{1}{p}}  \\
+	&= M\cdot \left( \int s_{n}^{q} \right)^{\frac{1}{q} \cdot \frac{q}{p}}  \\
+	&=  M \|s_{n}\|_{q}^{\frac{q}{p}}
+\end{align*}.
+Hence, \(\|s_{n}\|_{q}^{q} \le M \|s_{n}\|_{q}^{\frac{q}{p}}\). Dividing yields \[
+\|s_{n}\|_{q}^{q-\frac{q}{p}} = \|s_{n}\|_{q}\le M
+.\]
+Applying Fatous lemma
+\begin{align*}
+	\int_{\left[ a, b \right] } \left| g \right| &= \int_{\left[ a, b \right] } \left( \lim_{n \to \infty} s_{n}^{q} \right)  \\&\le  \liminf_{n \to \infty} \int_{\left[ a, b \right] } s_{n}^{q} \\
+						     &\le M^{q}
+.\end{align*}
+\end{proof}
+\begin{theorem}[Riesz Representation Theorem]
+Let \( S \subseteq \R\) 	be measurable with \(1 \le p < \infty\) and \(q\) being \(p\)'s conjugate. Then, for every bounded linear functional \(  \phi: L^{p}\left( S \right)  \to \R\) there is a unique \(g \in L^{q}\left( S \right) \) so that \[
+\pi\left( f \right) = \int_{S}fg   \ \forall  \ f \in L^{p}\left( S \right)
+\] and \(\| \phi\| = \|g\|_{q}\).
+\end{theorem}
+\begin{proof}
+	Defining \( \phi^{*}\left( f \right) = \phi \left( f \mid_{S} \right) \) for some \(f \in L^{p}\left( \R \right) \), we see \( \phi\) is a bounded linear functional on \(L^{p}\left( \R \right) \) whiles preserving its norm. Hence, we can assume \(S = \R\).\\
+Let \(\left[ a, b \right]  \subseteq R\) and define the following function \begin{align*}
+	F: \left[ a, b \right]  &\longrightarrow \R \\
+	x &\longmapsto F(x) = \phi\left( \chi_{\left[ a, x \right] } \right)
+.\end{align*}
+Given a finite disjoint collection \(\{\left( a_{k}, b_{k} \right) : 1 \le k \le n\} \in \left[ a, b \right]  \) with each interval being nonempty (\(a_{k} < b_{k}\)). Define \(s_{k} = \sgn\left( F\left( b_{k} \right) - F\left( a_{k} \right)  \right) \). Then, linearity yields
+\begin{align*}
+	\phi\left( \sum_{k= 1}^{n} \delta_{k} \chi_{\left( a_{k}, b_{k} \right] } \right) &=  \sum_{i= 1}^{n} \delta_{k} \phi\left( \chi_{\left( a_{k}, b_{k} \right] } \right)  \\
+	&=  \sum_{k= 1}^{n} \delta_{k} \left( \phi\left( \chi_{\left[ a, b_{k} \right] }  - \chi_{\left[ a, a_{k} \right] }  \right)  \\
+		&= \sum_{k= 1}^{n} \left| F\left( b_{k} \right)  - F\left( a_{k} \right)  \right|
+.\end{align*}
+Since \(\left| \sum_{k=1}^{n} \delta_{k} \chi_{\left( a_{k}, b_{k} \right] } \right|^{p} = \sum_{k=1}^{n} \chi_{\left( a_{k}, b_{k} \right] } \), we see
+\begin{align*}
+	\sum_{k=1}^{n} \left| F\left( b_{k} \right)  - F\left( a_{k} \right)  \right| &\le \| \phi\| \left( \int \sum_{k=1}^{n} \chi_{\left( a_{k}, b_{k} \right] } \right) \\
+										      &= \| \phi\| \left( \sum_{k=1}^{n} \left( b_{k} - a_{k} \right)  \right)^{\frac{1}{p}}
+.\end{align*}
+Hence, we find \(F\) to be absolutely continuous.\\
+Now, for \(n \in \N\), define \(I_{n} = \left[ -n, n \right] \) and define the functions \begin{align*}
+	F_{n}: I_{n} &\longrightarrow \R \\
+	x &\longmapsto F_{n}(x) =  \phi\left( \chi_{\left( -n, x \right] } \right)
+.\end{align*} We see each \(F_{n}\) is absolutely continuous, so applying the fundamental theorem of calculus, we find a \(g_{n} \in L^{1}\left( I_{n} \right) \) so that \(F_{n}\left( x \right) = \int_{\left[ -n, x \right] } g_{n}\) for \(x \in I_{n}\) and \(F_{n}^{\prime} = g_{n}\) almost everywhere on \(I_{n}\).\\
+Since \(F_{n+1}\left( x \right) = \phi\left( \chi_{\left( -\left( n+1 \right), n  \right] } \right) + F_{n}\left( x \right) \) for \(x \in I_{n}\). Since this differs only by a constant, we see \(g_{n+1} = g_{n}\) almost everywhere on \(I_{n}\).\\
+Hence, the sequence of integrable functions \(\left( g_{n}^{*} \right) \) converges pointwise almost everywhere to a measurable \(g: \R \to \overline{\R}\). Moreover, every bounded interval \(I \subseteq \R\) has \( \phi\left( \chi_{I} \right) = \int_{I}\left( g \right) = \int g \chi_{I}\) since, there is an \(N \in \N\) so that \(g \chi_{I}= g_{N}^{*} \chi_{I}\) almost everywhere.\\
+Hence linearity yields \( \phi\left( \psi \right)  = \int g \psi\) for every step function \(\psi\). Applying the density results from the previous lecture yields the result for all \(f \in L^{p}\left( \R \right) \).
 \end{proof}

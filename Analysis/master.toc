@@ -1,2 +1,2 @@
-\contentsline {section}{\numberline {1}Seperability and Bounded Linear Functionals}{1}
-\contentsline {section}{\numberline {2}Bounded Linear Functionals}{3}
+\contentsline {section}{\numberline {1}Seperability and Bounded Linear Functionals}{4}
+\contentsline {section}{\numberline {2}Bounded Linear Functionals}{6}
