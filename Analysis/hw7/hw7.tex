@@ -6,8 +6,33 @@
 \input{../ops.tex}
 \begin{document}
 \maketitle
+\begin{problem}[31 (Collaborated with Andrea)]
+Let \(f = \frac{\sin\left( x \right) }{x}\). We aim to show \(\int f^{+} = \infty\). First, note that \(\int f^{+}  \ge \int_{\left[ 0, \infty \right] } f^{+}\) so it suffices to show this quantity infinite. Moreover, in this interval we find \(f\) positive for \(x \in \left[ 2n\pi, (2n+1)\pi \right] \) for \(n \in \Z^{+}_0\). Hence, defining \(f_{n} = f^{+} \chi_{\left[ 0, \left( 2n+1 \right) \pi \right] }\) we see each \(f_{n}\) is measurable (it is continuous) and non-negative with \(\lim_{n \to \infty}f_{n} \left( x \right) = f^{+}\left( x \right) \) for all \(x \ge 0  \). Moreover, since \(\left[ 0, \left( 2n+1 \right) \pi \right] \subseteq \left[ 0, \left( 2\left( n+1 \right) +1 \right) \pi \right] \) we see \(f_{n} \le f_{n+1}\) for all \(x \in \left[ 0, \infty \right) \).  Hence, applying dominated convergence yields
+\begin{align*}
+	\int f^{+} &\ge \int _{\left[ 0, \infty \right)} f^{+}\\
+	&= \int_{\left[ 0, \infty \right] } \lim_{n \to \infty} f_{n} \\
+	&= \lim_{n \to \infty} \int_{\left[ 0, \infty \right] } f_{n} \\
+	&= \lim_{n \to \infty} \sum_{i=0}^{n} \int_{\left[ 2i\pi, \left( 2i + 1 \right) \pi \right] } f_{n} \\
+	&\ge \lim_{n \to \infty} \sum_{i=0}^{n} \int_{\left[ 2i\pi, \left( 2i+1 \right) \pi \right] } \frac{(\sin ^{+}\left( x \right) \mid_{\left[ 0, 2n\pi \right] })^{*} }{\left( 2i + 1 \right) \pi}\\
+	&= \lim_{n \to \infty} \sum_{i=0}^{n} \frac{1}{\left( 2i + 1 \right) \pi } \int_{\left[ 2i\pi, \left( 2i+1 \right) \pi \right] } (\sin^{+}\left( x \right) \mid_{\left[ 0, 2n\pi \right] })^{*}\\
+	&\ge \lim_{n \to \infty} \sum_{i=0}^{n} \frac{1}{\left( 2i+1 \right) \pi} \text{ since } \int_{\left[ 2i\pi, \left( 2i+1 \right) \pi \right] } \sin ^{+}\left( x \right) = \int_{\left[ 0, \pi \right] } \sin\left( x \right) = 2 .\\
+	&= \frac{1}{\pi} \lim_{n \to \infty} \sum_{i=0}^{n} \frac{1}{\left( 2i+1 \right) }\\
+	&= \frac{1}{\pi} \sum_{i= 0}^{\infty} \frac{1}{2i+1} \\
+	&=  \infty
+.\end{align*}
+Hence, \(\int f^{+}\) is not finite, so \(f\) is nonintegrable.
+\end{problem}
+\newpage
 \begin{problem}[32]
-
+	First, note that \(f \coloneqq \frac{1}{\sqrt{x} }\) is measurable (preimage of an interval is an interval) and finite almost everywhere. Then, we define \(A_{n} = \left[ \frac{1}{\left( n-1 \right) ^2}, \frac{1}{n^2} \right] \) and the simple functions \(s_{n} = \sum_{i= 1}^{n} i \chi_{A_{i}}\). As each term is positive, we see \(s_{n}\) is increasing for fixed \(x\). Moreover, \(s = \lim_{n \to \infty}s_{n}\) is integrable by applying DCT
+	\begin{align*}
+		\int s &= \lim_{n \to \infty} \int s_{n} \\
+		&= \lim_{n \to \infty} \sum_{i= 1}^{\infty} \left( \frac{1}{\left( i-1 \right) ^2} - \frac{1}{i^2} \right) i\\
+		&= \lim_{n \to \infty} \sum_{i= 1}^{n} \frac{1}{\left( i-1 \right) ^2} + \frac{1}{i\left( i-1 \right) } \\
+		&\le \lim_{n \to \infty}\sum_{i= 1}^{n} \frac{2}{i^2}\\
+		&= \frac{\pi^2}{3}
+	.\end{align*}
+	Then, for any \(t \in \mathscr{S}\left( f \right) \) , we see \(t \le s_{n} \le s\) for some \(n = \left\lceil \frac{1}{\sqrt{\inf \{ x : x \in \support\left( t \right)  \} } } \right\rceil \). Hence, \(\int s\) is an upper bound of \(\sup \{ \int t: t \in \mathscr{S}\left( f \right)  \} = \int f \), so \(\int f\) is bounded and hence \(f\) is integrable.
 \end{problem}
 \newpage
 \begin{problem}[33]
@@ -50,9 +75,4 @@
 	.\end{align*}
 	Moreover, \(0 \le \int_{\left[ 0, 1 \right] }f_{n}^2\) as the integrand is always non-negative. Hence, as the sum is bounded and strictly increasing, we see the terms tend to \(0\). That is \( \lim_{n \to \infty} \int _{\left[ 0, 1 \right] }f_{n}^2 = 0\).
 \end{problem}
-\newpage
-\begin{problem}[36]
-	Our function will be \(\phi\), the cantor-lebesque function. We have already shown it to be continuous and increasing with \(\phi\left( 1 \right) = 1, \phi\left( 0 \right) = 0\). Moreover, letting \(C\) be the cantor set, we see \(\left[ 0, 1 \right] \setminus C \coloneqq C ^{c}\) is open in \(\left[ 0, 1 \right] \) so for all \(x \in C ^{c} \), there is an \(\epsilon > 0\) so that \(\left( x-\epsilon, x+\epsilon \right) \subseteq C ^{c}\) . Then, since for all intervals \(I \)  in the \(\left[ 0, 1 \right] \) complement of the cantor set, we find  \(I \subseteq J_{n, k}\) for some \(n, k \in \N\)  , we have \(\xi(I) = \{\frac{n}{2^{k}}\} \), so \[\overline{D}\left( \phi\left( x \right)  \right)  = \lim_{r \to 0}\sup \{ \frac{ \phi\left( x+h \right) -  \phi\left( x \right) }{h} : 0 < \left| h \right|  < r   \} = \lim_{r \to 0}\sup \{ \frac{0}{h} : 0 < \left| h \right|  <  r\} = 0  .\] Similarly, we find \( \underline{D}  \left( \phi\left( x \right)  \right) = 0\). Hence, \( \phi\) is differentiable at \(x\) and since \( \phi^{\prime} = 0\) almost everywhere, yet \( \phi\) is not constant by the initial claim, we find \( \phi\) is not absolutely continuous.
-\end{problem}
-
 \end{document}

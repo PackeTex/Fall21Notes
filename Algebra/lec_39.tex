@@ -1,0 +1,15 @@
+\lecture{39}{Mon 29 Nov 2021 11:29}{Polynomials (5)}
+\begin{recall}
+	We characterized the prime elements of \(R\left[ x \right] \) for some UFD \(R\) . Next, we show the final part of the theorem, that \(R\) is a UFD implies \(R\left[ x \right] \) is a UFD.
+\end{recall}
+\begin{proof}
+	Let \(f \in R\left[ x \right] \) be nonzero. Clearly, \(f \in K\left[ x \right] \) with \(f = \cnt\left( f \right) \left( \prod_{i= 1}^{n} g_{i}  \right) \) where \(g_{i} \in K\left[ x \right] \) are irreducible polynomials. But, since \(R\) is a UFD, we can factor \(\cnt\left( f \right) \) into primes from \(R\). We know this factorization to also be primes in \(R\left[ x \right] \). Hence \(f\) can be factorized as the factorization of its content times a product of irreducible polynomials inn \(K\left[ x \right] \) which are also prime.\\
+	Lastly, we need to show this factorization unique. This is essentially trivial as \(\cnt\left( f \right) \in R\) and \(\prod_{i= 1}^{n} g_{i} \in K\left[ x \right]  \), a UFD, so we see any factorization in \(R\left[ x \right] \) is the product of these unique factorizations, so it is unique.
+\end{proof}
+The converse can be proved directly by examining only constant polynomials.\\
+Unfortunately, this conclusion does not extend to PIDs as we have already shown. However, we can extend this to multivariate polynomial rings to yield the following generalization.
+\begin{corollary}
+	If \(R\) is a UFD, then \(R\left[ x_1, \ldots, x_{n} \right] \) is a UFD.
+\end{corollary}
+
+Next class we will prove a few more theorems about polynomials and then review for the final.
