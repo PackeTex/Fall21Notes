@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (Web2C 2015) (preloaded format=pdflatex 2021.11.4)  29 NOV 2021 12:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (Web2C 2015) (preloaded format=pdflatex 2021.11.4)  29 NOV 2021 12:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1311,7 +1311,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  64i,11n,73p,10457b,362s stack positions out of 5000i,2500n,10000p,300000b,80000s
 {/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on master.pdf (3 pages, 181564 bytes).
+Output written on master.pdf (3 pages, 181677 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
