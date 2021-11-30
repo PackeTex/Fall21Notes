@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (Web2C 2015) (preloaded format=pdflatex 2021.11.4)  23 NOV 2021 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (Web2C 2015) (preloaded format=pdflatex 2021.11.4)  30 NOV 2021 14:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1362,65 +1362,25 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) (./lec_23.tex
-Overfull \hbox (35.43575pt too wide) in paragraph at lines 2--2
+) (./lec_25.tex
+Overfull \hbox (33.9986pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 3.
-[4]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 8.
-
-Overfull \hbox (31.82138pt too wide) detected at line 30
-\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 7! \OML/cmm/m/it/10 g [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^_[] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 ^^_[] \OT1/cmr/m/n/10 + [] \OML/cmm/m/it/10 ^^_ [] :
- []
-
-[5]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 39.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 42.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 45.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 53.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 62.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 67.
-
-Overfull \hbox (5.4543pt too wide) in paragraph at lines 68--69
-\T1/cmr/bx/n/10 con-tin-u-ous at $\OML/cmm/m/it/10 x[]$  \T1/cmr/m/n/10 if for ev-ery $\OML/cmm/m/it/10 " > \OT1/cmr/m/n/10 0$ \T1/cmr/m/n/10 we find a $\OML/cmm/m/it/10 ^^N > \OT1/cmr/m/n/10 0$ \T1/cmr/m/n/10 so that $[] \OML/cmm/m/it/10 <
- []
-
-[6]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 70.
-) [7] (./master.aux) ) 
+) [4] (./master.aux) ) 
 Here is how much of TeX's memory you used:
- 25790 strings out of 493093
- 502798 string characters out of 6138120
- 541299 words of memory out of 5000000
- 28769 multiletter control sequences out of 15000+600000
- 25668 words of font info for 81 fonts, out of 8000000 for 9000
+ 25780 strings out of 493093
+ 502646 string characters out of 6138120
+ 541317 words of memory out of 5000000
+ 28760 multiletter control sequences out of 15000+600000
+ 25333 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,17n,73p,10457b,374s stack positions out of 5000i,2500n,10000p,300000b,80000s
-{/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on master.pdf (7 pages, 256873 bytes).
+ 64i,17n,73p,10457b,369s stack positions out of 5000i,2500n,10000p,300000b,80000s
+{/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on master.pdf (4 pages, 218829 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 97 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
