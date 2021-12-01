@@ -24,15 +24,15 @@ Hence, \(\int f^{+}\) is not finite, so \(f\) is nonintegrable.
 \end{problem}
 \newpage
 \begin{problem}[32]
-	First, note that \(f \coloneqq \frac{1}{\sqrt{x} }\) is measurable (preimage of an interval is an interval) and finite almost everywhere. Then, we define \(A_{n} = \left[ \frac{1}{\left( n-1 \right) ^2}, \frac{1}{n^2} \right] \) and the simple functions \(s_{n} = \sum_{i= 1}^{n} i \chi_{A_{i}}\). As each term is positive, we see \(s_{n}\) is increasing for fixed \(x\). Moreover, \(s = \lim_{n \to \infty}s_{n}\) is integrable by applying DCT
+	First, note that \(f \coloneqq \frac{1}{\sqrt{x} }\) is measurable (preimage of an interval is an interval) and finite almost everywhere. Then, we define \(A_{n} = \left[ \frac{1}{\left( n+1 \right) ^2}, \frac{1}{n^2} \right] \) and the simple functions \(s_{n} = \sum_{i= 1}^{n} i \chi_{A_{i}}\). As each term is positive, we see \(s_{n}\) is increasing for fixed \(x\). Moreover, \(s = \lim_{n \to \infty}s_{n}\) is integrable by applying DCT
 	\begin{align*}
 		\int s &= \lim_{n \to \infty} \int s_{n} \\
-		&= \lim_{n \to \infty} \sum_{i= 1}^{\infty} \left( \frac{1}{\left( i-1 \right) ^2} - \frac{1}{i^2} \right) i\\
-		&= \lim_{n \to \infty} \sum_{i= 1}^{n} \frac{1}{\left( i-1 \right) ^2} + \frac{1}{i\left( i-1 \right) } \\
+		&= \lim_{n \to \infty} \sum_{i= 1}^{n} \left(  \frac{1}{i^2} - \frac{1}{\left( i+1 \right) ^2}  \right) i\\
+		&= \lim_{n \to \infty} \sum_{i= 1}^{n} \frac{1}{\left( i+1 \right) ^2} + \frac{1}{i\left( i+1 \right) } \\
 		&\le \lim_{n \to \infty}\sum_{i= 1}^{n} \frac{2}{i^2}\\
 		&= \frac{\pi^2}{3}
 	.\end{align*}
-	Then, for any \(t \in \mathscr{S}\left( f \right) \) , we see \(t \le s_{n} \le s\) for some \(n = \left\lceil \frac{1}{\sqrt{\inf \{ x : x \in \support\left( t \right)  \} } } \right\rceil \). Hence, \(\int s\) is an upper bound of \(\sup \{ \int t: t \in \mathscr{S}\left( f \right)  \} = \int f \), so \(\int f\) is bounded and hence \(f\) is integrable.
+	Then, for any \(t \in \mathscr{S}\left( f \right) \) , we see \(t \le s_{n} \le s\) for sufficiently large \(n\) . Hence, since \(s\) is an upper bound of \(\mathscr{S}\left( f \right) \), we find \(\infty > \int s  > \int f\), so \(f\) is measurable.
 \end{problem}
 \newpage
 \begin{problem}[33]
@@ -63,14 +63,12 @@ Hence, \(\int f^{+}\) is not finite, so \(f\) is nonintegrable.
 \newpage
 \begin{problem}[35]
 	First, recall \(\sum_{i= 1}^{\infty} \frac{1}{n^{4} } = \frac{\pi^{4}}{90}\).\\
-	Then, define \(g_{n} = \sum_{i= 1}^{n} f_{i}^2\) and note that \(g_{n} \le g_{n+1}\) as each term is finite. Moreover \(g_{n}\) is the sum of measurable functions, so it is measurable. Lastly, define \(\lim_{n \to \infty}g_{n}\left( x \right) = g\left( x \right)  = \sum_{i= 1}^{\infty} f_{n}^2\left( x \right) \) Then, monotone convergence  and zero extensions yield
+	Then, define \(g_{n} = \sum_{i= 1}^{n} f_{i}^2\) and note that \(g_{n} \le g_{n+1}\). Moreover \(g_{n}\) is the sum of measurable functions, so it is measurable. Lastly, define \(\lim_{n \to \infty}g_{n}\left( x \right) = g\left( x \right)  = \sum_{i= 1}^{\infty} f_{n}^2\left( x \right) \) Then, monotone convergence yields
 	\begin{align*}
-		\int_{\left[ 0, 1 \right] } g = \lim_{n \to \infty} \int_{\left[ 0, 1 \right] }g_{n}
-		&= \lim_{n \to \infty}\int g^{*} \\
-		&= \lim_{n \to \infty} \int (\sum_{i= 1}^{n} f_{n}^2)^{*} \\
-		&= \lim_{n \to \infty} \int_{\left[ 0, 1 \right] } \sum_{i= 1}^{n} f_{n}^2 \\
-		&= \lim_{n \to \infty} \sum_{i= 1}^{n} \int_{\left[ 0, 1 \right] }f_{n}^2 \\
-		&\le \lim_{n \to \infty} \sum_{i= 1}^{n} \frac{1}{n^{4}} \\
+		\int_{\left[ 0, 1 \right] } g &= \lim_{n \to \infty} \int_{\left[ 0, 1 \right] }g_{n}\\
+		&= \lim_{n \to \infty} \int_{\left[ 0, 1 \right] } \sum_{i= 1}^{n} f_{i}^2 \\
+		&= \lim_{n \to \infty} \sum_{i= 1}^{n} \int_{\left[ 0, 1 \right] }f_{i}^2 \\
+		&\le \lim_{n \to \infty} \sum_{i= 1}^{n} \frac{1}{i^{4}} \\
 		&= \frac{\pi^{4}}{90} \\
 	.\end{align*}
 	Moreover, \(0 \le \int_{\left[ 0, 1 \right] }f_{n}^2\) as the integrand is always non-negative. Hence, as the sum is bounded and strictly increasing, we see the terms tend to \(0\). That is \( \lim_{n \to \infty} \int _{\left[ 0, 1 \right] }f_{n}^2 = 0\).

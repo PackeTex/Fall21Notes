@@ -30,7 +30,7 @@
 		That is, for some \(\epsilon ^{\prime} = \epsilon ^2 > 0\),  and all \(N \in \N\) we find an \(n_N \ge N\), so that \(\int \left| f_{n} - f \right| \ge \epsilon^{\prime}\), so \(f_{n}\) does not converge to \(f\) in mean.
 	\item First, note that if \(x = 0\) or \(1\), then \(f_{n}\left( x \right)  = x\) for all \(n \in \N\). Then, if \(x \in \left( 0, 1 \right) \), the ratio test proves \(\sum_{i= 1}^{\infty} nx^{n} < \infty\), hence \(\lim_{n \to \infty} f_{n}\left( x \right)  = \lim_{n \to \infty}nx^{n} = 0\).  \\
 		To see that \(f_{n}\) converges to \(0\) in measure denote \(E_{\epsilon;n} = \{x \in \left[ 0, 1 \right] : nx^{n} < \epsilon\} \). Then, suppose \(c \in E_{\epsilon;n}\), then either \(c = 1\) or \(\lim_{n \to \infty} f_{n}\left( c \right) = 0\). We can exclude the first case as this happens only on a set of measure \(0\). Hence, fixing \(\epsilon > 0\) and assuming \(c\in \left[ 0, 1 - \frac{\epsilon}{2} \right) \) we see there is a \(N \in \N\) so that \(f_{n}\left( c \right)  < \epsilon\) for all \(n \ge N\). So, we have \(m\left( E_{\epsilon ; n} \right)  \le m \left(\left[ 1-\frac{\epsilon}{2}, 1 \right]\right)< \epsilon\) for all \(n \ge N\) , so \(f_{n}\) converges to \(0\) in measure.\\
-	\item Finally, to show that \(f\) does not converge in measure take \(\epsilon = \frac{1}{100}\). Then, we define \(a_{n} = 1 - \left( \frac{1}{100} \right) ^{\frac{1}{n+1}}\) we define \(s_{n} = f_{n}\left( a_{n} \right)  \chi_{\left[ a_{n}, 1 \right] }\) . Then, we find \(f_{n}\) dominates \(s_{n}\) for every \(n\), hence \(\int f_{n} \ge \int s_{n} = n\left( \frac{1}{100}^{n+1} - \frac{1}{100} \right) \ge n\left( \frac{1}{100}^{-2} - \frac{1}{100} \right)  \) for all \(n \ge 1\) . Since this grows linearly with \(n\), we find for sufficiently large \(n\) this number will exceed \(\epsilon\). Hence, it is shown.
+	\item Finally, to show that \(f\) does not converge in measure take \(\epsilon = \frac{1}{100}\). Then, we define \(a_{n} = 1 - \left( \frac{1}{100} \right) ^{\frac{1}{n+1}}\) we define \(s_{n} = f_{n}\left( a_{n} \right)  \chi_{\left[ a_{n}, 1 \right] }\) . Then, we find \(f_{n}\) dominates \(s_{n}\) for every \(n\), hence \[\int f_{n} \ge \int s_{n} = n\left( \frac{1}{100}^{n+1} - \frac{1}{100} \right) \ge n\left( 100^{-2} - \frac{1}{100} \right) = n\delta  \] for all \(n \ge 1\) . Since this grows linearly with \(n\), we find for sufficiently large \(n\), \(n\delta > \epsilon\). Hence, it is shown.
 \end{problem}
 \newpage
 \begin{problem}[40]
@@ -55,7 +55,7 @@ First, note that \(\|g\|_{1} = \int_{S} \left|g  \right| \le \ess\left( g \right
 \newpage
 \begin{problem}[42]
 \begin{enumerate}
-	\item Let \(f \in L^{s}\left( S \right) \). Then, we define \(r\) so that \(\frac{1}{s} + \frac{1}{r} = \frac{1}{p}\) (hence \(\frac{s}{p}\) and \(\frac{r}{p}\) are conjugate). Then, as we aim to show \(\|f\|_{p}\) finite, we see it suffices to show \(\|f\|_{p}^{p} = \int_{S} \left| f \right| ^{p} = \| f^{p}\|_{1}\) finite. We see
+	\item First, we prove the case \(s < \infty\). Let \(f \in L^{s}\left( S \right) \). Then, we define \(r\) so that \(\frac{1}{s} + \frac{1}{r} = \frac{1}{p}\) (hence \(\frac{s}{p}\) and \(\frac{r}{p}\) are conjugate). Then, as we aim to show \(\|f\|_{p}\) finite, we see it suffices to show \(\|f\|_{p}^{p} = \int_{S} \left| f \right| ^{p} = \| f^{p}\|_{1}\) finite. We see
 		\begin{align*}
 			\|f\|_{p}^{p} &= \| 1f\|_{p}^{p}\\
 &= \| 1^{p} f^{p}\|_{1} \\
@@ -65,7 +65,9 @@ First, note that \(\|g\|_{1} = \int_{S} \left|g  \right| \le \ess\left( g \right
 &= m\left( S \right) ^{\frac{1}{r}} \|f\|_{s}^{p} \\
 &< \infty
 		.\end{align*}
-		We find this finite by assumption, hence \(f \in L^{p}\left( S \right) \), so the claim is shown. It is clear that if \(m\left( S \right) = \infty\). For an example, sake \(S = \left[ 0, \infty \right] \) and \(f = \frac{1}{x}\), we see \(\|f\|_{1} = \int_{\left[ 0, \infty \right] } \frac{1}{x} = \infty\), however \(\|f\|_{2} = (\int_{\left[ 0, \infty \right] } \frac{1}{x^2})^{\frac{1}{2}}\). As \(\frac{1}{x^2}\) is integrable on \(\left[ 0, \infty \right] \) we find its root to be finite, hence \(f \in L_2\left( \left[ 0, \infty \right]  \right) \) but \(f \not\in L_1\left( \left[ 0, \infty \right]  \right) \).
+		We find this finite by assumption, hence \(f \in L^{p}\left( S \right) \), so the claim is shown. \\
+		Next, we show the case \(s = \infty\). In this case \(f\in L^{p}\left( S \right) \) is bounded almost everywhere (else its \(\ess\) would be infinite). Then, we see for \(p < \infty\) \(\int_{S} \left| f \right| ^{p} \le \int_{S}\ess\left( f \right)^{p} = S \|f\|_{\infty}^{p} < \infty\) by assumption so the claim holds.\\
+		It is clear that if \(m\left( S \right) = \infty\) this does not hold. For an example, sake \(S = \left[ 0, \infty \right] \) and \(f = \frac{1}{x}\), we see \(\|f\|_{1} = \int_{\left[ 0, \infty \right] } \frac{1}{x} = \infty\), however \(\|f\|_{2} = (\int_{\left[ 0, \infty \right] } \frac{1}{x^2})^{\frac{1}{2}}\). As \(\frac{1}{x^2}\) is integrable on \(\left[ 0, \infty \right] \) we find its root to be finite, hence \(f \in L_2\left( \left[ 0, \infty \right]  \right) \) but \(f \not\in L_1\left( \left[ 0, \infty \right]  \right) \).
 	\item Let \(f \in L^{r}\left( S \right) \cap L^{s}\left( S \right) \). Denote the following sets, \(A = \{x  : x \in S, \left| f\left( x \right)  \right| < 1\} \) and \(B = \{x : x \in S, \left| f\left( x \right)  \right| > 1\} \). It is clear \(A \cup B = S\), with \(A, B\) being disjoint. Then, we see if \(s \neq \infty\), we have
 		\begin{align*}
 			\|f\|_{p}^{p} &= \int_{S} \left| f \right| ^{p}\\
@@ -97,19 +99,19 @@ First, note that \(\|g\|_{1} = \int_{S} \left|g  \right| \le \ess\left( g \right
 				&= 0
 			.\end{align*}
 			The same argument shows \(\lim_{n \to \infty} \int_{ I } \cos \left( nx \right)  \le 0\) taking \(\cos ^{-}\) instead. Hence, \(\lim_{n \to \infty} \int_{I}\cos\left( nx \right)  = 0\).
-		\item Next, since \(f \in L^{1}\left( \R \right) \), we see \[
-		\int f \cos\left( nx \right) = \|f \cos\left( nx \right) \|_{1} \le \|f\|_{1} \|\cos\left( nx \right) \|_{\infty}
-		.\]
-		Note that \[
-		\lim_{n \to \infty} \int_{A} 1 \cos\left( nx \right) &= \|1 \cos\left( nx \right) \|_{1} \\
-		&= \|1\|_{1} \|\cos\left( nx \right) \|_{\infty} \\
-		&= 0 \\
-		\implies \lim_{n \to \infty} \|\cos\left( nx \right) \|_{\infty} = 0
+		\item First, note that an earlier exercise shows \(f \in L^{\infty}\left( \R \right) \). Next, note that
+			\begin{align*}
+				\lim_{n \to \infty} \int f \cos\left( nx \right) &\le \lim_{n \to \infty}\|f \cos\left( nx \right)  \|_{1}\\							 &\le \lim_{n \to \infty} \|f\|_{\infty} \|\cos\left( nx \right) \|_{1} \\
+				&= \lim_{n \to \infty} \alpha \|\cos\left( nx \right) \|_{1}
+			.\end{align*}
 
-		.\]   Letting \(I\) be the interval \(\left[ 0, 2\pi \right] \) we see \(\cos\left( nI \right) = \cos\left( \R \right) = \left[ 0, 1 \right]  \) , hence \(\ess_{\R} \cos \left( nx \right)   = \ess_{\left[ 0, 2\pi \right]} \cos\left( nx   \right)   = \|\cos\left( nx \right) \|_{\infty}}\) with the norm being taken in \(\R\). Hence, \(\lim_{n \to \infty}\|\cos\left( nx \right) \|_{\infty ; \R} = 0\), so \[
-		\lim_{n \to \infty} \int f \cos\left( nx \right)  = \|f\|_{1} \lim_{n \to \infty} \|\cos\left( nx \right) \| _{\infty} = 0
-		.\]
-	\end{itemize}
+			Similairly,
+			\begin{align*}
+				\lim_{n \to \infty} \int f \cos\left( nx \right) &\ge \lim_{n \to \infty} - \|f \cos\left( nx \right) \|_{1}\\
+				&\ge \lim_{n \to \infty} - \|f\|_{\infty} \|\cos\left( nx \right) \|_{1}\\
+				&= -\alpha \|\cos\left( nx \right) \|_{1}
+			.\end{align*}
+			\end{itemize}
 \end{problem}
 \newpage
 \begin{problem}[44]
