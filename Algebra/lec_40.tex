@@ -1,0 +1,44 @@
+\lecture{40}{Wed 01 Dec 2021 12:33}{Polynomials (6)}
+This was the last class.
+\begin{recall}
+	If \(R\) was a UFD with \(K\) its quotient field, then a polynomial \(f \in K\left[ x \right] \) has a linear factor if and only if it has a root. Moreover, if \(\deg \left( f \right) \le 3\), then \(f\) has a linear factor if and only if it is irreducible (and has \(\cnt\left( f \right)  = 1\)).
+\end{recall}
+\begin{theorem}[Eisenstein's Criterion]
+	Suppose \(R\) is a UFD with quotient field \(K\) and \(f\left( x \right)  = \prod_{i= 0}^{n} a_{i} x^{i} \in R\left[ x \right]  \) with \(n = \deg \left( f \right)  \ge 1\) and \(\cnt\left( f \right) = 1\). If \(p \in R\) is prime with the following conditions holding
+	\begin{itemize}
+		\item \(a_{n} \not \equiv 0 \mod \left( p \right) \),
+		\item \(a_{i} \equiv 0 \mod \left( p \right) \) for all \(0 \le i < n\),
+		\item and \(a_0 \not \equiv 0 \mod \left( p^2 \right) \),
+	\end{itemize}
+then \(f\) is irreducible.
+\end{theorem}
+\begin{proof}
+	Assume by contradiction that there is a factorization \(f = gh\) with \(\deg \left( g \right) , \deg \left( h \right) \ge 1\) and \(g = \sum_{i=0}^{m} b_{i}x^{i}\), \(h = \sum_{i=0}^{d} c_{i} x^{i}\). Remove any trivial terms such that \(\deg \left( g \right) = m\) and \(\deg \left( h \right) = d\) with both being nonzero. Additionally, we can assume all coefficients live in \(R\).\\
+	Then, we see \(a_0 = c_0 b_0 \equiv 0 \mod \left( p \right) \) but \(c_0b_0 \not \equiv 0 \mod \left(p^2  \right) \). This implies exactly one of \(c_0, b_0\) is divisible by \(p\). WLOG, suppose \(p \mid c_0\) and \(p \nmid b_0\).\\
+	Next, \(a_{n} = b_{m} \cdot c_{d} \not \equiv 0 \mod \left( p \right) \), so \(p \nmid c_{d}\). Then, there is a minimal index \(r\) such that \(p \nmid c_{r}\) but \(p \mid c_{i}\) for \(0 \le i < r\).\\
+	Now, collecting coefficients yields \[
+	a_{r} = b_0 c_{r} + b_1 c_{r-1} + \ldots + b_{r-1} c_1 + b_{r} c_0
+	.\]
+	By the earlier conclusion, we see \(p \mid b_{j} c_{r-j}\) for all \(j \ge 1\). That is, \(p\) divides all but the first term since \(p \nmid b_0\) and \(p \nmid c_{r}\). Since \(p\) is prime, \(p \nmid b_0 c_{r}\), and since \(p\) divides all other terms, we find \(p \nmid a_{r}\), hence \(a_{r} \not \equiv 0 \mod \left( p \right) \). Hence, the assumptions yield \(r = n\) But by an earlier assumption, we see \(d \ge r\), hence \(d = n\) else a contradiction would arise. Hence since \(\deg \left( h \right)  = \deg \left( f \right) \), we see \(\deg \left( g \right)  = 0\), so \(g\) is constant. \(\lightning\), since we assumed \(g\) nonconstant.
+\end{proof}
+\begin{example}
+	\(f\left( x \right)  = x^{72} + 40x^{7} + 10x + 50 \in \Z\left[ x \right] \). Clearly \(\cnt\left( f \right) = 1\) and \(\deg \left( f \right)  = 72 \ge 1\). Since \(2, 5\) divide all the coefficients these are our choices for \(p\). Since \(5^2 \mid 50\), this one will not work, so we choose \(2\). \(2 \nmid 1 = a_{n}\), \(2 \mid 40, 10, 50\) respectively, and \(2^2 = 4 \nmid 50\), hence eisenstein yields that \(f\) is irreducible over \(\Z\) (hence \(\Q\)).\\
+	\(g\left( x \right) = x^{4}+1  \). As no primes divide \(1\), this seems to be a poor case for eisenstein. However, if we consider the ring isomoprhism \begin{align*}
+		h_{a}: R\left[ x \right]  &\longrightarrow R\left[ x \right]  \\
+		f\left( x \right)  &\longmapsto h_{a}(f\left( x \right) ) = f\left( x + a \right)
+	.\end{align*}
+	We see this has inverse \(f\left( x \right) \mapsto f\left( x-a \right) \). Since this is an isomorphism, we know it preserves irreducible. Hence, we need only choose a clever \(a\), and show that \(h_{a}\left( g\left( x \right)  \right) \) is irreducible.\\
+	For our \(a\) we choose \(1\), yielding \(h_1\left( g \right) = \left( x+1 \right)^{4} + 1 = x^{4} + 4x^{3} + 6x^2 + 4x + 2 \). Taking \(p = 2\), we see the conditions of eisenstein hold hence this is irreducible. Taking the pullback \(h_{-1}\) yields \(x^{4} + 1 = g\) irreducible.\\
+	As a final example, we take \(\phi_{p}\left( x \right)  = \frac{x^{p} - 1}{x-1} = x^{p-1} + x^{p-2} + \ldots + x + 1\) . Again, taking the isomorphism \(h_{1}\) yields \(h_{1}\left( \phi_{p} \right) = \sum_{n= 1}^{p} \binom{p}{n} x^{n-1} \). When \(n = 1\), we see \(p \mid \binom{p}{1} = p\) but \(p^2 \nmid p\). Moreover, every other \(\binom{p}{n}\) has \(p \mid \binom{p}{n}\) except \(p \nmid \binom{p}{p} = 1\). Hence applying eisenstein and the pullback \(h_{-1}\) yields the result.
+\end{example}
+\begin{theorem}
+	Suppose \(R\) and \(\overline{R}\) are both integral domains with \(\alpha: R \to \overline{R}\) being a ring homomorphism. We know this extends to homomorphism \begin{align*}
+		\overline{\alpha}: R\left[ x \right]  &\longrightarrow \overline{R}\left[ x \right]  \\
+		 f = \sum_{i=0}^{n} a_{i} x^{i}&\longmapsto \sum_{i=0}^{n} f\left( a_{i} \right) x^{i}= \overline{f}
+	.\end{align*}
+	If \(f\left( x \right) \in R\left[ x \right]  \)  with \(\deg \left(  f \right)  = \deg \left( \overline{f} \right) \) and \(\overline{f}\) being irreducible, then \(f\) has no nontrivial factorizations (no factorization \(f = gh\) with \(\deg \left( g \right) , \deg \left( h \right)  \ge 1\)).
+\end{theorem}
+This theorem is generally used when \(R = \Z\) and \(\overline{\R} = \Z / p\Z\). The proof is omitted for now, so see Lang.
+\begin{example}
+	If \(f = x^{5} + \left( 2k+1 \right) x^2 + \left( 2\ell +1 \right) \). Reducing \(\mod 2\) yields \(\overline{f} = x^{5} + x^2 + 1\). Clearly, there are no linear factors, hence as all partitions of \(5\) into \(2\) integers admit either a \(1\) or \(2\) we need only show there are no quadratic factors. Moreover, the quadratic factor must be irreducible (else it would admit a linear factor). The only four quadratic factors in \(\Z / 2\Z\) are \(x^2, x^2 + 1, x^2 + x, x^2 + x + 1\). We know \(x^2 = x \cdot x\) , \(x^2 + 1 = \left( x+1 \right) ^2\) over characteristic \(2\), \(x^2 + x = x \left( x + 1 \right) \). Hence we need only see if \(x^2 + x + 1\) is irreducible. This is a trivial fact to show, so we need only see if it divides the original polynomial. Performing long division yields remainder \(1\), so \(x^2 + x + 1 \nmid x^{5} + x^2 + 1\). Hence, as this polynomial is irreducible over \(\Z / 2\Z\) applying the pullback yields the original family of polynomials to be irreducible.
+\end{example}
