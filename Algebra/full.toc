@@ -19,3 +19,6 @@
 \contentsline {section}{\numberline {12}Ring Localization}{55}
 \contentsline {section}{\numberline {13}Chinese Remainder Theorem}{56}
 \contentsline {section}{\numberline {14}Polynomial Rings}{58}
+\contentsline {section}{\numberline {15}Summary of Ring Theory}{66}
+\contentsline {subsection}{\numberline {15.1}Rings and Ideals}{66}
+\contentsline {subsection}{\numberline {15.2}Polynomials}{68}

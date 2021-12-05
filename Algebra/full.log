@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (Web2C 2015) (preloaded format=pdflatex 2021.11.4)  19 NOV 2021 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (Web2C 2015) (preloaded format=pdflatex 2021.11.4)  7 MAY 2018 19:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2481,15 +2481,11 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 38.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 45.
 ) (./lec_36.tex
 Overfull \hbox (38.15036pt too wide) in paragraph at lines 1--1
 [][] 
  []
 
-[59]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 9.
@@ -2503,6 +2499,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
+[59]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 21.
@@ -2512,14 +2509,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 31.
-[60]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 43.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 49.
-) (./lec_37.tex
+ [60]) (./lec_37.tex
 Overfull \hbox (29.97176pt too wide) in paragraph at lines 1--1
 [][] 
  []
@@ -2540,15 +2536,174 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 35.
-) [62]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 38.
+) (./lec_38.tex
+Overfull \hbox (37.04646pt too wide) in paragraph at lines 1--1
+[][] 
+ []
 
-./full.tex:47: LaTeX Error: \begin{proof} on input line 51 ended by \end{document}.
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 12.
+[62]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 21.
+) (./lec_39.tex
+Overfull \hbox (37.04646pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+[63]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 11.
+) (./lec_40.tex
+Overfull \hbox (36.42163pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6.
+[64]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 34.
+ [65]) (./lec_41.tex
+Overfull \hbox (38.15036pt too wide) in paragraph at lines 2--2
+[][] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 4.
+[66]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 30.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 33.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 39.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 42.
+
+Overfull \hbox (0.78374pt too wide) in paragraph at lines 46--47
+[]\T1/cmr/m/n/10 Take set of all proper ide-als con-tain-ing $\OML/cmm/m/it/10 I$ \T1/cmr/m/n/10 po'd by in-clu-sion. It is nonempty
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 48.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 52.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 55.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 61.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 64.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 70.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 76.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 82.
+[67]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 88.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 94.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 97.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 103.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 110.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 118.
+ [68]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 128.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 131.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 134.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 140.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 146.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 152.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 158.
+ [69]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 164.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 170.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 173.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 180.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 189.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 195.
+ [70]
+Overfull \hbox (1.11978pt too wide) in paragraph at lines 205--206
+[]\T1/cmr/m/n/10 Assuming by con-tra-dic-tion $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 gh$ \T1/cmr/m/n/10 with $\OML/cmm/m/it/10 g \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 b[]x[]$ \T1/cmr/m/n/10 and $\OML/cmm/m/it/10 h \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 c[]x[]$\T1/cmr/m/n/10 ,
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 210.
+) [71]
+
+./full.tex:51: LaTeX Error: \begin{proof} on input line 51 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \end{document}
+l.51 \end{document}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2560,8 +2715,8 @@ or  <return>  to continue without it.
 ### semi simple group (level 1) entered at line 51 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 25984 strings out of 493093
- 505412 string characters out of 6138120
+ 25996 strings out of 493093
+ 505524 string characters out of 6138120
  543344 words of memory out of 5000000
  28850 multiletter control sequences out of 15000+600000
  27963 words of font info for 84 fonts, out of 8000000 for 9000
@@ -2569,10 +2724,10 @@ Here is how much of TeX's memory you used:
  64i,17n,75p,10455b,585s stack positions out of 5000i,2500n,10000p,300000b,80000s
 {/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/share/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/lo
 cal/share/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on full.pdf (62 pages, 600017 bytes).
+Output written on full.pdf (71 pages, 638828 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
+ 361 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

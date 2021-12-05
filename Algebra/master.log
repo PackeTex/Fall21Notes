@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (Web2C 2015) (preloaded format=pdflatex 2021.11.4)  1 DEC 2021 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (Web2C 2015) (preloaded format=pdflatex 2021.11.4)  7 MAY 2018 19:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1270,46 +1270,146 @@ LaTeX Font Info:    Try loading font information for U+stmry on input line 6.
 \tf@toc=\write6
 \openout6 = `master.toc'.
 
- (./lec_39.tex
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 1.
+ (./lec_41.tex
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 2.
  (/usr/local/share/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (37.04646pt too wide) in paragraph at lines 1--1
+Overfull \hbox (38.15036pt too wide) in paragraph at lines 2--2
 [][] 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 11.
-) (./lec_40.tex
-Overfull \hbox (36.42163pt too wide) in paragraph at lines 1--1
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 6.
+(mdframed)              on input line 4.
 [1
 
 {/usr/local/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 34.
- [2]) [3] (./master.aux) ) 
+(mdframed)              on input line 30.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 33.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 39.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 42.
+
+Overfull \hbox (0.78374pt too wide) in paragraph at lines 46--47
+[]\T1/cmr/m/n/10 Take set of all proper ide-als con-tain-ing $\OML/cmm/m/it/10 I$ \T1/cmr/m/n/10 po'd by in-clu-sion. It is nonempty
+ []
+
+[2]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 48.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 52.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 55.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 61.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 64.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 70.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 76.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 82.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 88.
+ [3]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 94.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 97.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 103.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 110.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 118.
+ [4]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 128.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 131.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 134.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 140.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 146.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 152.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 158.
+ [5]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 164.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 170.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 173.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 180.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 189.
+ [6]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 195.
+
+Overfull \hbox (1.11978pt too wide) in paragraph at lines 205--206
+[]\T1/cmr/m/n/10 Assuming by con-tra-dic-tion $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 gh$ \T1/cmr/m/n/10 with $\OML/cmm/m/it/10 g \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 b[]x[]$ \T1/cmr/m/n/10 and $\OML/cmm/m/it/10 h \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 c[]x[]$\T1/cmr/m/n/10 ,
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 210.
+) [7] (./master.aux) ) 
 Here is how much of TeX's memory you used:
- 25790 strings out of 493093
- 502753 string characters out of 6138120
- 541337 words of memory out of 5000000
- 28769 multiletter control sequences out of 15000+600000
- 25668 words of font info for 81 fonts, out of 8000000 for 9000
+ 25791 strings out of 493093
+ 502765 string characters out of 6138120
+ 540337 words of memory out of 5000000
+ 28771 multiletter control sequences out of 15000+600000
+ 27202 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,13n,73p,10457b,374s stack positions out of 5000i,2500n,10000p,300000b,80000s
-{/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on master.pdf (3 pages, 204501 bytes).
+ 64i,11n,73p,10457b,374s stack positions out of 5000i,2500n,10000p,300000b,80000s
+{/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on master.pdf (7 pages, 241415 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
