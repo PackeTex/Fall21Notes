@@ -267,10 +267,10 @@
   "ops.tex" 1637344845 321 9febfa2d8b1edf00692199596e84cda4 ""
   (generated)
   "full.aux"
-  "full.log"
-  "full.dvi"
   "full.toc"
-["pdflatex"] 1525738636 "full.tex" "full.pdf" "full" 1525738636
+  "full.dvi"
+  "full.log"
+["pdflatex"] 1525738714 "full.tex" "full.pdf" "full" 1525738714
   "../preamble.tex" 1630686567 6347 16a26149382ad4273dfee86f4822bea1 ""
   "./figures/fig.pdf" 1633541785 2057 a914d9b4643677cdcadde4231eed649d ""
   "./figures/fig.pdf_tex" 1633541785 3038 4ac0fbc395b2b15e7ddf59a951eae8ff ""
@@ -526,9 +526,9 @@
   "/var/db/tlpkg/texmf.cnf" 1635988352 31993 99636c7cdb6bfcdeed281f4a9987770c ""
   "figures/fig.pdf" 1633541785 2057 a914d9b4643677cdcadde4231eed649d ""
   "figures/fig.pdf_tex" 1633541785 3038 4ac0fbc395b2b15e7ddf59a951eae8ff ""
-  "full.aux" 0 -1 0 ""
+  "full.aux" 1525738637 2340 94c5dc99f4775699fae5b677181d10f4 ""
   "full.tex" 1525738636 1151 5da34bf48486118b2a7ca036ad9bdf7c ""
-  "full.toc" 0 -1 0 ""
+  "full.toc" 1525738637 1536 ed02253918ab61b2a70de86779092064 ""
   "lec_01.tex" 1630348463 5182 133fa37d242ebaea609d25a8da2441d4 ""
   "lec_02.tex" 1630081950 6174 4b17074657d927f37da44945ca5dc830 ""
   "lec_03.tex" 1631028717 5514 978522504aa9f6bab90a59b10354640b ""
@@ -569,10 +569,10 @@
   "lec_38.tex" 1637606277 6267 a97797cb50c510ffef97061dcd225a5c ""
   "lec_39.tex" 1638210660 1700 08c8833999ce19f1bce5ee0bcf09f905 ""
   "lec_40.tex" 1638387223 6340 6fc218db15ee0c24ac23bae93a6447f4 ""
-  "lec_41.tex" 1525738622 16120 7732cfb26c107d74f4e10d7f5bce3a7e ""
+  "lec_41.tex" 1525738700 16121 0664903c61fcb63ac713ce85dbc10842 ""
   "ops.tex" 1637344845 321 9febfa2d8b1edf00692199596e84cda4 ""
   (generated)
-  "full.pdf"
   "full.aux"
+  "full.pdf"
   "full.toc"
   "full.log"
