@@ -1,1 +1,1 @@
-This project is now complete, I will be archiving everything except the full.pdf files within the next couple days. If you would like copies of any tex files submit an email request or an issue on github.
+This project is now complete. If you need the .tex files they are in the respective tar archives, otherwise see the eponymous pdfs.
